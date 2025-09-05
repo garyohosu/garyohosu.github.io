@@ -38,3 +38,16 @@
 # - type: threads
 #   icon: 'fa-brands fa-threads'
 #   url: ''                   # Fill with your Threads profile link
+
+
+- type: qiita
+
+  icon: 'fas fa-link'
+
+  url: 'https://qiita.com/garyo'- type: note
+
+  icon: 'fas fa-note-sticky'
+
+  url: 'https://note.com/hantani'
+
+- type: hatena
