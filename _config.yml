@@ -30,7 +30,7 @@ twitter:
   username: twitter_username # change to your Twitter username
 
 social:
-  name: 判谷貞彦
+  name: hantani
   email: example@domain.com
   links:
     - https://x.com/garyo
@@ -219,7 +219,7 @@ jekyll-archives:
     category: /categories/:name/
 future: true
 
-author:
-  name: 判谷貞彦
-  bio: 電子機器のプログラマ。AI・電子工作などの技術メモを発信。
 
+author:
+  name: hantani
+  bio: 電子機器のプログラマ。AI・電子工作などの技術メモを発信。
