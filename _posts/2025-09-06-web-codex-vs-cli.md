@@ -14,4 +14,8 @@ tags: [Codex, GitHub Pages, Web版, CLI版]
 
 ## 実験してみた
 
+Web版Codexには GitHub リポジトリを連携できる機能があります。
+自分のリポジトリ（garyohosu.github.io）を選び、コードを読ませることができました。
+
+## できたこと
 元記事: （URL未設定。提供いただければリンクに更新します）
