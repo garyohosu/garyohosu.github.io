@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Codex CLIで最初の記事を追加してみた"
-date: 2025-09-05 18:00:00 +0900
+date: 2025-09-05 00:01:00 +0900
 categories: [blog]
 tags: [Codex, GitHub Pages, Chirpy]
 ---
