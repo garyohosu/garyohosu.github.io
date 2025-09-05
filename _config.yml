@@ -34,6 +34,11 @@ social:
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: 判谷貞彦
   email: example@domain.com # change to your email address
+    - https://x.com/garyo
+    - https://github.com/garyohosu
+    - https://qiita.com/garyo
+    - https://note.com/hantani
+    # - <hatena-url>  # はてな（URLがあれば有効化）
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/username # change to your Twitter homepage
