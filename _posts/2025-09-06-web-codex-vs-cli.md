@@ -8,6 +8,10 @@ tags: [Codex, GitHub Pages, Web版, CLI版]
 
 ## はじめに
 
-<!-- TODO: 元記事URLを追記してください -->
+前回、ChatGPT + Codex CLI + gh を使って GitHub Pages にブログを自動構築しました。
+では「Web版のCodex」なら、ブラウザだけで更新できるのでしょうか？
+実際に試してみた結果をまとめます。
 
-元記事: （URL未設定）
+## 実験してみた
+
+元記事: （URL未設定。提供いただければリンクに更新します）
