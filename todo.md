@@ -19,3 +19,10 @@
 - `gh repo clone garyohosu/garyohosu.github.io`
 - `git add -A && git commit -m "chore: bootstrap Chirpy" && git push`
 - `bundle exec jekyll s` （ローカル確認）
+## 追記（最新作業）
+- 記事追加: `_posts/2025-09-05-hello-world.md` を作成。提供フロントマターの不整合を修正。
+- 公開調整: future-date 回避のため `date: 2025-09-05 00:01:00 +0900` に更新し再デプロイ成功。
+- 記事追加: `_posts/2025-09-06-web-codex-vs-cli.md` を作成し、本文を段階的に追記。
+  - セクション: 「できたこと」「できなかったこと」「CLI版との違い」「まとめ」を追加。
+  - 要点箇条書きの挿入と、`元記事` リンク（note）を末尾に追記。
+- 各コミットごとに GitHub Actions（pages-deploy.yml）が起動し、ビルド状態を確認。
