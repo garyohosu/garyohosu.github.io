@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Web版CodexはGitHubと連携できるけど、自動更新はできない話"
-date: 2025-09-06 10:00:00 +0900
+date: 2025-09-05 23:59:00 +0900
 categories: [blog]
 tags: [Codex, GitHub Pages, Web版, CLI版]
 ---
