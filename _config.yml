@@ -32,7 +32,7 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
+  name: 判谷貞彦
   email: example@domain.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
@@ -223,3 +223,7 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 future: true
+
+author:
+  name: 判谷貞彦
+
