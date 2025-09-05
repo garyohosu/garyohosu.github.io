@@ -12,3 +12,4 @@ GitHub Pages と Chirpy テーマを使って構築しました。
 - [note](https://note.com/hantani)
 - [はてなブログ](https://garyo.hatenablog.jp/)
 - [X (Twitter)](https://x.com/garyo)
+- [Quora](https://jp.quora.com/profile/Hantani-Sadahiko)
