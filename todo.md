@@ -35,3 +35,12 @@
 - 未来日時対応: `_config.yml` に `future: true` を設定（未来日投稿の表示を許可）。
 - 公開調整: `web-codex-vs-cli` の `date` を `2025-09-05 23:59:00 +0900` に変更して即時公開。
 - CI: Pages ワークフローの失敗（contact.yml の構文エラー）を修正後、成功を確認。
+
+## 追記（2025-09-05 GitHub CLI/環境確認）
+- 実行環境: Ubuntu 24.04.1 LTS（WSL2 上）、シェル `/bin/bash`、ユーザー `garyo`。
+- 作業ディレクトリ: `/mnt/c/PROJECT/blog/garyohosu.github.io`（Windows の `C:\PROJECT\blog\garyohosu.github.io` に対応）。
+- GitHub CLI: v2.45.0（`/usr/bin/gh`）を確認。
+- 認証状態: この環境では未認証（`gh auth status` が未ログインを報告）。
+- Git: 2.43.0 を確認。
+- サンドボックス/承認: workspace-write、ネットワーク制限、承認 on-request。ネットワークを伴う `gh` や `git fetch/push` は承認が必要。
+- メモ: Windows 側の `gh` 認証とは別管理（WSL 側は `~/.config/gh/hosts.yml`）。
