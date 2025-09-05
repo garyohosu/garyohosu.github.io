@@ -26,3 +26,12 @@
   - セクション: 「できたこと」「できなかったこと」「CLI版との違い」「まとめ」を追加。
   - 要点箇条書きの挿入と、`元記事` リンク（note）を末尾に追記。
 - 各コミットごとに GitHub Actions（pages-deploy.yml）が起動し、ビルド状態を確認。
+
+## 追記（著者設定・リンク整備・公開対応）
+- 著者表示: `_config.yml` の `author.name` を `hantani`、`author.bio` を設定。`social.name` も `hantani` に統一。
+- 記事側の上書き: `_posts/2025-09-06-web-codex-vs-cli.md` に `author:` 行が無いことを確認（上書きなし）。
+- リンク整備: `social.links` に X/GitHub/Qiita/note/はてな を追加。`github.username` と `twitter.username` を設定。
+- 連絡先: `_data/contact.yml` の YAML 崩れを修正し、各サービスの URL を追記（X/GitHub/Qiita/note/はてな）。
+- 未来日時対応: `_config.yml` に `future: true` を設定（未来日投稿の表示を許可）。
+- 公開調整: `web-codex-vs-cli` の `date` を `2025-09-05 23:59:00 +0900` に変更して即時公開。
+- CI: Pages ワークフローの失敗（contact.yml の構文エラー）を修正後、成功を確認。
