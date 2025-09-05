@@ -1,8 +1,14 @@
 ---
-# the default layout is 'page'
+title: このサイトについて
 icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+このサイトは、判谷が技術メモやプログラミング、AI、電子工作などについて発信するブログです。  
+GitHub Pages と Chirpy テーマを使って構築しました。
+
+他の活動場所もぜひご覧ください：
+- [Qiita](https://qiita.com/garyo)
+- [note](https://note.com/hantani)
+- [はてなブログ](https://garyo.hatenablog.jp/)
+- [X (Twitter)](https://x.com/garyo)
