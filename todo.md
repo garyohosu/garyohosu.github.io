@@ -49,3 +49,18 @@
 - 記事追加: `_posts/2025-09-07-from-home-pc.md` を作成
 - コミット: feat: 家のPCからブログを書いてみた
 - プッシュ: origin/main ブランチへ反映
+## 2025-09-06 作業ログ
+
+- Git の状態確認と同期
+  - `main` ブランチの未プッシュ 2 コミットを `origin/main` へプッシュ
+  - すべてのローカルブランチとタグを `origin` に同期（更新なし／タグ 0）
+- 開発環境の確認
+  - OS: Microsoft Windows 10.0.26100 / PowerShell 5.1
+  - ツール: git 2.47.1, node 22.14.0, npm 10.9.2, python 3.12.10
+- Ruby/Jekyll 関連のセットアップ
+  - RubyInstaller (DevKit 同梱) 3.3.9 を `winget` でインストール
+  - Bundler 2.7.1 を `gem install bundler` で導入
+  - Jekyll 4.4.1 を `gem install jekyll` で導入
+- メモ
+  - リポジトリ直下で `jekyll` を実行すると、`jekyll-theme-chirpy (~> 7.3)` 未導入により Bundler の解決エラー発生
+  - 次のステップ: `bundle install` を実行し、`bundle exec jekyll serve` でローカル確認
