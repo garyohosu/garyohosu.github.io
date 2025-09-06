@@ -44,3 +44,8 @@
 - Git: 2.43.0 を確認。
 - サンドボックス/承認: workspace-write、ネットワーク制限、承認 on-request。ネットワークを伴う `gh` や `git fetch/push` は承認が必要。
 - メモ: Windows 側の `gh` 認証とは別管理（WSL 側は `~/.config/gh/hosts.yml`）。
+ 
+## 追記（2025-09-07 家のPCからの投稿）
+- 記事追加: `_posts/2025-09-07-from-home-pc.md` を作成
+- コミット: feat: 家のPCからブログを書いてみた
+- プッシュ: origin/main ブランチへ反映
