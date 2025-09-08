@@ -1,0 +1,26 @@
+/* overrides 2025-09 */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;700&display=swap");
+
+/* フォントは全体に確実適用 */
+html, body {
+  font-family: "Inter","Noto Sans JP",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,
+               "Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif !important;
+  letter-spacing: .02em;
+}
+
+/* リンク色（!importantは最小限） */
+a { color: #0ea5a3 !important; }
+a:hover, a:focus { color: #0b8685 !important; }
+
+/* タグのピル化＆色 */
+.tag, a.tag, .post-tags .tag {
+  border-radius: 999px;
+  padding: .15rem .5rem;
+  background: rgba(14,165,163,.12) !important;
+  color: #0c8e8d !important;
+  border-color: transparent !important;
+}
+
+/* 投稿カードの影と丸み */
+.post-preview { border-radius: 16px; box-shadow: 0 6px 18px rgba(0,0,0,.06); transition: .2s ease; }
+.post-preview:hover { transform: translateY(-1px); box-shadow: 0 10px 24px rgba(0,0,0,.10); }
