@@ -88,3 +88,19 @@
 
 コミット/プッシュ:
 - `git add -A && git commit -m "chore(codex): add config.toml and MCP DALL·E setup" && git push` を実行
+
+## 追記（2025-09-08 Codex 画像生成/MCP 検証）
+- 起動エラー解消: `imagegen-mcp` の起動タイムアウト原因を特定（`OPENAI_API_KEY` 未設定）。
+- 秘密情報の安全化: `~/.secrets/openai.env` を作成し `OPENAI_API_KEY` を保存（600 権限）。`~/.bashrc` から自動読み込みを追加。
+- Codex 認証: `codex login --api-key` を実行し、API キー方式に切替（ChatGPT ログインから移行）。
+- 既定モデル修正: 非対応モデルで 400 が出ていたため `model = "o4-mini"` に更新。
+- 画像MCPの整理: `~/.codex/config.toml` から旧 `[mcp_servers.dalle]` を無効化。代替として以下を追加。
+  - `[mcp_servers.images]`: `mcp-gpt-image-1`（Cloudwerx 版 GPT-Image-1 MCP）。
+  - ラッパー `~/.local/bin/mcp-gpt-image-1` を作成し、環境変数を安全に注入。
+- MCP ツール検出: Codex から `images__create_image` / `images__create_image_edit` を確認（ツールスキーマも取得）。
+- 画像生成の現状: `gpt-image-1` は組織の「確認済み」要件により 403。`dall-e-3` は API 直叩きで 200 を確認。
+- 次アクション: OpenAI の組織を「確認済み」にして gpt-image-1 を有効化（反映まで最長 15 分）。
+- 検証予定: 組織確認後、`~/Pictures/gpt-image-1/red-panda.png` に 1024x1024 のサンプルを生成・保存。
+
+（記録: 最終更新: 
+)
