@@ -71,3 +71,20 @@
 - コミット: `feat: VS Codeからブログを更新してみた`
 - プッシュ: `main` を `origin/main` へプッシュ（Actions により自動ビルド/デプロイ）
 - 備考: サンドボックス on-request のため、ネットワーク操作（push）は承認付きで実行
+
+## 追記（2025-09-08 Codex CLI 設定）
+- Codex CLI の設定ファイルの場所を確認: `~/.codex/config.toml`（`CODEX_HOME=/home/garyo/.codex`）。
+- `config.toml` を新規作成し、以下を反映:
+  - projects."/mnt/c/PROJECT/blog/garyohosu.github.io" の `trust_level = "trusted"`
+  - model = "gpt-5"
+  - model_reasoning_effort = "high"、model_reasoning_summary = "auto"
+  - hide_agent_reasoning = true、show_raw_agent_reasoning = false
+  - approvals="Full Access" の意図を `approval_policy = "never"` と `sandbox_mode = "danger-full-access"` に正規化
+  - [sandbox_workspace_write].network_access = true（将来 workspace-write に切替時に有効）
+  - [tools].web_search = true を有効化
+- MCP サーバーを追加（DALL·E / OpenAI Images 用）:
+  - `[mcp_servers.dalle]` を追加し、`npx -y imagegen-mcp` で起動するよう設定
+  - 利用には `OPENAI_API_KEY` が必要（環境変数で付与するのが推奨）
+
+コミット/プッシュ:
+- `git add -A && git commit -m "chore(codex): add config.toml and MCP DALL·E setup" && git push` を実行
