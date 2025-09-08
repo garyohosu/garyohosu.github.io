@@ -104,3 +104,8 @@
 
 （記録: 最終更新: 
 )
+
+## 2025-09-08 追記（UI最小カスタム）
+- UI刷新（最小カスタム）: フォント/配色/カード影/タグ/ナビを微調整（assets/css/jekyll-theme-chirpy.scss）
+- 記事追加: _posts/2025-09-08-chirpy-facelift.md
+- note原稿保存: drafts/note-2025-09-08-facelift.txt
