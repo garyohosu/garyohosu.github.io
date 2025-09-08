@@ -109,3 +109,12 @@
 - UI刷新（最小カスタム）: フォント/配色/カード影/タグ/ナビを微調整（assets/css/jekyll-theme-chirpy.scss）
 - 記事追加: _posts/2025-09-08-chirpy-facelift.md
 - note原稿保存: drafts/note-2025-09-08-facelift.txt
+
+## 2025-09-08 追記（faceliftまとめ）
+- ブランチ作成: facelift-202509
+- SCSS最小カスタム: assets/css/jekyll-theme-chirpy.scss
+- ヒーロー追加: index.html（layout: home 維持）
+- ビルド確認: bundle exec jekyll build 成功
+- 記事追加: _posts/2025-09-08-chirpy-facelift.md
+- note原稿: drafts/note-2025-09-08-facelift.txt
+- プッシュ: origin/facelift-202509（PR: https://github.com/garyohosu/garyohosu.github.io/pull/new/facelift-202509）
