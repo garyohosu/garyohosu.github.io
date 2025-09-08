@@ -64,3 +64,10 @@
 - メモ
   - リポジトリ直下で `jekyll` を実行すると、`jekyll-theme-chirpy (~> 7.3)` 未導入により Bundler の解決エラー発生
   - 次のステップ: `bundle install` を実行し、`bundle exec jekyll serve` でローカル確認
+
+## 追記（2025-09-08 VS Code からの更新）
+- リポジトリ確認: ルート構成、`_config.yml`、`Gemfile`、`index.html`、Pages ワークフローを確認
+- 記事追加: `_posts/2025-09-08-update-from-vscode.md` を新規作成（VS Code で編集）
+- コミット: `feat: VS Codeからブログを更新してみた`
+- プッシュ: `main` を `origin/main` へプッシュ（Actions により自動ビルド/デプロイ）
+- 備考: サンドボックス on-request のため、ネットワーク操作（push）は承認付きで実行
