@@ -118,3 +118,7 @@
 - 記事追加: _posts/2025-09-08-chirpy-facelift.md
 - note原稿: drafts/note-2025-09-08-facelift.txt
 - プッシュ: origin/facelift-202509（PR: https://github.com/garyohosu/garyohosu.github.io/pull/new/facelift-202509）
+
+## 2025-09-08 見た目反映ホットフィックス
+- _sass/custom.scss を追加、エントリSCSS末尾で @import "custom" を明示。
+- フォント/リンク色/タグ/カード影を高優先度セレクタで上書き。
