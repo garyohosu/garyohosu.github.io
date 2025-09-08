@@ -1,0 +1,25 @@
+/* ==== custom overrides (2025-09) ==== */
+/* Web Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;700&display=swap");
+
+:root {
+  --global-theme-color: #0ea5a3;
+  --link-color: var(--global-theme-color);
+  --link-hover-color: #0b8685;
+
+  --body-font-family: "Inter","Noto Sans JP",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif;
+  --heading-font-family: "Inter","Noto Sans JP",system-ui,sans-serif;
+}
+
+body { font-feature-settings: "palt"; letter-spacing: .02em; }
+h1,h2,h3 { font-weight: 800; letter-spacing: .01em; }
+
+.post-preview { border-radius: 16px; box-shadow: 0 6px 18px rgba(0,0,0,.06); transition: .2s ease; }
+.post-preview:hover { transform: translateY(-1px); box-shadow: 0 10px 24px rgba(0,0,0,.10); }
+
+.tag { border-radius: 999px; padding: .15rem .5rem; background: rgba(14,165,163,.12); color: #0c8e8d; }
+
+.navbar { backdrop-filter: saturate(180%) blur(8px); background: rgba(255,255,255,.75); }
+[data-mode="dark"] .navbar { background: rgba(17,24,39,.6); }
+
+code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono","Noto Sans Mono", monospace; border-radius: 8px; }
