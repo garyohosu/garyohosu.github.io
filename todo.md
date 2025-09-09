@@ -130,3 +130,14 @@
 - コミット: `fix(ui): correct Chirpy theme CSS override to apply custom styling`
 - プッシュ: main → origin/main（GitHub Actions 自動デプロイ待ち）
 - 期待結果: 数分後にカスタムデザインが公開サイトに反映予定
+
+## 2025-09-09 追記（ブログ記事作成・テーマ修正）
+- ブログ記事作成: `_posts/2025-09-09-claude-code-css-fix.md`
+  - 内容: Claude CodeでのCSS修正トラブルシューティング体験談
+  - Claude Codeからの記事作成であることを明記
+  - 診断プロセス、解決策、学びポイントを詳細記録
+- コミット・プッシュ: `feat: add blog post about Claude Code CSS troubleshooting`
+- 追加問題発見: `_config.yml` のテーマが意図せず `jekyll-theme-hacker` に変更されていた
+- 緊急修正: テーマを `jekyll-theme-chirpy` に復元
+- コミット・プッシュ: `fix: restore Chirpy theme in _config.yml`
+- 状況: カスタムCSSとテーマの両方が正常動作するよう修正完了
