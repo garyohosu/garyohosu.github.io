@@ -118,3 +118,15 @@
 - 記事追加: _posts/2025-09-08-chirpy-facelift.md
 - note原稿: drafts/note-2025-09-08-facelift.txt
 - プッシュ: origin/facelift-202509（PR: https://github.com/garyohosu/garyohosu.github.io/pull/new/facelift-202509）
+
+## 2025-09-09 追記（Claude Codeによるカスタムスタイル修正）
+- 問題: カスタムCSSが公開サイトに反映されない（https://garyohosu.github.io）
+- 原因調査: `assets/css/jekyll-theme-chirpy.scss` がテーマのベースimportを欠如、基本スタイル未読込
+- 修正内容:
+  - Chirpy v7.3の正しい構造に修正（`@use 'main'` を復元）
+  - テーマベースの後にカスタム override を配置する構造に変更
+  - Inter + Noto Sans JP フォント、ティール配色 (#0ea5a3)、カード影等のカスタマイズ維持
+- ビルド確認: `bundle exec jekyll build` 成功、カスタムCSS正常コンパイル
+- コミット: `fix(ui): correct Chirpy theme CSS override to apply custom styling`
+- プッシュ: main → origin/main（GitHub Actions 自動デプロイ待ち）
+- 期待結果: 数分後にカスタムデザインが公開サイトに反映予定
