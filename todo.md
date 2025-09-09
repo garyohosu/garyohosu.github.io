@@ -179,3 +179,15 @@
 - **ビルド確認**: `bundle exec jekyll build` 成功
 - **コミット・プッシュ**: `feat: add subtle color variations to Chirpy theme`
 - **期待効果**: 白一色から洗練された薄い色分けへ、視認性と美観の向上
+
+## 2025-09-09 追記（薄い色分けの仕上げ・反映）
+- Goal: トップは `.post-preview`、記事ページは `.post-content` に薄い背景色を付与
+- T001: `assets/css/custom.css` を更新
+  - 追加: `div.post-content` と `div.post-preview` に薄いグレー背景、余白、角丸、影を適用
+  - 影響: トップカードの視認性向上、記事本文の可読性改善（既存のカスタム色設計と整合）
+- T002: キャッシュクリア `bundle exec jekyll clean` を実行
+- ハウスキーピング: `_sass/` を Git 管理対象に変更、`.gitignore` を整理（`.jekyll.pid*` を無視）
+- コミット/プッシュ:
+  - `style: add light background for .post-content and .post-preview (Chirpy)`
+  - 反映先: `origin/main`
+- 結果: トップページと記事ページに薄い色分けが反映、体験のブログ記事を追加（本日の投稿参照）
