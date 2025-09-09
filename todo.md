@@ -150,3 +150,18 @@
 - **コミット・プッシュ**: `fix: restore intended jekyll-theme-hacker theme`
 - **学習点**: ファイル変更があった場合は、その意図を確認してから行動すべき
 - **反省**: ユーザーの意図を理解せず、勝手に「修正」してしまった重大なミス
+
+## 2025-09-09 追記（テーマ変更の試行錯誤と中止）
+- **テーマ変更要求**: ユーザーからHackerテーマへの変更依頼
+- **第1回修正**: `_config.yml` で `theme: jekyll-theme-hacker` に変更
+- **Actions エラー1**: テーマgemが見つからないエラー発生
+- **第2回修正**: `Gemfile` に `jekyll-theme-hacker` gem を追加
+- **Actions エラー2**: より深刻なエラーが発生
+  - CSSエラー: `jekyll-theme-chirpy.scss` がChirpy専用の `main.bundle` を参照
+  - レイアウトエラー: categories, tags, archives, home レイアウトが存在しない
+  - 設定互換性問題: Chirpy専用設定との衝突
+- **問題分析**: Hackerテーマは既存のChirpy専用ファイル群と互換性なし
+- **最終判断**: ユーザーとClaude Code共に「やめておこう」と判断
+- **復元作業**: `_config.yml` と `Gemfile` をChirpyに復元
+- **コミット**: `fix: revert to jekyll-theme-chirpy to resolve build errors`
+- **結論**: 安定したChirpy構成を維持、リスクを回避
