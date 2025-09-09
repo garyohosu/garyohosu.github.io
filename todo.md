@@ -165,3 +165,17 @@
 - **復元作業**: `_config.yml` と `Gemfile` をChirpyに復元
 - **コミット**: `fix: revert to jekyll-theme-chirpy to resolve build errors`
 - **結論**: 安定したChirpy構成を維持、リスクを回避
+
+## 2025-09-09 追記（Chirpyテーマ色分けカスタマイズ）
+- **要望**: ユーザーから「白一色なのでせめて薄く色分けしてほしい」
+- **Chirpyカスタマイズ可能性の説明**: 豊富なカスタマイズオプションを提示
+- **色分け実装**: `assets/css/jekyll-theme-chirpy.scss` に追加
+  - **カラーパレット**: ティール、青、紫、緑、オレンジのアクセントカラー
+  - **背景バリエーション**: main (#fefefe), secondary (#f8fafc), accent (薄いティール)
+  - **カテゴリ色分け**: Dev→青系、Blog→緑系の自動色分け
+  - **タグ色展開**: nth-child セレクタで多色展開
+  - **UI要素強化**: サイドバーグラデーション、コードブロック背景、区切り線
+  - **ダークモード対応**: 全カスタム色のダークバージョン完備
+- **ビルド確認**: `bundle exec jekyll build` 成功
+- **コミット・プッシュ**: `feat: add subtle color variations to Chirpy theme`
+- **期待効果**: 白一色から洗練された薄い色分けへ、視認性と美観の向上
