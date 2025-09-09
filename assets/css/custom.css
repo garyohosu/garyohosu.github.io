@@ -1,5 +1,22 @@
 /* Custom CSS for Chirpy Theme Color Variations */
 
+/* 記事ページ本文 */
+div.post-content {
+  background: #f8fafc !important;
+  padding: 1.5rem !important;
+  border-radius: 12px !important;
+  margin-bottom: 2rem !important;
+}
+
+/* トップページの記事カード */
+div.post-preview {
+  background: #f8fafc !important;
+  border-radius: 12px !important;
+  padding: 1rem !important;
+  margin-bottom: 1.5rem !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,.05) !important;
+}
+
 /* Post content subtle background */
 .post-content {
   background: #f8fafc !important;
