@@ -50,9 +50,6 @@ h1,h2,h3 { font-weight: 800; letter-spacing: .01em; }
 code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono","Noto Sans Mono", monospace; border-radius: 8px; }
 
 /* Enhanced color variations */
-/* Main content background */
-#main-wrapper { background: var(--bg-main); }
-
 /* Post content subtle background */
 .post-content { background: var(--bg-secondary); padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; }
 
