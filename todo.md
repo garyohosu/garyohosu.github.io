@@ -119,6 +119,16 @@
 - note原稿: drafts/note-2025-09-08-facelift.txt
 - プッシュ: origin/facelift-202509（PR: https://github.com/garyohosu/garyohosu.github.io/pull/new/facelift-202509）
 
+## 2025-09-12 追記（noteリンクポスト追加）
+- 参照記事: https://note.com/hantani/n/n861018605568
+- メタ取得: `datePublished`, `title`, `description`, `og:image` を抽出
+- 記事追加: `_posts/2025-09-12-try-genspark-ai-dev-pwa.md`（リンクポスト、要約・外部リンク掲載）
+- ビルド確認: `bundle exec jekyll build` 成功（`_site/posts/try-genspark-ai-dev-pwa/` 生成）
+- リモート設定: `origin` を HTTPS に変更（`git remote set-url origin https://github.com/garyohosu/garyohosu.github.io.git`）
+- コミット: `Add link post: GensparkのAIデベロッパーでPWAを最短公開 (note)`
+- プッシュ: `git push origin main` 成功
+- 公開URL: https://garyohosu.github.io/posts/try-genspark-ai-dev-pwa/
+
 ## 2025-09-09 追記（Claude Codeによるカスタムスタイル修正）
 - 問題: カスタムCSSが公開サイトに反映されない（https://garyohosu.github.io）
 - 原因調査: `assets/css/jekyll-theme-chirpy.scss` がテーマのベースimportを欠如、基本スタイル未読込
