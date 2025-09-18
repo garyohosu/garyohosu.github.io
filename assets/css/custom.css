@@ -197,7 +197,7 @@ div[class^="language-"] {
   content: "";
   display: block;
   width: 100%;
-  height: 220px; /* adjust as needed */
+  height: 160px; /* reduced for better title/menu visibility */
   background-image: url('/assets/img/dall/header.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -214,3 +214,27 @@ body {
   background-position: center top;
 }
 */
+
+/* ========== Hero / Cover wrappers: keep header area compact ========== */
+.post-cover,
+.hero-banner {
+  max-height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.post-cover img,
+.hero-banner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+@media (max-width: 576px) {
+  .post-cover,
+  .hero-banner { max-height: 220px; }
+  .post-cover img,
+  .hero-banner img { height: 220px; }
+}
