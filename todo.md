@@ -117,6 +117,19 @@
   - OpenAI クライアントを遅延生成し、未設定時はサーバーを落とさずエラー返却。
   - `model` 引数（`gpt-image-1` / `dall-e-2`）をサポート。`gpt-image-1` 403 時はフォールバック処理を追加。
 
+## 追記（2025-09-18 サイト共通ヘッダーにDALL画像を適用）
+- 目標: ブログ全体（全ページのヘッダー/背景）で DALL MCP 生成画像を利用。
+- 画像生成: プロンプト「未来的な和風デザインのヘッダー背景」、サイズ「1024x1024」。
+  - `gpt-image-1` が未認証のため `dall-e-2` で生成。
+  - 保存先: `assets/img/dall/header.png`（新規ディレクトリを作成）。
+- 適用方法（Chirpyを壊さないCSS方式）:
+  - `assets/css/custom.css` に `#topbar-wrapper::before` バナーを追加（高さ 220px、カバー）。
+  - 任意で `body` 背景用のCSSもコメントとして追記（必要時にアンコメント）。
+  - レイアウト直編集（`_layouts/default.html`）は回避し、Gemテーマの構造維持。
+- コミット/プッシュ:
+  - 画像とCSSを追加: `8d8c875`（main）
+  - 本メモ追記コミットも `main` に反映。
+
 ## 2025-09-08 追記（UI最小カスタム）
 - UI刷新（最小カスタム）: フォント/配色/カード影/タグ/ナビを微調整（assets/css/jekyll-theme-chirpy.scss）
 - 記事追加: _posts/2025-09-08-chirpy-facelift.md
