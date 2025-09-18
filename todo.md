@@ -105,6 +105,18 @@
 （記録: 最終更新: 
 )
 
+## 追記（2025-09-18 MCP: dall 追加・動作確認）
+- MCP サーバー: `dall`（STDIO 型）を環境に追加し、起動確認。
+  - コマンド例: `node /home/garyo/project/dall-server/server.mjs`
+  - 依存環境: `OPENAI_API_KEY` を環境変数で付与。
+- ツール検出: `dall-generate` がクライアントに認識されることを確認。
+- 動作確認: プロンプト指定で画像生成を実行し、サンプルを保存。
+  - 出力: `/home/garyo/project/dall-server/outputs/sample.png`（1024x1024）
+  - 備考: `gpt-image-1` は組織未認証により 403 のため、自動で `dall-e-2` にフォールバックして生成成功。
+- 実装補足（dall-server 側）:
+  - OpenAI クライアントを遅延生成し、未設定時はサーバーを落とさずエラー返却。
+  - `model` 引数（`gpt-image-1` / `dall-e-2`）をサポート。`gpt-image-1` 403 時はフォールバック処理を追加。
+
 ## 2025-09-08 追記（UI最小カスタム）
 - UI刷新（最小カスタム）: フォント/配色/カード影/タグ/ナビを微調整（assets/css/jekyll-theme-chirpy.scss）
 - 記事追加: _posts/2025-09-08-chirpy-facelift.md
