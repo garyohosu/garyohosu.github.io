@@ -187,33 +187,7 @@ div[class^="language-"] {
   border-color: rgba(236, 72, 153, 0.3) !important;
 }
 
-/* ========== DALL MCP: Site-wide banner & optional background ========== */
-/* Header banner image inserted via CSS (no layout override needed) */
-#topbar-wrapper {
-  position: relative;
-}
-
-#topbar-wrapper::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 160px; /* reduced for better title/menu visibility */
-  background-image: url('/assets/img/dall/header.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* Optional: use as full-page background (enable by uncommenting) */
-/*
-body {
-  background-image: url('/assets/img/dall/header.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center top;
-}
-*/
+/* (removed) Site-wide header background image */
 
 /* ========== Hero / Cover wrappers: keep header area compact ========== */
 .post-cover,
