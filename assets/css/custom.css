@@ -189,16 +189,14 @@ div[class^="language-"] {
 
 /* (removed) Site-wide header background image */
 
-/* ========== Hero / Cover wrappers: keep header area compact ========== */
-.post-cover,
-.hero-banner {
+/* ========== Post cover wrappers: keep header area compact ========== */
+.post-cover {
   max-height: 300px;
   overflow: hidden;
   position: relative;
 }
 
-.post-cover img,
-.hero-banner img {
+.post-cover img {
   width: 100%;
   height: 300px;
   object-fit: cover;
@@ -207,8 +205,6 @@ div[class^="language-"] {
 }
 
 @media (max-width: 576px) {
-  .post-cover,
-  .hero-banner { max-height: 220px; }
-  .post-cover img,
-  .hero-banner img { height: 220px; }
+  .post-cover { max-height: 220px; }
+  .post-cover img { height: 220px; }
 }
