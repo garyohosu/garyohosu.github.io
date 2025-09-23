@@ -1,4 +1,7 @@
 ---
+image:
+  path: /assets/img/2025-09-23-pdf-vision-banner.png
+  alt: スキャンPDF → OpenAI Vision → Markdown 要約
 layout: post
 title: "スキャンPDFをOpenAI VisionでMarkdown要約するパイプラインを実装" 
 date: 2025-09-23 15:45:00 +0900
