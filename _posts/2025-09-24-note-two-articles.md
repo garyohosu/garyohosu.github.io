@@ -5,6 +5,9 @@ date: 2025-09-24 23:30:00 +0900
 categories: [Dev, Link]
 tags: [note, Gemini, CLI, Codex, Claude, AIエージェント]
 description: 2025-09-24にnoteで2本公開した記事（Gemini CLIの入門と、Codex×Claudeのディベート実験）をブログでまとめて紹介します。
+image:
+  path: /assets/img/2025-09-24-note-gemini-cli.png
+  alt: 無料で使えるGemini CLIを試してみる（note記事サムネイル）
 ---
 
 2025-09-24にnoteで記事を2本公開しました。それぞれの概要とリンクをまとめます。
@@ -28,4 +31,3 @@ OpenAIのCodex CLIとAnthropicのClaude Codeという異なるコーディング
 ---
 
 どちらも「AIエージェントを実務の導線にどう組み込むか」を意識した内容です。よければ本編もご覧ください。
-
