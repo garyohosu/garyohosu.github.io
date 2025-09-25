@@ -244,3 +244,15 @@
   - https://note.com/hantani/n/nf194ca9641db
 - Gemini CLIからブログが更新されたことを記事に記載
 - コミット・プッシュ: `feat: add new post about gemini cli agent controller`
+
+## 2025-09-25 追記（Noteリンクポスト／Gemini CLIでゲーム制作）
+- 参照記事: https://note.com/hantani/n/n1576bf19d93f（タイトル: 無料で使えるGemini CLIでゲームを作ろう）
+- メタ取得: `title`, `datePublished`（2025-09-25T23:51:40+09:00）, `og:image` を抽出
+- サムネイル保存: `assets/img/2025-09-26-note-gemini-cli-game.png`（NoteのOG画像をローカル保存）
+- 記事追加: `_posts/2025-09-25-note-gemini-cli-game.md`
+  - 内容: ノベルゲーム「Cat and the Magical Adventure」を作成、画像生成は Codex CLI → DALL MCP
+  - 日時: `date: 2025-09-25 23:55:00 +0900`
+  - 外部リンク: note記事とゲーム実行ページ https://garyo.sakura.ne.jp/gemini_game/index.html を掲載
+- リンク検証: note / sakura の両URLが `200 OK`
+- コミット: `Add post: Note『無料で使えるGemini CLIでゲームを作ろう』の紹介とOG画像`
+- プッシュ: `main` → `origin/main`（コミット `e9ec756`）
