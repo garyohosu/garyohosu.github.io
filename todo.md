@@ -237,3 +237,10 @@
   - `Add post: Introduce two new Note articles (Gemini CLI / Codex×Claude) [2025-09-24]`
   - `Add featured image to Note roundup post`
 - プッシュ: `main` → `origin/main`。GitHub Pages のビルド待ち（数分）。
+
+## 2025-09-25 追記（Gemini CLIからの投稿）
+- note記事の紹介ブログ記事を作成: `_posts/2025-09-25-gemini-cli-agent-controller.md`
+  - 紹介対象（note）: Gemini CLIをAIエージェントとして動作させる方法
+  - https://note.com/hantani/n/nf194ca9641db
+- Gemini CLIからブログが更新されたことを記事に記載
+- コミット・プッシュ: `feat: add new post about gemini cli agent controller`
