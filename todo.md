@@ -226,3 +226,14 @@
   - `style: add light background for .post-content and .post-preview (Chirpy)`
   - 反映先: `origin/main`
 - 結果: トップページと記事ページに薄い色分けが反映、体験のブログ記事を追加（本日の投稿参照）
+
+## 2025-09-25 追記（note記事の紹介投稿＋サムネ）
+- 記事追加: `_posts/2025-09-24-note-two-articles.md` を作成（JST 2025-09-24 23:30）。
+  - 紹介対象（note）
+    - 無料で使えるGemini CLIを試してみる — https://note.com/hantani/n/n461ce66e0807
+    - CodexとClaudeにディベートしてもらった — https://note.com/hantani/n/n154bdc6299f5
+- サムネイル: `assets/img/2025-09-24-note-gemini-cli.png` を追加し、フロントマターに `image.path` と `image.alt` を設定。
+- コミット:
+  - `Add post: Introduce two new Note articles (Gemini CLI / Codex×Claude) [2025-09-24]`
+  - `Add featured image to Note roundup post`
+- プッシュ: `main` → `origin/main`。GitHub Pages のビルド待ち（数分）。
