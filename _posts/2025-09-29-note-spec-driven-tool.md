@@ -12,7 +12,7 @@ image:
 
 2025-09-28 20:02（JST）に、noteで以下の記事を公開しました。
 
-- 外部リンク（note）: https://note.com/hantani/n/nd33a986ece07
+- 外部リンク（note）: <https://note.com/hantani/n/nd33a986ece07>
 
 ## 記事概要
 
