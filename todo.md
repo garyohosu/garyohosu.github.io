@@ -198,6 +198,15 @@
 - **問題分析**: Hackerテーマは既存のChirpy専用ファイル群と互換性なし
 - **最終判断**: ユーザーとClaude Code共に「やめておこう」と判断
 - **復元作業**: `_config.yml` と `Gemfile` をChirpyに復元
+
+## 2025-09-29 追記（noteリンクポスト追加：Claude Desktop × Codex MCP）
+- 参照記事: https://note.com/hantani/n/n6a44c2633efc
+- 記事追加: `_posts/2025-09-29-note-claude-desktop-codex-mcp.md` を作成（リンクポスト）。
+  - 概要: Claude DesktopにCodex CLIのMCPサーバーを接続する手順の要点を抜粋。設定JSON例と外部リンクを掲載。
+  - 相互参照: 同日公開の `_posts/2025-09-29-note-spec-driven-tool.md` へのリンクを `{% post_url %}` で追加。
+- コミット: `post: note紹介 ClaudeデスクトップにCodex CLIのMCPサーバーを接続`
+- リモート反映: `git pull --rebase origin main` 後に `git push origin main` 実行。
+- コミットID: `f4d0be2`
 - **コミット**: `fix: revert to jekyll-theme-chirpy to resolve build errors`
 - **結論**: 安定したChirpy構成を維持、リスクを回避
 
