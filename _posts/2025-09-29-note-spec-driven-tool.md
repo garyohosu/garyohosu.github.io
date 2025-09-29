@@ -22,7 +22,7 @@ image:
 
 ## 関連リンク
 
-- Qiita: 仕様駆動開発を楽しむための最初の手がかり — <https://qiita.com/garyo/items/02b0b15e40188a3dc17f>
+- Qiita: 仕様駆動開発を楽しむための最初の手がかり — <https://qiita.com/tomada/items/781d6eb5b79e5873d9ab>
 - デモWebアプリ: トークフォークダンス（TALK FOLK DANCE） — <https://garyohosu.github.io/talkfolkdance/>
 
 仕様（期待と制約）を会話に落とし、必要なツールだけを手際よく足していく——という運びは、エージェント時代の“設計の書き方”としてしっくり来ます。詳細はnote本編をご覧ください。
