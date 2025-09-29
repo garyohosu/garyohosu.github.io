@@ -256,3 +256,14 @@
 - リンク検証: note / sakura の両URLが `200 OK`
 - コミット: `Add post: Note『無料で使えるGemini CLIでゲームを作ろう』の紹介とOG画像`
 - プッシュ: `main` → `origin/main`（コミット `e9ec756`）
+
+## 2025-09-29 追記（Note記事: 仕様駆動ツール／サムネ追加／公開）
+- 参照記事（note）: https://note.com/hantani/n/nd33a986ece07
+- OG画像取得: `og:image` を抽出しローカル保存 → `assets/img/2025-09-29-note-spec-driven-tool.png`
+- 記事追加: `_posts/2025-09-29-note-spec-driven-tool.md`
+  - フロントマターに `image.path` と `image.alt` を追記
+  - 概要・関連リンク（Qiita、デモWebアプリ）を記載
+- ビルド確認: `bundle exec jekyll build` 成功
+- コミット: `feat(post): add Note summary (Spec Driven Codex) with eyecatch`
+- 追加コミット: `docs(todo): log 2025-09-29 Note post + image`
+- プッシュ: `main` → `origin/main`（本ログ時点で成功）
