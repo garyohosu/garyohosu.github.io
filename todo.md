@@ -264,6 +264,5 @@
   - フロントマターに `image.path` と `image.alt` を追記
   - 概要・関連リンク（Qiita、デモWebアプリ）を記載
 - ビルド確認: `bundle exec jekyll build` 成功
-- コミット: `feat(post): add Note summary (Spec Driven Codex) with eyecatch`
-- 追加コミット: `docs(todo): log 2025-09-29 Note post + image`
+- コミット: `feat(post): add Note summary (Spec Driven Codex) with eyecatch`（todo更新も同コミットに含む）
 - プッシュ: `main` → `origin/main`（本ログ時点で成功）
