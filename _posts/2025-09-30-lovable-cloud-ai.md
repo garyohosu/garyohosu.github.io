@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "note更新：Lovable「Cloud & AI」無料体験キャンペーンのまとめ"
 date: 2025-09-30 09:00:00 +0900
 categories: [Product, AI]
