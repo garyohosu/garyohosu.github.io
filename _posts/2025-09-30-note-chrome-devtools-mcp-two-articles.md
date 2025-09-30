@@ -3,9 +3,8 @@ title: "noteで公開したChrome DevTools MCP記事2本"
 date: 2025-09-30 15:00:00 +0900
 categories: [Technology, AI]
 tags: [note, MCP, Chrome DevTools, Claude, Gemini, ブラウザ自動化]
-image:
-  path: /assets/img/chrome-devtools-mcp-note.jpg
-  alt: "Chrome DevTools MCPでブラウザ自動操作"
+image: /assets/img/chrome-devtools-mcp-note.jpg
+image_alt: "Chrome DevTools MCPでブラウザ自動操作"
 ---
 
 2025-09-29にnoteで公開した「ClaudeでChrome-devtools MCPを設定してブラウザを自動操作」「Gemini CLIからchrome-devtools MCPでブラウザを動かす」の2本をまとめて紹介します。
