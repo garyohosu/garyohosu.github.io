@@ -122,3 +122,14 @@
 ## 2025-09-08 見た目反映ホットフィックス
 - _sass/custom.scss を追加、エントリSCSS末尾で @import "custom" を明示。
 - フォント/リンク色/タグ/カード影を高優先度セレクタで上書き。
+
+## 2025-09-30 追記（note 2本紹介ポスト）
+- 記事追加: `_posts/2025-09-30-note-claude-codex-mcp-two-articles.md` を新規作成。
+  - 参照リンク: 
+    - Claude CodeにMCPサーバーを入れる: https://note.com/hantani/n/n87d400309698
+    - Codex CLIにMCPサーバーを入れる: https://note.com/hantani/n/n42985f971ddc
+  - サムネイル: note側OG画像URLを`image.path`に設定。
+  - 公開URL: https://garyohosu.github.io/posts/note-claude-codex-mcp-two-articles/
+- ビルド確認: `bundle exec jekyll build` にて生成成功（警告: タグ/カテゴリの重複出力は既知）。
+- コミット: `post(note): Claude Code／Codex CLIにMCPサーバーの2本を紹介 [2025-09-30]`
+- プッシュ: `git pull --rebase origin main` で最新を取り込み後、`git push origin main` で反映。
