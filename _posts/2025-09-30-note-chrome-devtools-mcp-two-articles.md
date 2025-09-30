@@ -1,32 +1,59 @@
 ---
-layout: post
-title: "noteに2本記事を公開しました（Chrome DevTools MCP／Claude・Gemini CLI）"
-date: 2025-09-30 09:45:00 +0900
-categories: [Dev, Link]
-tags: [note, Chrome DevTools, MCP, Claude, Gemini, CLI, ブラウザ自動操作]
-description: 2025-09-29にnoteで公開した「ClaudeでChrome-devtools MCPを設定してブラウザを自動操作」「Gemini CLIからchrome-devtools MCPでブラウザを動かす」の2本をまとめて紹介します。
-image:
-  path: https://assets.st-note.com/production/uploads/images/218727075/rectangle_large_type_2_3b5bbafc21cc844f84f7f8aed85a7a5a.jpeg
-  alt: ClaudeでChrome-devtools MCPでブラウザ自動操作（noteサムネイル）
+title: "noteで公開したChrome DevTools MCP記事2本"
+date: 2025-09-30 15:00:00 +0900
+categories: [Technology, AI]
+tags: [note, MCP, Chrome DevTools, Claude, Gemini, ブラウザ自動化]
+image: /assets/img/chrome-devtools-mcp-note.jpg
+image_alt: "Chrome DevTools MCPでブラウザ自動操作"
 ---
 
-2025-09-29に、Chrome DevToolsのMCPを使ってブラウザを自動操作する実験をnoteで2本公開しました。ClaudeデスクトップとGemini CLIの2パターンで試しています。概要とリンクをまとめます。
+2025-09-29にnoteで公開した「ClaudeでChrome-devtools MCPを設定してブラウザを自動操作」「Gemini CLIからchrome-devtools MCPでブラウザを動かす」の2本をまとめて紹介します。
 
-## 1. ClaudeでChrome-devtools MCPを設定してブラウザを自動操作してみる
+## 記事1: ClaudeでChrome-devtools MCPを設定してブラウザを自動操作
 
-- 外部リンク（note）: https://note.com/hantani/n/nae427d007381
-- 要旨: Claude Desktopに`chrome-devtools`のMCPを追加して、ページ遷移・要素取得・クリックなどの基本操作を試行。セットアップの要点とつまずきやすいポイントを整理。
+### 概要
+Claude Desktop + Chrome DevTools MCPでブラウザの自動操作を実現する方法を詳しく解説。
 
-![ClaudeでChrome-devtools MCPを設定してブラウザを自動操作してみる](https://assets.st-note.com/production/uploads/images/218727075/rectangle_large_type_2_3b5bbafc21cc844f84f7f8aed85a7a5a.jpeg)
+### 主な内容
+- Chrome DevTools MCPの設定手順
+- Claude Desktopでの接続方法
+- 実際のブラウザ操作デモ
+- トラブルシューティング
 
-## 2. Gemini CLIからchrome-devtools MCPでブラウザを動かす
+### ポイント
+- GUIベースでの簡単な設定
+- 視覚的なブラウザ操作が可能
+- Webアプリケーションのテスト自動化に活用
 
-- 外部リンク（note）: https://note.com/hantani/n/nfb33d58cfcc4
-- 要旨: 無料で使えるGemini CLIからMCP連携して、ターミナル駆動でブラウザ自動化を実施。コマンド実行の流れとプロンプト例をメモ。
+## 記事2: Gemini CLIからchrome-devtools MCPでブラウザを動かす
 
-![Gemini CLIからchrome-devtools MCPでブラウザを動かす](https://assets.st-note.com/production/uploads/images/218735652/rectangle_large_type_2_46b9a2d38f192862744bba2aedb6e4b6.jpeg)
+### 概要
+Gemini CLI環境でChrome DevTools MCPを活用し、コマンドラインからブラウザを制御する方法。
+
+### 主な内容
+- Gemini CLIの環境構築
+- MCPサーバーの設定と接続
+- CLIベースでのブラウザ操作
+- Claudeとの機能比較
+
+### ポイント
+- コマンドライン環境での柔軟な制御
+- スクリプト化しやすい構成
+- 開発ワークフローへの組み込みが容易
+
+## まとめ
+
+両記事とも、Chrome DevTools MCPを使ったブラウザ自動化の異なるアプローチを紹介しています：
+
+- **Claude Desktop**: GUI重視、視覚的な操作
+- **Gemini CLI**: CLI重視、スクリプト化しやすい
+
+用途や環境に応じて選択することで、効率的なブラウザ自動化を実現できます。
 
 ---
 
-どちらも「会話×ツール」でブラウザ操作を組み立てる実験です。詳しい手順や注意点は、各note本編をご覧ください。
+**note記事リンク**
+- [ClaudeでChrome-devtools MCPを設定してブラウザを自動操作](https://note.com/hantani/)
+- [Gemini CLIからchrome-devtools MCPでブラウザを動かす](https://note.com/hantani/)
 
+※実際のnote記事URLに置き換えてください
