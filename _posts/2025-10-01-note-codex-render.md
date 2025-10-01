@@ -5,6 +5,9 @@ date: 2025-10-01 10:00:00 +0900
 categories: [Dev, Link]
 tags: [note, Codex, CLI, Render, Deploy]
 description: 2025-10-01にnoteで公開した「Codex CLIで作って無料のRenderでサイトを公開してみる」を紹介します。
+image:
+  path: https://assets.st-note.com/production/uploads/images/219198365/2d85248cd1ff532919302e042fdf5af3.png
+  alt: Codex CLIで作って無料のRenderでサイトを公開してみる（noteサムネイル）
 ---
 
 noteに、Codex CLIとRenderを使ったWeb公開の記事を投稿しました。
