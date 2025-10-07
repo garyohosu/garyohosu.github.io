@@ -144,3 +144,8 @@
 - アイキャッチ追加: `chore: アイキャッチ画像を追加 (image: codex-render-note.png)`
 - プッシュ: `git push -u origin note-codex-render` で反映。
 - PR: https://github.com/garyohosu/garyohosu.github.io/pull/new/note-codex-render
+
+## 2025-10-07 note記事紹介
+- note記事を紹介するブログ記事を作成
+- 日本語へ修正し、アイキャッチ画像も変更
+- git push
