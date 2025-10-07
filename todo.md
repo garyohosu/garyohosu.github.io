@@ -122,3 +122,25 @@
 ## 2025-09-08 見た目反映ホットフィックス
 - _sass/custom.scss を追加、エントリSCSS末尾で @import "custom" を明示。
 - フォント/リンク色/タグ/カード影を高優先度セレクタで上書き。
+
+## 2025-09-30 追記（note 2本紹介ポスト）
+- 記事追加: `_posts/2025-09-30-note-claude-codex-mcp-two-articles.md` を新規作成。
+  - 参照リンク: 
+    - Claude CodeにMCPサーバーを入れる: https://note.com/hantani/n/n87d400309698
+    - Codex CLIにMCPサーバーを入れる: https://note.com/hantani/n/n42985f971ddc
+  - サムネイル: note側OG画像URLを`image.path`に設定。
+  - 公開URL: https://garyohosu.github.io/posts/note-claude-codex-mcp-two-articles/
+- ビルド確認: `bundle exec jekyll build` にて生成成功（警告: タグ/カテゴリの重複出力は既知）。
+- コミット: `post(note): Claude Code／Codex CLIにMCPサーバーの2本を紹介 [2025-09-30]`
+- プッシュ: `git pull --rebase origin main` で最新を取り込み後、`git push origin main` で反映。
+
+## 2025-10-01 追記（note Codex/Render 記事紹介）
+- 記事追加: `_posts/2025-10-01-note-codex-render.md` を新規作成。
+  - 参照リンク: Codex CLIで作って無料のRenderでサイトを公開してみる: https://note.com/hantani/n/nde12363dc482
+  - サムネイル: note側OG画像URLを`image.path`に設定（https://assets.st-note.com/production/uploads/images/219198365/2d85248cd1ff532919302e042fdf5af3.png）。
+  - 要旨: Codex CLIでWebアプリケーション作成し、Renderの無料プランでデプロイする方法を紹介。
+- ブランチ作成: `note-codex-render` でフィーチャーブランチを作成。
+- コミット: `post(note): Codex CLIで作って無料のRenderでサイトを公開してみる [2025-10-01]`
+- アイキャッチ追加: `chore: アイキャッチ画像を追加 (image: codex-render-note.png)`
+- プッシュ: `git push -u origin note-codex-render` で反映。
+- PR: https://github.com/garyohosu/garyohosu.github.io/pull/new/note-codex-render
