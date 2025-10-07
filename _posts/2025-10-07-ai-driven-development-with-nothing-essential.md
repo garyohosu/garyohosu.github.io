@@ -4,7 +4,7 @@ date: 2025-10-07 12:00:00 +0900
 categories: [AI, 開発]
 tags: [ai, note]
 image:
-  path: /assets/img/gemini-cli-chrome-devtools-note.jpg
+  path: /assets/img/dall/banner-futuristic.png
 ---
 
 AIによる開発の可能性が急速に現実のものとなりつつあります。簡単な会話を通じてアプリケーションやウィジェットを作成できる新しいプラットフォームが登場しています。その中でも注目を集めているのが、Nothing社の「Essential」です。これは、自然言語のコマンドを使ってスマートフォンのウィジェットを構築できるように設計されたAIプラットフォームです。
