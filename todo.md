@@ -149,3 +149,10 @@
 - note記事を紹介するブログ記事を作成
 - 日本語へ修正し、アイキャッチ画像も変更
 - git push
+
+## 2025-10-07 追記（note: OpenAI Agent Builder 紹介）
+- 記事追加: `_posts/2025-10-07-note-openai-agent-builder.md` を新規作成
+  - 参照: note「OpenAIのAgent Builder を触ってみた」 https://note.com/hantani/n/n51f8fadde32f
+  - アイキャッチ: noteのOG画像URLを `image.path` に設定
+- コミット: `Add post: Introduce note article about OpenAI Agent Builder with eyecatch image`
+- プッシュ: `origin/main` へ反映
