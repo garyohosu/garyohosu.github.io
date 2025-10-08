@@ -5,6 +5,7 @@ date: 2025-10-08 16:00:00 +0900
 categories: [Dev, Link]
 tags: [note, OpenAI, Agent Builder]
 description: noteで公開した「OpenAI Agent Builder を試す」の紹介です。
+permalink: /posts/note-openai-agent-builder-2025-10-08/
 image:
   path: https://assets.st-note.com/production/uploads/images/220875590/rectangle_large_type_2_45c3e65284981877146ed8f1d7fbeddb.png?fit=bounds&quality=85&width=1280
   alt: OpenAI Agent Builder を試す（note サムネイル）
@@ -23,4 +24,3 @@ image:
 - Preview での動作確認の様子
 
 詳細やスクリーンショットは、上記の note 本文をご覧ください。
-

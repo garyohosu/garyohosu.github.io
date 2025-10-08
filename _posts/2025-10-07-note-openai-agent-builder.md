@@ -5,6 +5,7 @@ date: 2025-10-07 21:48:48 +0900
 categories: [Dev, Link]
 tags: [note, OpenAI, Agent Builder]
 description: noteに公開された「OpenAIのAgent Builder を触ってみた」を紹介。エージェントの作成や出力形式（JSON）などの要点を手短にまとめます。
+permalink: /posts/note-openai-agent-builder-2025-10-07/
 image:
   path: https://assets.st-note.com/production/uploads/images/220687716/rectangle_large_type_2_8d976cd6ec7241222f4391fc4ad3850e.png?fit=bounds&quality=85&width=1280
   alt: OpenAI Agent Builder アイキャッチ（note）
@@ -25,4 +26,3 @@ image:
 ![OpenAI Agent Builder アイキャッチ（note）](https://assets.st-note.com/production/uploads/images/220687716/rectangle_large_type_2_8d976cd6ec7241222f4391fc4ad3850e.png?fit=bounds&quality=85&width=1280)
 
 詳細は、ぜひnote本編をご覧ください。
-
