@@ -152,6 +152,7 @@
 - アイキャッチ画像作成: `assets/img/gemini-cli-mcp-servers-note.jpg` を生成（1200x630、グラデーション背景＋テキスト）。
 - コミット予定: `post(note): 無料で使えるGemini CLIに色々なMCPサーバーを入れてみる [2025-10-02]`
 - GitHub Pages再ビルド対策: ルートの`.nojekyll` を削除し、Playwrightでトップページ表示を確認（フロントマターがそのまま出る不具合を解消予定）。
+- ビルド修正: `sass-embedded` の Broken pipe で失敗したため、`jekyll-sass-converter (~> 2.2)` と `sassc (~> 2.4)` を採用し、`assets/css/custom.scss` を追加してJekyllビルド成功を確認。
 
 ## 2025-10-07 note記事紹介
 - note記事を紹介するブログ記事を作成
