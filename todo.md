@@ -156,3 +156,12 @@
   - アイキャッチ: noteのOG画像URLを `image.path` に設定
 - コミット: `Add post: Introduce note article about OpenAI Agent Builder with eyecatch image`
 - プッシュ: `origin/main` へ反映
+
+## 2025-10-08 追記（note: ChatGPT 外部アプリ 連携）
+- 記事追加: `_posts/2025-10-08-note-chatgpt-external-apps.md` を新規作成。
+  - 参照: note「ChatGPTから外部アプリを呼び出す」 https://note.com/hantani/n/n2eb4dc7a7483
+  - アイキャッチ: note側OG画像URLを `image.path` に設定（https://assets.st-note.com/production/uploads/images/220777997/rectangle_large_type_2_0a19b23bdf0ad9368e3ce85ae26030c3.png）。
+  - 公開URL: https://garyohosu.github.io/posts/note-chatgpt-external-apps/
+- ブランチ運用: `note-codex-render` 上で作業 → `main` へ fast-forward 反映。
+- コミット: `post: note記事『ChatGPTから外部アプリを呼び出す』紹介`
+- プッシュ: `git pull --rebase origin main` で同期後、`git push origin main` で公開。GitHub Pages により自動ビルド/デプロイ。
