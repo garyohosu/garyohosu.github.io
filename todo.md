@@ -174,3 +174,22 @@
 - ブランチ運用: `note-codex-render` 上で作業 → `main` へ fast-forward 反映。
 - コミット: `post: note記事『ChatGPTから外部アプリを呼び出す』紹介`
 - プッシュ: `git pull --rebase origin main` で同期後、`git push origin main` で公開。GitHub Pages により自動ビルド/デプロイ。
+
+## 2025-10-09 追記（Jekyll依存関係の修正）by Claude
+- 問題調査: ブログの表示崩れを確認。Playwrightでサイトをスクリーンショット取得し、視覚的に検証。
+- 原因特定: Jekyllビルドエラーを発見。`jekyll-sass-converter` のバージョン不一致が原因。
+  - Gemfile指定: `jekyll-sass-converter ~> 2.2`
+  - 実際にインストール済み: `jekyll-sass-converter 3.1.0`
+  - エラー: `Could not find gem 'jekyll-sass-converter (~> 2.2)' in locally installed gems.`
+- 解決策: 不要な依存関係をGemfileから削除。
+  - 削除行: `gem "jekyll-sass-converter", "~> 2.2"` と `gem "sassc", "~> 2.4"`
+  - 理由: `jekyll-theme-chirpy` が適切に依存関係を管理するため、明示的な指定は不要。
+- 検証:
+  1. `bundle install` で依存関係を再インストール（成功）
+  2. `bundle exec jekyll build` でビルド成功を確認
+  3. `bundle exec jekyll serve` でローカルサーバー起動
+  4. Playwrightで `http://0.0.0.0:4000/` にアクセスし、表示を確認（正常）
+- 一時ファイル削除: `.playwright-mcp/` ディレクトリを削除してワークスペースをクリーンアップ。
+- コミット: `fix: Jekyll依存関係の問題を修正` (commit: dbe7421)
+- プッシュ: `git push origin main` で反映。GitHub Pages により自動ビルド/デプロイ。
+- 公開URL: https://garyohosu.github.io/
