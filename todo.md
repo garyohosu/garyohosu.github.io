@@ -204,3 +204,16 @@
 - ローカル検証: `bundle exec jekyll build` で Build: OK（Sass `@import` の非推奨警告あり）
 - コミット: `Add two Note article intro posts with featured images`（投稿2本と画像2点を追加）
 - プッシュ: `git push origin main` 実行、`main -> main` 反映を確認
+
+## 2025-10-16 追記（GitHub Pages ビルドエラー修正）by Claude
+- 問題発生: GitHub Pagesの `pages-build-deployment` ワークフローが失敗
+  - エラー: `jekyll-theme-chirpy theme could not be found`
+  - 原因: GitHub Pagesの標準ビルド（legacy mode）は `jekyll-theme-chirpy` テーマをサポートしていない
+- 修正内容: GitHub Pagesの設定を変更
+  - `build_type` を `legacy` から `workflow` に変更
+  - GitHub Actions の `.github/workflows/pages-deploy.yml` ワークフローを使用するように設定
+- 検証: ワークフローを手動実行して成功を確認
+  - ビルド: 22秒で完了
+  - デプロイ: 10秒で完了
+- 結果: 今後は GitHub Actions ワークフローが自動的にサイトをビルド・デプロイ
+- コマンド: `gh api --method PUT repos/garyohosu/garyohosu.github.io/pages -f build_type=workflow`
