@@ -217,3 +217,13 @@
   - デプロイ: 10秒で完了
 - 結果: 今後は GitHub Actions ワークフローが自動的にサイトをビルド・デプロイ
 - コマンド: `gh api --method PUT repos/garyohosu/garyohosu.github.io/pages -f build_type=workflow`
+
+## 2025-10-16 追記（Gensparkハッカソン記事追加とnoteリンクのクリック化）
+- 記事追加: `_posts/2025-10-16-note-genspark-hackathon.md`
+  - 参照: note「AIで稼ぐチャンス到来！Gensparkハッカソンで賞金ゲットする方法」 https://note.com/hantani/n/n8a49a6233ec7
+  - アイキャッチ: noteのOG画像URLを直接参照（https://assets.st-note.com/production/uploads/images/222741635/5a2d1321f27be080688170c12a18bcd6.png）
+- リンク修正: 全てのnote記事紹介の外部リンクをマークダウンリンク形式に変更
+  - 修正対象: 14ファイル（2025-09-23から2025-10-16までのnote記事紹介投稿）
+  - 変更内容: `https://note.com/...` → `[記事タイトル](https://note.com/...)`
+- コミット: `feat: Gensparkハッカソン記事追加とnoteリンクをクリック可能に変更` (commit: c986bcf)
+- プッシュ: `git push origin main` で反映。GitHub Actions により自動ビルド/デプロイ
