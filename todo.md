@@ -193,3 +193,14 @@
 - コミット: `fix: Jekyll依存関係の問題を修正` (commit: dbe7421)
 - プッシュ: `git push origin main` で反映。GitHub Pages により自動ビルド/デプロイ。
 - 公開URL: https://garyohosu.github.io/
+
+## 2025-10-16 追記（note記事2本紹介＋アイキャッチ）
+- 記事追加: `_posts/2025-10-16-note-claude-playwright-blog-fix.md`
+  - 参照: note「Claude CodeとPlaywrightでブログ修正、ChatGPT×Canva連携」 https://note.com/hantani/n/n3aad46c1c717
+  - アイキャッチ: `assets/img/2025-10-16-note-claude-playwright.png`（noteのOG画像を保存して利用）
+- 記事追加: `_posts/2025-10-16-note-google-opal-miniapp.md`
+  - 参照: note「Google の 無料の“Opal” で誰でも AI ミニアプリを作れる未来」 https://note.com/hantani/n/n21897b810fd2
+  - アイキャッチ: `assets/img/2025-10-16-note-google-opal-miniapp.png`（noteのOG画像を保存して利用）
+- ローカル検証: `bundle exec jekyll build` で Build: OK（Sass `@import` の非推奨警告あり）
+- コミット: `Add two Note article intro posts with featured images`（投稿2本と画像2点を追加）
+- プッシュ: `git push origin main` 実行、`main -> main` 反映を確認
