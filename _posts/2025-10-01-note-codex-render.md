@@ -14,7 +14,7 @@ noteに、Codex CLIとRenderを使ったWeb公開の記事を投稿しました�
 
 ## Codex CLIで作って無料のRenderでサイトを公開してみる
 
-- 外部リンク（note）: https://note.com/hantani/n/nde12363dc482
+- 外部リンク（note）: [Codex CLIで作って無料のRenderでサイトを公開してみる](https://note.com/hantani/n/nde12363dc482)
 - 要旨: Codex CLIでWebアプリケーションを作成し、Renderの無料プランでデプロイする方法をまとめています。GitHub PagesやSakura等の従来手段から、Flaskやデータベース対応が可能なRenderへ移行した経緯と手順を紹介。
 
 ---

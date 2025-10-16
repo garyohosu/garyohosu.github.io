@@ -12,7 +12,7 @@ image:
 
 2025-10-08（JST）に、noteで下記の記事を公開しました。
 
-- 外部リンク（note）： https://note.com/hantani/n/n0b350635d63c
+- 外部リンク（note）： [ChatGPTからCanvaを呼び出す](https://note.com/hantani/n/n0b350635d63c)
 
 ---
 

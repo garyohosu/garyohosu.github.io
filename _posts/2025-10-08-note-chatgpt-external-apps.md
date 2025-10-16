@@ -12,7 +12,7 @@ image:
 
 2025-10-08（JST）に、noteで以下の記事を公開しました。
 
-- 外部リンク（note）: https://note.com/hantani/n/n2eb4dc7a7483
+- 外部リンク（note）: [ChatGPTから外部アプリを呼び出す](https://note.com/hantani/n/n2eb4dc7a7483)
 
 ## 記事のポイント
 

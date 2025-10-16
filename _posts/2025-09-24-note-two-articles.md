@@ -16,7 +16,7 @@ image:
 
 Googleの「Gemini CLI」を使い、ローカル環境で動く無料のAIエージェント型コーディング体験を紹介しています。なるべく専門用語を避けつつ、導入の流れや他ツール（Codex CLI / Claude Code など）との位置づけも整理しました。
 
-- 外部リンク（note）: https://note.com/hantani/n/n461ce66e0807
+- 外部リンク（note）: [無料で使えるGemini CLIを試してみる](https://note.com/hantani/n/n461ce66e0807)
 
 ![無料で使えるGemini CLIを試してみる](https://assets.st-note.com/production/uploads/images/217646641/rectangle_large_type_2_0404d3033513c00d90275d8f021656c8.png?fit=bounds&quality=85&width=1280)
 
@@ -24,7 +24,7 @@ Googleの「Gemini CLI」を使い、ローカル環境で動く無料のAIエ�
 
 OpenAIのCodex CLIとAnthropicのClaude Codeという異なるコーディングAIエージェントにディベートさせる実験です。環境準備（インストール、MCP接続）から、実際のやり取りの流れと気づきをまとめました。
 
-- 外部リンク（note）: https://note.com/hantani/n/n154bdc6299f5
+- 外部リンク（note）: [CodexとClaudeにディベートしてもらった](https://note.com/hantani/n/n154bdc6299f5)
 
 ![CodexとClaudeにディベートしてもらった](https://assets.st-note.com/production/uploads/images/217524870/rectangle_large_type_2_bf551311dfc043f9935b7143e9e8a926.png?fit=bounds&quality=85&width=1280)
 

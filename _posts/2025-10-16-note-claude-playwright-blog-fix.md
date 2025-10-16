@@ -12,7 +12,7 @@ image:
 
 2025-10-10（JST）に、noteで以下の記事を公開しました。
 
-- 外部リンク（note）： https://note.com/hantani/n/n3aad46c1c717
+- 外部リンク（note）： [Claude CodeとPlaywriteでブログを直してそれを記事にしてもらった。ChatGPTとCanva連携も試した。](https://note.com/hantani/n/n3aad46c1c717)
 
 ### 記事タイトル
 

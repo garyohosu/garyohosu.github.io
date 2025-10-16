@@ -12,7 +12,7 @@ image:
 
 noteで以下の記事を公開しました。概要とリンクを置いておきます。
 
-- 外部リンク（note）： https://note.com/hantani/n/n21897b810fd2
+- 外部リンク（note）： [Google の 無料の"Opal" で誰でも AI ミニアプリを作れる未来](https://note.com/hantani/n/n21897b810fd2)
 
 ### 記事タイトル
 

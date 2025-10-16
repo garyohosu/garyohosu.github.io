@@ -20,7 +20,7 @@ image:
 
 ## リンク
 
-- 外部リンク（note）: https://note.com/hantani/n/n1576bf19d93f
+- 外部リンク（note）: [無料で使えるGemini CLIでゲームを作ろう](https://note.com/hantani/n/n1576bf19d93f)
 - ゲームを試す（Web版）: https://garyo.sakura.ne.jp/gemini_game/index.html
 
 Gemini CLIそのものの説明や環境準備については、これまでの関連ポスト・noteにまとめています。よければ併せてどうぞ。

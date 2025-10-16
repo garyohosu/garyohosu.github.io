@@ -13,7 +13,7 @@ image:
 
 2025-10-08 に、noteで以下の記事を公開しました。
 
-- 外部リンク（note）：https://note.com/hantani/n/n03256906d03a
+- 外部リンク（note）：[OpenAI Agent Builder を試す](https://note.com/hantani/n/n03256906d03a)
 
 ---
 

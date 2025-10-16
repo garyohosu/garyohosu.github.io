@@ -10,7 +10,7 @@ image: https://assets.st-note.com/production/uploads/images/217274083/rectangle_
 
 本日は、ChatGPTの「開発モード（Developer Mode）」でMCP（Model Context Protocol）コネクタを使い、Qiitaへ直接記事を書けるようにする手順をまとめたnoteを公開しました。この記事では、note本文の要点に加えて、セットアップの背景や運用時の注意点を補足します。
 
-- 外部リンク（note）: https://note.com/hantani/n/nfa5764ea933a
+- 外部リンク（note）: [ChatGPTの開発モードでMCP経由でQiitaに記事を書く](https://note.com/hantani/n/nfa5764ea933a)
 ## 背景と狙い
 
 - 開発モードは、ChatGPTに「コネクタ（MCPクライアント）」を通じて外部ツール/APIを安全に接続する仕組み。

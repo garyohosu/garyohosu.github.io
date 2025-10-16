@@ -12,7 +12,7 @@ image:
 
 2025-09-29 13:14（JST）に、noteで以下の記事を公開しました。
 
-- 外部リンク（note）: https://note.com/hantani/n/n6a44c2633efc
+- 外部リンク（note）: [ClaudeデスクトップにCodex CLIのMCPサーバーを接続する](https://note.com/hantani/n/n6a44c2633efc)
 
 ## 記事のポイント
 
