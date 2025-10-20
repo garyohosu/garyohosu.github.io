@@ -227,3 +227,9 @@
   - 変更内容: `https://note.com/...` → `[記事タイトル](https://note.com/...)`
 - コミット: `feat: Gensparkハッカソン記事追加とnoteリンクをクリック可能に変更` (commit: c986bcf)
 - プッシュ: `git push origin main` で反映。GitHub Actions により自動ビルド/デプロイ
+
+## 2025-10-21 追記（Gemini CLI大幅アップデート記事追加）
+- 記事追加: `_posts/2025-10-21-note-gemini-cli-update.md`
+  - 参照: note「【無料でここまで!?】Gemini CLIが大幅アップデート。ターミナルからAIとの対話が可能に」 https://note.com/hantani/n/n274bb0cfdbf8
+  - アイキャッチ: noteのOG画像URLを直接参照（https://assets.st-note.com/production/uploads/images/223698715/8db9ee782bd7d8ab4b0490e2218190fa.png）
+  - 要旨: GoogleのGemini CLIが進化し、ターミナル上でAIと直接対話可能に。自然言語での操作や無料での高度な機能利用が魅力。
