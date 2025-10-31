@@ -248,3 +248,13 @@
 - 再検証: Playwrightで src: /assets/img/2025-10-31-note-genspark-stl.png, 
 aturalWidth: 1280 を確認。
 - TODO: htmlproofer のルール調整（外部画像/リンク除外、alt必須設定）後に再有効化。
+
+## 2025-10-31 htmlproofer 再有効化（一時ファイル除外）
+- 問題: 過去に htmlproofer が tmp_note2.html 等の一時ファイル内のnoteリンクをエラーとして検出し、ビルドが失敗していた
+- 対応:
+  - .github/workflows/pages-deploy.yml に「Test site」ステップを追加
+  - htmlproofer の設定: --disable-external（外部リンクチェック無効化）、--ignore-files "/tmp_.*\.html$/"（一時ファイル除外）
+  - Playwright でサイト表示を確認（正常）
+- 検証: GitHub Actions でビルド・テスト・デプロイがすべて成功
+- コミット: `chore: re-enable htmlproofer with tmp file exclusion` (commit: 147e70a)
+- プッシュ: origin/main に反映、Pages デプロイ成功
