@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: "noteに書きました（GensparkのスーパーAIエージェントで3Dプリンタ用のSTLファイル作った）"
 date: 2025-10-31 19:00:00 +0900
@@ -6,7 +6,7 @@ categories: [Dev, Link]
 tags: [note, Genspark, AI, 3Dプリンタ, STL]
 description: 2025-10-31にnoteで公開した「GensparkのスーパーAIエージェントで3Dプリンタ用のSTLファイル作った」の紹介。スーパーAIエージェントを使ってSTLを生成する流れやポイントを簡単にまとめました。
 image:
-  path: https://assets.st-note.com/production/uploads/images/224635808/rectangle_large_type_2_7e5bfb37e2b01c7ad0ae3eb8de5a3b84.jpeg?fit=bounds&quality=85&width=1440
+  path: assets/img/2025-10-31-note-genspark-stl.png
   alt: GensparkのスーパーAIエージェントで3Dプリンタ用のSTLファイル作った（note サムネイル）
 ---
 
