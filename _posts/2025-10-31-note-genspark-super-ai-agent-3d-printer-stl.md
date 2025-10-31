@@ -1,4 +1,13 @@
 ---
+layout: post
+title: "Note Genspark Super Ai Agent 3d Printer Stl"
+date: 2025-10-31 09:00:00 +0900
+categories: [Dev, Link]
+tags: [note, AI, Genspark, 3Dプリンタ, STL]
+description: 2025-10-31（JST）に、noteで次の記事を書きました。サマリーとリンクを置いておきます。
+image:
+  path: /assets/img/2025-10-31-note-genspark-stl.png
+  alt: GensparkのスーパーAIエージェントで3Dプリンタ用のSTLファイル作った
 ---
 
 ![GensparkのスーパーAIエージェントで3Dプリンタ用のSTLファイル作った](/assets/img/2025-10-31-note-genspark-stl.png)
