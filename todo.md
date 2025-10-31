@@ -258,3 +258,18 @@ aturalWidth: 1280 を確認。
 - 検証: GitHub Actions でビルド・テスト・デプロイがすべて成功
 - コミット: `chore: re-enable htmlproofer with tmp file exclusion` (commit: 147e70a)
 - プッシュ: origin/main に反映、Pages デプロイ成功
+
+## 2025-10-31 最新記事のサムネイル表示修正
+- 問題: 最新記事（2025-10-31-note-genspark-super-ai-agent-3d-printer-stl.md）のサムネイルが一覧ページで表示されない
+- 調査:
+  - Playwright でトップページを確認し、最初の記事だけ img タグが欠落していることを発見
+  - 記事ファイルを確認したところ、フロントマターが空（`---` と `---` の間に何もない）
+  - 画像ファイル自体は存在し、記事詳細ページでは正常に表示
+- 対応:
+  - フロントマターを追加: layout, title, date, categories, tags, description, image (path + alt)
+  - 他の記事と同様の構造に修正
+- 検証:
+  - GitHub Actions でビルド成功
+  - Playwright でトップページを再確認し、サムネイル画像（3Dプリンタのキャラクター）が表示されることを確認
+- コミット: `fix: add missing front matter to genspark 3d printer post` (commit: 0f52abc)
+- プッシュ: origin/main に反映、Pages デプロイ成功
