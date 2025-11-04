@@ -4,9 +4,7 @@ title: "AIニュース・ダイジェスト（2025/11/01–11/03）：OpenAI×AW
 date: 2025-11-04 10:00:00 +0900
 categories: [blog, news]
 tags: [AI, クラウド, 半導体, ガバナンス, AWS, OpenAI, Microsoft, Nvidia, IREN, Onsemi, APEC, 中国]
-image:
-  path: /assets/img/ai-news-2025-11-04.svg
-  alt: "AIニュース・ダイジェスト（2025/11/01–11/03）"
+image: /assets/img/ai-news-2025-11-04.svg
 ---
 
 ここ3日（2025/11/01–11/03）に注目を集めたAI関連トピックを、要点と背景、インパクトで一気に把握できるよう簡潔に整理しました。深掘りしたい項目があれば追記します。
