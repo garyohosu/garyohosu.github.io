@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <g transform="translate(80,120)">
+    <text x="0" y="0" fill="#e0f2fe" font-size="40" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">AIニュース・ダイジェスト</text>
+    <text x="0" y="70" fill="white" font-size="64" font-weight="700" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">OpenAI×AWS / Microsoft×IREN / 規制動向</text>
+    <text x="0" y="135" fill="#f0f9ff" font-size="36" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">2025/11/01–11/03 の主要トピック</text>
+  </g>
+  <g transform="translate(80,330)">
+    <circle cx="22" cy="-12" r="6" fill="#bae6fd"/>
+    <text x="40" y="0" fill="#eaf6ff" font-size="30" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">OpenAIとAWSが7年・380億ドル契約</text>
+    <circle cx="22" cy="48" r="6" fill="#bae6fd"/>
+    <text x="40" y="60" fill="#eaf6ff" font-size="30" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">Microsoft×IREN 97億ドル、GB300確保</text>
+    <circle cx="22" cy="108" r="6" fill="#bae6fd"/>
+    <text x="40" y="120" fill="#eaf6ff" font-size="30" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">UAE投資・輸出管理/Blackwell発言 ほか</text>
+  </g>
+  <text x="80" y="590" fill="#e2e8f0" font-size="24" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">garyohosu.github.io · 2025-11-04</text>
+</svg>

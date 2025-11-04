@@ -119,6 +119,13 @@
 - note原稿: drafts/note-2025-09-08-facelift.txt
 - プッシュ: origin/facelift-202509（PR: https://github.com/garyohosu/garyohosu.github.io/pull/new/facelift-202509）
 
+## 2025-11-04 追記（AIニュース・ダイジェスト）
+- 記事追加: `_posts/2025-11-04-ai-news-digest.md`（直近3日のAI関連ニュースまとめ）。
+- サムネイル作成: `assets/img/ai-news-2025-11-04.svg`（1200x630 SVG、グラデ+テキスト）。
+- フロントマター: `image.path` と `image.alt` を追加し、OGP/カードに反映。
+- コミット: `feat(post): AIニュース・ダイジェスト(2025-11-01–03) + thumbnail`。
+- プッシュ: `origin/main` へ反映。
+
 ## 2025-09-08 見た目反映ホットフィックス
 - _sass/custom.scss を追加、エントリSCSS末尾で @import "custom" を明示。
 - フォント/リンク色/タグ/カード影を高優先度セレクタで上書き。
