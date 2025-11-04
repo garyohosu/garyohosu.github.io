@@ -126,6 +126,13 @@
 - コミット: `feat(post): AIニュース・ダイジェスト(2025-11-01–03) + thumbnail`。
 - プッシュ: `origin/main` へ反映。
 
+## 2025-11-04 追記（JBpress 記事紹介）
+- 記事紹介ポスト作成: `_posts/2025-11-04-jbpress-91476.md`（要点・背景・所感を整理）。
+- 参照元: JBpress「AIは『働きたくても働けない人』と『働かなくてもいい人』を生み始めた」(https://jbpress.ismedia.jp/articles/-/91476)。
+- サムネ作成: `assets/img/jbpress-91476-hero.svg`（1200x630、ダーク基調）。
+- フロントマター: `image: /assets/img/jbpress-91476-hero.svg` を設定。
+- コミット/プッシュ: `feat(post): JBpress記事91476の解説とサムネ追加` を `origin/main` へ。
+
 ## 2025-09-08 見た目反映ホットフィックス
 - _sass/custom.scss を追加、エントリSCSS末尾で @import "custom" を明示。
 - フォント/リンク色/タグ/カード影を高優先度セレクタで上書き。
