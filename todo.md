@@ -133,6 +133,13 @@
 - フロントマター: `image: /assets/img/jbpress-91476-hero.svg` を設定。
 - コミット/プッシュ: `feat(post): JBpress記事91476の解説とサムネ追加` を `origin/main` へ。
 
+## 2025-11-04 追記（XenoSpectrum 記事紹介）
+- 記事紹介ポスト作成: `_posts/2025-11-04-xenospectrum-chatgpt-learning-shallow.md`。
+- 参照元: XenoSpectrum「AI learning using ChatGPT only produces shallow understanding」(https://xenospectrum.com/ai-learning-using-chatgpt-only-produces-shallow-understanding/)。
+- サムネ作成: `assets/img/xenospectrum-ai-learning-shallow-20251104.svg`。
+- フロントマター: `image: /assets/img/xenospectrum-ai-learning-shallow-20251104.svg` を設定。
+- コミット/プッシュ予定: `feat(post): XenoSpectrum記事の解説とサムネ追加`。
+
 ## 2025-09-08 見た目反映ホットフィックス
 - _sass/custom.scss を追加、エントリSCSS末尾で @import "custom" を明示。
 - フォント/リンク色/タグ/カード影を高優先度セレクタで上書き。
