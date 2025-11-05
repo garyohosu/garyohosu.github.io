@@ -171,6 +171,11 @@
 - 内容: PayPal.Me（hantani）への任意チップのご案内、使途・代替支援の明記
 - コミット: `feat(post): PayPal.Me でのサポート案内（少額チップ歓迎）`
 
+## 2025-11-05 追記（サポート導線の追加）
+- ホーム: `index.html` のヒーローに「このブログをサポートする」ボタンを追加（/support/）。
+- 固定ページ: `_tabs/support.md` を新規追加（PayPalボタン、使いみち、他の応援方法）。
+- コミット: `feat(support): add support tab and hero CTA`
+
 ## 2025-09-08 見た目反映ホットフィックス
 - _sass/custom.scss を追加、エントリSCSS末尾で @import "custom" を明示。
 - フォント/リンク色/タグ/カード影を高優先度セレクタで上書き。
