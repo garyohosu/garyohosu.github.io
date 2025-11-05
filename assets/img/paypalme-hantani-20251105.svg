@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <g transform="translate(80,120)">
+    <text x="0" y="0" fill="#e0f2fe" font-size="40" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">このブログがお役に立ったら</text>
+    <text x="0" y="70" fill="#ffffff" font-size="72" font-weight="700" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">PayPalでサポートをお願いします</text>
+    <text x="0" y="130" fill="#f0f9ff" font-size="36" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">数百円からのチップで運営を応援</text>
+  </g>
+  <g transform="translate(80,330)">
+    <rect x="0" y="-40" rx="10" ry="10" width="560" height="80" fill="#ffffff" opacity="0.14"/>
+    <text x="20" y="10" fill="#ffffff" font-size="34" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">paypal.me/hantani</text>
+  </g>
+  <text x="80" y="590" fill="#e2e8f0" font-size="22" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">garyohosu.github.io · 2025-11-05</text>
+</svg>
