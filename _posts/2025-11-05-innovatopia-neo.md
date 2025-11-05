@@ -3,12 +3,17 @@ layout: post
 title: "innovaTopia解説：家庭用ヒューマノイド『Neo』予約開始（1X、2026年米国出荷予定）"
 date: 2025-11-05 11:00:00 +0900
 categories: [blog, robotics]
-tags: [ロボット, ヒューマノイド, 1X, 家電, 遠隔操作, 自律化]
+tags: [ロボット, ヒューマノイド, 1X, Neo, 家庭ロボット, 遠隔操作, 自律化]
 image: /assets/img/innovatopia-neo-20251105.svg
+description: "1Xの家庭用ヒューマノイドNeoの予約開始（$20,000 / 月額$499）。まずは遠隔操作中心→学習で自律化を高める計画、米国は2026年出荷。価格や仕様、留意点を要点で整理。"
 ---
 
 出典：innovaTopia「家庭用ヒューマノイドロボット『Neo』の予約受付が開始、価格は2万ドル」（2025/11/05 掲載）
 <https://innovatopia.jp/robot/robot-news/70374/>
+
+公式情報：
+- 製品ページ: <https://www.1x.tech/neo>
+- アナウンス: <https://www.1x.tech/discover/neo-home-robot>
 
 1X（旧：Halodi Robotics）が家庭用ヒューマノイド『Neo』の予約を開始。価格は$20,000、予約金$200、
 月額$499のサブスクで運用可能とされ、米国向け出荷は2026年、国際展開は2027年以降を見込むと報じられています。

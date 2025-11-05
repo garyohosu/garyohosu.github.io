@@ -3,8 +3,9 @@ layout: post
 title: "XenoSpectrum解説：ChatGPTだけの学習は浅い理解しか生まない？（要点・示唆・実務ヒント）"
 date: 2025-11-04 16:20:00 +0900
 categories: [blog, reading]
-tags: [学習, 教育, LLM, ChatGPT, 情報探索, PNAS Nexus]
+tags: [学習, 教育, LLM, ChatGPT, 情報探索, 学習科学, PNAS Nexus]
 image: /assets/img/xenospectrum-ai-learning-shallow-20251104.svg
+description: "大規模実験が示唆：LLMだけに依存した学習は効率は上がるが理解は浅くなりがち。検索・比較・根拠統合の“望ましい困難”を残す設計で学びを深める。"
 ---
 
 出典：XenoSpectrum「AI learning using ChatGPT only produces shallow understanding」（2025/11/04 記事）

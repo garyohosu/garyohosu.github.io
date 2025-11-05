@@ -145,7 +145,12 @@
 - 参照元: innovaTopia「家庭用ヒューマノイドロボット『Neo』の予約受付が開始、価格は2万ドル」(https://innovatopia.jp/robot/robot-news/70374/)。
 - サムネ作成: `assets/img/innovatopia-neo-20251105.svg`（1200x630）。
 - フロントマター: `image: /assets/img/innovatopia-neo-20251105.svg` を設定。
-- コミット/プッシュ: `feat(post): innovaTopia/Neo記事の解説とサムネ追加` を `origin/main` へ。
+ - コミット/プッシュ: `feat(post): innovaTopia/Neo記事の解説とサムネ追加` を `origin/main` へ。
+
+## 2025-11-05 追記（OGP/タグ微調整・公式リンク）
+- OGP: 3記事に `description:` を追加（JBpress / XenoSpectrum / innovaTopia）。
+- タグ: 文脈に合わせてキーワードを最適化（例：二極化、学習科学、Neo、家庭ロボット）。
+- 公式リンク: Neo の公式ページとアナウンスを本文に追記（1X: https://www.1x.tech/neo, https://www.1x.tech/discover/neo-home-robot）。
 
 ## 2025-09-08 見た目反映ホットフィックス
 - _sass/custom.scss を追加、エントリSCSS末尾で @import "custom" を明示。
