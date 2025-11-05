@@ -165,6 +165,12 @@
 - 追加ファイル: `_posts/2025-11-05-ai-news-digest.md`、`assets/img/ai-news-20251105.svg`
 - コミット: `feat(post): AIニュース・ダイジェスト(2025/11/03–11/05) + thumbnail`
 
+## 2025-11-05 追記（新規2記事の追加）
+- 追加: `_posts/2025-11-05-deepdive-openai-aws.md`（ニュース深掘り：OpenAI×AWS 7年・$38B）
+- 追加: `_posts/2025-11-05-llm-workflows-5.md`（仕事が早い人のLLMワークフロー5選）
+- サムネ: `assets/img/openai-aws-20251105.svg`, `assets/img/llm-workflows-5-20251105.svg`
+- コミット: `feat(posts): deep dive (OpenAI×AWS) & LLM workflows 5` 
+
 ## 2025-11-05 追記（PayPalチップ案内ポスト）
 - 追加ファイル: `_posts/2025-11-05-support-paypalme.md`
 - サムネ: `assets/img/paypalme-hantani-20251105.svg`

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+  <g transform="translate(80,110)">
+    <text x="0" y="0" fill="#93c5fd" font-size="34" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">ニュース深掘り</text>
+    <text x="0" y="60" fill="#ffffff" font-size="58" font-weight="700" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">OpenAI × AWS 7年・$38B</text>
+    <text x="0" y="112" fill="#e5e7eb" font-size="30" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">マルチクラウド化の狙いと波及</text>
+  </g>
+  <g transform="translate(80,300)" fill="#dbeafe" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif" font-size="28">
+    <text x="0" y="0">・計算基盤の多様化</text>
+    <text x="0" y="46">・価格/交渉力の強化</text>
+    <text x="0" y="92">・供給網リスクの低減</text>
+  </g>
+  <text x="80" y="590" fill="#94a3b8" font-size="22" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">garyohosu.github.io · 2025-11-05</text>
+</svg>
