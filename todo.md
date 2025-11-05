@@ -140,6 +140,13 @@
 - フロントマター: `image: /assets/img/xenospectrum-ai-learning-shallow-20251104.svg` を設定。
 - コミット/プッシュ予定: `feat(post): XenoSpectrum記事の解説とサムネ追加`。
 
+## 2025-11-05 追記（innovaTopia 記事紹介）
+- 記事紹介ポスト作成: `_posts/2025-11-05-innovatopia-neo.md`（1Xの家庭用ヒューマノイドNeo）。
+- 参照元: innovaTopia「家庭用ヒューマノイドロボット『Neo』の予約受付が開始、価格は2万ドル」(https://innovatopia.jp/robot/robot-news/70374/)。
+- サムネ作成: `assets/img/innovatopia-neo-20251105.svg`（1200x630）。
+- フロントマター: `image: /assets/img/innovatopia-neo-20251105.svg` を設定。
+- コミット/プッシュ: `feat(post): innovaTopia/Neo記事の解説とサムネ追加` を `origin/main` へ。
+
 ## 2025-09-08 見た目反映ホットフィックス
 - _sass/custom.scss を追加、エントリSCSS末尾で @import "custom" を明示。
 - フォント/リンク色/タグ/カード影を高優先度セレクタで上書き。
