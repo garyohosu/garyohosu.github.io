@@ -34,3 +34,6 @@ description: "Googleが発表した衛星軌道上のAIデータセンター構�
 が見えてくると期待。
 
 （注）本稿はITmediaの記事内容に基づく要約・所感です。最終的な仕様・時期は必ず公式情報でご確認ください。
+
+{% include cta-support.html %}
+

@@ -176,6 +176,15 @@
 - 固定ページ: `_tabs/support.md` を新規追加（PayPalボタン、使いみち、他の応援方法）。
 - コミット: `feat(support): add support tab and hero CTA`
 
+## 2025-11-05 追記（全部対応: A/B・ピン留め・ニュース末尾CTA）
+- A/B: `_includes/custom-head.html` に軽量JSを追加し、ヒーローのサポートCTAの文言/色をAB切替（7日保持）。
+- ピン留め: `_posts/2025-11-05-support-paypalme.md` に `pin: true` を付与。
+- ニュース末尾CTA: `_includes/cta-support.html` を新規作成し、以下に挿入。
+  - `_posts/2025-11-04-ai-news-digest.md`
+  - `_posts/2025-11-05-ai-news-digest.md`
+  - `_posts/2025-11-05-itmedia-suncatcher.md`
+- コミット: `feat(CTA): hero AB test + pin support post + add news-tail CTA`
+
 ## 2025-09-08 見た目反映ホットフィックス
 - _sass/custom.scss を追加、エントリSCSS末尾で @import "custom" を明示。
 - フォント/リンク色/タグ/カード影を高優先度セレクタで上書き。
