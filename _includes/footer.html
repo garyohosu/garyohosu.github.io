@@ -1,3 +1,8 @@
+<!-- Auto-insert Support CTA for posts -->
+{% if page.layout == 'post' and page.cta_support != false %}
+  {% include cta-support.html %}
+{% endif %}
+
 <!-- The Footer (overridden locally to add GenSpark link) -->
 
 <footer

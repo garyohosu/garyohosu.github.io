@@ -82,5 +82,4 @@ image: /assets/img/ai-news-2025-11-04.svg
 
 （注）本稿のリンクはすべて一次情報（公式発表）または一次配信社（Reuters）に基づきます。掲載日時は米国太平洋時間基準を目安にしています。
 
-{% include cta-support.html %}
 

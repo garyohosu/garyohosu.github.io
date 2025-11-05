@@ -7,6 +7,7 @@ tags: [お知らせ, 支援, 寄付, PayPal]
 image: /assets/img/paypalme-hantani-20251105.svg
 description: "PayPal.Meで数百円からサポート受付中。AIニュース解説や実験記事の継続に充てます。いつも読んでくださりありがとうございます。"
 pin: true
+cta_support: false
 ---
 
 いつも読んでいただき、ありがとうございます。もし記事が少しでもお役に立ったと感じていただけたら、**PayPal.Me での少額チップ**で応援いただけると嬉しいです。
