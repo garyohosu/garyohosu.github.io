@@ -183,6 +183,12 @@
 - サポートCTA: 関連記事の下に引き続き表示（`cta_support: false` で個別無効化）。
 - コミット: `feat(related): auto-insert related posts include for all posts`
 
+## 2025-11-05 追記（PWA: AIニュースBingo）
+- 追加: `apps/ai-news-bingo/`（index.html, styles.css, app.js, sw.js, manifest.webmanifest, icon.svg, words.json）
+- 機能: 5x5ボード（中央FREE）、日付シード固定、チェック保存、PNG書き出し、Web Share API、PWAオフライン
+- 導線: `_tabs/apps.md` を追加して一覧化
+- コミット: `feat(app): add AI News Bingo PWA under /apps/ai-news-bingo + Apps tab`
+
 ## 2025-11-05 追記（PayPalチップ案内ポスト）
 - 追加ファイル: `_posts/2025-11-05-support-paypalme.md`
 - サムネ: `assets/img/paypalme-hantani-20251105.svg`

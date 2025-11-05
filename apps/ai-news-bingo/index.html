@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AIニュースBingo | garyohosu</title>
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <meta name="description" content="毎日変わるAIニュース用語でBINGO！盤面は日付で固定。画像を書き出してXで共有できます。" />
+  </head>
+  <body>
+    <header class="top">
+      <h1>AIニュースBingo</h1>
+      <p class="sub">毎日変わる旬ワードで5x5ビンゴ。中央はFREE。画像書き出しでXに即共有。</p>
+    </header>
+
+    <main>
+      <section class="controls">
+        <label>日付シード
+          <input id="seed-date" type="date" />
+        </label>
+        <button id="today-btn">今日の盤面</button>
+        <button id="shuffle-btn" title="シードに+1して再生成">もう一枚</button>
+        <button id="clear-btn">チェックをクリア</button>
+      </section>
+
+      <section id="board" class="board" aria-label="Bingo board" role="grid"></section>
+
+      <section class="status">
+        <div>成立ライン: <strong id="lines">0</strong> / 12</div>
+        <div id="hint" class="hint">マスをタップしてチェック。</div>
+      </section>
+
+      <section class="share">
+        <button id="save-btn">画像を書き出す（PNG）</button>
+        <button id="share-btn">Xで共有する</button>
+        <a id="download" style="display:none"></a>
+        <canvas id="card" width="1200" height="675" hidden></canvas>
+      </section>
+
+      <details class="about">
+        <summary>このアプリについて</summary>
+        <ul>
+          <li>完全クライアント/PWA（オフライン可）</li>
+          <li>盤面は <code>YYYYMMDD</code> をシードに固定。<em>もう一枚</em>で派生シード</li>
+          <li>語彙は <code>words.json</code> から抽選</li>
+        </ul>
+      </details>
+    </main>
+
+    <footer class="foot">
+      <a href="/">← ブログへ</a>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
+
