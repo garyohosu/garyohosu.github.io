@@ -189,6 +189,13 @@
 - 導線: `_tabs/apps.md` を追加して一覧化
 - コミット: `feat(app): add AI News Bingo PWA under /apps/ai-news-bingo + Apps tab`
 
+## 2025-11-05 追記（Bingo改良: 語彙自動更新 & ストリーク）
+- 自動更新: `.github/workflows/update-bingo-words.yml` を追加。毎日 02:13 UTC に `scripts/update_bingo_words.mjs` を実行し、
+  `_posts` からタグ/キーワード、`apps/.../words-extra.json` を統合して `words.json` を再生成・コミット。
+- PWA更新: `sw.js` を v2 にし、`words.json` をネットワーク優先で取得（最新語彙を反映）。
+- ストリーク: 連続日数（current/best）をローカルに保存し、UI表示＆PNGにもバッジ描画。
+- コミット: `feat(app): bingo streak badge + SW refresh; chore(workflow): daily words refresh`
+
 ## 2025-11-05 追記（PayPalチップ案内ポスト）
 - 追加ファイル: `_posts/2025-11-05-support-paypalme.md`
 - サムネ: `assets/img/paypalme-hantani-20251105.svg`

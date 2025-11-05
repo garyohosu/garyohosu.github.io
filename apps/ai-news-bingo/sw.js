@@ -1,4 +1,4 @@
-const CACHE = 'ai-bingo-v1';
+const CACHE = 'ai-bingo-v2';
 const ASSETS = [
   './', './index.html', './styles.css', './app.js', './manifest.webmanifest', './icon.svg', './words.json'
 ];
@@ -10,8 +10,15 @@ self.addEventListener('activate', e=>{
 });
 self.addEventListener('fetch', e=>{
   const url = new URL(e.request.url);
-  if(url.origin === location.origin){
+  if(url.origin !== location.origin) return; // ignore cross-origin
+  if(url.pathname.endsWith('/words.json')){
+    // network-first to keep vocab fresh
+    e.respondWith(
+      fetch(e.request).then(resp=>{
+        const copy = resp.clone(); caches.open(CACHE).then(c=>c.put(e.request, copy)); return resp;
+      }).catch(()=> caches.match(e.request))
+    );
+  } else {
     e.respondWith(caches.match(e.request).then(r=> r || fetch(e.request)));
   }
 });
-

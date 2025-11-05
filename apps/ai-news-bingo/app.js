@@ -2,6 +2,7 @@
 const WORDS_URL = './words.json';
 const BOARD = document.getElementById('board');
 const linesEl = document.getElementById('lines');
+const streakEl = document.getElementById('streak');
 const dateInput = document.getElementById('seed-date');
 const todayBtn = document.getElementById('today-btn');
 const shuffleBtn = document.getElementById('shuffle-btn');
@@ -101,6 +102,7 @@ async function init(){
   const today = fmtYMD(new Date());
   dateInput.value = today;
   setSeedFromDateStr(today);
+  updateStreakOnVisit(today);
   registerSW();
 }
 
@@ -172,6 +174,16 @@ async function renderCard(){
   // footer
   ctx.fillStyle='#94a3b8'; ctx.font='20px \\"Segoe UI\\", Roboto, \\"Noto Sans JP\\", sans-serif';
   ctx.fillText('garyohosu.github.io/apps/ai-news-bingo', PAD, H-PAD/2);
+  // streak badge
+  const s = getStreak();
+  if(s.current>0){
+    const btxt = `Streak ${s.current}d  ·  Best ${s.best}d`;
+    const bx = W-PAD-380, by = H-PAD-16;
+    ctx.fillStyle='rgba(16,185,129,.12)'; ctx.fillRect(bx, by-28, 360, 40);
+    ctx.fillStyle='#10b981'; ctx.font='bold 22px "Segoe UI", Roboto, "Noto Sans JP", sans-serif';
+    ctx.textAlign='right'; ctx.fillText(btxt, W-PAD, H-PAD-8);
+    ctx.textAlign='left';
+  }
   return new Promise(res=> cw.toBlob(b=>res(b),'image/png'));
 }
 
@@ -181,3 +193,29 @@ function registerSW(){
 
 init();
 
+// ---- Streak (連続日数) ----
+function getStreak(){
+  const rec = JSON.parse(localStorage.getItem('bingo:streak')||'{}');
+  return {current: rec.current||0, best: rec.best||0, last: rec.last||null};
+}
+function setStreak(obj){ localStorage.setItem('bingo:streak', JSON.stringify(obj)); }
+function daysBetween(a,b){
+  const ad=new Date(a+'T00:00:00'), bd=new Date(b+'T00:00:00');
+  return Math.round((bd-ad)/86400000);
+}
+function updateStreakOnVisit(todayStr){
+  const s = getStreak();
+  if(!s.last){ s.current=1; s.best=1; s.last=todayStr; }
+  else {
+    const diff = daysBetween(s.last, todayStr);
+    if(diff===0){ /* same day */ }
+    else if(diff===1){ s.current = (s.current||0)+1; s.best=Math.max(s.best||0, s.current); s.last=todayStr; }
+    else if(diff>1){ s.current=1; s.last=todayStr; s.best=Math.max(s.best||0, s.current); }
+  }
+  setStreak(s); renderStreak();
+}
+function renderStreak(){
+  const s=getStreak();
+  if(streakEl){ streakEl.textContent = `連続: ${s.current}日（最高 ${s.best}日）`; }
+}
+renderStreak();

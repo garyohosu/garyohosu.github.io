@@ -1,0 +1,32 @@
+name: Update AI Bingo words
+
+on:
+  schedule:
+    - cron: '13 2 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Update words.json
+        run: node scripts/update_bingo_words.mjs
+      - name: Commit changes
+        run: |
+          if git diff --quiet; then
+            echo "No changes"; exit 0; fi
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add apps/ai-news-bingo/words.json
+          git commit -m "chore(apps/bingo): refresh words.json from posts/tags/extras"
+          git push
+
