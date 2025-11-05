@@ -209,6 +209,12 @@
 - 参考: 発表ポスト（X） https://x.com/kensuu/status/1985977308763865323
 - コミット: `feat(post): OpenPrompt受賞のご報告（概要と今後の方針）`
 
+## 2025-11-06 追記（受賞プロンプトの公開）
+- ページ追加: `prompts/openprompt-award.md`（フル版/ライト版/チェックリスト/使用例）
+- タブ追加: `_tabs/prompts.md`（プロンプト一覧）
+- 記事更新: 受賞記事に公開ページへのリンクを追記
+- コミット: `feat(prompts): publish OpenPrompt受賞プロンプト + add Prompts tab + link from award post`
+
 ## 2025-11-05 追記（PayPalチップ案内ポスト）
 - 追加ファイル: `_posts/2025-11-05-support-paypalme.md`
 - サムネ: `assets/img/paypalme-hantani-20251105.svg`
