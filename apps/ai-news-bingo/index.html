@@ -30,15 +30,24 @@
 
       <section class="status">
         <div>成立ライン: <strong id="lines">0</strong> / 12</div>
-        <div id="streak" class="hint">連続: 0日（最高 0日）</div>
+        <div id="streak" class="hint">連続: 0日（最高 0日）<span id="badge" class="badge" aria-label="streak badge"></span></div>
         <div id="hint" class="hint">マスをタップしてチェック。</div>
       </section>
 
       <section class="share">
         <button id="save-btn">画像を書き出す（PNG）</button>
         <button id="share-btn">Xで共有する</button>
+        <button id="install-btn" hidden>ホーム画面に追加</button>
         <a id="download" style="display:none"></a>
         <canvas id="card" width="1200" height="675" hidden></canvas>
+      </section>
+
+      <section class="legend" aria-label="カテゴリ凡例">
+        <div class="legend-item"><span class="dot cat-0"></span> モデル/製品</div>
+        <div class="legend-item"><span class="dot cat-1"></span> 半導体/インフラ</div>
+        <div class="legend-item"><span class="dot cat-2"></span> 研究/手法</div>
+        <div class="legend-item"><span class="dot cat-3"></span> 規制/政策</div>
+        <div class="legend-item"><span class="dot cat-4"></span> 企業/動向</div>
       </section>
 
       <details class="about">

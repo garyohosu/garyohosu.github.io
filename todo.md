@@ -196,6 +196,13 @@
 - ストリーク: 連続日数（current/best）をローカルに保存し、UI表示＆PNGにもバッジ描画。
 - コミット: `feat(app): bingo streak badge + SW refresh; chore(workflow): daily words refresh`
 
+## 2025-11-05 追記（Bingo強化: カテゴリ色分け & インストール促進）
+- カテゴリ: `apps/ai-news-bingo/categories.json` を追加し、語に応じて盤面上部に色バー表示（モデル/半導体/研究/規制/企業）。
+- PNG出力: カテゴリ色バーとストリーク称号（ROOKIE/REGULAR/POWER USER/STREAK MASTER）を描画。
+- インストール: `beforeinstallprompt` を捕捉し、「ホーム画面に追加」ボタンを表示→プロンプト起動。
+- SW更新: v3（`categories.json` をプレキャッシュ／ネットワーク優先対象に追加）。
+- コミット: `feat(apps/bingo): categories tint + install prompt + SW v3`
+
 ## 2025-11-05 追記（PayPalチップ案内ポスト）
 - 追加ファイル: `_posts/2025-11-05-support-paypalme.md`
 - サムネ: `assets/img/paypalme-hantani-20251105.svg`
