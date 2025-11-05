@@ -177,6 +177,12 @@
 - 関連記事: 相互リンクとニュースダイジェストへのリンクを本文末に追加（Jekyll `{% link %}` 利用）。
 - コミット: `chore(posts): add related links + tags/toc/meta tweaks`
 
+## 2025-11-05 追記（関連記事の自動差し込み）
+- 追加: `_includes/related-posts.html`（タグ/カテゴリ一致で最大3件を抽出）
+- 差し込み位置: `_includes/footer.html` で `page.layout == 'post'` の場合に自動表示。
+- サポートCTA: 関連記事の下に引き続き表示（`cta_support: false` で個別無効化）。
+- コミット: `feat(related): auto-insert related posts include for all posts`
+
 ## 2025-11-05 追記（PayPalチップ案内ポスト）
 - 追加ファイル: `_posts/2025-11-05-support-paypalme.md`
 - サムネ: `assets/img/paypalme-hantani-20251105.svg`
