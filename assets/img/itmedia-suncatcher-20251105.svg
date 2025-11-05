@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="rg" cx="60%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="40%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#0b1020"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0b1020"/>
+  <circle cx="860" cy="180" r="220" fill="url(#rg)" opacity="0.9"/>
+  <g transform="translate(80,120)">
+    <text x="0" y="0" fill="#93c5fd" font-size="34" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">ITmedia 記事紹介</text>
+    <text x="0" y="60" fill="#ffffff" font-size="58" font-weight="700" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">Project Suncatcher</text>
+    <text x="0" y="112" fill="#e5e7eb" font-size="32" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">Googleの宇宙AIデータセンター構想（TPU×太陽光）</text>
+  </g>
+  <g transform="translate(80,320)" fill="#dbeafe" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif" font-size="28">
+    <text x="0" y="0">・衛星群でAI演算、地球の電力負荷を軽減</text>
+    <text x="0" y="46">・TPU搭載＋太陽光発電、熱/騒音の制約が小さい</text>
+    <text x="0" y="92">・2027年初頭 プロトタイプ衛星の学習ミッション</text>
+  </g>
+  <text x="80" y="590" fill="#94a3b8" font-size="22" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">garyohosu.github.io · 2025-11-05</text>
+</svg>

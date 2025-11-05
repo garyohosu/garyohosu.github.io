@@ -152,6 +152,13 @@
 - タグ: 文脈に合わせてキーワードを最適化（例：二極化、学習科学、Neo、家庭ロボット）。
 - 公式リンク: Neo の公式ページとアナウンスを本文に追記（1X: https://www.1x.tech/neo, https://www.1x.tech/discover/neo-home-robot）。
 
+## 2025-11-05 追記（ITmedia 記事紹介）
+- 記事紹介ポスト作成: `_posts/2025-11-05-itmedia-suncatcher.md`（Googleの宇宙AI DC構想）。
+- 参照元: ITmedia NEWS「Google、TPU搭載の宇宙AIデータセンター構想『Project Suncatcher』発表」(https://www.itmedia.co.jp/news/articles/2511/05/news054.html)。
+- サムネ作成: `assets/img/itmedia-suncatcher-20251105.svg`（1200x630、太陽×軌道イメージ）。
+- フロントマター: `image: /assets/img/itmedia-suncatcher-20251105.svg`, `description:` を設定。
+- コミット/プッシュ: `feat(post): ITmedia/Project Suncatcherの解説とサムネ追加` を `origin/main` へ。
+
 ## 2025-09-08 見た目反映ホットフィックス
 - _sass/custom.scss を追加、エントリSCSS末尾で @import "custom" を明示。
 - フォント/リンク色/タグ/カード影を高優先度セレクタで上書き。
