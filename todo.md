@@ -171,6 +171,12 @@
 - サムネ: `assets/img/openai-aws-20251105.svg`, `assets/img/llm-workflows-5-20251105.svg`
 - コミット: `feat(posts): deep dive (OpenAI×AWS) & LLM workflows 5` 
 
+## 2025-11-05 追記（OGP/タグ最適化＆関連記事リンク）
+- OGP: 2記事に `toc: true` と `last_modified_at` を付与し、メタを最適化。
+- タグ: 深掘りに「レジリエンス/コスト管理」、ワークフローに「再現性/根拠提示」を追加。
+- 関連記事: 相互リンクとニュースダイジェストへのリンクを本文末に追加（Jekyll `{% link %}` 利用）。
+- コミット: `chore(posts): add related links + tags/toc/meta tweaks`
+
 ## 2025-11-05 追記（PayPalチップ案内ポスト）
 - 追加ファイル: `_posts/2025-11-05-support-paypalme.md`
 - サムネ: `assets/img/paypalme-hantani-20251105.svg`

@@ -3,9 +3,11 @@ layout: post
 title: "仕事が早い人のLLMワークフロー5選（テンプレとKPI付き）"
 date: 2025-11-05 23:25:00 +0900
 categories: [blog, howto]
-tags: [LLM, 生成AI, 仕事術, プロンプト, ワークフロー, KPI]
+tags: [LLM, 生成AI, 仕事術, プロンプト, ワークフロー, KPI, 再現性, 根拠提示]
 image: /assets/img/llm-workflows-5-20251105.svg
 description: "要件分解→下書き→検証→根拠→再利用。今日から回せるLLMワークフロー5種をミニプロンプトとKPIで提示。"
+toc: true
+last_modified_at: 2025-11-05 23:45:00 +0900
 ---
 
 前提：LLMは“下書きと検証を速くする”道具です。再現可能な型で回すと、質と速度が同時に上がります。
@@ -54,3 +56,7 @@ description: "要件分解→下書き→検証→根拠→再利用。今日か
 - [ ] 出力の検証観点を設定したか
 - [ ] 出典や社内根拠にリンクを貼ったか
 - [ ] テンプレ/スニペット化して再利用したか
+
+## 関連記事
+- ニュース深掘り（OpenAI×AWS）：{% link _posts/2025-11-05-deepdive-openai-aws.md %}
+- 直近ニュースまとめ（11/03–11/05）：{% link _posts/2025-11-05-ai-news-digest.md %}
