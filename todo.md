@@ -159,6 +159,12 @@
 - フロントマター: `image: /assets/img/itmedia-suncatcher-20251105.svg`, `description:` を設定。
 - コミット/プッシュ: `feat(post): ITmedia/Project Suncatcherの解説とサムネ追加` を `origin/main` へ。
 
+## 2025-11-05 追記（AIニュース・ダイジェスト 11/03–11/05）
+- 期間: 2025/11/03–11/05（JST）
+- 件数: 6（OpenAI×AWS、Microsoft×IREN、UAE向けGB300、Blackwell発言、Google Suncatcher、Onsemi決算）
+- 追加ファイル: `_posts/2025-11-05-ai-news-digest.md`、`assets/img/ai-news-20251105.svg`
+- コミット: `feat(post): AIニュース・ダイジェスト(2025/11/03–11/05) + thumbnail`
+
 ## 2025-09-08 見た目反映ホットフィックス
 - _sass/custom.scss を追加、エントリSCSS末尾で @import "custom" を明示。
 - フォント/リンク色/タグ/カード影を高優先度セレクタで上書き。
