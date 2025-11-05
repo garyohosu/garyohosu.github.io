@@ -203,6 +203,12 @@
 - SW更新: v3（`categories.json` をプレキャッシュ／ネットワーク優先対象に追加）。
 - コミット: `feat(apps/bingo): categories tint + install prompt + SW v3`
 
+## 2025-11-06 追記（OpenPrompt 受賞のご報告）
+- 記事追加: `_posts/2025-11-06-openprompt-award.md`
+- サムネ: `assets/img/openprompt-award-2025-11-06.svg`
+- 参考: 発表ポスト（X） https://x.com/kensuu/status/1985977308763865323
+- コミット: `feat(post): OpenPrompt受賞のご報告（概要と今後の方針）`
+
 ## 2025-11-05 追記（PayPalチップ案内ポスト）
 - 追加ファイル: `_posts/2025-11-05-support-paypalme.md`
 - サムネ: `assets/img/paypalme-hantani-20251105.svg`
