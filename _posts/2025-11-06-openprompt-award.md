@@ -36,7 +36,7 @@ description: "OpenPromptでAIテキストを人間味あふれる文章に変換
 多くの皆様からフィードバック・応援をいただきました。心より感謝申し上げます。
 
 参考リンク：
-- OpenPrompt: https://openprompt.co
-- 発表リツイート: https://x.com/kensuu/status/1985977308763865323
+- [OpenPrompt](https://openprompt.jp/)
+- [発表リツイート](https://x.com/kensuu/status/1985977308763865323)
 
 今後も実用的で価値のあるプロンプトの開発・共有を続けてまいります。
