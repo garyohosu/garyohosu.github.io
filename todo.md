@@ -389,3 +389,18 @@ aturalWidth: 1280 を確認。
   - Playwright でトップページを再確認し、サムネイル画像（3Dプリンタのキャラクター）が表示されることを確認
 - コミット: `fix: add missing front matter to genspark 3d printer post` (commit: 0f52abc)
 - プッシュ: origin/main に反映、Pages デプロイ成功
+
+## 2025-11-07 追記（AIニュース・ダイジェスト）
+
+- 期間: 2025/11/04–11/06（直近3日分）
+- 件数: 5トピック
+- 代表トピック:
+  - OpenAI×AWS 380億ドル契約（マルチクラウド化）
+  - Nvidia Blackwell Ultra（AI推論時代）
+  - 日本ガバメントAI（2026年度本格提供）
+  - OpenAI法人向けマイルストーン（100万企業達成）
+  - Google DeepMind AI for Math Initiative
+- 作成ファイル:
+  - `_posts/2025-11-07-ai-news-digest.md`
+  - `assets/img/ai-news-20251107.svg`
+- コミット: `feat(post): AIニュース・ダイジェスト(2025/11/04–11/06) + thumbnail`
