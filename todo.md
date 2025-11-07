@@ -450,3 +450,90 @@ aturalWidth: 1280 を確認。
 ### 4. デプロイ状況
 - すべての記事・修正が GitHub Actions で自動ビルド・デプロイ成功
 - ブログは正常に更新・公開状態
+
+## 2025-11-07 追記（AI業界人物相関図ジェネレーター v2）by Claude Code
+
+### 概要
+- **アプリ名**: AI 業界人物相関図ジェネレーター（AI Industry People Correlation Diagram Generator）
+- **ファイル**: `apps/ai-industry-people-graph/index.html`（31KB）
+- **ビルド**: D3.js v7 Force-directed graph + HTML5 Canvas + バニラ JavaScript
+
+### 実装内容
+
+#### 1. 人物データの大幅拡張
+- **初期版**: 13 人（Sam Altman, Demis Hassabis など）
+- **v2 版**: 32+ 人に拡張
+- **新規追加カテゴリ**:
+  - 起業家・投資家: Kai-Fu Lee (Sinovation), Oren Etzioni (AI2)
+  - 研究者層: Ian Goodfellow (GAN発明者), Fei-Fei Li (ImageNet), Pieter Abbeel (RL先駆者), Silvio Savarese, Sergey Levine
+  - 業界リーダー: Jensen Huang (Nvidia), Bill Dally
+  - 歴史的人物: Geoffrey Hinton (Backprop発明者), Yoshua Bengio (DL三巨頭)
+
+#### 2. 共著論文の可視化
+- **実装**: ピンク色の破線（dashed line）で表現
+- **関係性**: 異なる企業間の学術的つながりを強調
+- **例**: Ilya Sutskever × Chris Olah, Yann LeCun × Yoshua Bengio
+
+#### 3. 職位別フィルタ機能
+- **4つのボタン**: CEO, CTO/VP, 研究者, その他
+- **複数選択対応**: 複数のボタン同時有効が可能
+- **ビジュアル**: ノードサイズと色で職位を区分
+  - CEO: ピンク（#ff6b9d）、最大サイズ
+  - CTO/VP: シアン（#00d4ff）、中サイズ
+  - 研究者: ターコイズ（#4ecdc4）、小サイズ
+  - その他: ゴールド（#ffd93d）
+
+#### 4. タイムラインスライダー
+- **期間**: 2010–2025 年（拡張）
+- **機能**: 年度ごとに人物を表示/非表示
+- **用途**: 「○○年時点では△△企業に誰がいたか」を視覚的に確認
+
+#### 5. インタラクティブ機能
+- **検索機能**: 人物名で絞り込み、該当者を強調表示
+- **企業フィルタ**: OpenAI / Google / Anthropic など企業ごとに表示
+- **ノードのドラッグ**: 力学シミュレーション内で自由に移動可能
+- **クリック詳細**: ノードをクリックすると右側パネルに詳細情報表示
+  - 基本情報: 職位、企業、参加年
+  - 人物説明: 簡潔な経歴・貢献
+  - 同企業の人物: 同じ企業で働いた/いる人
+  - 共著論文: 一緒に論文を書いた研究者
+
+#### 6. ビジュアル強化
+- **ノードサイズ**: 職位で自動スケーリング（CEO が最大）
+- **ノード色**: 職位で色分け（4色）
+- **グロー効果**: ホバー時にピンク色で輝く
+- **選択時**: 黄色の枠線で特別に強調
+- **リンク色**:
+  - 同企業: 青色（solid）
+  - 共著: ピンク色（dashed）
+- **統計情報**: 現在表示中の人物数と関連性（リンク）の総数を表示
+
+#### 7. パフォーマンス
+- **シングルファイルデプロイ**: 全データを HTML に埋め込み（Pages での公開を想定）
+- **ローカルストレージなし**: サーバー側処理不要
+
+### ファイル修正・作成
+
+#### 新規作成
+- `apps/ai-industry-people-graph/index.html`（v1 → v2 への大幅拡張）
+
+#### 更新
+- `_posts/2025-11-07-ai-people-graph.md`
+  - v1 の機能説明を保持
+  - v2 の新機能セクションを追加
+  - 今後の拡張予定（スナップショット）を記載
+
+### コミット・デプロイ
+
+- **コミット**: `feat(app): expand AI people graph v2 with 32+ people, paper co-authorship, role filters`
+- **プッシュ**: `origin/main` へ反映、GitHub Actions により自動ビルド・デプロイ成功
+- **公開 URL**: https://garyohosu.github.io/apps/ai-industry-people-graph/
+
+### 今後の拡張予定
+
+- [ ] SNS フォロー関係の可視化（X/GitHub followers）
+- [ ] リアルタイムデータ更新（Google Sheets から自動同期）
+- [ ] 転職履歴の時系列アニメーション
+- [ ] 論文被引用数の可視化（ノードサイズで表現）
+- [ ] モバイル最適化
+- [ ] エクスポート機能（PNG/SVG で相関図をダウンロード）
