@@ -404,3 +404,49 @@ aturalWidth: 1280 を確認。
   - `_posts/2025-11-07-ai-news-digest.md`
   - `assets/img/ai-news-20251107.svg`
 - コミット: `feat(post): AIニュース・ダイジェスト(2025/11/04–11/06) + thumbnail`
+
+## 2025-11-07 追記（複数記事・修正作業）by Claude Code
+
+### 1. GitHub Actions エラー修正
+- 問題: Jekyll ビルドで「`_posts/2025-11-05-llm-workflows-5.md` not found」エラー
+- 原因: `drafts/archived/` ディレクトリのファイルが Jekyll に処理されていた
+- 解決: `_config.yml` の `exclude:` に `drafts` を追加
+- コミット: `fix: exclude drafts directory from Jekyll build to prevent broken link errors`
+
+### 2. OpenPrompt 虚偽内容の削除と再作成
+- 削除: OpenPrompt の虚偽記事・プロンプトページを全削除
+  - `_posts/2025-11-06-openprompt-award.md`
+  - `prompts/openprompt-award.md`
+  - `_tabs/prompts.md` の OpenPrompt 関連部分削除
+- 再作成: 正確な内容に基づいた記事の作成
+  - タイトル: 「OpenPromptで『AIの人間味リライト』プロンプトが表彰されました」
+  - 内容: AIテキストの「AIっぽさ」を消して人間味ある文章に変換するプロンプト
+  - 出典: X のツイート（garyo/@garyo, 2025/10/22）
+  - リンク修正: `https://openprompt.co` → `https://openprompt.jp/`（正しい URL に修正）
+- コミット:
+  - `chore(post): remove fabricated OpenPrompt award content`
+  - `feat(post): OpenPromptで『AIの人間味リライト』プロンプトが表彰されました`
+  - `fix: correct OpenPrompt URL to https://openprompt.jp/ and make links clickable`
+
+### 3. 外部記事の紹介記事作成（3本）
+- ① Git Worktree について
+  - 記事: `_posts/2025-11-06-git-worktree-ai-workflow.md`
+  - 内容: 複数ブランチの並列開発、AI コーディングとの組み合わせワークフロー
+  - 参考: [Git Worktree を使い始めた](https://zenn.dev/tmasuyama1114/articles/git_worktree_beginner)
+  - コミット: `feat(post): Git Worktreeで並列開発を効率化：AIと一緒に使うワークフロー`
+
+- ② ファクトベース AI プロンプト
+  - 記事: `_posts/2025-11-06-fact-based-ai-prompt.md`
+  - 内容: ChatGPT の「ハルシネーション」問題を解決するプロンプト技法
+  - 参考: [ChatGPTが"嘘をつかなくなる"？ SNSで話題の"ファクトベースAI"プロンプトが凄い！ | smartwatchlife](https://www.smartwatchlife.jp/59860/)
+  - コミット: `feat(post): 『ファクトベースAI』プロンプト：ChatGPTの嘘を減らす賢い使い方`
+
+- ③ Gemini Deep Research Google Workspace 統合
+  - 記事: `_posts/2025-11-07-gemini-deep-research.md`
+  - 内容: Gemini の Deep Research が Gmail・Google Drive に統合。複数 Web サイトを自動分析
+  - 参考: [Gemini の「Deep Research」が Gmail および Google ドライブに統合 | ITmedia AI+](https://www.itmedia.co.jp/aiplus/articles/2511/06/news073.html)
+  - コミット: `feat(post): Gemini『Deep Research』がGmailとGoogle Driveに統合：複数ソース自動分析`
+
+### 4. デプロイ状況
+- すべての記事・修正が GitHub Actions で自動ビルド・デプロイ成功
+- ブログは正常に更新・公開状態
