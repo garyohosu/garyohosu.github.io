@@ -537,3 +537,9 @@ aturalWidth: 1280 を確認。
 - [ ] 論文被引用数の可視化（ノードサイズで表現）
 - [ ] モバイル最適化
 - [ ] エクスポート機能（PNG/SVG で相関図をダウンロード）
+
+## 2025-11-07 追記（OpenAI Academy CSプロンプト紹介）
+- リソース確認: OpenAI Academy "ChatGPT for customer success" をローカル保存し内容を解析
+- プロンプト整理: 5カテゴリ24本のプロンプトをリンク付きで抜粋し、ブログ記事 `_posts/2025-11-07-openai-customer-success-prompts.md` を作成
+- メモ追記: カテゴリ概要と代表プロンプトを日本語で要約、使い方メモ/所感セクションを追加
+- コミット/プッシュ: `feat(post): share openai cs prompt pack` を main へ反映し、Pages ビルドを監視
