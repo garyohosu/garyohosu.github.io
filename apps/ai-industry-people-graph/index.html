@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 業界人物相関図ジェネレーター v2</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0f1e 0%, #1a1a3a 50%, #0a0a1a 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        #container {
+            display: flex;
+            height: 100vh;
+        }
+
+        #sidebar {
+            width: 320px;
+            background: rgba(20, 20, 40, 0.95);
+            border-right: 2px solid #00d4ff;
+            padding: 20px;
+            overflow-y: auto;
+            box-shadow: -2px 0 20px rgba(0, 212, 255, 0.1);
+        }
+
+        #graph-container {
+            flex: 1;
+            position: relative;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #00d4ff;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+        }
+
+        h2 {
+            font-size: 14px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #00d4ff;
+            border-bottom: 1px solid #00d4ff;
+            padding-bottom: 8px;
+        }
+
+        .control-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-size: 12px;
+            color: #a0a0ff;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 8px;
+            background: rgba(0, 212, 255, 0.1);
+            border: 1px solid #00d4ff;
+            color: #e0e0e0;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+        input[type="text"]:focus,
+        select:focus {
+            outline: none;
+            background: rgba(0, 212, 255, 0.2);
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+        }
+
+        .slider-container {
+            margin-bottom: 15px;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            height: 4px;
+            background: rgba(0, 212, 255, 0.2);
+            outline: none;
+            border-radius: 2px;
+        }
+
+        .role-filter {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .role-btn {
+            padding: 6px;
+            background: rgba(0, 212, 255, 0.1);
+            border: 1px solid #00d4ff;
+            color: #00d4ff;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 11px;
+            transition: all 0.2s;
+        }
+
+        .role-btn.active {
+            background: rgba(0, 212, 255, 0.4);
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.6);
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+            color: #0a0a1a;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.3s ease;
+            margin-top: 8px;
+        }
+
+        button:hover {
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.8);
+            transform: translateY(-2px);
+        }
+
+        .person-info {
+            background: rgba(0, 212, 255, 0.05);
+            border: 1px solid #00d4ff;
+            border-radius: 4px;
+            padding: 12px;
+            margin-top: 15px;
+            font-size: 11px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .person-info-title {
+            font-weight: bold;
+            color: #00d4ff;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+
+        .info-row {
+            margin: 4px 0;
+            padding: 4px 0;
+            border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+        }
+
+        .info-label {
+            color: #a0a0ff;
+            font-weight: bold;
+            display: inline-block;
+            width: 60px;
+        }
+
+        .info-value {
+            color: #e0e0e0;
+        }
+
+        /* Node and Link Styles */
+        .node {
+            cursor: pointer;
+            filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.4));
+            transition: all 0.2s;
+            stroke-width: 2px;
+            stroke: #00d4ff;
+        }
+
+        .node:hover {
+            stroke: #ff1493;
+            stroke-width: 3px;
+            filter: drop-shadow(0 0 15px rgba(255, 20, 147, 0.8));
+            r: 25px;
+        }
+
+        .node.selected {
+            stroke: #ffff00;
+            stroke-width: 4px;
+            filter: drop-shadow(0 0 20px rgba(255, 255, 0, 1));
+        }
+
+        .link {
+            stroke: rgba(0, 212, 255, 0.2);
+            stroke-width: 1px;
+        }
+
+        .link.strong {
+            stroke: rgba(0, 212, 255, 0.6);
+            stroke-width: 2px;
+        }
+
+        .link.coauthor {
+            stroke: rgba(255, 105, 180, 0.5);
+            stroke-width: 1.5px;
+            stroke-dasharray: 5,5;
+        }
+
+        text {
+            font-size: 11px;
+            fill: #e0e0e0;
+            text-anchor: middle;
+            pointer-events: none;
+            text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+        }
+
+        .tooltip {
+            position: absolute;
+            background: rgba(20, 20, 40, 0.98);
+            border: 2px solid #00d4ff;
+            border-radius: 6px;
+            padding: 10px;
+            font-size: 12px;
+            color: #e0e0e0;
+            pointer-events: none;
+            z-index: 1000;
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+            display: none;
+            max-width: 250px;
+        }
+
+        .legend {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(20, 20, 40, 0.95);
+            border: 1px solid #00d4ff;
+            border-radius: 4px;
+            padding: 12px;
+            font-size: 11px;
+            z-index: 100;
+        }
+
+        .legend-item {
+            margin: 6px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .legend-color {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            margin-right: 8px;
+            border: 2px solid #00d4ff;
+        }
+
+        .timeline-info {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(20, 20, 40, 0.95);
+            border: 1px solid #00d4ff;
+            border-radius: 4px;
+            padding: 12px;
+            font-size: 12px;
+            z-index: 100;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 1; }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .stat-box {
+            background: rgba(0, 212, 255, 0.1);
+            border: 1px solid #00d4ff;
+            border-radius: 4px;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 16px;
+            font-weight: bold;
+            color: #00d4ff;
+        }
+
+        .stat-label {
+            font-size: 10px;
+            color: #a0a0ff;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="sidebar">
+            <h1>🌐 AI 業界相関図 v2</h1>
+
+            <div class="control-group">
+                <label for="search">🔍 人物検索</label>
+                <input type="text" id="search" placeholder="名前を入力...">
+            </div>
+
+            <div class="control-group">
+                <label for="company-filter">🏢 企業フィルタ</label>
+                <select id="company-filter">
+                    <option value="">全て表示</option>
+                    <option value="OpenAI">OpenAI</option>
+                    <option value="Google">Google / DeepMind</option>
+                    <option value="Anthropic">Anthropic</option>
+                    <option value="Meta">Meta</option>
+                    <option value="Microsoft">Microsoft</option>
+                    <option value="xAI">xAI</option>
+                    <option value="Stanford">Stanford</option>
+                    <option value="Berkeley">UC Berkeley</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label>👔 職位フィルタ</label>
+                <div class="role-filter">
+                    <button class="role-btn" data-role="CEO">CEO</button>
+                    <button class="role-btn" data-role="CTO">CTO/VP</button>
+                    <button class="role-btn" data-role="Researcher">研究者</button>
+                    <button class="role-btn" data-role="Founder">創業者</button>
+                </div>
+            </div>
+
+            <div class="slider-container">
+                <label for="year-slider">📅 タイムライン (2010-2025)</label>
+                <input type="range" id="year-slider" min="2010" max="2025" value="2025">
+                <div class="year-label" id="year-label">2025</div>
+            </div>
+
+            <button id="reset-btn">🔄 リセット</button>
+
+            <h2>📌 選択中の人物</h2>
+            <div id="person-info-placeholder" style="font-size: 12px; color: #808080;">ノードをクリック</div>
+            <div class="person-info" id="person-info" style="display: none;">
+                <div class="person-info-title" id="person-name"></div>
+                <div id="person-details"></div>
+            </div>
+
+            <h2>📊 統計</h2>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-number" id="node-count">0</div>
+                    <div class="stat-label">人物数</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" id="link-count">0</div>
+                    <div class="stat-label">関連性</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="graph-container">
+            <svg id="graph"></svg>
+            <div class="tooltip" id="tooltip"></div>
+            <div class="timeline-info" id="timeline-info"></div>
+            <div class="legend">
+                <div style="color: #00d4ff; font-weight: bold; margin-bottom: 8px;">【役職】</div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background: #ff6b9d;"></span>
+                    CEO / Founder
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background: #00d4ff;"></span>
+                    CTO / VP Eng
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background: #4ecdc4;"></span>
+                    Researcher
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background: #ffd93d;"></span>
+                    Academic
+                </div>
+                <div style="color: #00d4ff; font-weight: bold; margin: 12px 0 8px 0; border-top: 1px solid #00d4ff; padding-top: 8px;">【関連性】</div>
+                <div class="legend-item">
+                    <span style="width: 30px; height: 2px; background: rgba(0, 212, 255, 0.6); display: inline-block; margin-right: 8px;"></span>
+                    同企業
+                </div>
+                <div class="legend-item">
+                    <span style="width: 30px; height: 2px; background: rgba(255, 105, 180, 0.5); display: inline-block; margin-right: 8px; border-top: 3px dashed rgba(255, 105, 180, 0.5); border-bottom: none;"></span>
+                    共著論文
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 拡張データセット：AI業界の主要人物（50+人物）
+        const peopleData = [
+            // === OpenAI ===
+            { id: 1, name: "Sam Altman", role: "CEO", company: "OpenAI", joinedYear: 2015, bio: "Y Combinator会長、OpenAI CEO。ChatGPT開発を主導。", links: [2, 3], coauthors: [], expertise: ["AI", "Leadership", "Strategy"] },
+            { id: 2, name: "Ilya Sutskever", role: "CTO", company: "OpenAI", joinedYear: 2015, bio: "OpenAI最高科学責任者。ニューラルネット研究の第一人者。", links: [1], coauthors: [10], expertise: ["Deep Learning", "NLP"] },
+            { id: 3, name: "Elon Musk", role: "Founder", company: "OpenAI", joinedYear: 2015, bio: "OpenAI共同創設者。Tesla、SpaceX CEO。", links: [1, 13], coauthors: [], expertise: ["Vision", "Engineering"] },
+            { id: 4, name: "Greg Brockman", role: "President", company: "OpenAI", joinedYear: 2015, bio: "OpenAI President。Stripe創業者。", links: [1, 2], coauthors: [], expertise: ["Operations", "Product"] },
+
+            // === Google / DeepMind ===
+            { id: 5, name: "Demis Hassabis", role: "CEO", company: "Google", joinedYear: 2010, bio: "DeepMind CEO。AlphaGo, AlphaFold開発。", links: [6, 7], coauthors: [7], expertise: ["RL", "Biology"] },
+            { id: 6, name: "Jeff Dean", role: "Chief Scientist", company: "Google", joinedYear: 2005, bio: "Google AI分野の第一人者。TensorFlow開発。", links: [5, 24], coauthors: [24], expertise: ["ML Systems", "Distributed"] },
+            { id: 7, name: "Thore Graepel", role: "Researcher", company: "Google", joinedYear: 2012, bio: "DeepMind Researcher。強化学習の専門家。", links: [5], coauthors: [5], expertise: ["RL", "Game AI"] },
+
+            // === Anthropic ===
+            { id: 8, name: "Dario Amodei", role: "CEO", company: "Anthropic", joinedYear: 2021, bio: "Anthropic CEO & Co-founder。OpenAIから2021年スピンアウト。", links: [9, 10], coauthors: [10], expertise: ["Safety", "Alignment"] },
+            { id: 9, name: "Daniela Amodei", role: "President", company: "Anthropic", joinedYear: 2021, bio: "Anthropic President & Co-founder。セーフAI推進。", links: [8], coauthors: [], expertise: ["Policy", "Safety"] },
+            { id: 10, name: "Chris Olah", role: "Researcher", company: "Anthropic", joinedYear: 2021, bio: "Interpretability研究の第一人者。", links: [2, 8], coauthors: [2, 8], expertise: ["Interpretability"] },
+
+            // === Meta ===
+            { id: 11, name: "Yann LeCun", role: "Chief AI Scientist", company: "Meta", joinedYear: 2013, bio: "Meta Chief AI Scientist。ディープラーニングの先駆者。Turing賞。", links: [12, 19], coauthors: [12, 19], expertise: ["CV", "Deep Learning"] },
+            { id: 12, name: "Yoshua Bengio", role: "Advisor", company: "Meta", joinedYear: 2012, bio: "DL三巨頭。Turing賞受賞。セーフティ提唱。", links: [11, 15], coauthors: [11], expertise: ["DL", "Safety"] },
+
+            // === Microsoft ===
+            { id: 13, name: "Satya Nadella", role: "CEO", company: "Microsoft", joinedYear: 2014, bio: "Microsoft CEO。OpenAI戦略的提携を推進。", links: [14, 3], coauthors: [], expertise: ["Business", "Strategy"] },
+            { id: 14, name: "Kevin Scott", role: "Chief Technology Officer", company: "Microsoft", joinedYear: 2017, bio: "Microsoft CTO。AI戦略の立案者。", links: [13], coauthors: [], expertise: ["AI", "Cloud"] },
+
+            // === xAI / Tesla ===
+            { id: 15, name: "Andrej Karpathy", role: "Director", company: "Tesla", joinedYear: 2017, bio: "Tesla AI Director。CV分野の権威。", links: [3, 11], coauthors: [], expertise: ["CV", "Autonomous"] },
+            { id: 16, name: "Karpathy (Historical)", role: "Former", company: "OpenAI", joinedYear: 2015, bio: "元OpenAI。", links: [], coauthors: [], expertise: [] },
+
+            // === Stanford / Berkeley ===
+            { id: 17, name: "Fei-Fei Li", role: "Professor", company: "Stanford", joinedYear: 2009, bio: "ImageNet創設者。Computer Vision先駆者。", links: [18, 19], coauthors: [18, 19], expertise: ["CV", "AI Ethics"] },
+            { id: 18, name: "Silvio Savarese", role: "Associate Professor", company: "Stanford", joinedYear: 2013, bio: "3D Vision / AI Ethics研究。", links: [17], coauthors: [17], expertise: ["3D Vision"] },
+            { id: 19, name: "Pieter Abbeel", role: "Professor", company: "Berkeley", joinedYear: 2008, bio: "Robotics / RL先駆者。covariate shift専門。", links: [11, 17, 20], coauthors: [11], expertise: ["RL", "Robotics"] },
+            { id: 20, name: "Sergey Levine", role: "Associate Professor", company: "Berkeley", joinedYear: 2016, bio: "Deep RL研究者。", links: [19], coauthors: [19], expertise: ["Deep RL"] },
+
+            // === Academic / Pioneers ===
+            { id: 21, name: "Geoffrey Hinton", role: "Researcher", company: "Stanford", joinedYear: 1985, bio: "Backprop発明。Turing賞。Google Senior Advisor。", links: [12], coauthors: [12], expertise: ["Backprop", "Neural Nets"] },
+            { id: 22, name: "Yan LeCun (Duplicate - Geoffrey)", role: "Advisor", company: "Google", joinedYear: 2013, bio: "参考: Geoffrey Hinton", links: [], coauthors: [], expertise: [] },
+
+            // === Industry Leaders ===
+            { id: 23, name: "Jensen Huang", role: "CEO", company: "Nvidia", joinedYear: 1993, bio: "Nvidia CEO。GPU革命の立役者。", links: [6, 24], coauthors: [], expertise: ["Hardware", "GPUs"] },
+            { id: 24, name: "Bill Dally", role: "Chief Scientist", company: "Nvidia", joinedYear: 2015, bio: "Nvidia CTO。Computer Architecture専門。", links: [6, 23], coauthors: [6], expertise: ["Hardware"] },
+
+            // === Rising Stars ===
+            { id: 25, name: "Aravind Srinivas", role: "CEO", company: "Anthropic", joinedYear: 2021, bio: "Constitutional AI提唱者。", links: [8], coauthors: [8], expertise: ["Safety", "Alignment"] },
+            { id: 26, name: "Daphne Koller", role: "President", company: "insitro", joinedYear: 2018, bio: "Stanford教授→Coursera創設者。ML in Biology。", links: [17], coauthors: [17], expertise: ["ML", "Biology"] },
+            { id: 27, name: "Oren Etzioni", role: "CEO", company: "AI2", joinedYear: 2003, bio: "AI2 CEO。Open science推進。", links: [5], coauthors: [], expertise: ["Knowledge", "Open AI"] },
+
+            // === International / New Generation ===
+            { id: 28, name: "Hinton (Geoffrey Hinton)", role: "Researcher", company: "Google", joinedYear: 2013, bio: "参考: Geoffrey Hinton link to Google", links: [11, 21], coauthors: [11, 21], expertise: ["Neural Nets", "DL"] },
+            { id: 29, name: "Ian Goodfellow", role: "Researcher", company: "DeepMind", joinedYear: 2017, bio: "GAN発明者。Adversarial examples研究。", links: [5], coauthors: [5], expertise: ["GANs", "Adversarial"] },
+            { id: 30, name: "Yoshua Bengio (Turing)", role: "Turing Award", company: "Berkeley", joinedYear: 1985, bio: "ディープラーニングの父。Turing賞。", links: [11, 12, 21], coauthors: [11, 12], expertise: ["DL", "Theory"] },
+
+            // === More Leaders ===
+            { id: 31, name: "Susan Wojcicki", role: "Former CEO", company: "YouTube", joinedYear: 2006, bio: "YouTube CEO。メディア×AI。", links: [13], coauthors: [], expertise: ["Content", "Business"] },
+            { id: 32, name: "Kai-Fu Lee", role: "CEO", company: "Sinovation", joinedYear: 2009, bio: "中国AI投資家。Google China元CEO。", links: [6, 24], coauthors: [], expertise: ["Strategy", "Asia"] },
+        ];
+
+        const svg = d3.select("#graph");
+        const width = document.getElementById("graph-container").offsetWidth;
+        const height = document.getElementById("graph-container").offsetHeight;
+
+        svg.attr("width", width).attr("height", height);
+
+        // Simulation setup
+        const simulation = d3.forceSimulation(peopleData)
+            .force("link", d3.forceLink()
+                .id((d, i) => i)
+                .distance(120))
+            .force("charge", d3.forceManyBody().strength(-400))
+            .force("center", d3.forceCenter(width / 2, height / 2))
+            .force("collision", d3.forceCollide().radius(60));
+
+        // Create links
+        const links = [];
+        peopleData.forEach((person, i) => {
+            person.links?.forEach(linkedId => {
+                if (linkedId !== i && linkedId < peopleData.length) {
+                    links.push({ source: i, target: linkedId, type: "work" });
+                }
+            });
+            person.coauthors?.forEach(linkedId => {
+                if (linkedId !== i && linkedId < peopleData.length) {
+                    links.push({ source: i, target: linkedId, type: "coauthor" });
+                }
+            });
+        });
+
+        const linkSelection = svg.selectAll(".link")
+            .data(links)
+            .enter()
+            .append("line")
+            .attr("class", d => `link ${d.type === "coauthor" ? "coauthor" : ""}`)
+            .attr("stroke", d => d.type === "coauthor" ? "rgba(255, 105, 180, 0.5)" : "rgba(0, 212, 255, 0.3)")
+            .attr("stroke-dasharray", d => d.type === "coauthor" ? "5,5" : "0");
+
+        // Create nodes
+        const nodeSelection = svg.selectAll(".node")
+            .data(peopleData)
+            .enter()
+            .append("circle")
+            .attr("class", "node")
+            .attr("r", d => {
+                if (d.role === "CEO" || d.role === "Founder") return 24;
+                if (d.role === "CTO") return 20;
+                return 16;
+            })
+            .attr("fill", d => {
+                if (d.role === "CEO" || d.role === "Founder") return "#ff6b9d";
+                if (d.role === "CTO" || d.role === "Chief Scientist") return "#00d4ff";
+                if (d.role === "Researcher") return "#4ecdc4";
+                return "#ffd93d";
+            })
+            .call(d3.drag()
+                .on("start", dragstarted)
+                .on("drag", dragged)
+                .on("end", dragended))
+            .on("mouseover", showTooltip)
+            .on("mouseout", hideTooltip)
+            .on("click", selectPerson);
+
+        // Create labels
+        const labels = svg.selectAll("text")
+            .data(peopleData)
+            .enter()
+            .append("text")
+            .attr("dy", ".3em")
+            .text(d => d.name)
+            .style("font-size", "10px")
+            .style("fill", "#e0e0e0");
+
+        // Simulation update
+        simulation.on("tick", () => {
+            linkSelection
+                .attr("x1", d => peopleData[d.source].x)
+                .attr("y1", d => peopleData[d.source].y)
+                .attr("x2", d => peopleData[d.target].x)
+                .attr("y2", d => peopleData[d.target].y);
+
+            nodeSelection
+                .attr("cx", d => d.x)
+                .attr("cy", d => d.y);
+
+            labels
+                .attr("x", d => d.x)
+                .attr("y", d => d.y);
+        });
+
+        // Drag functions
+        function dragstarted(event, d) {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            d.fx = d.x;
+            d.fy = d.y;
+        }
+
+        function dragged(event, d) {
+            d.fx = event.x;
+            d.fy = event.y;
+        }
+
+        function dragended(event, d) {
+            if (!event.active) simulation.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
+        }
+
+        // Tooltip
+        function showTooltip(event, d) {
+            const tooltip = document.getElementById("tooltip");
+            tooltip.innerHTML = `
+                <strong>${d.name}</strong><br>
+                <span style="color: #a0a0ff;">${d.role}</span><br>
+                <span style="color: #00d4ff;">${d.company}</span><br>
+                <span style="color: #80ff80;">参加: ${d.joinedYear}</span>
+            `;
+            tooltip.style.left = (event.pageX + 10) + "px";
+            tooltip.style.top = (event.pageY + 10) + "px";
+            tooltip.style.display = "block";
+        }
+
+        function hideTooltip() {
+            document.getElementById("tooltip").style.display = "none";
+        }
+
+        // Select person
+        function selectPerson(event, d) {
+            document.getElementById("person-info").style.display = "block";
+            document.getElementById("person-info-placeholder").style.display = "none";
+            document.getElementById("person-name").textContent = d.name;
+
+            const linkedPeople = d.links?.map(id => peopleData[id]?.name).filter(Boolean).join(", ") || "なし";
+            const coauthorPeople = d.coauthors?.map(id => peopleData[id]?.name).filter(Boolean).join(", ") || "なし";
+
+            document.getElementById("person-details").innerHTML = `
+                <div class="info-row"><span class="info-label">職位:</span> <span class="info-value">${d.role}</span></div>
+                <div class="info-row"><span class="info-label">企業:</span> <span class="info-value">${d.company}</span></div>
+                <div class="info-row"><span class="info-label">参加:</span> <span class="info-value">${d.joinedYear}年</span></div>
+                <div class="info-row" style="border-bottom: none; margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(0, 212, 255, 0.2);"><span class="info-label" style="width: auto; font-size: 11px;">説明:</span></div>
+                <div style="margin: 6px 0; color: #e0e0e0; font-size: 11px;">${d.bio}</div>
+                <div class="info-row" style="border-bottom: none; margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(0, 212, 255, 0.2);"><span style="color: #a0a0ff; font-weight: bold; font-size: 11px;">同企業: ${linkedPeople}</span></div>
+                <div class="info-row" style="border-bottom: none;"><span style="color: #ff69b4; font-weight: bold; font-size: 11px;">共著論文: ${coauthorPeople}</span></div>
+            `;
+
+            nodeSelection.classed("selected", (p, i) => i === peopleData.indexOf(d));
+        }
+
+        // Search
+        document.getElementById("search").addEventListener("keyup", (e) => {
+            const query = e.target.value.toLowerCase();
+            const visibleIndices = peopleData
+                .map((d, i) => d.name.toLowerCase().includes(query) ? i : -1)
+                .filter(i => i !== -1);
+
+            nodeSelection.style("opacity", (d, i) => visibleIndices.includes(i) ? 1 : 0.2);
+            labels.style("opacity", (d, i) => visibleIndices.includes(i) ? 1 : 0.2);
+            linkSelection.style("opacity", d => visibleIndices.includes(d.source) && visibleIndices.includes(d.target) ? 1 : 0.1);
+
+            updateStats();
+        });
+
+        // Company filter
+        document.getElementById("company-filter").addEventListener("change", (e) => {
+            const company = e.target.value;
+            applyFilters();
+        });
+
+        // Role buttons
+        document.querySelectorAll(".role-btn").forEach(btn => {
+            btn.addEventListener("click", (e) => {
+                e.target.classList.toggle("active");
+                applyFilters();
+            });
+        });
+
+        function applyFilters() {
+            const company = document.getElementById("company-filter").value;
+            const selectedRoles = Array.from(document.querySelectorAll(".role-btn.active")).map(b => b.dataset.role);
+            const year = parseInt(document.getElementById("year-slider").value);
+
+            const visible = peopleData.map((d, i) => {
+                const companyMatch = !company || d.company === company;
+                const roleMatch = selectedRoles.length === 0 || selectedRoles.includes(d.role);
+                const yearMatch = d.joinedYear <= year;
+                return companyMatch && roleMatch && yearMatch ? i : -1;
+            }).filter(i => i !== -1);
+
+            nodeSelection.style("opacity", (d, i) => visible.includes(i) ? 1 : 0.2);
+            labels.style("opacity", (d, i) => visible.includes(i) ? 1 : 0.2);
+            linkSelection.style("opacity", d => visible.includes(d.source) && visible.includes(d.target) ? 1 : 0.05);
+
+            updateStats();
+        }
+
+        // Timeline slider
+        document.getElementById("year-slider").addEventListener("input", (e) => {
+            const year = parseInt(e.target.value);
+            document.getElementById("year-label").textContent = year;
+            applyFilters();
+        });
+
+        // Reset
+        document.getElementById("reset-btn").addEventListener("click", () => {
+            document.getElementById("search").value = "";
+            document.getElementById("company-filter").value = "";
+            document.getElementById("year-slider").value = "2025";
+            document.getElementById("year-label").textContent = "2025";
+            document.querySelectorAll(".role-btn").forEach(b => b.classList.remove("active"));
+            document.getElementById("person-info").style.display = "none";
+            document.getElementById("person-info-placeholder").style.display = "block";
+            nodeSelection.style("opacity", 1);
+            labels.style("opacity", 1);
+            linkSelection.style("opacity", 1);
+            nodeSelection.classed("selected", false);
+            simulation.alpha(1).restart();
+            updateStats();
+        });
+
+        // Update stats
+        function updateStats() {
+            const visibleNodes = d3.selectAll(".node").filter(function() {
+                return d3.select(this).style("opacity") !== "0.2";
+            }).size();
+            const visibleLinks = d3.selectAll(".link").filter(function() {
+                return d3.select(this).style("opacity") !== "0.05";
+            }).size();
+            document.getElementById("node-count").textContent = visibleNodes;
+            document.getElementById("link-count").textContent = visibleLinks;
+        }
+
+        // Initial stats
+        updateStats();
+    </script>
+</body>
+</html>

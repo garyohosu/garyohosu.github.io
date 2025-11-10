@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <g transform="translate(80,110)">
+    <text x="0" y="0" fill="#93c5fd" font-size="34" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">AIニュース・ダイジェスト</text>
+    <text x="0" y="60" fill="#ffffff" font-size="60" font-weight="700" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">2025/11/03–11/05 の主要トピック</text>
+  </g>
+  <g transform="translate(80,300)" fill="#dbeafe" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif" font-size="28">
+    <text x="0" y="0">・OpenAI×AWS 7年$380億契約</text>
+    <text x="0" y="46">・Microsoft×IREN $97億/GB300確保</text>
+    <text x="0" y="92">・UAEへ6万枚GB300出荷許可</text>
+    <text x="0" y="138">・Blackwell「米国内限定」発言</text>
+    <text x="0" y="184">・Google 宇宙DC構想 Suncatcher</text>
+    <text x="0" y="230">・Onsemi 決算、AI需要で予想超え</text>
+  </g>
+  <text x="80" y="590" fill="#94a3b8" font-size="22" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">garyohosu.github.io · 2025-11-05</text>
+</svg>

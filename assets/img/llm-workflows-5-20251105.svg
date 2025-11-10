@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g2)"/>
+  <g transform="translate(80,110)">
+    <text x="0" y="0" fill="#e0f2fe" font-size="36" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">仕事が早い人の</text>
+    <text x="0" y="60" fill="#ffffff" font-size="62" font-weight="700" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">LLMワークフロー5選</text>
+    <text x="0" y="118" fill="#ecfeff" font-size="30" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">要件分解→下書き→検証→根拠→再利用</text>
+  </g>
+  <g transform="translate(80,300)" fill="#f0fdf4" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif" font-size="28">
+    <text x="0" y="0">・議事録→決定要約</text>
+    <text x="0" y="46">・要件分解→仕様ドラフト</text>
+    <text x="0" y="92">・検索併用→根拠強化</text>
+  </g>
+  <text x="80" y="590" fill="#e2e8f0" font-size="22" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">garyohosu.github.io · 2025-11-05</text>
+</svg>

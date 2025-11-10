@@ -1,0 +1,8 @@
+[
+  {"name":"モデル/製品","color":"#3b82f6","patterns":["ChatGPT","GPT","Claude","Gemini","Llama","Copilot","Bedrock","Grok","Qwen","Yi","Kimi","Moonshot"]},
+  {"name":"半導体/インフラ","color":"#f59e0b","patterns":["NVIDIA","Blackwell","Hopper","GB300","TPU","InfiniBand","NVLink","PCIe","Photonic","Data Center","Liquid","Cooling","HPC"]},
+  {"name":"研究/手法","color":"#10b981","patterns":["RAG","Transformers","Diffusion","LoRA","RLHF","DPO","MoE","Speculative","Quantization","INT4","FP8","Tokenizer","Eval","Benchmark"]},
+  {"name":"規制/政策","color":"#e11d48","patterns":["GDPR","AI Act","Export","Residency","Sovereign","Compliance","Copyright","Licensing","Data","Policy"]},
+  {"name":"企業/動向","color":"#a855f7","patterns":["OpenAI","Microsoft","Amazon","AWS","Google","DeepMind","Meta","Anthropic","CoreWeave","Groq","Mistral","Cohere","Perplexity"]}
+]
+

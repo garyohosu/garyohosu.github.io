@@ -1,2 +1,27 @@
 <!-- Custom CSS for color variations -->
 <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+<script>
+  // Simple A/B labeling for hero support CTA. Persists 7 days.
+  document.addEventListener('DOMContentLoaded', function() {
+    try {
+      var el = document.getElementById('support-cta');
+      if (!el) return;
+      var key = 'supportCtaVariant';
+      var rec = JSON.parse(localStorage.getItem(key) || 'null');
+      var now = Date.now();
+      if (!rec || (now - rec.t) > 7*24*3600*1000) {
+        rec = { v: Math.random() < 0.5 ? 'A' : 'B', t: now };
+        localStorage.setItem(key, JSON.stringify(rec));
+      }
+      if (rec.v === 'A') {
+        el.textContent = 'このブログをサポートする';
+        el.style.background = '#0ea5e9';
+        el.setAttribute('aria-label','このブログをサポートする（PayPal）');
+      } else {
+        el.textContent = 'コーヒー1杯分で応援する';
+        el.style.background = '#10b981';
+        el.setAttribute('aria-label','コーヒー1杯分で応援（PayPal）');
+      }
+    } catch(e) { /* no-op */ }
+  });
+  </script>

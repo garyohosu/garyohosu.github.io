@@ -1,3 +1,11 @@
+<!-- Auto-insert Support CTA for posts -->
+{% if page.layout == 'post' %}
+  {% include related-posts.html %}
+  {% if page.cta_support != false %}
+    {% include cta-support.html %}
+  {% endif %}
+{% endif %}
+
 <!-- The Footer (overridden locally to add GenSpark link) -->
 
 <footer

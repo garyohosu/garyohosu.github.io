@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1020"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <g transform="translate(80,120)">
+    <text x="0" y="0" fill="#60a5fa" font-size="34" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">innovaTopia 記事紹介</text>
+    <text x="0" y="58" fill="#ffffff" font-size="60" font-weight="700" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">家庭用ヒューマノイド Neo 予約開始</text>
+    <text x="0" y="112" fill="#e5e7eb" font-size="32" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">1X開発、2026年に米国出荷予定</text>
+  </g>
+  <g transform="translate(80,320)" fill="#dbeafe" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif" font-size="28">
+    <text x="0" y="0">・価格$20,000／予約$200、月額$499プラン</text>
+    <text x="0" y="46">・遠隔操作中心→2026年に自律化へ</text>
+    <text x="0" y="92">・家事タスク／22dBの静音／Human-in-the-Loop</text>
+  </g>
+  <text x="80" y="590" fill="#9ca3af" font-size="22" font-family="'Segoe UI', Roboto, 'Noto Sans JP', sans-serif">garyohosu.github.io · 2025-11-05</text>
+</svg>
