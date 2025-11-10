@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f39c12;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Main Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+
+  <!-- Accent Bar -->
+  <rect x="0" y="0" width="1200" height="8" fill="url(#accentGradient)"/>
+
+  <!-- Title Section -->
+  <text x="60" y="100" font-family="sans-serif" font-size="56" font-weight="bold" fill="#ffffff">
+    AIニュース・ダイジェスト
+  </text>
+
+  <!-- Date Range -->
+  <text x="60" y="160" font-family="sans-serif" font-size="32" fill="#f39c12">
+    2025/11/07–11/10
+  </text>
+
+  <!-- Divider Line -->
+  <line x1="60" y1="185" x2="1140" y2="185" stroke="#e94560" stroke-width="2" opacity="0.5"/>
+
+  <!-- Key Topics Section -->
+  <text x="60" y="250" font-family="sans-serif" font-size="18" fill="#b0b0b0">
+    主要トピック
+  </text>
+
+  <!-- Topic 1 -->
+  <circle cx="90" cy="320" r="8" fill="#e94560"/>
+  <text x="120" y="328" font-family="sans-serif" font-size="22" font-weight="600" fill="#ffffff">
+    Kimi K2 Thinking
+  </text>
+  <text x="120" y="355" font-family="sans-serif" font-size="16" fill="#c0c0c0">
+    Agent機能でChatGPT凌駕 • 訓練費$4.6M
+  </text>
+
+  <!-- Topic 2 -->
+  <circle cx="90" cy="420" r="8" fill="#f39c12"/>
+  <text x="120" y="428" font-family="sans-serif" font-size="22" font-weight="600" fill="#ffffff">
+    Apple × Google Gemini
+  </text>
+  <text x="120" y="455" font-family="sans-serif" font-size="16" fill="#c0c0c0">
+    年間$1B投資でSiri刷新 • 1.2T Parameters
+  </text>
+
+  <!-- Topic 3 -->
+  <circle cx="90" cy="520" r="8" fill="#e94560"/>
+  <text x="120" y="528" font-family="sans-serif" font-size="22" font-weight="600" fill="#ffffff">
+    Microsoft AI独立 + Google Gemini 3
+  </text>
+  <text x="120" y="555" font-family="sans-serif" font-size="16" fill="#c0c0c0">
+    MAI Superintelligence設立 • モデル戦国時代へ
+  </text>
+
+  <!-- Footer -->
+  <text x="60" y="610" font-family="sans-serif" font-size="14" fill="#808080">
+    モデル多元化・マルチクラウド化・Agent本格化 | 出典: CNBC, Bloomberg, Google Cloud
+  </text>
+</svg>

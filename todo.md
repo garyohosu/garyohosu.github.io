@@ -543,3 +543,20 @@ aturalWidth: 1280 を確認。
 - プロンプト整理: 5カテゴリ24本のプロンプトをリンク付きで抜粋し、ブログ記事 `_posts/2025-11-07-openai-customer-success-prompts.md` を作成
 - メモ追記: カテゴリ概要と代表プロンプトを日本語で要約、使い方メモ/所感セクションを追加
 - コミット/プッシュ: `feat(post): share openai cs prompt pack` を main へ反映し、Pages ビルドを監視
+
+## 2025-11-10 追記（AIニュース・ダイジェスト）
+- **期間**: 2025/11/07–11/10（直近3日分、JST）
+- **件数**: 6件（Kimi K2 Thinking / Apple×Google Siri / Sora 2 / Microsoft MAI / Gemini 3 / Google Vertex AI Agent）
+- **強調テーマ**: モデル/生成AI（ユーザー指定）
+- **代表トピック**:
+  - 中国Moonshot「Kimi K2 Thinking」ChatGPT超越のAgent機能（$4.6M訓練費）
+  - Apple × Google Gemini 年間$1B投資で新Siri刷新へ
+  - OpenAI「Sora 2」招待制廃止、著作権者向け収益分配スキーム開始
+  - Microsoft「MAI Superintelligence Team」設立、OpenAI独立研究開始
+  - Google「Gemini 3」発表予告、Agent強化へ
+  - Google Cloud「Vertex AI Agent Engine Runtime」有料化スタート
+- **作成ファイル**:
+  - `_posts/2025-11-10-ai-news-digest.md`
+  - `assets/img/ai-news-20251110.svg`（1200x630 SVG、グラデ+アクセント色）
+- **検索クエリ**: 4クエリで実行（AI news models / ChatGPT Claude Gemini / generative AI products / OpenAI Microsoft Google AI news）
+- **事実確認**: 6トピック全て複数ソースで交差確認、金額・日付・企業名を明記
