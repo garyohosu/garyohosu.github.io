@@ -574,3 +574,10 @@ aturalWidth: 1280 を確認。
   - 内容: ChatGPTを活用した沖縄方言のリアルタイム翻訳ツールの開発。OpenPromptの「方言AI」コンテストをきっかけに実装
   - アイキャッチ: `/assets/img/note.png`（既存のnoteアイコンを使用）
   - タグ: note, AI, ChatGPT, 方言, 翻訳, リアルタイム, 沖縄弁, ウチナーグチ, OpenPrompt
+
+## 2025-11-11 追記（Zenn記事紹介『スクラムからカンバンへ』追加）
+- 記事追加: `_posts/2025-11-11-scrum-to-kanban-article.md`
+  - 参照: Zenn「スクラムからカンバンへの移行——ソフトウェアエンジニアがマネージャーになる時代に」 https://zenn.dev/pivotmedia/articles/engineer-as-manager-scrum-to-kanban
+  - 執筆者: PIVOT Tech Blog（外部記事の紹介）
+  - 内容: AI時代における開発プロセスの転換。スプリント固定計画からカンバン方式への移行、全員がAIをメンバーにもつエンジニアリングマネージャーというビジョンの紹介
+  - タグ: Zenn, スクラム, カンバン, AI, マネジメント, アジャイル
