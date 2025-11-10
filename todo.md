@@ -233,3 +233,17 @@
   - 参照: note「【無料でここまで!?】Gemini CLIが大幅アップデート。ターミナルからAIとの対話が可能に」 https://note.com/hantani/n/n274bb0cfdbf8
   - アイキャッチ: noteのOG画像URLを直接参照（https://assets.st-note.com/production/uploads/images/223698715/8db9ee782bd7d8ab4b0490e2218190fa.png）
   - 要旨: GoogleのGemini CLIが進化し、ターミナル上でAIと直接対話可能に。自然言語での操作や無料での高度な機能利用が魅力。
+
+## 2025-10-30 追記（GensparkのSTLファイル生成記事追加）
+- 記事追加: `_posts/2025-10-30-note-genspark-stl-generation.md`
+  - 参照: note「GensparkのスーパーAIエージェントでSTLファイルを作成」 https://note.com/hantani/n/naa140af2a425
+  - 内容: GensparkのAIエージェントを使った3Dプリンター用STLファイル生成の実験
+  - アイキャッチ: `/assets/img/note.png`（既存のnoteアイコンを使用）
+  - タグ: note, AI, Genspark, STL, 3Dプリンター, AIエージェント, 3Dモデリング
+
+## 2025-11-11 追記（沖縄弁リアルタイム翻訳記事追加）
+- 記事追加: `_posts/2025-11-11-note-okinawan-dialect-realtime-translation.md`
+  - 参照: note「沖縄弁がすぐ分かる！ChatGPTで"方言リアルタイム翻訳"を試してみた」 https://note.com/hantani/n/n104a5701bcbc
+  - 内容: ChatGPTを活用した沖縄方言のリアルタイム翻訳ツールの開発。OpenPromptの「方言AI」コンテストをきっかけに実装
+  - アイキャッチ: `/assets/img/note.png`（既存のnoteアイコンを使用）
+  - タグ: note, AI, ChatGPT, 方言, 翻訳, リアルタイム, 沖縄弁, ウチナーグチ, OpenPrompt
