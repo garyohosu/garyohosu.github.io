@@ -586,3 +586,10 @@ aturalWidth: 1280 を確認。
 - `ainews.md` をAI記事生成用のプロンプトファイルとして更新。
 - 上記プロンプトを実行し、Google Opalなどの最新情報を含むAIトレンド記事を生成。
 - 生成した記事を `_posts/2025-11-11-latest-ai-trends.md` として保存。
+
+## 2025-11-11 追記（Gemini API マルチエージェント対応記事追加）
+- 記事追加: `_posts/2025-11-11-gemini-api-multi-agent-workflows.md`
+  - 参照: Android Central「Google is making it easier to use the Gemini API in multi-agent workflows」 https://www.androidcentral.com/apps-software/ai/google-is-making-it-easier-to-use-the-gemini-api-in-multi-agent-workflows
+  - 内容: GoogleがGemini APIに構造化出力とJSON Schemaサポート拡張を実装。マルチエージェントワークフローでの利用を想定した改善について解説
+  - アイキャッチ: `/assets/img/2025-11-11-gemini-api-multi-agent.svg`（Geminiカラーのグラデーション背景）
+  - タグ: Google, Gemini API, AI, マルチエージェント, JSON Schema, 構造化出力
