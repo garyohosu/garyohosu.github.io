@@ -593,3 +593,10 @@ aturalWidth: 1280 を確認。
   - 内容: GoogleがGemini APIに構造化出力とJSON Schemaサポート拡張を実装。マルチエージェントワークフローでの利用を想定した改善について解説
   - アイキャッチ: `/assets/img/2025-11-11-gemini-api-multi-agent.svg`（Geminiカラーのグラデーション背景）
   - タグ: Google, Gemini API, AI, マルチエージェント, JSON Schema, 構造化出力
+
+## 2025-11-11 追記（OpenAI GPT-5-Codex-Mini発表記事追加）
+- 記事追加: `_posts/2025-11-11-openai-gpt5-codex-mini.md`
+  - 参照: CodeZine「OpenAI、コーディング支援AI「Codex」の小型・高効率版「GPT-5-Codex-Mini」を発表」 https://codezine.jp/news/detail/22531
+  - 内容: OpenAIがGPT-5-Codex-Miniをリリース。軽微な能力低下と引き換えに約4倍の利用が可能な高効率モデルについて解説。自動切り替え機能とレート改善も含む
+  - アイキャッチ: `/assets/img/2025-11-11-openai-gpt5-codex-mini.svg`（OpenAI緑色グラデーション背景）
+  - タグ: OpenAI, GPT-5, Codex, AI, コーディング支援, ChatGPT
