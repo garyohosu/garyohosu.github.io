@@ -1,0 +1,50 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a2332;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10a37f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0ea173;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="100" cy="150" r="90" fill="#10a37f" opacity="0.08"/>
+  <circle cx="1100" cy="500" r="130" fill="#10a37f" opacity="0.08"/>
+
+  <!-- Main title -->
+  <text x="600" y="180" font-size="68" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial, sans-serif">
+    GPT-5-Codex-Mini
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="260" font-size="44" fill="#a0aec0" text-anchor="middle" font-family="Arial, sans-serif">
+    軽量で高効率なコーディングAI
+  </text>
+
+  <!-- Description -->
+  <text x="600" y="340" font-size="32" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">
+    約4倍の利用が可能
+  </text>
+
+  <!-- Bottom accent line -->
+  <rect x="350" y="390" width="500" height="4" fill="url(#accentGradient)"/>
+
+  <!-- Feature boxes -->
+  <g opacity="0.2">
+    <rect x="200" y="450" width="280" height="120" rx="10" fill="#10a37f" stroke="#10a37f" stroke-width="2"/>
+    <text x="340" y="510" font-size="24" fill="white" text-anchor="middle" font-family="Arial, sans-serif">効率的</text>
+
+    <rect x="520" y="450" width="280" height="120" rx="10" fill="#10a37f" stroke="#10a37f" stroke-width="2"/>
+    <text x="660" y="510" font-size="24" fill="white" text-anchor="middle" font-family="Arial, sans-serif">高速</text>
+
+    <rect x="840" y="450" width="280" height="120" rx="10" fill="#10a37f" stroke="#10a37f" stroke-width="2"/>
+    <text x="980" y="510" font-size="24" fill="white" text-anchor="middle" font-family="Arial, sans-serif">統合可能</text>
+  </g>
+</svg>
