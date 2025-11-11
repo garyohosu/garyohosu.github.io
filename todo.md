@@ -263,7 +263,7 @@
 
 ## 2025-10-02 追記（note Gemini CLI MCP サーバー記事紹介）
 - 記事追加: `_posts/2025-10-02-note-gemini-cli-mcp-servers.md` を新規作成。
-  - 参照リンク: 無料で使えるGemini CLIに色々なMCPサーバーを入れてみる: https://note.com/hantani/n/n6c473a3a6626
+  - 参照リンク: 無料で使えるGemini CLIに色々なMCPサーバーを入れる: https://note.com/hantani/n/n6c473a3a6626
   - 要旨: 無料のGemini CLIに7種類のMCPサーバーを追加し、AIエージェントの機能拡張を実現。chrome-devtoolsによるブラウザ自動制御などを紹介。
 - アイキャッチ画像作成: `assets/img/gemini-cli-mcp-servers-note.jpg` を生成（1200x630、グラデーション背景＋テキスト）。
 - コミット予定: `post(note): 無料で使えるGemini CLIに色々なMCPサーバーを入れてみる [2025-10-02]`
@@ -581,3 +581,8 @@ aturalWidth: 1280 を確認。
   - 執筆者: PIVOT Tech Blog（外部記事の紹介）
   - 内容: AI時代における開発プロセスの転換。スプリント固定計画からカンバン方式への移行、全員がAIをメンバーにもつエンジニアリングマネージャーというビジョンの紹介
   - タグ: Zenn, スクラム, カンバン, AI, マネジメント, アジャイル
+
+## 2025-11-11 追記（AI記事生成とプロンプト管理）
+- `ainews.md` をAI記事生成用のプロンプトファイルとして更新。
+- 上記プロンプトを実行し、Google Opalなどの最新情報を含むAIトレンド記事を生成。
+- 生成した記事を `_posts/2025-11-11-latest-ai-trends.md` として保存。
