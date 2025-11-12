@@ -614,3 +614,43 @@ aturalWidth: 1280 を確認。
   - 内容: Windows/Mac両対応のGensparkAIブラウザ。OpenAI AtlasがMac専用だったためPerplexityのCometを試したが制限に達したことから、既に課金利用しているGensparkのAIブラウザを試用。831個のMCPサーバーが利用可能な点を紹介
   - アイキャッチ: `/assets/img/note.png`（既存のnoteアイコンを使用）
   - タグ: note, Genspark, AIブラウザ, MCP, MCPサーバー, Windows, AI, Perplexity, OpenAI
+
+## 2025-11-13 追記（note記事のアイキャッチ画像修正）by Claude Code
+
+### 問題の発生と修正
+- **問題**: GensparkとOkinawan dialect（沖縄弁）の2記事のアイキャッチ画像が同じ `/assets/img/note.png` になっていた
+- **原因**: note記事紹介ポスト追加時に汎用のnote.pngを全ての記事で使い回していたため、視覚的な混同とOGP情報の不適切さが発生
+- **修正内容**:
+  - Genspark記事: `/assets/img/note.png` → `/assets/img/2025-11-12-note-genspark-ai-browser.png`
+  - 沖縄弁記事: `/assets/img/note.png` → `/assets/img/2025-11-11-note-okinawan-dialect.png`
+  - 各note元記事の正式なOG画像をダウンロードして個別ファイルとして保存
+
+### 対策と今後の注意事項
+
+#### ✅ アイキャッチ画像の管理ルール
+1. **note記事紹介時は必ず個別画像を保存する**
+   - 汎用のnote.pngではなく、記事ごとのサムネイル画像を取得
+   - note元記事のOG画像（`og:image`）を参考にする
+
+2. **ファイル命名規則の統一**
+   - 形式: `{YYYY-MM-DD}-{サービス名}-{記事テーマ}.png`
+   - 例: `2025-11-12-note-genspark-ai-browser.png`, `2025-11-11-note-okinawan-dialect.png`
+   - 日付で記事追加順序を把握しやすく、サービス+テーマで記事内容を判別可能に
+
+3. **記事追加時のチェックリスト**
+   - [ ] note元記事のOG画像URLを確認
+   - [ ] `assets/img/`配下にローカル保存（`curl -L` または WebFetch で取得）
+   - [ ] フロントマターの`image.path`を個別ファイルに設定
+   - [ ] ローカルビルドで画像表示を確認
+
+#### ⚠️ 避けるべきパターン
+| ❌ やってはいけないこと | ✅ 推奨する方法 |
+|----------------------|----------------|
+| 複数記事で同じ汎用画像を使い回す | 記事ごとに固有のサムネイル画像を用意 |
+| 記事追加時に画像確認をスキップ | ローカルビルドで表示確認を必須化 |
+| noteの外部URLを直接参照 | 変更に備えてローカル保存を推奨 |
+
+### コミット・デプロイ
+- **修正コミット**: `fix: fix article thumbnails to use note original images`
+- **ブログ記事**: `_posts/2025-11-13-fix-note-article-thumbnails.md`（修正内容の詳細ドキュメント）
+- **デプロイ**: GitHub Actions により自動ビルド・デプロイ成功
