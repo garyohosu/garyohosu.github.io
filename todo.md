@@ -607,3 +607,10 @@ aturalWidth: 1280 を確認。
   - 内容: SETI研究所とNVIDIAが協力し、高速電波バースト(FRB)検出用のAIシステムを開発。600倍の高速処理、精度7%向上、誤検知90%削減を実現。Holoscanプラットフォーム上に構築
   - アイキャッチ: `/assets/img/2025-11-11-seti-ai-space-signal.svg`（深宇宙テーマのグラデーション背景）
   - タグ: SETI, AI, NVIDIA, 宇宙探査, Holoscan, 高速電波バースト, 信号処理
+
+## 2025-11-12 追記（note記事紹介：GensparkのAIブラウザ）
+- 記事追加: `_posts/2025-11-12-note-genspark-ai-browser-831-mcp-servers.md`
+  - 参照: note「Windows対応AIブラウザ『Genspark』を試してみた ― 831個のMCPサーバーが使える衝撃」 https://note.com/hantani/n/n5203b7fab3a5
+  - 内容: Windows/Mac両対応のGensparkAIブラウザ。OpenAI AtlasがMac専用だったためPerplexityのCometを試したが制限に達したことから、既に課金利用しているGensparkのAIブラウザを試用。831個のMCPサーバーが利用可能な点を紹介
+  - アイキャッチ: `/assets/img/note.png`（既存のnoteアイコンを使用）
+  - タグ: note, Genspark, AIブラウザ, MCP, MCPサーバー, Windows, AI, Perplexity, OpenAI
