@@ -600,3 +600,10 @@ aturalWidth: 1280 を確認。
   - 内容: OpenAIがGPT-5-Codex-Miniをリリース。軽微な能力低下と引き換えに約4倍の利用が可能な高効率モデルについて解説。自動切り替え機能とレート改善も含む
   - アイキャッチ: `/assets/img/2025-11-11-openai-gpt5-codex-mini.svg`（OpenAI緑色グラデーション背景）
   - タグ: OpenAI, GPT-5, Codex, AI, コーディング支援, ChatGPT
+
+## 2025-11-11 追記（SETI×NVIDIA 宇宙信号検出AI記事追加）
+- 記事追加: `_posts/2025-11-11-seti-ai-fasteradio-burst-detection.md`
+  - 参照: SETI Research「Revolutionary AI System Achieves 600x Speed Breakthrough in the Search for Signals from Space」 https://www.seti.org/news/revolutionary-ai-system-achieves-600x-speed-breakthrough-in-the-search-for-signals-from-space/
+  - 内容: SETI研究所とNVIDIAが協力し、高速電波バースト(FRB)検出用のAIシステムを開発。600倍の高速処理、精度7%向上、誤検知90%削減を実現。Holoscanプラットフォーム上に構築
+  - アイキャッチ: `/assets/img/2025-11-11-seti-ai-space-signal.svg`（深宇宙テーマのグラデーション背景）
+  - タグ: SETI, AI, NVIDIA, 宇宙探査, Holoscan, 高速電波バースト, 信号処理
