@@ -6,7 +6,7 @@ categories: [Dev, Link]
 tags: [note, AI, ChatGPT, 方言, 翻訳, リアルタイム, 沖縄弁, ウチナーグチ, OpenPrompt]
 description: noteで公開した「沖縄弁がすぐ分かる！ChatGPTで"方言リアルタイム翻訳"を試してみた」を紹介します。AIを活用した方言のリアルタイム翻訳の可能性について。
 image:
-  path: /assets/img/note.png
+  path: /assets/img/2025-11-11-note-okinawan-dialect.png
   alt: 沖縄弁がすぐ分かる！ChatGPTで方言リアルタイム翻訳（note サムネイル）
 ---
 

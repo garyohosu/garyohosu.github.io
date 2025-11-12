@@ -6,7 +6,7 @@ categories: [Dev, Link]
 tags: [note, Genspark, AIブラウザ, MCP, MCPサーバー, Windows, AI, Perplexity, OpenAI]
 description: noteで公開した「Windows対応AIブラウザ『Genspark』を試してみた ― 831個のMCPサーバーが使える衝撃」を紹介します。Windows対応でMCPサーバーを活用できるAIブラウザの可能性について。
 image:
-  path: /assets/img/note.png
+  path: /assets/img/2025-11-12-note-genspark-ai-browser.png
   alt: Windows対応AIブラウザ『Genspark』― 831個のMCPサーバーが使える衝撃（note サムネイル）
 ---
 
