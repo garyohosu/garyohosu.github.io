@@ -1,0 +1,99 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <!-- グラデーション背景 -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10a37f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d8a6e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffb700;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="warmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff8e72;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- 装飾要素 -->
+  <circle cx="100" cy="80" r="60" fill="url(#warmGrad)" opacity="0.15"/>
+  <circle cx="1100" cy="550" r="80" fill="url(#accentGrad)" opacity="0.1"/>
+  <rect x="950" y="150" width="120" height="120" fill="url(#warmGrad)" opacity="0.08" transform="rotate(45 1010 210)"/>
+
+  <!-- GPT-5のアイコン (before) -->
+  <g transform="translate(150, 150)">
+    <!-- 冷たい四角形 -->
+    <rect x="0" y="0" width="140" height="140" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.4)" stroke-width="2" rx="10"/>
+    <!-- ギアアイコン（冷淡さを表現） -->
+    <circle cx="70" cy="70" r="35" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="3"/>
+    <rect x="60" y="20" width="20" height="20" fill="rgba(255,255,255,0.5)"/>
+    <rect x="60" y="100" width="20" height="20" fill="rgba(255,255,255,0.5)"/>
+    <rect x="20" y="60" width="20" height="20" fill="rgba(255,255,255,0.5)"/>
+    <rect x="100" y="60" width="20" height="20" fill="rgba(255,255,255,0.5)"/>
+    <!-- ラベル -->
+    <text x="70" y="260" font-size="14" fill="white" font-weight="bold" text-anchor="middle">GPT-5</text>
+    <text x="70" y="280" font-size="11" fill="rgba(255,255,255,0.7)" text-anchor="middle">評判が悪い</text>
+  </g>
+
+  <!-- 矢印 -->
+  <g transform="translate(380, 220)">
+    <line x1="0" y1="0" x2="100" y2="0" stroke="white" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+        <polygon points="0 0, 10 3, 0 6" fill="white"/>
+      </marker>
+    </defs>
+  </g>
+
+  <!-- GPT-5.1のアイコン (after) -->
+  <g transform="translate(550, 100)">
+    <!-- 温かい丸い形 -->
+    <circle cx="70" cy="70" r="70" fill="url(#warmGrad)" opacity="0.8"/>
+    <circle cx="70" cy="70" r="65" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2"/>
+
+    <!-- 会話バブル（温かさを表現） -->
+    <ellipse cx="50" cy="50" rx="20" ry="25" fill="rgba(255,255,255,0.7)"/>
+    <ellipse cx="90" cy="60" rx="15" ry="20" fill="rgba(255,255,255,0.6)"/>
+    <circle cx="35" cy="75" r="8" fill="rgba(255,255,255,0.5)"/>
+
+    <!-- ハート（温かさを表現） -->
+    <path d="M 70 105 C 65 100 55 100 55 110 C 55 115 70 125 70 125 C 70 125 85 115 85 110 C 85 100 75 100 70 105 Z" fill="rgba(255,255,255,0.8)"/>
+
+    <!-- ラベル -->
+    <text x="70" y="210" font-size="16" fill="white" font-weight="bold" text-anchor="middle">GPT-5.1</text>
+    <text x="70" y="235" font-size="12" fill="rgba(255,255,255,0.8)" text-anchor="middle">温かい会話</text>
+  </g>
+
+  <!-- メインテキスト -->
+  <text x="600" y="410" font-size="48" font-weight="bold" fill="white" text-anchor="middle">温かみのある会話が帰ってきた</text>
+  <text x="600" y="475" font-size="18" fill="rgba(255,255,255,0.9)" text-anchor="middle">OpenAI ChatGPT GPT-5.1 リリース</text>
+  <text x="600" y="510" font-size="14" fill="rgba(255,255,255,0.75)" text-anchor="middle">より正確に、より平易に、より親しみやすく</text>
+
+  <!-- チェックマーク -->
+  <g transform="translate(200, 480)">
+    <circle cx="0" cy="0" r="16" fill="url(#accentGrad)"/>
+    <path d="M -6 0 L 0 5 L 6 -3" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="30" y="6" font-size="14" fill="white">回答の正確性向上</text>
+  </g>
+
+  <g transform="translate(200, 540)">
+    <circle cx="0" cy="0" r="16" fill="url(#accentGrad)"/>
+    <path d="M -6 0 L 0 5 L 6 -3" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="30" y="6" font-size="14" fill="white">カスタム指示の効果向上</text>
+  </g>
+
+  <g transform="translate(750, 480)">
+    <circle cx="0" cy="0" r="16" fill="url(#accentGrad)"/>
+    <path d="M -6 0 L 0 5 L 6 -3" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="30" y="6" font-size="14" fill="white">平易な表現</text>
+  </g>
+
+  <g transform="translate(750, 540)">
+    <circle cx="0" cy="0" r="16" fill="url(#accentGrad)"/>
+    <path d="M -6 0 L 0 5 L 6 -3" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="30" y="6" font-size="14" fill="white">適応的な推論機能</text>
+  </g>
+</svg>
