@@ -25,3 +25,26 @@
     } catch(e) { /* no-op */ }
   });
   </script>
+<script>
+  // Inject a simple hero on homepage with Portfolio link
+  document.addEventListener('DOMContentLoaded', function () {
+    try {
+      if (location.pathname !== '/' && location.pathname !== '/index.html') return;
+      var main = document.querySelector('main[aria-label="Main Content"]');
+      if (!main || document.getElementById('injected-hero')) return;
+
+      var hero = document.createElement('div');
+      hero.id = 'injected-hero';
+      hero.setAttribute('style', 'margin:24px 0 32px; padding:28px; border-radius:16px; background: linear-gradient(135deg, rgba(14,165,163,.12), rgba(14,165,163,.04));');
+      hero.innerHTML = [
+        '<h1 style="margin:0 0 8px; font-weight:800;">コードと実験ログのブログ</h1>',
+        '<p style="margin:0 0 16px; opacity:.9;">AIエージェント／製造自動化・GitHub Pages運用メモを中心に更新中。</p>',
+        '<a class="btn" href="/categories/" style="background:var(--global-theme-color); color:#fff; border-radius:12px; padding:10px 16px;">カテゴリから読む</a>',
+        '<a id="support-cta" class="btn" href="/support/" style="margin-left:8px; background:#0ea5e9; color:#fff; border-radius:12px; padding:10px 16px;">このブログをサポートする</a>',
+        '<a class="btn" href="/portfolio/" style="margin-left:8px; background:#10b981; color:#fff; border-radius:12px; padding:10px 16px;">ポートフォリオを見る</a>'
+      ].join('');
+
+      main.prepend(hero);
+    } catch (e) { /* no-op */ }
+  });
+</script>

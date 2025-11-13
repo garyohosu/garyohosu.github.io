@@ -27,6 +27,17 @@
   - 要点箇条書きの挿入と、`元記事` リンク（note）を末尾に追記。
 - 各コミットごとに GitHub Actions（pages-deploy.yml）が起動し、ビルド状態を確認。
 
+## 2025-11-13 追記（note 記事紹介の追加）
+- 記事紹介ポスト作成: `_posts/2025-11-13-note-genspark-portfolio-site.md`
+  - 参照元: note「Genspark AIブラウザでGitHub MCPサーバーを接続してポートフォリオサイトを作成する完全ガイド」(https://note.com/hantani/n/nbffacaf9e8a9)
+  - サムネ: `assets/img/2025-11-13-note-genspark-portfolio.png` を設定
+  - フロントマター: `image.path` と `description` を整備
+- 記事紹介ポスト作成: `_posts/2025-11-13-note-portfolio-reform.md`
+  - 参照元: note「英語で日本を語り、日本語でAIを語る─ 分断された25,000人を繋いだ、半日のポートフォリオ改革」(https://note.com/hantani/n/nffecd4047fa8)
+  - サムネ取得: note の OG 画像をダウンロードし `assets/img/2025-11-13-note-portfolio-reform.jpeg` として保存
+  - フロントマター: `image.path` と `description` を設定
+- コミット/プッシュ: これらの変更を `origin/main` へ反映
+
 ## 追記（著者設定・リンク整備・公開対応）
 - 著者表示: `_config.yml` の `author.name` を `hantani`、`author.bio` を設定。`social.name` も `hantani` に統一。
 - 記事側の上書き: `_posts/2025-09-06-web-codex-vs-cli.md` に `author:` 行が無いことを確認（上書きなし）。
