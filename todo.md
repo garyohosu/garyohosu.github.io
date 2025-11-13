@@ -692,3 +692,34 @@ aturalWidth: 1280 を確認。
 ### 3. デプロイ
 - **プッシュ**: 両修正・記事追加を `origin/main` へ反映
 - **GitHub Actions**: 自動ビルド・デプロイ成功を確認
+
+## 2025-11-13 追記（note記事紹介：Genspark × GitHub MCP）by Claude Code
+
+### note記事の紹介
+- **記事追加**: `_posts/2025-11-13-note-genspark-github-mcp.md`
+- **参照**: note「Genspark AIブラウザでGitHub MCPサーバーを接続する完全ガイド」 https://note.com/hantani/n/n531dd2e9474d
+- **内容構成**:
+  - Genspark AIブラウザ下部スパナアイコンからのMCPサーバー追加手順
+  - MCPサーバー設定内容：
+    - サーバー名：github
+    - サーバータイプ：Streamable HTTP
+    - サーバーURL：https://api.githubcopilot.com/mcp/
+    - 説明：「GitHub公式MCPサーバー - リポジトリ管理、Issue/PR操作、CI/」
+  - GitHub MCPサーバーの機能：リポジトリ管理、Issue/PR操作、CI/CDパイプライン統合
+  - MCPストアでの追加方法
+
+### 解説セクション
+- **AI-Driven Code Review**: Gensparkの自然言語処理能力を使用したPullRequest自動レビュー
+- **Issue/PR自動生成と管理**: AI指示による自動作成と定型タスク自動化
+- **CI/CDパイプライン自動トリガー**: GitHub Actions直接実行による開発フロー自動化
+- **他ツール比較**: VS Code拡張機能、GitHub Copilot、Claude for GitHub との比較分析
+- **今後の展開**:
+  - GitLab、Bitbucket など他ツール対応
+  - 複数MCPサーバー同時実行による開発ツール統合管理
+  - 日本語プロンプトでの GitHub操作標準化による非英語圏開発者の効率向上
+
+### ファイル・デプロイ
+- **アイキャッチ画像**: `assets/img/2025-11-13-note-genspark-github-mcp.png`（note記事のOG画像をダウンロード保存）
+- **コミット**: `feat(post): noteの記事『Genspark AIブラウザでGitHub MCPサーバーを接続する完全ガイド』を紹介`
+- **プッシュ**: `git pull --rebase && git push` で `origin/main` へ反映（リモート変更により rebase 実行）
+- **GitHub Actions**: 自動ビルド・デプロイ成功を確認
