@@ -654,3 +654,41 @@ aturalWidth: 1280 を確認。
 - **修正コミット**: `fix: fix article thumbnails to use note original images`
 - **ブログ記事**: `_posts/2025-11-13-fix-note-article-thumbnails.md`（修正内容の詳細ドキュメント）
 - **デプロイ**: GitHub Actions により自動ビルド・デプロイ成功
+
+## 2025-11-13 追記（数字修正とOpenAI GPT-5.1記事追加）by Claude Code
+
+### 1. MCP サーバー数の修正
+- **問題**: Genspark記事のタイトル・説明内で「831個」と記載されていたが、正確な数字は「631個」
+- **修正対象**: `_posts/2025-11-12-note-genspark-ai-browser-831-mcp-servers.md`
+- **修正箇所**: 6箇所
+  1. 記事タイトル（フロントマター）
+  2. description（記事説明）
+  3. image.alt（画像代替テキスト）
+  4. 外部リンク（noteへのリンク）
+  5. 記事タイトルセクション
+  6. 記事のポイント箇所
+- **コミット**: `fix: correct MCP server count from 831 to 631 in Genspark post`
+
+### 2. OpenAI GPT-5.1 リリース記事の追加
+- **記事追加**: `_posts/2025-11-13-openai-chatgpt-gpt-5-1-release.md`
+- **参照**: Gizmodo Japan 「ChatGPTに『温かい会話』が帰ってきた。OpenAIがGPT-5.1をリリース、評判が悪かったGPT-5を改善」
+  - URL: https://www.gizmodo.jp/2025/11/openai_chatgpt_gpt_5_1_released.html
+- **内容構成**:
+  - GPT-5の問題点：会話性の不足、冷淡な印象、柔軟性の課題
+  - GPT-5.1の改善点：
+    - 回答の正確性向上
+    - カスタム指示（システムプロンプト）の効果向上
+    - より平易で理解しやすい回答
+    - 適応的な推論機能（問題の複雑さに応じて思考時間を自動調整）
+  - ロールアウト状況：全ChatGPTユーザーで利用可能、GPT-5はレガシーモデルとして継続利用可能
+  - 解説・所感：LLMの競争がUX競争へシフト、他社への示唆、今後の注視点
+- **アイキャッチ画像**: `assets/img/2025-11-13-openai-gpt-5-1-release.svg`
+  - OpenAIグリーン主調のグラデーション背景
+  - GPT-5（冷淡）からGPT-5.1（温かい）への変化を視覚化
+  - 4つの改善点をチェックマーク付きで表示
+- **タグ**: OpenAI, ChatGPT, GPT-5.1, LLM, 会話性, ユーザー体験
+- **コミット**: `feat(post): OpenAI GPT-5.1リリース記事の紹介とサムネ追加`
+
+### 3. デプロイ
+- **プッシュ**: 両修正・記事追加を `origin/main` へ反映
+- **GitHub Actions**: 自動ビルド・デプロイ成功を確認
