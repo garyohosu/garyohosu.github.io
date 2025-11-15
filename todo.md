@@ -811,3 +811,66 @@ aturalWidth: 1280 を確認。
 ### コミット・プッシュ予定
 - **コミット**: `feat(post): note記事2本追加（初の有料記事全力宣伝とごはん難民AIプロンプト）`
 - **プッシュ**: `origin/main` へ反映予定
+
+## 2025-11-15 追記（GitHub Actions エラー修正とバグ修正記事追加）by Claude Code
+
+### 問題の発生
+- **エラー**: GitHub Actions の `Build and Deploy` ワークフローが失敗
+- **原因**: htmlproofer が3つの記事のアイキャッチ画像ファイルの欠落を検出
+  - `2025-11-15-first-paid-note-article.png`
+  - `2025-11-15-note-gohan-nanmin-ai-prompt.png`
+  - `2025-11-14-note-genspark-github-mcp-15min-blog.png`
+- **根本原因**: フロントマターに `image.path` を設定したが、実際の画像ファイルをダウンロード・保存していなかった
+
+### 解決プロセス
+
+#### 1. エラーログの確認
+```bash
+gh run list --limit 5
+gh run view 19384481433 --log-failed
+```
+
+#### 2. note記事のOG画像URL取得
+- WebFetch ツールで各note記事から `og:image` URLを抽出
+  - 初の有料記事: https://assets.st-note.com/production/uploads/images/229397290/0a3c2617b5dd5082abeeeecb7edc31a8.png
+  - ごはん難民プロンプト: https://assets.st-note.com/production/uploads/images/229505413/91cc8844526c2bca259fcfa9ebdb27a5.png
+  - 15分ブログ: https://assets.st-note.com/production/uploads/images/229350485/5e6182fe437d71e8c29e40fe4524ee11.png
+
+#### 3. 画像のダウンロード
+```bash
+curl -L -o "assets/img/2025-11-15-first-paid-note-article.png" "..."
+curl -L -o "assets/img/2025-11-15-note-gohan-nanmin-ai-prompt.png" "..."
+curl -L -o "assets/img/2025-11-14-note-genspark-github-mcp-15min-blog.png" "..."
+```
+
+#### 4. コミット・プッシュ
+- **コミット**: `fix: add missing featured images for 3 note articles`
+- **結果**: GitHub Actions ビルド成功（commit: d887a44）
+
+### 技術記事の追加
+- **記事追加**: `_posts/2025-11-15-fix-missing-featured-images-htmlproofer.md`
+- **内容構成**:
+  - 発生したエラー（GitHub Actions 失敗、htmlproofer のエラーログ）
+  - 原因の特定（画像ファイルの欠落）
+  - 解決方法（OG画像取得、ダウンロード、コミット）
+  - 学んだこと:
+    1. htmlproofer の重要性
+    2. ローカルビルドの重要性
+    3. 画像管理のチェックリスト
+    4. CI/CDの価値
+  - 参考リンク（HTMLProofer、Jekyll、GitHub Actions）
+- **タグ**: GitHub Actions, htmlproofer, CI/CD, Jekyll, デバッグ, エラー修正, 画像管理
+
+### 改善点
+- **推奨ワークフロー**を明記:
+  ```bash
+  bundle exec jekyll build  # エラーチェック
+  bundle exec jekyll serve  # ローカル確認
+  git add -A && git commit && git push
+  ```
+- **画像管理チェックリスト**を作成（note記事紹介時の標準手順）
+
+### 今後の対策
+- 記事作成時に必ずローカルビルドを実行
+- 画像ファイルの存在を確認してからプッシュ
+- note記事紹介時のチェックリストを遵守
