@@ -1,1 +1,1 @@
-$FILE_CONTENT$
+$(cat /home/user/existing_todo.md)
