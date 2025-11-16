@@ -4,9 +4,6 @@ date: 2025-11-15 11:00:00 +0900
 categories: [Dev, Deployment]
 tags: [Cloudflare Pages, GitHub Pages, 静的サイト, デプロイ, ポートフォリオ, DNS, Web開発]
 description: ポートフォリオサイトをCloudflare Pagesに移行した全プロセスを詳細解説。GitHub連携、ビルド設定、カスタムドメイン設定の成功例・失敗例、トラブルシューティングまで網羅。
-image:
-  path: https://www.genspark.ai/api/files/s/8irEOJKQ?cache_control=3600
-  alt: Cloudflare Pagesデプロイガイド
 ---
 
 ## はじめに
