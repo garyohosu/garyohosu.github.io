@@ -6,3 +6,5 @@ $(cat /home/user/existing_todo.md)
 - [x] 2025-11-17 note記事「Genspark AIブラウザは本当に私の画面が「見える」のか？」の紹介記事を追加（Genspark活用術シリーズ第2弾、3つの情報共有方法を解説）。画像もローカルに保存。
 - [x] 2025-11-25 note記事「ChatGPTに『ショッピングリサーチ』機能が追加されたので試して見た。」の紹介記事を作成（`_posts/2025-11-25-note-chatgpt-shopping-research.md`）。
 - [x] 2025-11-25 ショッピングリサーチ機能の紹介記事用にSVG featured imageを作成（`assets/img/2025-11-25-note-chatgpt-shopping-research.svg`）。
+- [x] 2025-11-25 Gemini CLIの起動エラーを解決：`~/.gemini/settings.json`から接続できない`codex` MCPサーバーの設定を削除し、モデル名を`gemini-3.0-pro`から`gemini-2.5-pro`に修正。
+- [x] 2025-11-25 トラブルシューティング記事「Gemini CLIが起動しないエラーを解決：codex MCPサーバーとモデル名の問題」を作成（`_posts/2025-11-25-gemini-cli-codex-mcp-error-fix.md`）。
