@@ -8,3 +8,5 @@ $(cat /home/user/existing_todo.md)
 - [x] 2025-11-25 ショッピングリサーチ機能の紹介記事用にSVG featured imageを作成（`assets/img/2025-11-25-note-chatgpt-shopping-research.svg`）。
 - [x] 2025-11-25 Gemini CLIの起動エラーを解決：`~/.gemini/settings.json`から接続できない`codex` MCPサーバーの設定を削除し、モデル名を`gemini-3.0-pro`から`gemini-2.5-pro`に修正。
 - [x] 2025-11-25 トラブルシューティング記事「Gemini CLIが起動しないエラーを解決：codex MCPサーバーとモデル名の問題」を作成（`_posts/2025-11-25-gemini-cli-codex-mcp-error-fix.md`）。
+- [x] 2025-11-26 Codex CLIの起動エラーを解決：`~/.codex/config.toml`で動作しない`dalle`と`serena` MCPサーバーをコメントアウトし、非推奨の`tools.web_search`を`features.web_search_request`に移行。
+- [x] 2025-11-26 トラブルシューティング記事「Codex CLI起動エラーを解決：MCP設定とweb_search設定の問題」を作成（`_posts/2025-11-26-fix-codex-config-errors.md`）。
