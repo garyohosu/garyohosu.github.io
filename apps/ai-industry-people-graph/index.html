@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI 業界人物相関図ジェネレーター v2</title>
+    <title>AI 業界人物相関図ジェネレーター v2 | AI Industry Network Graph v2</title>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <style>
         * {
@@ -312,6 +312,39 @@
             font-size: 10px;
             color: #a0a0ff;
         }
+
+        .lang-toggle {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(20, 20, 40, 0.95);
+            border: 1px solid #00d4ff;
+            border-radius: 4px;
+            padding: 8px;
+            z-index: 200;
+            display: flex;
+            gap: 8px;
+        }
+
+        .lang-btn {
+            padding: 6px 12px;
+            background: rgba(0, 212, 255, 0.1);
+            border: 1px solid #00d4ff;
+            color: #00d4ff;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.2s;
+        }
+
+        .lang-btn.active {
+            background: rgba(0, 212, 255, 0.4);
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.6);
+        }
+
+        .lang-btn:hover {
+            background: rgba(0, 212, 255, 0.3);
+        }
     </style>
 </head>
 <body>
@@ -378,6 +411,10 @@
         </div>
 
         <div id="graph-container">
+            <div class="lang-toggle">
+                <button class="lang-btn" data-lang="ja">🇯🇵 日本語</button>
+                <button class="lang-btn active" data-lang="en">🇬🇧 English</button>
+            </div>
             <svg id="graph"></svg>
             <div class="tooltip" id="tooltip"></div>
             <div class="timeline-info" id="timeline-info"></div>
@@ -413,6 +450,101 @@
     </div>
 
     <script>
+        // i18n translations
+        const translations = {
+            ja: {
+                title: "🌐 AI 業界相関図 v2",
+                search: "🔍 人物検索",
+                searchPlaceholder: "名前を入力...",
+                companyFilter: "🏢 企業フィルタ",
+                allCompanies: "全て表示",
+                roleFilter: "👔 職位フィルタ",
+                timeline: "📅 タイムライン (2010-2025)",
+                reset: "🔄 リセット",
+                selectedPerson: "📌 選択中の人物",
+                clickNode: "ノードをクリック",
+                statistics: "📊 統計",
+                peopleCount: "人物数",
+                relationCount: "関連性",
+                legendRoles: "【役職】",
+                ceoFounder: "CEO / Founder",
+                ctoVp: "CTO / VP Eng",
+                researcher: "Researcher",
+                academic: "Academic",
+                legendRelations: "【関連性】",
+                sameCompany: "同企業",
+                coAuthor: "共著論文",
+                role: "職位:",
+                company: "企業:",
+                joined: "参加:",
+                year: "年",
+                description: "説明:",
+                sameCompanyPeople: "同企業:",
+                coAuthorPeople: "共著論文:",
+                none: "なし"
+            },
+            en: {
+                title: "🌐 AI Industry Network v2",
+                search: "🔍 Search People",
+                searchPlaceholder: "Enter name...",
+                companyFilter: "🏢 Company Filter",
+                allCompanies: "All Companies",
+                roleFilter: "👔 Role Filter",
+                timeline: "📅 Timeline (2010-2025)",
+                reset: "🔄 Reset",
+                selectedPerson: "📌 Selected Person",
+                clickNode: "Click a node",
+                statistics: "📊 Statistics",
+                peopleCount: "People",
+                relationCount: "Relations",
+                legendRoles: "【Roles】",
+                ceoFounder: "CEO / Founder",
+                ctoVp: "CTO / VP Eng",
+                researcher: "Researcher",
+                academic: "Academic",
+                legendRelations: "【Relations】",
+                sameCompany: "Same Company",
+                coAuthor: "Co-authored Papers",
+                role: "Role:",
+                company: "Company:",
+                joined: "Joined:",
+                year: "",
+                description: "Bio:",
+                sameCompanyPeople: "Same Company:",
+                coAuthorPeople: "Co-authors:",
+                none: "None"
+            }
+        };
+
+        let currentLang = "en";
+
+        function t(key) {
+            return translations[currentLang][key] || key;
+        }
+
+        function updateLanguage() {
+            document.querySelector('h1').textContent = t('title');
+            document.querySelector('label[for="search"]').textContent = t('search');
+            document.getElementById('search').placeholder = t('searchPlaceholder');
+            document.querySelector('label[for="company-filter"]').textContent = t('companyFilter');
+            document.getElementById('company-filter').options[0].textContent = t('allCompanies');
+            document.querySelectorAll('.control-group label')[2].textContent = t('roleFilter');
+            document.querySelector('label[for="year-slider"]').textContent = t('timeline');
+            document.getElementById('reset-btn').textContent = t('reset');
+            document.querySelectorAll('h2')[0].textContent = t('selectedPerson');
+            document.getElementById('person-info-placeholder').textContent = t('clickNode');
+            document.querySelectorAll('h2')[1].textContent = t('statistics');
+            document.querySelectorAll('.stat-label')[0].textContent = t('peopleCount');
+            document.querySelectorAll('.stat-label')[1].textContent = t('relationCount');
+
+            // Update legend
+            const legendDivs = document.querySelectorAll('.legend > div');
+            if (legendDivs.length >= 8) {
+                legendDivs[0].innerHTML = `<span style="color: #00d4ff; font-weight: bold; margin-bottom: 8px;">${t('legendRoles')}</span>`;
+                legendDivs[5].innerHTML = `<span style="color: #00d4ff; font-weight: bold; margin: 12px 0 8px 0; border-top: 1px solid #00d4ff; padding-top: 8px;">${t('legendRelations')}</span>`;
+            }
+        }
+
         // 拡張データセット：AI業界の主要人物（50+人物）
         const peopleData = [
             // === OpenAI ===
@@ -587,7 +719,7 @@
                 <strong>${d.name}</strong><br>
                 <span style="color: #a0a0ff;">${d.role}</span><br>
                 <span style="color: #00d4ff;">${d.company}</span><br>
-                <span style="color: #80ff80;">参加: ${d.joinedYear}</span>
+                <span style="color: #80ff80;">${t('joined')} ${d.joinedYear}${t('year')}</span>
             `;
             tooltip.style.left = (event.pageX + 10) + "px";
             tooltip.style.top = (event.pageY + 10) + "px";
@@ -604,17 +736,17 @@
             document.getElementById("person-info-placeholder").style.display = "none";
             document.getElementById("person-name").textContent = d.name;
 
-            const linkedPeople = d.links?.map(id => peopleData[id]?.name).filter(Boolean).join(", ") || "なし";
-            const coauthorPeople = d.coauthors?.map(id => peopleData[id]?.name).filter(Boolean).join(", ") || "なし";
+            const linkedPeople = d.links?.map(id => peopleData[id]?.name).filter(Boolean).join(", ") || t('none');
+            const coauthorPeople = d.coauthors?.map(id => peopleData[id]?.name).filter(Boolean).join(", ") || t('none');
 
             document.getElementById("person-details").innerHTML = `
-                <div class="info-row"><span class="info-label">職位:</span> <span class="info-value">${d.role}</span></div>
-                <div class="info-row"><span class="info-label">企業:</span> <span class="info-value">${d.company}</span></div>
-                <div class="info-row"><span class="info-label">参加:</span> <span class="info-value">${d.joinedYear}年</span></div>
-                <div class="info-row" style="border-bottom: none; margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(0, 212, 255, 0.2);"><span class="info-label" style="width: auto; font-size: 11px;">説明:</span></div>
+                <div class="info-row"><span class="info-label">${t('role')}</span> <span class="info-value">${d.role}</span></div>
+                <div class="info-row"><span class="info-label">${t('company')}</span> <span class="info-value">${d.company}</span></div>
+                <div class="info-row"><span class="info-label">${t('joined')}</span> <span class="info-value">${d.joinedYear}${t('year')}</span></div>
+                <div class="info-row" style="border-bottom: none; margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(0, 212, 255, 0.2);"><span class="info-label" style="width: auto; font-size: 11px;">${t('description')}</span></div>
                 <div style="margin: 6px 0; color: #e0e0e0; font-size: 11px;">${d.bio}</div>
-                <div class="info-row" style="border-bottom: none; margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(0, 212, 255, 0.2);"><span style="color: #a0a0ff; font-weight: bold; font-size: 11px;">同企業: ${linkedPeople}</span></div>
-                <div class="info-row" style="border-bottom: none;"><span style="color: #ff69b4; font-weight: bold; font-size: 11px;">共著論文: ${coauthorPeople}</span></div>
+                <div class="info-row" style="border-bottom: none; margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(0, 212, 255, 0.2);"><span style="color: #a0a0ff; font-weight: bold; font-size: 11px;">${t('sameCompanyPeople')} ${linkedPeople}</span></div>
+                <div class="info-row" style="border-bottom: none;"><span style="color: #ff69b4; font-weight: bold; font-size: 11px;">${t('coAuthorPeople')} ${coauthorPeople}</span></div>
             `;
 
             nodeSelection.classed("selected", (p, i) => i === peopleData.indexOf(d));
@@ -703,8 +835,27 @@
             document.getElementById("link-count").textContent = visibleLinks;
         }
 
-        // Initial stats
+        // Language toggle
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const lang = e.target.dataset.lang;
+                if (lang === currentLang) return;
+
+                currentLang = lang;
+                document.documentElement.lang = lang;
+
+                // Update active state
+                document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+
+                // Update all UI text
+                updateLanguage();
+            });
+        });
+
+        // Initial setup
         updateStats();
+        updateLanguage();
     </script>
 </body>
 </html>
