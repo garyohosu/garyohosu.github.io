@@ -1,13 +1,13 @@
 ---
 title: X(旧Twitter)のプロフィールを英語対応し、海外への発信を強化します
 date: 2025-12-02 12:00:00 +0900
-author: garyohosu
+author: hantani
 categories: [Blog, Update]
 tags: [X, English, Global]
 thumbnail: assets/img/favicons/favicon-96x96.png
 ---
 
-こんにちは、Gary O'Hosuです。
+こんにちは、hantaniです。
 
 この度、私のX(旧Twitter)アカウントのプロフィールを更新し、日本語に加えて英語での情報発信を本格的に開始することにしました。
 
@@ -30,7 +30,7 @@ thumbnail: assets/img/favicons/favicon-96x96.png
 
 これを機に、ぜひ私のXアカウントをフォローしていただけると嬉しいです。英語でのコミュニケーションはまだ不慣れな点もあるかと思いますが、皆さんとグローバルな舞台で交流できることを楽しみにしています。
 
-[**» 私のXプロフィールをフォローする**](https://x.com/garyohosu)
+[**» 私のXプロフィールをフォローする**](https://x.com/garyo)
 
 いいね、リプライ、リポストなど、気軽に反応をいただけると大変励みになります。
 
