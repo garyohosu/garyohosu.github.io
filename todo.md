@@ -11,3 +11,4 @@ $(cat /home/user/existing_todo.md)
 - [x] 2025-11-26 Codex CLIの起動エラーを解決：`~/.codex/config.toml`で動作しない`dalle`と`serena` MCPサーバーをコメントアウトし、非推奨の`tools.web_search`を`features.web_search_request`に移行。
 - [x] 2025-11-26 トラブルシューティング記事「Codex CLI起動エラーを解決：MCP設定とweb_search設定の問題」を作成（`_posts/2025-11-26-fix-codex-config-errors.md`）。
 - [x] 2025-11-30 AI業界人物相関図アプリ（`apps/ai-industry-people-graph/index.html`）に日本語・英語の多言語対応を実装。デフォルト表示を英語に設定し、左上のボタンで言語切り替え可能に。
+- [x] 2025-12-02 ブログ記事作成: Xでの英語発信開始を告知
