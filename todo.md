@@ -1,5 +1,3 @@
-$(cat /home/user/existing_todo.md)
-
 - [x] 2025-11-17 ブログ記事「note-genspark-portfolio-degrade-fix」の `image.path` を note の OG 画像 URL に変更し、サムネイルを表示できるようにした。
 - [x] 2025-11-17 note記事から画像をダウンロードして `assets/img/2025-11-16-note-genspark-portfolio-degrade-fix.png` に保存し、マークダウンファイルの画像パスをローカルパスに更新した。
 - [x] 2025-11-17 UTF-8エンコーディングエラーを修正：ファイルを正常なバージョン(コミット3952009)に復元し、画像パスをローカルパスに更新した。
@@ -12,3 +10,4 @@ $(cat /home/user/existing_todo.md)
 - [x] 2025-11-26 トラブルシューティング記事「Codex CLI起動エラーを解決：MCP設定とweb_search設定の問題」を作成（`_posts/2025-11-26-fix-codex-config-errors.md`）。
 - [x] 2025-11-30 AI業界人物相関図アプリ（`apps/ai-industry-people-graph/index.html`）に日本語・英語の多言語対応を実装。デフォルト表示を英語に設定し、左上のボタンで言語切り替え可能に。
 - [x] 2025-12-02 ブログ記事作成: Xでの英語発信開始を告知
+- [x] 2025-12-02 ブログ記事の著者名(hantani)とXプロフィールURL(https://x.com/garyo)を修正
