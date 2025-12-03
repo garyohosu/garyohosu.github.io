@@ -12,8 +12,8 @@
   "OpenAI",
   "Codex",
   "categories",
-  "Jekyll",
   "tags",
+  "Jekyll",
   "date",
   "title",
   "img",
@@ -233,6 +233,7 @@
   "CNAME",
   "DALL",
   "Deploy",
+  "English",
   "feature",
   "GPT",
   "Hacker",
@@ -397,6 +398,5 @@
   "招待",
   "支援",
   "政府施策",
-  "業務効率化",
-  "生成AIニュース"
+  "業務効率化"
 ]
