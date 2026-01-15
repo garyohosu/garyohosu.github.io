@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0b1220;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#123447;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38bdf8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+
+  <circle cx="1050" cy="120" r="160" fill="#38bdf8" opacity="0.08"/>
+  <circle cx="180" cy="520" r="200" fill="#22c55e" opacity="0.08"/>
+  <rect x="0" y="0" width="1200" height="8" fill="url(#accentGradient)"/>
+
+  <text x="80" y="110" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="700" fill="#ffffff">
+    3日で加速したAI
+  </text>
+  <text x="80" y="160" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#9ae6ff">
+    リアルタイム推論・個人化・エージェント化
+  </text>
+  <text x="80" y="205" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#22c55e">
+    2026/01/12-01/14
+  </text>
+
+  <line x1="80" y1="235" x2="1120" y2="235" stroke="#38bdf8" stroke-width="2" opacity="0.4"/>
+
+  <text x="80" y="280" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#94a3b8">
+    主要トピック
+  </text>
+
+  <circle cx="95" cy="330" r="6" fill="#22c55e"/>
+  <text x="120" y="337" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="600">
+    OpenAI×Cerebras（超低遅延推論）
+  </text>
+
+  <circle cx="95" cy="390" r="6" fill="#38bdf8"/>
+  <text x="120" y="397" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="600">
+    Personal Intelligence（Gemini連携）
+  </text>
+
+  <circle cx="95" cy="450" r="6" fill="#22c55e"/>
+  <text x="120" y="457" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="600">
+    Slackbot AIエージェント
+  </text>
+
+  <circle cx="640" cy="330" r="6" fill="#38bdf8"/>
+  <text x="665" y="337" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="600">
+    1X 世界モデル（1XWM）
+  </text>
+
+  <circle cx="640" cy="390" r="6" fill="#22c55e"/>
+  <text x="665" y="397" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="600">
+    Veo 3.1（縦動画・4K）
+  </text>
+
+  <circle cx="640" cy="450" r="6" fill="#38bdf8"/>
+  <text x="665" y="457" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="600">
+    AI音楽規制 ＋ セキュリティ投資
+  </text>
+
+  <text x="80" y="590" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#94a3b8">
+    AI News Trends | 6つの進化ポイント
+  </text>
+</svg>

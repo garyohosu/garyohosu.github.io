@@ -4,6 +4,9 @@ title: "3日で加速したAI：リアルタイム推論・個人化・エージ
 date: 2026-01-14 10:00:00 +0900
 categories: [AI, News, Technology]
 tags: [OpenAI, Cerebras, Gemini, Google, Slackbot, エージェント, 世界モデル, Veo, セキュリティ]
+image:
+  path: /assets/img/ai-news-trends-2026-01-14.svg
+  alt: "3日で加速したAIの最新トレンド"
 description: "2026年1月12日から14日の最新ニュースをもとに、生成AI・マルチモーダル・AIエージェント・世界モデル・動画生成・倫理/セキュリティの6トレンドをやさしく解説。"
 ---
 
