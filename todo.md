@@ -13,3 +13,5 @@
 - [x] 2025-12-02 ブログ記事の著者名(hantani)とXプロフィールURL(https://x.com/garyo)を修正
 - [x] 2025-12-02 Google AdSenseスクリプトを全ページに導入し、`ads.txt`を設置
 - [x] 2025-12-11 note記事「【Genspark活用術 #5】今日から開発者になれる。AIデベロッパー3つの開発モードを全部試して分かったこと」の紹介記事を作成（`_posts/2025-12-11-note-genspark-ai-developer-modes.md`）。3つの開発モードを実際に試した力作記事を紹介。
+- [x] 2026-01-15 Jekyll YAML front matterの引用符エラーを修正。`_posts/2025-11-21-note-multi-agent-language-negotiation.md`のtitleとdescription内のダブルクォートが入れ子になっていたためYAMLパースエラーが発生し、タイトルと日付が正しく表示されなかった問題を解決。
+- [x] 2026-01-15 トラブルシューティング記事「Jekyll YAML front matterの引用符エラーを解決」を作成（`_posts/2026-01-15-fix-jekyll-yaml-quote-error.md`）。
