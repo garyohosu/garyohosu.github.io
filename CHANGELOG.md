@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-01-26 (5)
+
+### 変更内容
+- 記事追加: `2026-01-26-note-claude-code-codex-skills.md`（note記事の紹介）
+- 画像追加: `assets/img/2026-01-26-note-claude-code-codex-skills.png`
+
+### 理由
+- noteで公開した「Claude CodeからSkillsでCodexを使う」をブログに掲載するため
+
+---
+
 ## 2026-01-26 (4)
 
 ### 変更内容
