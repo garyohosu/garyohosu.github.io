@@ -1,6 +1,43 @@
-# AGENTS.md - ブログ運用ルールと再発防止策
+# AGENTS.md - ブログ運用ナレッジベース
 
-このファイルはAIエージェントがブログを運用する際のルールと過去の問題から学んだ教訓を記載します。
+このファイルはAIエージェント（Claude Code / Codex CLI / Gemini CLI）がブログを運用する際の共通ナレッジベースです。
+
+---
+
+## プロジェクト概要
+
+- **種別**: Jekyll静的ブログサイト（Chirpyテーマ）
+- **ホスティング**: GitHub Pages
+- **URL**: https://garyohosu.github.io/
+
+## ファイル構成
+
+```
+├── CLAUDE.md       # Claude Code用（AGENTS.mdを参照）
+├── AGENTS.md       # 共通ナレッジベース（このファイル）
+├── CHANGELOG.md    # 変更履歴
+├── _posts/         # ブログ記事
+├── assets/img/     # 画像ファイル
+└── _config.yml     # Jekyll設定（変更注意）
+```
+
+## よく使うコマンド
+
+```bash
+# 類似ファイル名の確認（記事作成前に必須）
+ls _posts/ | grep -i "<キーワード>"
+
+# ローカルビルド（推奨）
+bundle exec jekyll build
+
+# Git操作
+git status
+git diff
+git add <file>
+git commit -m "メッセージ"
+git push
+git pull --rebase
+```
 
 ---
 
@@ -268,3 +305,4 @@ YYYY-MM-DD-<サービス名>-<テーマ>.png
 
 - 2026-01-26: 初版作成（URLスラッグ衝突の再発防止策）
 - 2026-01-26: 過去の全インシデントを追加、運用ルールを整備
+- 2026-01-26: プロジェクト概要・コマンドを追加、共通ナレッジベース化
