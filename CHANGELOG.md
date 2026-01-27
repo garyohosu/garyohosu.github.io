@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-01-27
+
+### 変更内容
+- 記事追加: `2026-01-27-note-github-pages-sakura-cgi-cors.md`（note記事の紹介）
+- 画像追加: `assets/img/2026-01-27-note-github-pages-sakura-cgi-cors.png`
+
+### 理由
+- noteで公開した「GitHub Pages + さくらCGIでCORS問題を解決」をブログに掲載するため
+
+---
+
 ## 2026-01-26 (5)
 
 ### 変更内容
