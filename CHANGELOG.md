@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-01-28
+
+### 変更内容
+- 記事追加: `2026-01-28-mcp-apps-introduction.md`（MCP Appsの紹介記事）
+
+### 理由
+- Model Context Protocolの新拡張機能「MCP Apps」について解説する技術記事を追加
+
+---
+
 ## 2026-01-27
 
 ### 変更内容
