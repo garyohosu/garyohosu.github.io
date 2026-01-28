@@ -62,7 +62,7 @@ NVIDIAは以下をリリースしました：
 
 ## 3. MCP Apps：AIがUIを持つ時代へ
 
-[MCP Apps](http://blog.modelcontextprotocol.io/posts/2026-01-26-mcp-apps/)が1月26日に正式発表されました。これはModel Context Protocol（MCP）の**最初の公式拡張機能**です。
+[MCP Apps](https://blog.modelcontextprotocol.io/posts/2026-01-26-mcp-apps/)が1月26日に正式発表されました。これはModel Context Protocol（MCP）の**最初の公式拡張機能**です。
 
 ### MCP Appsでできること
 
@@ -155,6 +155,6 @@ AnthropicのダリオCEOが、NBC Newsの「Top Story」に出演し、新しい
 - [NVIDIA Releases New Physical AI Models](https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots)
 - [At CES 2026, AI Leaves the Screen | Scientific American](https://www.scientificamerican.com/article/at-ces-2026-ai-leaves-the-screen-and-enters-the-real-world/)
 - [Hyundai AI Robotics Strategy at CES 2026](https://www.hyundai.com/worldwide/en/newsroom/detail/hyundai-motor-group-announces-ai-robotics-strategy-to-lead-human-centered-robotics-era-at-ces-2026-0000001100)
-- [MCP Apps - Model Context Protocol Blog](http://blog.modelcontextprotocol.io/posts/2026-01-26-mcp-apps/)
+- [MCP Apps - Model Context Protocol Blog](https://blog.modelcontextprotocol.io/posts/2026-01-26-mcp-apps/)
 - [In 2026, AI will move from hype to pragmatism | TechCrunch](https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/)
 - [AI 2026 trends | Axios](https://www.axios.com/2026/01/01/ai-2026-money-openai-google-anthropic-agents)

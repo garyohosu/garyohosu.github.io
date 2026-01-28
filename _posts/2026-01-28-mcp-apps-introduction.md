@@ -126,7 +126,7 @@ AnthropicとOpenAIという競合他社が協力して統一仕様を作成し�
 
 ## 参考リンク
 
-- [MCP Apps - Bringing UI Capabilities To MCP Clients](http://blog.modelcontextprotocol.io/posts/2026-01-26-mcp-apps/)
+- [MCP Apps - Bringing UI Capabilities To MCP Clients](https://blog.modelcontextprotocol.io/posts/2026-01-26-mcp-apps/)
 - [Anthropic and OpenAI Join Forces to Standardize Interactive AI Interfaces](https://inkeep.com/blog/anthropic-openai-mcp-apps-extension)
 - [Model Context Protocol公式サイト](https://modelcontextprotocol.io/)
 - [MCP Specification 2025-11-25](https://modelcontextprotocol.io/specification/2025-11-25)
