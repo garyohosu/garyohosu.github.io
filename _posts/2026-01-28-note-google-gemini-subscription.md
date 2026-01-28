@@ -28,7 +28,7 @@ Googleが新しいGeminiサブスクリプションプランを発表しまし�
 | **Google Gemini** | 1,200円（初月600円） | Flow、Whisk、クラウドストレージ |
 | **ChatGPT Plus** | 約3,000円（$20） | GPT-4o、DALL-E、高度な分析 |
 | **Claude Pro** | 約3,000円（$20） | Claude 3.5 Sonnet/Opus、長文対応 |
-| **Genspark Plus** | 約1,500円（$10） | AI検索、レポート生成 |
+| **Genspark Plus** | 約3,000円（$20） | AI検索、レポート生成 |
 
 Geminiの価格設定は他と比べて「微妙に良い」位置づけ。複数のAIサービスに課金している方には、追加の選択肢として検討の価値がありそうです。
 
