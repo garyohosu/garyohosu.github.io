@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-01-28 (3)
+
+### 変更内容
+- 記事追加: `2026-01-28-note-google-gemini-subscription.md`（note記事の紹介）
+- 画像追加: `assets/img/2026-01-28-note-google-gemini-subscription.png`
+
+### 理由
+- noteで公開した「Googleから月1200円のGeminiサブスクが登場した」をブログに掲載するため
+
+---
+
 ## 2026-01-28 (2)
 
 ### 変更内容
