@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-02-01
+
+### 変更内容
+- 記事追加: `2026-02-01-ai-trends-february-week1.md`（2026年2月最新AIトレンド）
+- 画像追加: `assets/img/2026-02-01-ai-trends-february-week1.png`（1.4MB、AI生成）
+
+### 理由
+- 2026年2月の最新3日間のAIニュースをまとめた記事を追加
+- トピック: AlphaGenome（ゲノムAI）、Project Genie（世界生成AI）、AIエージェント、動画生成AI、OpenAIモデル刷新
+- 英語ニュースソース（Google DeepMind、OpenAI、CNBC、BBC、Guardianなど）を日本語で分かりやすく解説
+
+---
+
 ## 2026-01-30
 
 ### 変更内容
