@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0b1020;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1b3a52;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22d3ee;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+
+  <circle cx="1030" cy="120" r="170" fill="#22d3ee" opacity="0.08"/>
+  <circle cx="190" cy="520" r="210" fill="#f97316" opacity="0.08"/>
+  <rect x="0" y="0" width="1200" height="8" fill="url(#accentGradient)"/>
+
+  <text x="80" y="115" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="700" fill="#ffffff">
+    直近3日 AIトレンド
+  </text>
+  <text x="80" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#bae6fd">
+    2026/01/30-02/02
+  </text>
+  <text x="80" y="205" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#f8fafc" opacity="0.85">
+    生成AI・マルチモーダル・AIエージェント・世界モデル・動画生成・安全性
+  </text>
+
+  <line x1="80" y1="235" x2="1120" y2="235" stroke="#22d3ee" stroke-width="2" opacity="0.4"/>
+
+  <text x="80" y="278" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#94a3b8">
+    主要トピック
+  </text>
+
+  <circle cx="95" cy="330" r="6" fill="#f97316"/>
+  <text x="120" y="337" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="600">
+    GPT-4o退役（モデル刷新）
+  </text>
+
+  <circle cx="95" cy="390" r="6" fill="#22d3ee"/>
+  <text x="120" y="397" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="600">
+    AIおもちゃのマルチモーダル
+  </text>
+
+  <circle cx="95" cy="450" r="6" fill="#f97316"/>
+  <text x="120" y="457" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="600">
+    Moltbook（AIエージェントSNS）
+  </text>
+
+  <circle cx="640" cy="330" r="6" fill="#22d3ee"/>
+  <text x="665" y="337" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="600">
+    Project Genie（世界モデル）
+  </text>
+
+  <circle cx="640" cy="390" r="6" fill="#f97316"/>
+  <text x="665" y="397" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="600">
+    Grok Imagine 1.0（動画生成）
+  </text>
+
+  <circle cx="640" cy="450" r="6" fill="#22d3ee"/>
+  <text x="665" y="457" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="600">
+    深層偽造と安全性
+  </text>
+
+  <text x="80" y="590" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#94a3b8">
+    AI News Trends | 6つの進化ポイント
+  </text>
+</svg>
