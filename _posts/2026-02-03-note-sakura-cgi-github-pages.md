@@ -3,7 +3,7 @@ layout: post
 title: "GitHub Pages内だけで完結する「さくらCGI」呼び出し術（403問題回避版）"
 date: 2026-02-03 12:00:00 +0900
 categories: [Note]
-tags: [note, github-pages, sakura, cgi, sqlite, python, cors, 403]
+tags: [note, github-pages, sakura, cgi, sqlite, python, cors, "403"]
 image:
   path: /assets/img/2026-02-02-note-sakura-cgi-github-pages.png
 ---

@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-02-04 (2)
+
+### 変更内容
+- 記事修正: `2026-02-03-note-sakura-cgi-github-pages.md` のタグ `403` を文字列 `"403"` に修正
+- AGENTS.md更新: 数値タグによるビルドエラーのインシデントと対策を追記
+
+### 理由
+- GitHub Actionsで `undefined method 'gsub' for an instance of Integer` エラーが発生し、ビルドが失敗していたため
+
+---
+
 ## 2026-02-04
 
 ### 変更内容
