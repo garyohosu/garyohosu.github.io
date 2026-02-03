@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-02-03
+
+### 変更内容
+- 記事追加: `2026-02-03-note-sakura-cgi-github-pages.md`（note記事の紹介）
+- 画像追加: `assets/img/2026-02-02-note-sakura-cgi-github-pages.png`
+
+### 理由
+- noteで公開した「GitHub Pages内だけで完結する「さくらCGI」呼び出し術（403問題回避版）」をブログに掲載するため
+
+---
+
 ## 2026-02-02
 
 ### 変更内容
