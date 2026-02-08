@@ -89,10 +89,10 @@ git pull --rebase
 - [ ] 可能であれば`bundle exec jekyll build`でローカルビルド確認
 
 ### プッシュ後（★最重要）
-- [ ] **GitHub Actionsのビルド結果をコマンドまたはブラウザで確認したか**（`gh run list --limit 1`）
-- [ ] GitHub Actionsが正常終了（Success）したことを確認したか
-- [ ] サイトにアクセスして記事が正しく表示されるか確認
-- [ ] リンクをクリックして正しいページに遷移するか確認
+- [x] **GitHub Actionsのビルド結果をコマンドまたはブラウザで確認したか**（`gh run list --limit 1`）
+- [x] GitHub Actionsが正常終了（Success）したことを確認したか
+- [x] サイトにアクセスして記事が正しく表示されるか確認
+- [x] リンクをクリックして正しいページに遷移するか確認
 
 ---
 
