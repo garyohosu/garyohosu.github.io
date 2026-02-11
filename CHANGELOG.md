@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-02-11
+
+### 変更内容
+- 記事追加: `2026-02-11-note-magicboxai-save-publish.md`（note記事の紹介）
+- 画像追加: `assets/img/2026-02-11-note-magicboxai-save-publish.png`
+
+### 理由
+- noteで公開した「MagicBoxAIを作った理由：初心者が詰むのは保存と公開だった」をブログに掲載するため
+
+---
+
 ## 2026-02-04 (3)
 
 ### 変更内容
