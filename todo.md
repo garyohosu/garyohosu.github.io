@@ -16,3 +16,4 @@
 - [x] 2026-01-15 Jekyll YAML front matterの引用符エラーを修正。`_posts/2025-11-21-note-multi-agent-language-negotiation.md`のtitleとdescription内のダブルクォートが入れ子になっていたためYAMLパースエラーが発生し、タイトルと日付が正しく表示されなかった問題を解決。
 - [x] 2026-01-15 トラブルシューティング記事「Jekyll YAML front matterの引用符エラーを解決」を作成（`_posts/2026-01-15-fix-jekyll-yaml-quote-error.md`）。
 - [x] 2026-02-09 最新AIトレンド記事「2026年2月最新AIトレンド：『AIエージェント』の大躍進と物理を理解する『世界モデル』の衝撃」を作成（`_posts/2026-02-09-latest-ai-trends-february-week2.md`）し、SVGサムネイル（`assets/img/ai-news-trends-2026-02-09.svg`）を生成。
+- [x] 2026-02-11 note記事「Claude CodeのAgent Teamsを動かしてみる。」の紹介記事を作成（`_posts/2026-02-11-note-claude-code-agent-teams.md`）。OG画像をダウンロードして `assets/img/2026-02-11-note-claude-code-agent-teams.png` に保存。
