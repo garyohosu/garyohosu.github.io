@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+
+  <circle cx="1050" cy="150" r="200" fill="#06b6d4" opacity="0.06"/>
+  <circle cx="150" cy="480" r="180" fill="#8b5cf6" opacity="0.06"/>
+  <rect x="0" y="0" width="1200" height="8" fill="url(#accentGradient)"/>
+
+  <text x="80" y="115" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="700" fill="#ffffff">
+    直近3日 AIトレンド
+  </text>
+  <text x="80" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#bae6fd">
+    2026/02/10-02/12
+  </text>
+  <text x="80" y="205" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#f8fafc" opacity="0.85">
+    Coworkプラグイン・Apple×Gemini・AIエージェント急拡大・AI安全性・EU AI Act
+  </text>
+
+  <line x1="80" y1="235" x2="1120" y2="235" stroke="#06b6d4" stroke-width="2" opacity="0.4"/>
+
+  <text x="80" y="278" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#94a3b8">
+    主要トピック
+  </text>
+
+  <circle cx="95" cy="330" r="6" fill="#8b5cf6"/>
+  <text x="120" y="337" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="600">
+    Claude Coworkプラグイン&amp;株価急落
+  </text>
+
+  <circle cx="95" cy="390" r="6" fill="#06b6d4"/>
+  <text x="120" y="397" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="600">
+    Apple × Google Gemini 歴史的提携
+  </text>
+
+  <circle cx="95" cy="450" r="6" fill="#8b5cf6"/>
+  <text x="120" y="457" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="600">
+    AIエージェント企業導入が40%へ
+  </text>
+
+  <circle cx="640" cy="330" r="6" fill="#06b6d4"/>
+  <text x="665" y="337" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="600">
+    国際AIセーフティレポート2026
+  </text>
+
+  <circle cx="640" cy="390" r="6" fill="#8b5cf6"/>
+  <text x="665" y="397" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="600">
+    EU AI Act 本格施行へ
+  </text>
+
+  <circle cx="640" cy="450" r="6" fill="#06b6d4"/>
+  <text x="665" y="457" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="600">
+    推論ファーストモデルの時代
+  </text>
+
+  <text x="80" y="590" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#94a3b8">
+    AI News Trends | AIが「実用」と「規制」の両立を迫られる週
+  </text>
+</svg>
