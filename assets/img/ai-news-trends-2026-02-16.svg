@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1020"/>
+      <stop offset="100%" stop-color="#123b5c"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="8" fill="url(#bar)"/>
+  <circle cx="1010" cy="120" r="220" fill="#22d3ee" opacity="0.08"/>
+  <circle cx="180" cy="540" r="180" fill="#f59e0b" opacity="0.10"/>
+
+  <text x="80" y="112" font-family="Segoe UI, Arial, sans-serif" font-size="56" font-weight="700" fill="#ffffff">
+    直近3日 AIトレンド
+  </text>
+  <text x="80" y="160" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#bae6fd">
+    2026/02/13-02/16
+  </text>
+
+  <line x1="80" y1="200" x2="1120" y2="200" stroke="#67e8f9" stroke-width="2" opacity="0.45"/>
+
+  <text x="80" y="250" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="600">
+    ・AIエージェント実運用（Airbnb）
+  </text>
+  <text x="80" y="300" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="600">
+    ・モデル再編と生成AI運用の現実化
+  </text>
+  <text x="80" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="600">
+    ・世界モデル評価の新論点
+  </text>
+  <text x="80" y="400" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="600">
+    ・マルチモーダル軽量化で導入加速
+  </text>
+  <text x="80" y="450" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="600">
+    ・動画生成は分業エージェント型へ
+  </text>
+  <text x="80" y="500" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="600">
+    ・AI安全性はインシデント対応重視へ
+  </text>
+
+  <text x="80" y="588" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#cbd5e1">
+    AI News Trends | Practical Operations, Safety, and World Models
+  </text>
+</svg>
