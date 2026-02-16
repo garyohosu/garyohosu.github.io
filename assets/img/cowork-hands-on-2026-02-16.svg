@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a2a4a;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#1a1a3e;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)" />
+
+  <!-- Decorative circles -->
+  <circle cx="100" cy="80" r="200" fill="#e94560" opacity="0.05" />
+  <circle cx="1100" cy="550" r="250" fill="#4ecdc4" opacity="0.05" />
+  <circle cx="600" cy="315" r="300" fill="#a78bfa" opacity="0.03" />
+
+  <!-- Grid dots -->
+  <g opacity="0.08" fill="#ffffff">
+    <circle cx="50" cy="50" r="1.5" /><circle cx="100" cy="50" r="1.5" /><circle cx="150" cy="50" r="1.5" /><circle cx="200" cy="50" r="1.5" /><circle cx="250" cy="50" r="1.5" />
+    <circle cx="50" cy="100" r="1.5" /><circle cx="100" cy="100" r="1.5" /><circle cx="150" cy="100" r="1.5" /><circle cx="200" cy="100" r="1.5" /><circle cx="250" cy="100" r="1.5" />
+    <circle cx="950" cy="530" r="1.5" /><circle cx="1000" cy="530" r="1.5" /><circle cx="1050" cy="530" r="1.5" /><circle cx="1100" cy="530" r="1.5" /><circle cx="1150" cy="530" r="1.5" />
+    <circle cx="950" cy="580" r="1.5" /><circle cx="1000" cy="580" r="1.5" /><circle cx="1050" cy="580" r="1.5" /><circle cx="1100" cy="580" r="1.5" /><circle cx="1150" cy="580" r="1.5" />
+  </g>
+
+  <!-- Main title -->
+  <text x="600" y="160" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif" font-size="52" font-weight="bold" fill="#ffffff">Claude Cowork 実践ガイド</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="215" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif" font-size="24" fill="#a0aec0">非エンジニアでも5分で体感できるAIの実力</text>
+
+  <!-- Accent line -->
+  <rect x="450" y="240" width="300" height="3" rx="1.5" fill="url(#accent)" />
+
+  <!-- Feature cards -->
+  <!-- Card 1: File Organization -->
+  <rect x="80" y="280" width="240" height="220" rx="16" fill="url(#card)" stroke="#e94560" stroke-width="1" opacity="0.9" />
+  <text x="200" y="340" text-anchor="middle" font-size="48">📁</text>
+  <text x="200" y="385" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif" font-size="20" font-weight="bold" fill="#ffffff">ファイル整理</text>
+  <text x="200" y="415" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif" font-size="14" fill="#a0aec0">散らかったフォルダを</text>
+  <text x="200" y="435" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif" font-size="14" fill="#a0aec0">一瞬で整理</text>
+
+  <!-- Card 2: Document Creation -->
+  <rect x="360" y="280" width="240" height="220" rx="16" fill="url(#card)" stroke="#4ecdc4" stroke-width="1" opacity="0.9" />
+  <text x="480" y="340" text-anchor="middle" font-size="48">📄</text>
+  <text x="480" y="385" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif" font-size="20" font-weight="bold" fill="#ffffff">資料作成</text>
+  <text x="480" y="415" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif" font-size="14" fill="#a0aec0">Word・Excel・PPTを</text>
+  <text x="480" y="435" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif" font-size="14" fill="#a0aec0">会話だけで生成</text>
+
+  <!-- Card 3: Data Analysis -->
+  <rect x="640" y="280" width="240" height="220" rx="16" fill="url(#card)" stroke="#a78bfa" stroke-width="1" opacity="0.9" />
+  <text x="760" y="340" text-anchor="middle" font-size="48">📊</text>
+  <text x="760" y="385" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif" font-size="20" font-weight="bold" fill="#ffffff">データ分析</text>
+  <text x="760" y="415" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif" font-size="14" fill="#a0aec0">CSVを渡すだけで</text>
+  <text x="760" y="435" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif" font-size="14" fill="#a0aec0">グラフ付きレポート</text>
+
+  <!-- Card 4: Blog Writing -->
+  <rect x="920" y="280" width="240" height="220" rx="16" fill="url(#card)" stroke="#fbbf24" stroke-width="1" opacity="0.9" />
+  <text x="1040" y="340" text-anchor="middle" font-size="48">✍️</text>
+  <text x="1040" y="385" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif" font-size="20" font-weight="bold" fill="#ffffff">ブログ執筆</text>
+  <text x="1040" y="415" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif" font-size="14" fill="#a0aec0">この記事もCoworkで</text>
+  <text x="1040" y="435" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif" font-size="14" fill="#a0aec0">作成しました</text>
+
+  <!-- Bottom tag line -->
+  <text x="600" y="560" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif" font-size="18" fill="#e94560">Hands-On</text>
+  <text x="600" y="590" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif" font-size="16" fill="#718096">2026.02.16 — garyohosu.github.io</text>
+</svg>
