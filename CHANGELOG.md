@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-02-16 (2)
+
+### 変更内容
+- 記事追加: `2026-02-16-note-claude-cowork-5min.md`（note記事の紹介）
+- 画像追加: `assets/img/2026-02-16-note-claude-cowork-5min.png`（note OG画像）
+
+### 理由
+- noteで公開した「Claude Coworkを実際に使ってみた：非エンジニアでも5分で体感できるAIの本気」をブログで紹介するため
+
+---
+
 ## 2026-02-16
 
 ### 変更内容
