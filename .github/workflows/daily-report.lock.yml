@@ -22,7 +22,7 @@
 # For more information: https://github.github.com/gh-aw/introduction/overview/
 #
 #
-# frontmatter-hash: dacd6d96c134e330985bd1b54a5cb2c7cbe080b08625a86b2e09ef25f3e5e29e
+# frontmatter-hash: 3b545c686bd46a426b23ec9d73eccca9c33e14d0bf52a8864a6efc9e205e12db
 
 name: "Daily Report"
 "on":
@@ -68,6 +68,7 @@ jobs:
     permissions:
       contents: read
       issues: read
+      pull-requests: read
     concurrency:
       group: "gh-aw-copilot-${{ github.workflow }}"
     env:
