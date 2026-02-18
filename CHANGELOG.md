@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-02-18
+
+### 変更内容
+- 記事追加: `2026-02-18-ai-news-trends-february-week3-update.md`（直近3日のAI最新トレンドまとめ）
+- 画像追加: `assets/img/ai-news-trends-2026-02-18.svg`（記事サムネイル）
+
+### 理由
+- 2026/02/16〜02/18（JST）の英語ニュースをもとに、Anthropic Sonnet 4.6・Gemini 3 Deep Think・MiniMax M2.5・NVIDIA Vera Rubin・OpenAI IPO動向などをまとめるため
+
+---
+
 ## 2026-02-16 (2)
 
 ### 変更内容
