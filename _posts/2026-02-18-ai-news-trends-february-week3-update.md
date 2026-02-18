@@ -10,6 +10,12 @@ image:
 description: "2026/02/16〜02/18の最新ニュースをもとに、Anthropic Sonnet 4.6、Gemini 3 Deep Think、MiniMax M2.5、NVIDIA Vera Rubinなど主要トピックをやさしく整理。"
 ---
 
+## 今週のAIニュース 4コマ漫画
+
+![今週のAIニュース4コマ漫画](/assets/img/ai-news-manga-2026-02-18.svg)
+
+---
+
 ## 導入：なぜ今週のAIニュースが重要なのか
 
 2026年2月第3週後半は、主要AIベンダーが一斉に「次の世代」を見せた週でした。Anthropicは新モデルSonnet 4.6を発表、Googleは科学研究向けのGemini 3 Deep Thinkを大幅強化、NVIDIAは次世代AIチップの量産を開始。共通するテーマは **「賢さ」ではなく「実行力」** ── AIが自らコンピュータを操作し、科学の最前線を解き、現実世界のタスクを完遂する方向へ一気にシフトしています。
