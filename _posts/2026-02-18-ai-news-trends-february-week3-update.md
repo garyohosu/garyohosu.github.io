@@ -10,9 +10,9 @@ image:
 description: "2026/02/16〜02/18の最新ニュースをもとに、Anthropic Sonnet 4.6、Gemini 3 Deep Think、MiniMax M2.5、NVIDIA Vera Rubinなど主要トピックをやさしく整理。"
 ---
 
-## 今週のAIニュース 4コマ漫画
+## 今週のAIニュース漫画
 
-![今週のAIニュース4コマ漫画](/assets/img/ai-news-manga-2026-02-18.svg)
+![今週のAIニュース漫画](/assets/img/ai-news-manga-2026-02-18.png)
 
 ---
 
