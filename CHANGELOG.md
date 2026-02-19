@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-02-19 (2)
+
+### 変更内容
+- 記事追加: `2026-02-19-note-github-agentic-workflows-auto-blog.md`（note記事の紹介）
+- 画像追加: `assets/img/2026-02-19-note-github-agentic-workflows-auto-blog.png`（note OG画像）
+
+### 理由
+- noteで公開した「GitHub Agentic Workflowsによる全自動ブログを作った」を既存ブログでも紹介し、導線を作るため
+
+---
+
 ## 2026-02-19
 
 ### 変更内容
