@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-02-19
+
+### 変更内容
+- 記事追加: `2026-02-19-auto-ai-blog-introduction.md`（auto-ai-blog の紹介記事）
+- 画像追加: `assets/img/2026-02-19-auto-ai-blog-launch.svg`（記事サムネイル）
+
+### 理由
+- 新規公開した `https://garyohosu.github.io/auto-ai-blog/` の内容と導線を既存ブログ側で案内するため
+
+---
+
 ## 2026-02-18
 
 ### 変更内容
