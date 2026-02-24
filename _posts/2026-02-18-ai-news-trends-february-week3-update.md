@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "【直近3日】Sonnet 4.6登場・Gemini 3 Deep Think躍進──AIは"実行力"の時代へ"
+title: "【直近3日】Sonnet 4.6登場・Gemini 3 Deep Think躍進──AIは「実行力」の時代へ"
 date: 2026-02-18 09:30:00 +0900
 categories: [AI, News, Technology]
 tags: [Anthropic, Google, OpenAI, NVIDIA, MiniMax, ByteDance, AIエージェント, マルチモーダルAI, 世界モデル, 動画生成AI, AI安全性]

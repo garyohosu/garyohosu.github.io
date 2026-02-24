@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">GitHub Actions Error Fix</title>
+  <desc id="desc">HTMLProofer missing image and YAML quote error incident summary.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1f2937"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="76" y="82" width="1048" height="466" rx="24" fill="none" stroke="url(#line)" stroke-width="6"/>
+  <text x="600" y="220" fill="#f9fafb" font-family="'Segoe UI',sans-serif" font-size="70" font-weight="700" text-anchor="middle">GitHub Actions Build Error</text>
+  <text x="600" y="305" fill="#d1d5db" font-family="'Segoe UI',sans-serif" font-size="42" font-weight="600" text-anchor="middle">HTMLProofer + YAML Front Matter</text>
+  <text x="600" y="385" fill="#9ca3af" font-family="'Segoe UI',sans-serif" font-size="30" text-anchor="middle">Cause Analysis and Preventive Measures</text>
+  <text x="600" y="458" fill="#cbd5e1" font-family="'Segoe UI',sans-serif" font-size="28" text-anchor="middle">2026-02-24</text>
+</svg>

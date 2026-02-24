@@ -4,6 +4,22 @@
 
 ---
 
+## 2026-02-24
+
+### 変更内容
+- 記事修正: `_posts/2026-02-20-chatgpt-vs-claude-comparison-2026.md` の `image` をローカル画像パスに変更
+- 画像追加: `assets/img/2026-02-20-chatgpt-vs-claude-comparison-2026.svg` を追加
+- 記事修正: `_posts/2026-02-18-ai-news-trends-february-week3-update.md` のタイトル引用符を修正（YAMLエラー解消）
+- 記事追加: `_posts/2026-02-24-fix-github-actions-htmlproofer-missing-image-yaml-quote.md`（障害原因と対策まとめ）
+- 画像追加: `assets/img/2026-02-24-fix-github-actions-htmlproofer-missing-image-yaml-quote.svg`（記事サムネイル）
+- `AGENTS.md` にインシデント記録と再発防止チェックを追記
+
+### 理由
+- GitHub Actions の `Build and Deploy` における `htmlproofer` 失敗（存在しない内部画像リンク）を解消するため
+- 併発していた YAML フロントマター引用符エラーを解消し、再発防止ナレッジを更新するため
+
+---
+
 ## 2026-02-19 (2)
 
 ### 変更内容
