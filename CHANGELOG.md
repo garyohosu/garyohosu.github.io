@@ -7,6 +7,8 @@
 ## 2026-02-24
 
 ### 変更内容
+- 記事追加: `_posts/2026-02-24-note-openclaw-openai-flat-rate.md`（note記事の紹介）
+- 画像追加: `assets/img/2026-02-24-note-openclaw-openai-flat-rate.png`（note OG画像）
 - 記事修正: `_posts/2026-02-20-chatgpt-vs-claude-comparison-2026.md` の `image` をローカル画像パスに変更
 - 画像追加: `assets/img/2026-02-20-chatgpt-vs-claude-comparison-2026.svg` を追加
 - 記事修正: `_posts/2026-02-18-ai-news-trends-february-week3-update.md` のタイトル引用符を修正（YAMLエラー解消）
@@ -18,6 +20,7 @@
 - `AGENTS.md` の push後手順を「AI自動確認」に変更
 
 ### 理由
+- noteで公開した「OpenClawはOpenAIの定額モデルがお勧め」を既存ブログでも紹介し、導線を作るため
 - GitHub Actions の `Build and Deploy` における `htmlproofer` 失敗（存在しない内部画像リンク）を解消するため
 - 併発していた YAML フロントマター引用符エラーを解消し、再発防止ナレッジを更新するため
 - push後の確認漏れを防ぎ、毎回同じ確認をAIが自動実行できる状態にするため
