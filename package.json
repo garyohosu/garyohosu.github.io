@@ -6,6 +6,7 @@
     "playwright": "^1.48.0"
   },
   "scripts": {
-    "check:thumb": "node scripts/check-post-thumb.js"
+    "check:thumb": "node scripts/check-post-thumb.js",
+    "check:post-push": "node scripts/ai-post-push-check.mjs"
   }
 }

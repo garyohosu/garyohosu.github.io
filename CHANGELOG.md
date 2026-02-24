@@ -13,10 +13,14 @@
 - 記事追加: `_posts/2026-02-24-fix-github-actions-htmlproofer-missing-image-yaml-quote.md`（障害原因と対策まとめ）
 - 画像追加: `assets/img/2026-02-24-fix-github-actions-htmlproofer-missing-image-yaml-quote.svg`（記事サムネイル）
 - `AGENTS.md` にインシデント記録と再発防止チェックを追記
+- push後のAI自動確認スクリプト `scripts/ai-post-push-check.mjs` を追加
+- `package.json` に `check:post-push` スクリプトを追加
+- `AGENTS.md` の push後手順を「AI自動確認」に変更
 
 ### 理由
 - GitHub Actions の `Build and Deploy` における `htmlproofer` 失敗（存在しない内部画像リンク）を解消するため
 - 併発していた YAML フロントマター引用符エラーを解消し、再発防止ナレッジを更新するため
+- push後の確認漏れを防ぎ、毎回同じ確認をAIが自動実行できる状態にするため
 
 ---
 

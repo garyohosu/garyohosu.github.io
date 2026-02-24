@@ -37,6 +37,9 @@ git add <file>
 git commit -m "メッセージ"
 git push
 git pull --rebase
+
+# push後のAI自動確認
+node scripts/ai-post-push-check.mjs
 ```
 
 ---
@@ -67,6 +70,16 @@ git pull --rebase
 
 **プッシュ後は必ずチェックリストを「未チェック」の状態に戻すこと。また、各ステップの確認を行うごとにチェックを入れること。**
 
+### 4. プッシュ後確認の自動化
+
+**push後確認は人手確認ではなく、AIエージェントがコマンド実行で自動確認すること。**
+
+```bash
+node scripts/ai-post-push-check.mjs
+```
+
+このコマンドで、最新の `Build and Deploy` 成功確認、サイトトップURL確認、当該コミットで変更した記事URL確認まで実施する。
+
 ---
 
 ## 再発防止チェックリスト
@@ -90,10 +103,10 @@ git pull --rebase
 - [ ] 可能であれば`bundle exec jekyll build`でローカルビルド確認
 
 ### プッシュ後（★最重要）
-- [ ] **GitHub Actionsのビルド結果をコマンドまたはブラウザで確認したか**（`gh run list --limit 1`）
-- [ ] GitHub Actionsが正常終了（Success）したことを確認したか
-- [ ] サイトにアクセスして記事が正しく表示されるか確認
-- [ ] リンクをクリックして正しいページに遷移するか確認
+- [ ] AIが `node scripts/ai-post-push-check.mjs` を実行したか
+- [ ] コマンド結果で `Build and Deploy` が正常終了（Success）だったか
+- [ ] コマンド結果で `https://garyohosu.github.io/` が 200/3xx 応答だったか
+- [ ] コマンド結果で当該コミットの変更記事URL（`/posts/<slug>/`）が 200/3xx 応答だったか
 
 ---
 
@@ -132,6 +145,13 @@ git pull --rebase
 **解決**: `assets/img/` に画像を追加し、`image` をローカル画像パスへ修正。`title` の入れ子引用符を `「」` に修正。
 **再発防止**: `image.path` だけでなく `image` も実在ファイルを指すことをチェックし、YAML入れ子引用符を事前確認する。
 
+### カテゴリー8: 運用フローの問題
+#### 2026-02-24: push後確認が手動依存で漏れる問題
+**症状**: push後の `Build and Deploy` 失敗をその場で検知できず、修正が後追いになった。
+**原因**: ルールが人手確認前提で、自動確認コマンドが未整備だった。
+**解決**: `scripts/ai-post-push-check.mjs` を追加し、push後チェックをAIの自動実行手順に変更。
+**再発防止**: AIエージェントは push直後に `node scripts/ai-post-push-check.mjs` を必ず実行する。
+
 ---
 
 ## 更新履歴
@@ -139,3 +159,4 @@ git pull --rebase
 - 2026-02-04: Windows環境でのGitコミット文字化け問題を追加
 - 2026-02-04: 数値タグによるビルドエラーの記録とチェックリスト強化
 - 2026-02-24: HTMLProofer画像リンク切れとYAML引用符エラーの記録を追加
+- 2026-02-24: push後確認をAI自動確認（`ai-post-push-check.mjs`）へ移行
