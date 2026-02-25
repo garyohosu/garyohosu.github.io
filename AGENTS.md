@@ -92,6 +92,7 @@ node scripts/ai-post-push-check.mjs
 ### 記事作成時
 - [ ] `image.path`に指定した画像ファイルが`assets/img/`に存在するか確認
 - [ ] フロントマターで`image:`を使う場合も、同様に実在する画像ファイル（`/assets/img/...`）を指定する
+- [ ] `pic.md` の画像生成時は `model` と `size` の組み合わせを事前確認（`dall-e-3` は `1792x1024`）
 - [ ] note記事紹介時は汎用画像でなく個別のOG画像を取得・保存
 - [ ] **数字のみのタグやカテゴリーは必ずクォートしているか確認**（例: `"403"`）
 - [ ] 外部URLを使う場合はURLが有効か確認
@@ -152,6 +153,13 @@ node scripts/ai-post-push-check.mjs
 **解決**: `scripts/ai-post-push-check.mjs` を追加し、push後チェックをAIの自動実行手順に変更。
 **再発防止**: AIエージェントは push直後に `node scripts/ai-post-push-check.mjs` を必ず実行する。
 
+### カテゴリー9: 画像生成API運用の問題
+#### 2026-02-25: 画像生成サイズ指定ミスマッチ
+**症状**: サムネイル生成時に `Invalid value: '1792x1024'` エラーが発生し、画像が生成されない。
+**原因**: `gpt-image-1` の許容サイズと `dall-e-3` の推奨サイズを混同した。
+**解決**: `pic.md` 手順どおり `dall-e-3` + `1792x1024` + `quality: hd` に修正して再生成。
+**再発防止**: 画像生成前に `model` と `size` の対応をチェックリストで確認する。
+
 ---
 
 ## 更新履歴
@@ -160,3 +168,4 @@ node scripts/ai-post-push-check.mjs
 - 2026-02-04: 数値タグによるビルドエラーの記録とチェックリスト強化
 - 2026-02-24: HTMLProofer画像リンク切れとYAML引用符エラーの記録を追加
 - 2026-02-24: push後確認をAI自動確認（`ai-post-push-check.mjs`）へ移行
+- 2026-02-25: 画像生成APIサイズ指定ミスマッチの記録とチェック項目を追加
