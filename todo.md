@@ -19,3 +19,4 @@
 - [x] 2026-02-11 note記事「Claude CodeのAgent Teamsを動かしてみる。」の紹介記事を作成（`_posts/2026-02-11-note-claude-code-agent-teams.md`）。OG画像をダウンロードして `assets/img/2026-02-11-note-claude-code-agent-teams.png` に保存。
 - [x] 2026-02-16 AIトレンド記事「【直近3日】AIトレンド最前線：エージェント実運用と世界モデル研究が同時加速」を追加（`_posts/2026-02-16-ai-news-trends-february-week3.md`）し、SVGサムネイル（`assets/img/ai-news-trends-2026-02-16.svg`）を生成。
 - [x] 2026-02-16 note記事「Claude Coworkを実際に使ってみた：非エンジニアでも5分で体感できるAIの本気」の紹介記事を作成（`_posts/2026-02-16-note-claude-cowork-5min.md`）。OG画像をダウンロードして `assets/img/2026-02-16-note-claude-cowork-5min.png` に保存。
+- [x] 2026-02-26 note記事「AI戦争の最前線にいるユーザーの体験記」の紹介記事を作成（`_posts/2026-02-26-note-ai-war-frontline-user-experience.md`）。OG画像をダウンロードして `assets/img/2026-02-26-note-ai-war-frontline-user-experience.png` に保存。
