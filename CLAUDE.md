@@ -1,10 +1,10 @@
-# CLAUDE.md
+# Claude Code Project Instructions
 
-**作業開始前に必ず `AGENTS.md` を読んでください。**
+このリポジトリの運用ナレッジは AGENTS.md に集約されている。
+まず AGENTS.md を読んでから作業すること。
 
-AGENTS.mdには以下が記載されています：
-- プロジェクト概要
-- 運用ルール
-- 再発防止チェックリスト
-- 過去のインシデント記録
-- ファイル命名規則
+必ず守るルールは .claude/rules/blog-operation.md にある。
+作業のたびにルール遵守チェックを行うこと。
+
+変更が発生したら必ず CHANGELOG.md を更新する。
+問題を解決したら必ず AGENTS.md にインシデント追記する。
