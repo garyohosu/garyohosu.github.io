@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-03-02
+
+### 変更内容
+- 記事追加: `_posts/2026-02-27-note-openclaw-ollama-local-llm.md`（note記事紹介: OpenClaw × Ollama ローカルLLM運用）
+- 記事追加: `_posts/2026-03-01-note-investor-unnecessary-ai.md`（note記事紹介: 投資家が不要になる日）
+- 画像追加: `assets/img/2026-02-27-note-openclaw-ollama-local-llm.png`（note OG画像）
+- 画像追加: `assets/img/2026-03-01-note-investor-unnecessary-ai.png`（note OG画像）
+
+### 理由
+- noteに公開した2記事をブログで紹介するため
+
+---
+
 ## 2026-03-01
 
 ### 変更内容
