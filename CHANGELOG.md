@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-03-04
+
+### 変更内容
+- 記事追加: `_posts/2026-03-04-note-openclaw-subordinate-local-llm.md`（note記事紹介: OpenClawに部下を作った。ローカルLLMを2台のPCで動かす実験）
+- 画像追加: `assets/img/2026-03-04-note-openclaw-subordinate-local-llm.png`（note OG画像）
+
+### 理由
+- noteに公開した記事をブログで紹介するため
+
+---
+
 ## 2026-03-02
 
 ### 変更内容
