@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-03-05
+
+### 変更内容
+- 記事追加: `_posts/2026-03-05-note-codex-app-windows.md`（note記事紹介: Codex AppがWindows対応になったので動かしてみる）
+- 画像追加: `assets/img/2026-03-05-note-codex-app-windows.png`（note OG画像）
+
+### 理由
+- noteに公開した記事をブログで紹介するため
+
+---
+
 ## 2026-03-04
 
 ### 変更内容
