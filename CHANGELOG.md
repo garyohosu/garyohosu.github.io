@@ -9,9 +9,12 @@
 ### 変更内容
 - 記事追加: `_posts/2026-03-05-note-codex-app-windows.md`（note記事紹介: Codex AppがWindows対応になったので動かしてみる）
 - 画像追加: `assets/img/2026-03-05-note-codex-app-windows.png`（note OG画像）
+- 記事追加: `_posts/2026-03-05-ai-news-trends-march-week2.md`（2026年3月第2週 AI最新トレンド記事）
+- 画像追加: `assets/img/ai-news-manga-2026-03-05.png`（DALL-E 3生成 漫画風サムネイル）
 
 ### 理由
 - noteに公開した記事をブログで紹介するため
+- ainews.md のプロンプトに基づく最新AIニュース週次記事の追加（Claude App Store首位、Gemini 3.1 Pro記録更新、Apple新Siri、NVIDIA動画生成強化、AI反対デモ等）
 
 ---
 
@@ -20,6 +23,8 @@
 ### 変更内容
 - 記事追加: `_posts/2026-03-04-note-openclaw-subordinate-local-llm.md`（note記事紹介: OpenClawに部下を作った。ローカルLLMを2台のPCで動かす実験）
 - 画像追加: `assets/img/2026-03-04-note-openclaw-subordinate-local-llm.png`（note OG画像）
+- 記事追加: `_posts/2026-03-04-note-openclaw-blog-autogenerate.md`（note記事紹介: OpenClawで技術ブログを自動生成）
+- 画像追加: `assets/img/2026-03-04-note-openclaw-blog-autogenerate.png`（DALL-E生成サムネイル）
 
 ### 理由
 - noteに公開した記事をブログで紹介するため
