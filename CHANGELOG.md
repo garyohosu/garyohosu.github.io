@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-03-05 (2)
+
+### 変更内容
+- 記事追加: `_posts/2026-03-05-portfolio-virtual-company.md`（ポートフォリオ更新：バーチャルカンパニーセクション追加の宣伝記事）
+- 画像追加: `assets/img/2026-03-05-portfolio-virtual-company.png`（gpt-image-1生成サムネイル）
+
+### 理由
+- ポートフォリオサイト（hantani-portfolio.pages.dev）にバーチャルカンパニーセクションを追加したため、ブログで告知・宣伝するため
+
+---
+
 ## 2026-03-05
 
 ### 変更内容
