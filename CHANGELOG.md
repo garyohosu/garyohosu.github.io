@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-03-06
+
+### 変更内容
+- 記事追加: `_posts/2026-03-06-note-ai-design-review-translation-site.md`（note記事「AI同士に設計レビューさせて翻訳サイトを作ってみた」紹介記事）
+- 画像追加: `assets/img/2026-03-06-note-ai-design-review-translation-site.png`（note OG画像）
+
+### 理由
+- noteに公開した記事をブログで紹介するため
+
+---
+
 ## 2026-03-05 (3)
 
 ### 変更内容
