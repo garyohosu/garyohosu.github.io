@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-03-11
+
+### 変更内容
+- 記事追加: `_posts/2026-03-11-note-claude-github-beginner.md`（note記事「ClaudeはGitHubにつながるのか？（初心者の方への説明）」紹介記事）
+- 画像追加: `assets/img/2026-03-11-note-claude-github-beginner.png`（サムネイル画像）
+
+### 理由
+- noteに公開した記事をブログで紹介するため
+
+---
+
 ## 2026-03-10
 
 ### 変更内容
