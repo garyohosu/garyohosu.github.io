@@ -19,3 +19,12 @@ order: 3
   <a href="https://garyohosu.github.io/portfolio" target="_blank" rel="noopener noreferrer" style="color:#3b82f6">GitHub Pages版</a>
 </p>
 </details>
+
+## Virtual Company Projects
+
+ブログ内で公開している Virtual Company 系プロジェクトの入口は、専用の親ポータルに集約しています。
+
+<p style="margin:1.0em 0">
+  <a class="btn" style="background:#f59e0b;color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:700" href="/virtual-company/">Virtual Company ページを開く</a>
+  <br><span style="opacity:.85; font-size:.95em">Auto AI Blog / AITecBlog / AI-Broker / WebGame / WomensMagazine の一覧と役割を掲載</span>
+</p>

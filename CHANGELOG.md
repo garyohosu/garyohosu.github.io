@@ -4,6 +4,22 @@
 
 ---
 
+## 2026-03-12
+
+### 変更内容
+- タブ追加: `_tabs/virtual-company.md` を新規作成し、Virtual Company 系プロジェクトの親ポータルを追加
+- タブ追加: `_tabs/privacy-policy.md` と `_tabs/contact.md` を新規作成し、AdSense 対応ページを追加
+- `index.html` を更新し、トップのヒーロー文言に `Virtual Company` を追加、`/virtual-company/` への導線を追加
+- `_tabs/portfolio.md` を更新し、Virtual Company ページへの案内を追加
+- テンプレ未展開の誤記リンクを運用対象ソースで再点検し、公開対象に残っていないことを確認
+
+### 理由
+- 親ポータルであるブログから Virtual Company プロジェクトへ遷移できるようにするため
+- `/privacy-policy/` と `/contact/` を追加し、運用・広告ポリシー上の不足ページを補うため
+- root portal の導線不足とリンク監査の指摘に対応するため
+
+---
+
 ## 2026-03-11
 
 ### 変更内容
