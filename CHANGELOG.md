@@ -4,6 +4,21 @@
 
 ---
 
+## 2026-03-13
+
+### 変更内容
+- `_includes/footer.html`: GenSpark リンクを `https://genspark.ai?via=garyo471` → `https://www.genspark.ai` に変更
+- `tmp_page.html`: git 追跡ファイルとして残っていた一時生成 HTML を `git rm` で削除
+- `portfolio/index.html`: Auto AI Blog・AITecBlog・AI-Broker・WebGame・WomensMagazine の 5 パネルを追加
+
+### 理由
+- CompanyGuardian 日報（2026-03-13）で報告された監視異常 3 件を解消するため
+  1. `LINK_BROKEN: https://genspark.ai?via=garyo471` → アフィリエイト引数を除去して標準 URL に修正
+  2. `LINK_BROKEN: https://garyohosu.github.io/{url}` → tmp_page.html（SimpleJekyllSearch テンプレートを含む一時ファイル）を削除
+  3. ポータル掲載漏れ 5 件 → portfolio/index.html に各 Virtual Company サイトのパネルを追加
+
+---
+
 ## 2026-03-12
 
 ### 変更内容

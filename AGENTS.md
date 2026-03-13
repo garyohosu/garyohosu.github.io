@@ -153,6 +153,19 @@ node scripts/ai-post-push-check.mjs
 **解決**: `scripts/ai-post-push-check.mjs` を追加し、push後チェックをAIの自動実行手順に変更。
 **再発防止**: AIエージェントは push直後に `node scripts/ai-post-push-check.mjs` を必ず実行する。
 
+### カテゴリー10: root-portal 監視異常（CompanyGuardian）
+#### 2026-03-13: root-portal リンク切れ・掲載漏れ
+**症状**: CompanyGuardian 日報で `KEYWORD_MISSING: Virtual Company`、`LINK_BROKEN: https://genspark.ai?via=garyo471`、`LINK_BROKEN: https://garyohosu.github.io/{url}`、ポータル掲載漏れ 5 件が報告された。
+**原因**:
+1. `_includes/footer.html` の GenSpark 紹介リンクがアフィリエイトパラメータ付き URL (`?via=garyo471`) で監視が異常扱いした。
+2. `tmp_page.html`（Jekyll ビルド時の一時生成物）が git 追跡ファイルとして残っており、SimpleJekyllSearch テンプレートの `{url}` が未展開 URL として検知された。
+3. `portfolio/index.html` に Virtual Company 傘下の 5 サイトが個別リンクとして掲載されていなかった。
+**解決**:
+1. `footer.html` の GenSpark リンクを `https://www.genspark.ai` に変更（アフィリエイト引数を除去）。
+2. `tmp_page.html` を `git rm` で削除。
+3. `portfolio/index.html` に Auto AI Blog、AITecBlog、AI-Broker、WebGame、WomensMagazine の各パネルを追加。
+**再発防止**: 一時生成 HTML を git add する前にテンプレート文字列 (`{url}` 等) が含まれていないか確認する。外部アフィリエイトリンクは監視除外リストに登録するか標準 URL を使う。
+
 ### カテゴリー9: 画像生成API運用の問題
 #### 2026-02-25: 画像生成サイズ指定ミスマッチ
 **症状**: サムネイル生成時に `Invalid value: '1792x1024'` エラーが発生し、画像が生成されない。
