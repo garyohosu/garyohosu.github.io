@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-03-14
+
+### 変更内容
+- 記事追加: `_posts/2026-03-14-note-ai-driven-dev-for-non-engineers.md`（note記事「AI駆動開発って何？ 非エンジニアの方向けにやさしく説明してみます」紹介記事）
+- 画像追加: `assets/img/2026-03-14-note-ai-driven-dev-for-non-engineers.png`（OG画像）
+
+### 理由
+- noteに公開した記事をブログで紹介するため
+
+---
+
 ## 2026-03-12
 
 ### 変更内容
