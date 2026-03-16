@@ -9,6 +9,8 @@
 ### 変更内容
 - 記事追加: `_posts/2026-03-16-note-genspark-ai-agent-guide.md`（note記事「Genspark AIエージェント完全ガイド」紹介記事）
 - 画像追加: `assets/img/2026-03-16-note-genspark-ai-agent-guide.png`（OG画像）
+- 記事追加: `_posts/2026-03-16-note-genspark-claw-vs-ai-developer.md`（note記事「Genspark Clawの開発環境 vs AI Developer」紹介記事）
+- 画像追加: `assets/img/2026-03-16-note-genspark-claw-vs-ai-developer.png`（サムネイル画像）
 
 ### 理由
 - noteに公開した記事をブログで紹介するため
