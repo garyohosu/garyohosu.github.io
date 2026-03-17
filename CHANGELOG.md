@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-03-17
+
+### 変更内容
+- 記事追加: `_posts/2026-03-17-note-genspark-credit-guide.md`（note記事「GensparkとGenspark Clawのクレジット完全ガイド」紹介記事）
+- 画像追加: `assets/img/2026-03-17-note-genspark-credit-guide.png`（OG画像）
+
+### 理由
+- noteに公開した記事をブログで紹介するため
+
+---
+
 ## 2026-03-16
 
 ### 変更内容
