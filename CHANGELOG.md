@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-03-20
+
+### 変更内容
+- 記事追加: `_posts/2026-03-20-ai-news-trends-march-week3.md`（AIニュース記事「GPT-5.4登場、Anthropic Institute設立──2026年3月第3週のAI最新トレンド」）
+- 画像追加: `assets/img/ai-news-manga-2026-03-20.png`（漫画風サムネイル、DALL-E 3生成）
+
+### 理由
+- ainews.md プロンプトによる定期AIニュース記事の自動作成
+
+---
+
 ## 2026-03-17
 
 ### 変更内容
