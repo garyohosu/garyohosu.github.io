@@ -27,3 +27,23 @@
 - type: hatena
   icon: "fas fa-link"
   url: "https://garyo.hatenablog.jp/"
+
+- type: auto-ai-blog
+  icon: "fas fa-robot"
+  url: "https://garyohosu.github.io/auto-ai-blog/"
+
+- type: aitecblog
+  icon: "fas fa-microchip"
+  url: "https://garyohosu.github.io/AITecBlog/"
+
+- type: ai-broker
+  icon: "fas fa-briefcase"
+  url: "https://garyohosu.github.io/ai-broker/"
+
+- type: webgame
+  icon: "fas fa-gamepad"
+  url: "https://garyohosu.github.io/webgame/"
+
+- type: womensmagazine
+  icon: "fas fa-book-open"
+  url: "https://garyohosu.github.io/WomensMagazine/"
