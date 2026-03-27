@@ -8,6 +8,10 @@
 
 ### 変更内容
 - 記事追加: `_posts/2026-03-27-ai-news-trends-march-week5.md`（AIニュース記事「2026年3月末のAIニュース：Cursor炎上・中国製AIの台頭・米国でAIチップ密輸摘発」）
+- 記事追加: `_posts/2026-03-23-note-openclaw-virtual-company.md`（note転載「OpenClawで『仮想開発会社』を作ってみた」）
+- 記事追加: `_posts/2026-03-27-note-grok-note-assessment.md`（note転載「Grokに自分のnoteの記事を査定してもらった」）
+- 記事追加: `_posts/2026-03-27-note-openclaw-to-genspark-claw.md`（note転載「OpenClawをGenspark Claw化する方法」）
+- 画像追加: `assets/img/2026-03-23-note-openclaw-virtual-company.png` ほか2枚（DALL-E 3生成サムネイル）
 - 画像追加: `assets/img/ai-news-manga-2026-03-27.png`（漫画風サムネイル、DALL-E 3生成）
 
 ### 理由
