@@ -47,3 +47,19 @@
 - type: womensmagazine
   icon: "fas fa-book-open"
   url: "https://garyohosu.github.io/WomensMagazine/"
+
+- type: aozoradailytranslations
+  icon: "fas fa-language"
+  url: "https://garyohosu.github.io/AozoraDailyTranslations/"
+
+- type: worldclassicsjp
+  icon: "fas fa-scroll"
+  url: "https://garyohosu.github.io/WorldClassicsJP/"
+
+- type: writer
+  icon: "fas fa-pen-nib"
+  url: "https://garyohosu.github.io/writer/"
+
+- type: openclawblog
+  icon: "fas fa-robot"
+  url: "https://garyohosu.github.io/OpenClawBlog/"
