@@ -28,6 +28,10 @@
   icon: "fas fa-link"
   url: "https://garyo.hatenablog.jp/"
 
+- type: magicboxai
+  icon: "fas fa-cube"
+  url: "https://garyo.sakura.ne.jp/magicboxai/"
+
 - type: auto-ai-blog
   icon: "fas fa-robot"
   url: "https://garyohosu.github.io/auto-ai-blog/"
