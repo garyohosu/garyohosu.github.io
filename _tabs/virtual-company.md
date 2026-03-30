@@ -9,6 +9,13 @@ This page is the parent portal for my Virtual Company projects.
 
 AIエージェントで運用・検証している Virtual Company 系プロジェクトの一覧です。ブログ側では役割と導線をまとめ、各サービス側で実験内容を公開しています。
 
+<section style="margin:1.5rem 0; padding:1.25rem; border:1px solid rgba(15,23,42,.12); border-radius:16px; background:rgba(99,102,241,.06);">
+  <h2 style="margin-top:0;">MagicBoxAI</h2>
+  <p><strong>名前:</strong> MagicBoxAI</p>
+  <p><strong>役割:</strong> 生成AI活用プロダクトの実験公開サイト。</p>
+  <p><strong>リンク:</strong> <a href="https://garyo.sakura.ne.jp/magicboxai/" target="_blank" rel="noopener noreferrer">https://garyo.sakura.ne.jp/magicboxai/</a></p>
+</section>
+
 <section style="margin:1.5rem 0; padding:1.25rem; border:1px solid rgba(15,23,42,.12); border-radius:16px; background:rgba(14,165,163,.04);">
   <h2 style="margin-top:0;">Auto AI Blog</h2>
   <p><strong>名前:</strong> Auto AI Blog</p>
