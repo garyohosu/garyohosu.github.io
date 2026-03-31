@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-04-01
+
+### 変更内容
+- 記事追加: `_posts/2026-04-01-note-vibe-coding-rpg-beginner.md`（note転載「高校生向け はじめてのバイブコーディング AIと一緒にRPGを作ってみよう」）
+- 画像追加: `assets/img/2026-04-01-note-vibe-coding-rpg-beginner.png`（note OG画像）
+
+### 理由
+- note記事（高校生向けバイブコーディング/Codex CLI/RPG制作）をブログに紹介記事として追加
+
+---
+
 ## 2026-03-31
 
 ### 変更内容
