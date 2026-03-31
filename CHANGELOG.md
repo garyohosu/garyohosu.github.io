@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-04-01 (2)
+
+### 変更内容
+- 記事追加: `_posts/2026-02-28-note-openclaw-ollama-local-llm-auto-start.md`（note転載「OpenClaw × Ollama 自動起動で「無料ローカルLLM運用」を実戦投入した話」）
+- 記事追加: `_posts/2026-03-01-note-investors-unnecessary.md`（note転載「投資家が不要になる日」）
+- 画像追加: `assets/img/2026-02-28-note-openclaw-ollama-local-llm-auto-start.png`
+- 画像追加: `assets/img/2026-03-01-note-investors-unnecessary.png`
+
+### 理由
+- 未コミットのnote記事2件をブログに追加
+
+---
+
 ## 2026-04-01
 
 ### 変更内容
