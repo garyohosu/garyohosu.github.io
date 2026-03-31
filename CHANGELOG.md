@@ -4,6 +4,21 @@
 
 ---
 
+## 2026-03-31
+
+### 変更内容
+- 記事追加: `_posts/2026-03-31-note-claude-code-codex-plugin.md`（note転載「Claude CodeからCodexを呼んでレビューするOpenAI公式プラグインを試す」）
+- 記事追加: `_posts/2026-03-31-note-codex-app-plugin.md`（note転載「Codex AppにPluginが追加されたので試してみる」）
+- 記事追加: `_posts/2026-03-30-note-chatgpt-python-guide.md`（note転載「ChatGPT Plusユーザー向けPython学習ガイド」）
+- 画像追加: `assets/img/2026-03-31-note-claude-code-codex-plugin.png`（note OG画像）
+- 画像追加: `assets/img/2026-03-31-note-codex-app-plugin.png`（note OG画像）
+- 画像追加: `assets/img/2026-03-30-note-chatgpt-python-guide.png`（note OG画像）
+
+### 理由
+- note記事3件（Codex/Claude Code/Python学習）をブログに紹介記事として追加
+
+---
+
 ## 2026-03-27
 
 ### 変更内容
