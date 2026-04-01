@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-04-01 (4)
+
+### 変更内容
+- 記事追加: `_posts/2026-04-01-note-claude-code-pet-buddy.md`（note記事「Claude Codeでペットを飼う」紹介）
+- 画像追加: `assets/img/2026-04-01-note-claude-code-pet-buddy.png`（noteのOG画像）
+
+### 理由
+- noteに公開した記事をブログで紹介
+
+---
+
 ## 2026-04-01 (3)
 
 ### 変更内容
