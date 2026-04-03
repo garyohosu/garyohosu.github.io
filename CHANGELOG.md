@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-04-03
+
+### 変更内容
+- 記事追加: `_posts/2026-04-03-note-claude-computer-use-windows.md`（note記事「ついにWindows対応。Claude CoworkでComputer Useを使ってみた」紹介）
+- 画像追加: `assets/img/2026-04-03-note-claude-computer-use-windows.png`（noteのOG画像）
+
+### 理由
+- noteに公開した記事をブログで紹介
+
+---
+
 ## 2026-04-01 (4)
 
 ### 変更内容
