@@ -4,6 +4,21 @@
 
 ---
 
+## 2026-04-08
+
+### 変更内容
+- 記事追加: `_posts/2026-04-07-note-vibe-coding-gui-app.md`（note記事「高校生向け はじめてのVibeコーディング AIと一緒にGUIアプリを作ってみよう」紹介）
+- 記事追加: `_posts/2026-04-07-note-vibe-coding-web-publish.md`（note記事「高校生向け はじめてのウェブ公開 GitHubなしでVercelにサイトを出してみよう」紹介）
+- 記事追加: `_posts/2026-04-08-note-vercel-neon-webapp.md`（note記事「初心者でも簡単Webアプリ VercelとNeonで無料公開」紹介）
+- 画像追加: `assets/img/2026-04-07-note-vibe-coding-gui-app.png`（note OG画像）
+- 画像追加: `assets/img/2026-04-07-note-vibe-coding-web-publish.png`（note OG画像）
+- 画像追加: `assets/img/2026-04-08-note-vercel-neon-webapp.jpeg`（note OG画像）
+
+### 理由
+- 新しく公開したnote記事3本をブログでも紹介し、既存の高校生向けバイブコーディング連載とあわせて導線を整えるため
+
+---
+
 ## 2026-04-07
 
 ### 変更内容
