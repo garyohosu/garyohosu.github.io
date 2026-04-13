@@ -7,6 +7,17 @@
 ## 2026-04-13
 
 ### 変更内容
+- スキル追加: `.project/skills/ainews/SKILL.md`（ainews.md を実行する薄いラッパースキル）
+- スキル追加: `.project/skills/note/SKILL.md`（note URL からブログ紹介記事を作るスキル）
+- ドキュメント追加: `.project/skills/README.md`（スキル一覧と使い方）
+### 理由
+- よく使う定型作業（AIニュース作成・note紹介記事作成）をスキル化して短いスキル名で呼び出せるようにした
+
+---
+
+## 2026-04-13 (2)
+
+### 変更内容
 - 記事追加: `_posts/2026-04-13-note-vercel-neon-github-deploy.md`（note記事「GitHub連携によるVercelとNeonの自動デプロイ」紹介）
 - 画像追加: `assets/img/2026-04-13-note-vercel-neon-github-deploy.png`（note OGサムネイル）
 - 記事追加: `_posts/2026-04-13-ai-news-trends-april-week3.md`（AIニュース「2026年4月第3週：Claude新モデル・AIエージェント産業化・世界モデルの夜明け」）
