@@ -7,6 +7,16 @@
 ## 2026-04-13
 
 ### 変更内容
+- 記事追加: `_posts/2026-04-13-note-gemini-cli-vercel-windows.md`（note紹介記事：無料のGemini CLIでWebアプリを作ってVercelで公開する）
+- 画像追加: `assets/img/2026-04-13-note-gemini-cli-vercel-windows.png`（OGサムネイル）
+### 理由
+- noteに公開した記事をブログに紹介
+
+---
+
+## 2026-04-13
+
+### 変更内容
 - スキル移設: `.project/skills/` → `.claude/skills/`（Claude Code プロジェクトスキルの正しい配置先に修正）
 - スキル追加: `.claude/skills/ainews/SKILL.md`（ainews.md を実行する薄いラッパースキル）
 - スキル追加: `.claude/skills/note/SKILL.md`（note URL からブログ紹介記事を作るスキル）
@@ -15,6 +25,16 @@
 ### 理由
 - よく使う定型作業（AIニュース作成・note紹介記事作成）をスキル化して短いスキル名で呼び出せるようにした
 - 初回は `.project/skills/` に誤配置したため `.claude/skills/` へ移設
+
+---
+
+## 2026-04-13 (3)
+
+### 変更内容
+- 記事追加: `_posts/2026-04-13-ai-news-trends-april-week3b.md`（AIニュース「2026年4月第3週：Gemma 4・Meta Muse Spark・MCPが塗り替えるAIの勢力図」）
+- 画像追加: `assets/img/ai-news-manga-2026-04-13b.png`（漫画サムネイル）
+### 理由
+- Gemma 4・Meta Muse Spark・MCP 9700万DL など第3週記事未収録の重要ニュースを補足追加
 
 ---
 
