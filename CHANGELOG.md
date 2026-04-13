@@ -7,9 +7,12 @@
 ## 2026-04-13
 
 ### 変更内容
+- 記事追加: `_posts/2026-04-13-note-vercel-neon-github-deploy.md`（note記事「GitHub連携によるVercelとNeonの自動デプロイ」紹介）
+- 画像追加: `assets/img/2026-04-13-note-vercel-neon-github-deploy.png`（note OGサムネイル）
 - 記事追加: `_posts/2026-04-13-ai-news-trends-april-week3.md`（AIニュース「2026年4月第3週：Claude新モデル・AIエージェント産業化・世界モデルの夜明け」）
 - 画像追加: `assets/img/ai-news-manga-2026-04-13.png`（漫画サムネイル）
 ### 理由
+- noteに公開したVercel+Neon GitHub連携記事をブログに追加
 - 最新AIニュース（2026/04/10〜13）を定期記事として投稿
 
 ---
