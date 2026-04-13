@@ -23,4 +23,5 @@ assets/js/dist
 # Local dev artifacts
 .jekyll.pid
 .jekyll.pid2
-.claude/ 
+.claude/*
+!.claude/skills/

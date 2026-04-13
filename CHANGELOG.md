@@ -7,11 +7,14 @@
 ## 2026-04-13
 
 ### 変更内容
-- スキル追加: `.project/skills/ainews/SKILL.md`（ainews.md を実行する薄いラッパースキル）
-- スキル追加: `.project/skills/note/SKILL.md`（note URL からブログ紹介記事を作るスキル）
-- ドキュメント追加: `.project/skills/README.md`（スキル一覧と使い方）
+- スキル移設: `.project/skills/` → `.claude/skills/`（Claude Code プロジェクトスキルの正しい配置先に修正）
+- スキル追加: `.claude/skills/ainews/SKILL.md`（ainews.md を実行する薄いラッパースキル）
+- スキル追加: `.claude/skills/note/SKILL.md`（note URL からブログ紹介記事を作るスキル）
+- ドキュメント追加: `.claude/skills/README.md`（スキル一覧と使い方）
+- `.gitignore` 修正: `.claude/*` + `!.claude/skills/` でスキルのみ追跡対象に
 ### 理由
 - よく使う定型作業（AIニュース作成・note紹介記事作成）をスキル化して短いスキル名で呼び出せるようにした
+- 初回は `.project/skills/` に誤配置したため `.claude/skills/` へ移設
 
 ---
 
