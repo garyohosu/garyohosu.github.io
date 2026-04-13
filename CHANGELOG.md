@@ -7,6 +7,16 @@
 ## 2026-04-13
 
 ### 変更内容
+- 記事追加: `_posts/2026-04-13-note-markitdown-microsoft.md`（note紹介記事：マイクロソフト公式ツール「MarkItDown」を試す）
+- 画像追加: `assets/img/2026-04-13-note-markitdown-microsoft.png`（OGサムネイル）
+### 理由
+- noteに公開した記事をブログに紹介
+
+---
+
+## 2026-04-13
+
+### 変更内容
 - 記事追加: `_posts/2026-04-13-note-gemini-cli-vercel-windows.md`（note紹介記事：無料のGemini CLIでWebアプリを作ってVercelで公開する）
 - 画像追加: `assets/img/2026-04-13-note-gemini-cli-vercel-windows.png`（OGサムネイル）
 ### 理由
