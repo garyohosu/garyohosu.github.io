@@ -9,6 +9,8 @@
 ### 変更内容
 - 記事追加: `_posts/2026-04-14-note-genspark-claw-credit-tips.md`（note紹介記事：Genspark Clawのクレジット消費量を減らすには）
 - 画像追加: `assets/img/2026-04-14-note-genspark-claw-credit-tips.jpg`（OGサムネイル）
+- 記事追加: `_posts/2026-04-14-note-genspark-claw-desktop.md`（note紹介記事：Genspark Claw デスクトップ使ってみる）
+- 画像追加: `assets/img/2026-04-14-note-genspark-claw-desktop.png`（OGサムネイル）
 ### 理由
 - noteに公開した記事をブログに紹介
 
