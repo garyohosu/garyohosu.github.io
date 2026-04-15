@@ -7,6 +7,8 @@
 ## 2026-04-15
 
 ### 変更内容
+- 記事追加: `_posts/2026-04-15-note-claude-code-token-saving.md`（note紹介記事：Claude Codeのトークン節約術）
+- 画像追加: `assets/img/2026-04-15-note-claude-code-token-saving.png`（OGサムネイル）
 - 記事追加: `_posts/2026-04-15-note-claude-cowork-update.md`（note紹介記事：Claude Coworkが大幅バージョンアップ）
 - 画像追加: `assets/img/2026-04-15-note-claude-cowork-update.png`（OGサムネイル）
 ### 理由
