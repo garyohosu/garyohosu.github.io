@@ -1,0 +1,57 @@
+name: Daily AI News
+
+on:
+  schedule:
+    - cron: '0 21 * * *'  # 6:00 AM JST (UTC+9)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Generate AI news article
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          TODAY=$(TZ=Asia/Tokyo date +%Y-%m-%d)
+          COUNT=$(ls _posts/${TODAY}-ai-weekly-news-*.md 2>/dev/null | wc -l || echo 0)
+          SLUG="${TODAY}-ai-weekly-news-$(printf '%03d' $((COUNT + 1)))"
+
+          claude -p "以下の手順で記事を生成してください:
+
+1. ainews.md を読み、その指示に従って今日のAIニュース記事を作成する
+2. pic.md を読み、その指示に従って DALL-E 3 で漫画風サムネイルイラストを生成する
+3. 記事を _posts/${SLUG}.md として保存する
+4. 画像を assets/img/ai-news-manga-${TODAY}.png として保存する
+5. 記事フロントマターの image.path に /assets/img/ai-news-manga-${TODAY}.png を設定する
+
+今日の日付は ${TODAY} です。" \
+            --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
+
+      - name: Commit and push
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          TODAY=$(TZ=Asia/Tokyo date +%Y-%m-%d)
+          git add _posts/ assets/img/
+          if git diff --cached --quiet; then
+            echo "No article generated"
+            exit 0
+          fi
+          git commit -m "feat(posts): auto AI news ${TODAY}"
+          git push
