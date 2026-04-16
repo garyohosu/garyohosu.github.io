@@ -25,3 +25,6 @@ assets/js/dist
 .jekyll.pid2
 .claude/*
 !.claude/skills/
+!.claude/hooks/
+!.claude/settings.json
+.claude/secrets.env
