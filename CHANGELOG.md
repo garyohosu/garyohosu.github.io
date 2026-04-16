@@ -11,6 +11,8 @@
 - 画像追加: `assets/img/ai-news-manga-2026-04-16.png`（漫画サムネイル・既存画像を流用、OPENAI_API_KEY未設定のため）
 - 記事追加: `_posts/2026-04-16-note-gemini-personal-intelligence.md`（note紹介記事：GeminiのPersonal Intelligence機能を試してみる）
 - 画像追加: `assets/img/2026-04-16-note-gemini-personal-intelligence.png`（note OGサムネイル）
+- 記事追加: `_posts/2026-04-16-note-claude-code-desktop-remote.md`（note紹介記事：Claude Codeデスクトップの新機能「リモート」の仕様について調べる）
+- 画像追加: `assets/img/2026-04-16-note-claude-code-desktop-remote.png`（note OGサムネイル）
 ### 理由
 - ainews.mdの指示に従いAIニュース記事を自動作成（2026年4月第3週後半の最新動向）
 - noteに公開した記事をブログに紹介
