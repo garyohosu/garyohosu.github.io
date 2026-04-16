@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-04-16
+
+### 変更内容
+- 記事追加: `_posts/2026-04-16-ai-news-trends-april-week3-update.md`（AIニュース：Claude Mythos制限・Stanford AI Index・AIが仕事を変える）
+- 画像追加: `assets/img/ai-news-manga-2026-04-16.png`（漫画サムネイル・既存画像を流用、OPENAI_API_KEY未設定のため）
+### 理由
+- ainews.mdの指示に従いAIニュース記事を自動作成（2026年4月第3週後半の最新動向）
+
+---
+
 ## 2026-04-15
 
 ### 変更内容
