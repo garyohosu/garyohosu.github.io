@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-04-20
+
+### 変更内容
+- 記事追加: `_posts/2026-04-20-note-claude-design.md`（note紹介記事：新機能Claude Designを試してみる）
+- 画像追加: `assets/img/2026-04-20-note-claude-design.png`（noteサムネイル）
+- 記事追加: `_posts/2026-04-20-ai-news-trends-april-week4.md`（AIニュース：4月第4週 Claude Opus 4.7・GPT-Rosalind・スタンフォードAI Index 2026）
+- 画像追加: `assets/img/ai-news-manga-2026-04-20.png`（DALL-E 3生成漫画サムネイル）
+### 理由
+- note記事「新機能Claude Designを試して見る」の紹介記事を作成
+- 2026年4月第4週のAIニュース記事を作成
+
+---
+
 ## 2026-04-15
 
 ### 変更内容
