@@ -7,6 +7,15 @@
 ## 2026-04-20
 
 ### 変更内容
+- ワークフロー追加: `.github/workflows/daily-ainews.yml`（毎日06:00 JSTに自動AIニュース記事作成・push・Pages更新）
+### 理由
+- ainewsスキルの毎日自動実行をGitHub Actionsで設定
+
+---
+
+## 2026-04-20 (earlier)
+
+### 変更内容
 - 記事追加: `_posts/2026-04-20-note-claude-design.md`（note紹介記事：新機能Claude Designを試してみる）
 - 画像追加: `assets/img/2026-04-20-note-claude-design.png`（noteサムネイル）
 - 記事追加: `_posts/2026-04-20-ai-news-trends-april-week4.md`（AIニュース：4月第4週 Claude Opus 4.7・GPT-Rosalind・スタンフォードAI Index 2026）
