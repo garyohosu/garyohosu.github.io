@@ -1,0 +1,52 @@
+name: "Daily AI News Post"
+
+on:
+  schedule:
+    - cron: "0 21 * * *"  # 毎日 06:00 JST (UTC 21:00)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  ainews:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Configure Git
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+
+      - name: Run ainews skill
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          TODAY=$(TZ=Asia/Tokyo date +%Y-%m-%d)
+          PROMPT="Today is ${TODAY} (JST). $(cat ainews.md)"
+          claude --dangerously-skip-permissions -p "$PROMPT"
+
+      - name: Commit and push
+        run: |
+          git add _posts/ assets/img/
+          if git diff --cached --quiet; then
+            echo "No new files to commit"
+            exit 0
+          fi
+          TODAY=$(TZ=Asia/Tokyo date +%Y-%m-%d)
+          git commit -m "feat: add AI news post for ${TODAY}"
+          git push origin main
