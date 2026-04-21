@@ -9,6 +9,8 @@
 ### 変更内容
 - 記事追加: `_posts/2026-04-21-note-genspark-cancel.md`（note紹介記事：Genspark解約する）
 - 画像追加: `assets/img/note-genspark-cancel-2026-04-20.png`
+- 記事追加: `_posts/2026-04-21-note-claude-free.md`（note紹介記事：Claude無料版、そこまでできるのか）
+- 画像追加: `assets/img/2026-04-21-note-claude-free.png`（noteサムネイル）
 
 ---
 
