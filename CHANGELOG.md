@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-04-22
+
+### 変更内容
+- 記事追加: `_posts/2026-04-22-ai-news-trends-april-week5.md`（AIニュース：4月第5週 Anthropic収益逆転・Claude Mythos・MIT「今最重要のAI10選」）
+- 画像追加: `assets/img/ai-news-manga-2026-04-22.png`（DALL-E 3生成漫画サムネイル）
+### 理由
+- 2026年4月第5週のAIニュース記事を作成（Anthropic $30B ARR・Claude Mythos限定公開・MITテクノロジーレビューリスト・AIエージェント社会実装・Apple×Google Siri刷新）
+
+---
+
 ## 2026-04-21
 
 ### 変更内容
