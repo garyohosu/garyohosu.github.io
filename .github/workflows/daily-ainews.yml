@@ -1,0 +1,65 @@
+name: "Daily AI News"
+
+on:
+  schedule:
+    - cron: "0 21 * * *"  # 6:00 JST (UTC+9)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "daily-ainews"
+  cancel-in-progress: false
+
+jobs:
+  ainews:
+    runs-on: ubuntu-latest
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+      - name: Run Claude Code (ainews)
+        uses: anthropics/claude-code-action@beta
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          allowed_tools: "Bash,Read,Write,Edit,WebSearch,WebFetch"
+          timeout_minutes: "30"
+          prompt: |
+            以下の手順でAIニュース記事を作成し、GitHubにプッシュしてください。
+
+            ## Step 1: ainews.md を読む
+            ワークスペースの ainews.md を読んで、その指示に従ってAIニュース記事を作成してください。
+            WebSearch や WebFetch で最近3日以内の最新AIニュースを調査してから記事を書くこと。
+
+            ## Step 2: 画像生成
+            pic.md を読んで、DALL-E 3 API で漫画風サムネイルを生成してください。
+            環境変数 OPENAI_API_KEY が設定済みです。
+            - 保存先: assets/img/ai-news-manga-YYYY-MM-DD.png（今日の日付で）
+
+            ## Step 3: 記事ファイル作成
+            - ファイル名: _posts/YYYY-MM-DD-ai-news-SLUG.md（今日の日付、スラッグは記事内容を反映）
+            - 作成前に ls _posts/ で既存記事と重複しないスラッグか確認すること
+            - フロントマターに image.path を含めること
+
+            ## Step 4: チェックリスト確認（AGENTS.md 参照）
+            - 外部URLはすべて https:// を使用
+            - 数字のみのタグ・カテゴリはクォート（例: "403"）
+            - image.path に指定した画像ファイルが assets/img/ に存在するか確認
+
+            ## Step 5: Git コミット & プッシュ
+            ```bash
+            git add _posts/ assets/img/
+            git commit -m "Add daily AI news $(date +%Y-%m-%d)"
+            git push origin main
+            ```

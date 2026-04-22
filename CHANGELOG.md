@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-04-22 (2)
+
+### 変更内容
+- ワークフロー追加: `.github/workflows/daily-ainews.yml`（毎日6時JST にAIニュース記事を自動生成・push）
+### 理由
+- ainews.md の実行・GitHub push・Pages更新を毎日6時に自動化
+
+---
+
 ## 2026-04-22
 
 ### 変更内容
