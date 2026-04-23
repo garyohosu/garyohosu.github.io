@@ -4,6 +4,18 @@
 
 ---
 
+## 2026-04-23
+
+### 変更内容
+- 記事追加: `_posts/2026-04-23-note-lolipop-openclaw-intro.md`（note紹介記事：格安ロリポップのOpenClawを試した）
+- 画像追加: `assets/img/2026-04-23-note-lolipop-openclaw-intro.jpg`（OGサムネイル）
+- 記事追加: `_posts/2026-04-23-note-lolipop-claw-github-setup.md`（note紹介記事：ロリポップClawでまず最初にやったこと）
+- 画像追加: `assets/img/2026-04-23-note-lolipop-claw-github-setup.jpg`（OGサムネイル）
+### 理由
+- noteに公開した記事をブログに紹介
+
+---
+
 ## 2026-04-22
 
 ### 変更内容
