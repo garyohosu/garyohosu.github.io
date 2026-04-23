@@ -7,6 +7,14 @@
 ## 2026-04-23
 
 ### 変更内容
+- スクリプト追加: `scripts/generate-ainews.mjs`（Claude API + DALL-E 3 で毎日AIニュース記事を自動生成）
+- ワークフロー追加: `.github/workflows/daily-ainews.yml`（毎日 6:00 JST に ainews 記事を生成・push・Pages 更新）
+### 理由
+- AIニュース記事の毎日 6 時自動更新を GitHub Actions で実現するため
+
+---
+
+### 変更内容
 - 記事追加: `_posts/2026-04-23-note-lolipop-openclaw-intro.md`（note紹介記事：格安ロリポップのOpenClawを試した）
 - 画像追加: `assets/img/2026-04-23-note-lolipop-openclaw-intro.jpg`（OGサムネイル）
 - 記事追加: `_posts/2026-04-23-note-lolipop-claw-github-setup.md`（note紹介記事：ロリポップClawでまず最初にやったこと）
