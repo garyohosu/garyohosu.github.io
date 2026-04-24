@@ -1,0 +1,57 @@
+name: Daily AI News
+
+on:
+  schedule:
+    - cron: '0 21 * * *'  # 06:00 JST (UTC+9)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-ainews
+  cancel-in-progress: false
+
+jobs:
+  create-ainews:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Configure git
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+
+      - name: Create AI News Article
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          claude -p "$(cat ainews.md)
+
+          ---
+
+          上記の指示に従い、本日 ${TODAY} のAIニュース記事を作成してください。
+
+          記事作成完了後、以下の手順で必ず保存・プッシュしてください：
+          1. CHANGELOG.md に今日の変更を追記する
+          2. git add _posts/ assets/img/ CHANGELOG.md
+          3. git diff --cached --quiet || git commit -m 'feat(posts): add daily AI news ${TODAY}'
+          4. git push origin main" \
+            --allowedTools "Bash,Write,Edit,WebSearch,WebFetch" \
+            --max-turns 50
