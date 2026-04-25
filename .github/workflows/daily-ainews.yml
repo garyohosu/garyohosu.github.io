@@ -1,0 +1,68 @@
+name: Daily AI News
+
+on:
+  schedule:
+    - cron: '0 21 * * *'  # JST 6:00 (UTC 21:00 前日)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-ainews
+  cancel-in-progress: false
+
+jobs:
+  ainews:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Generate AI News Article
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          claude --dangerously-skip-permissions -p "
+          $(cat ainews.md)
+
+          ## 出力先ルール
+          - 記事ファイルは _posts/YYYY-MM-DD-ai-news-daily-MMDD.md に保存する（当日の日付を使用）
+          - 漫画イラストは pic.md の手順に従い DALL-E 3 で生成し assets/img/ai-news-manga-YYYY-MM-DD.png に保存する
+          - CHANGELOG.md に今日の変更を追記する
+          - ファイル保存後、git status を確認する
+          "
+
+      - name: Commit and push
+        run: |
+          git status
+          if git diff --quiet HEAD -- _posts/ assets/img/ CHANGELOG.md; then
+            echo "No new article generated, skipping commit"
+            exit 0
+          fi
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add _posts/ assets/img/ CHANGELOG.md
+          git diff --cached --stat
+          git commit -m "feat(blog): daily AI news $(date -u +'%Y-%m-%d')"
+          git push origin main
+
+      - name: Post-push check
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Waiting 30s for Actions to queue..."
+          sleep 30
+          node scripts/ai-post-push-check.mjs || true
