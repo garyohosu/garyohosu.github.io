@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-04-27
+
+### 変更内容
+- 記事追加: `_posts/2026-04-27-ai-news-trends-april-final.md`（AIニュース：4月末 Agentic OS・Stargateフェーズ1完了・Apple iOS 26.5）
+- 画像追加: `assets/img/ai-news-manga-2026-04-27.png`（DALL-E 3生成漫画サムネイル）
+### 理由
+- 2026年4月末の最新AIニュースを定期記事として投稿（Agentic AIのOS化、OpenAI/MS Stargateプロジェクト、Apple新Siri、小型モデル革命、ビジョン基盤モデル）
+
+---
+
 ## 2026-04-23
 
 ### 変更内容
@@ -574,7 +584,7 @@
 
 ### 変更内容
 - 記事追加: `2026-02-11-note-magicboxai-save-publish.md`（note記事の紹介）
-- 画像追加: `assets/img/2026-02-11-note-magicboxai-save-publish.png`
+- 画像追加: `assets/img/2026-02-11-magicboxai-save-publish.png`
 
 ### 理由
 - noteで公開した「MagicBoxAIを作った理由：初心者が詰むのは保存と公開だった」をブログに掲載するため
@@ -667,7 +677,7 @@
 - AGENTS.md更新: HTTPSチェックを再発防止リストとインシデント記録に追加
 
 ### 理由
-- HTML-Prooferの「is not an HTTPS link」エラーの原因・解決・再発防止を記録
+- HTML-Proofer of 「is not an HTTPS link」エラーの原因・解決・再発防止を記録
 
 ---
 
