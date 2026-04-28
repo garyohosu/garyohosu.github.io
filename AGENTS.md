@@ -175,10 +175,31 @@ node scripts/ai-post-push-check.mjs
 
 ---
 
+## GitHub Actions 自動化
+
+### daily-ainews.yml — 毎日6時JST自動記事生成
+
+`.github/workflows/daily-ainews.yml` が以下のフローを自動実行する:
+
+1. **ainews生成**: `anthropics/claude-code-action@beta` が `ainews.md` の指示に従いAIニュース記事と画像を生成
+2. **コミット&プッシュ**: 変更があれば `github-actions[bot]` がコミット・プッシュ
+3. **Pagesデプロイ**: Jekyll ビルド → `actions/deploy-pages` で GitHub Pages を即時更新
+
+**必要なシークレット（GitHub リポジトリ設定で登録）**:
+| シークレット名 | 用途 |
+|---|---|
+| `ANTHROPIC_API_KEY` | Claude Code (ainews生成) |
+| `OPENAI_API_KEY` | DALL-E 3 (サムネイル画像生成) |
+
+**スケジュール**: `cron: '0 21 * * *'` = 毎日 21:00 UTC = 翌06:00 JST
+
+---
+
 ## 更新履歴
 - 2026-01-26: プロジェクト概要・コマンドを追加、共通ナレッジベース化
 - 2026-02-04: Windows環境でのGitコミット文字化け問題を追加
 - 2026-02-04: 数値タグによるビルドエラーの記録とチェックリスト強化
 - 2026-02-24: HTMLProofer画像リンク切れとYAML引用符エラーの記録を追加
 - 2026-02-24: push後確認をAI自動確認（`ai-post-push-check.mjs`）へ移行
+- 2026-04-28: daily-ainews.yml ワークフロー追加（毎日6時JST自動記事生成）
 - 2026-02-25: 画像生成APIサイズ指定ミスマッチの記録とチェック項目を追加

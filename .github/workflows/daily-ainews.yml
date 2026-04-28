@@ -1,0 +1,84 @@
+name: Daily AI News
+
+on:
+  schedule:
+    - cron: '0 21 * * *'  # 6:00 AM JST (UTC+9)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  ainews:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate AI News article
+        uses: anthropics/claude-code-action@beta
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            ainews.md を読み込み、その指示に従ってAIニュース記事を作成してください。
+            - 記事は _posts/ ディレクトリに保存する
+            - 画像は assets/img/ ディレクトリに保存する
+            - git commit や git push は行わない（後のステップで実施する）
+
+      - name: Commit and push article
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add _posts/ assets/img/
+          if git diff --staged --quiet; then
+            echo "No new article generated, skipping commit"
+          else
+            DATE=$(TZ=Asia/Tokyo date +%Y-%m-%d)
+            git commit -m "feat(ainews): 日次AIニュース ${DATE}"
+            git push
+          fi
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.3
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: "production"
+
+      - name: Test site
+        run: |
+          bundle exec htmlproofer _site \
+            --disable-external \
+            --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/" \
+            --ignore-files "/tmp_.*\.html$/"
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "_site${{ steps.pages.outputs.base_path }}"
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
