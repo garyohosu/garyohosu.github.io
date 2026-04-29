@@ -7,9 +7,12 @@
 ## 2026-04-29
 
 ### 変更内容
+- 記事追加: `_posts/2026-04-29-ai-news-trends-april-29.md`（AIニュース：Google-Pentagon契約・GPT-5.5・AIエージェント66%達成）
+- 画像追加: `assets/img/ai-news-manga-2026-04-29.png`（DALL-E 3生成漫画サムネイル）
 - 記事追加: `_posts/2026-04-29-note-lolipop-hermes-claw.md`（note紹介記事：ロリポップClawにHermes Clawも追加）
 - 画像追加: `assets/img/2026-04-29-note-lolipop-hermes-claw.jpg`（note OGサムネイル）
 ### 理由
+- 2026年4月29日の最新AIニュースを定期記事として投稿（Google軍事AI契約問題、GPT-5.5リリース、エージェント性能向上、マルチモーダル標準化、日本AI投資加速）
 - noteに公開したロリポップAIエージェントクラウドへのHermes Agent追加に関する記事をブログに紹介
 
 ---
