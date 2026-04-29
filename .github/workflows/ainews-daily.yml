@@ -1,0 +1,66 @@
+name: "Daily AI News (ainews)"
+
+on:
+  schedule:
+    - cron: "0 21 * * *"  # 6:00 JST (UTC+9)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "ainews-daily"
+  cancel-in-progress: false
+
+jobs:
+  ainews:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # GH_PAT (Personal Access Token) を使うと push 後に pages-deploy.yml が起動する。
+          # GH_PAT が未設定の場合は GITHUB_TOKEN にフォールバック
+          # （その場合 pages-deploy.yml は自動起動しないため手動 Dispatch が必要）
+          token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+
+      - name: Run ainews via Claude Code
+        uses: anthropics/claude-code-action@beta
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          allowed_tools: "Bash,Read,Write,Edit,WebSearch,WebFetch"
+          prompt: |
+            プロジェクトルートの `ainews.md` を読み、その指示をすべて実行してAIニュース記事を作成してください。
+
+            完了したら以下を必ず実行してください:
+            1. `CHANGELOG.md` を AGENTS.md のルールに従って更新する
+            2. 作成したファイルをコミット・プッシュする:
+               ```
+               git add _posts/ assets/img/ CHANGELOG.md
+               git diff --staged --quiet || git commit -m "chore: daily AI news $(date +%Y-%m-%d)"
+               git push origin main
+               ```
+
+            注意:
+            - 今日の記事がすでに存在する場合はスキップしてよい
+            - `git push origin main` は必ず実行すること（Pages 更新のため）
+
+      - name: Fallback commit & push
+        if: always()
+        run: |
+          # Claude が push を忘れた場合の保険
+          git diff --quiet HEAD 2>/dev/null && exit 0
+          git add _posts/ assets/img/ CHANGELOG.md 2>/dev/null || true
+          git diff --staged --quiet && exit 0
+          git commit -m "chore: daily AI news $(date +%Y-%m-%d)" || true
+          git push origin main || true
