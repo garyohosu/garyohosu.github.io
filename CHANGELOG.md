@@ -9,6 +9,8 @@
 ### 変更内容
 - 記事追加: `_posts/2026-04-29-ai-news-trends-april-29.md`（AIニュース：Google-Pentagon契約・GPT-5.5・AIエージェント66%達成）
 - 画像追加: `assets/img/ai-news-manga-2026-04-29.png`（DALL-E 3生成漫画サムネイル）
+- 記事追加: `_posts/2026-04-29-note-lolipop-hermes-agent-trial.md`（note紹介記事：ロリポップ Hermes Agent を試してみる）
+- 画像追加: `assets/img/2026-04-29-note-lolipop-hermes-agent-trial.jpg`（note OGサムネイル）
 - 記事追加: `_posts/2026-04-29-note-lolipop-hermes-claw.md`（note紹介記事：ロリポップClawにHermes Clawも追加）
 - 画像追加: `assets/img/2026-04-29-note-lolipop-hermes-claw.jpg`（note OGサムネイル）
 ### 理由
