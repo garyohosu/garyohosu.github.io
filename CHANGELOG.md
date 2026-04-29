@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-04-29
+
+### 変更内容
+- 記事追加: `_posts/2026-04-29-note-lolipop-hermes-claw.md`（note紹介記事：ロリポップClawにHermes Clawも追加）
+- 画像追加: `assets/img/2026-04-29-note-lolipop-hermes-claw.jpg`（note OGサムネイル）
+### 理由
+- noteに公開したロリポップAIエージェントクラウドへのHermes Agent追加に関する記事をブログに紹介
+
+---
+
 ## 2026-04-27
 
 ### 変更内容
