@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-04-30
+
+### 変更内容
+- 記事追加: `_posts/2026-04-30-note-lolipop-hermes-first-setup.md`（note紹介記事：ロリポップのHermes Agentで最初にやったこと）
+- 画像追加: `assets/img/2026-04-30-note-lolipop-hermes-first-setup.jpg`（note OGサムネイル）
+### 理由
+- noteに公開したHermes Agent初期セットアップ（GitHub連携・バックアップ構築・Discord連携）の紹介記事をブログに追加
+
+---
+
 ## 2026-04-29
 
 ### 変更内容
