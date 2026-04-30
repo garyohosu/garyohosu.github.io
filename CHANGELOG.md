@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-04-30 (2)
+
+### 変更内容
+- 自動化追加: `.github/workflows/daily-ainews.yml`（毎日6時JST にAIニュース記事を自動生成・push）
+- スクリプト追加: `scripts/generate-ainews.mjs`（RSS取得→Claude記事生成→DALL-E画像生成→Jekyllポスト保存）
+### 理由
+- 毎日6時のAIニュース記事作成・GitHub push・Pages更新を自動化
+- 必要なGitHubシークレット: `ANTHROPIC_API_KEY`（必須）、`OPENAI_API_KEY`（任意、画像生成用）
+
+---
+
 ## 2026-04-30
 
 ### 変更内容
