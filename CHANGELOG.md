@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-05-01
+
+### 変更内容
+- スクリプト追加: `scripts/daily-ainews.sh`（毎日6時にainewsスキルを実行し自動投稿するシェルスクリプト）
+- cron設定追加: `/etc/cron.d/ainews`（daily-ainews.shを毎日6:00に自動実行）
+
+### 理由
+- AIニュース記事（ainews）の毎日6時自動生成・GitHub push・Pages更新を自動化するため
+
+---
+
 ## 2026-04-30
 
 ### 変更内容
