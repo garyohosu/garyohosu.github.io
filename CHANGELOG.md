@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-05-04
+
+### 変更内容
+- ワークフロー追加: `.github/workflows/ainews.yml`（毎日 6:00 JST に自動実行）
+- スクリプト追加: `scripts/ainews.mjs`（Claude web search で AI ニュース記事生成 + DALL-E 3 サムネイル生成）
+### 理由
+- AIニュース記事を毎日 6 時に自動生成・push・Pages 更新するため
+
+---
+
 ## 2026-04-30
 
 ### 変更内容
