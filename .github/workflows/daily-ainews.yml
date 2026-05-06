@@ -1,0 +1,41 @@
+name: Daily AI News
+
+on:
+  schedule:
+    - cron: '0 21 * * *'  # 6:00 JST (UTC+9)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  generate-ainews:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup git
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+
+      - name: Generate AI News Article
+        uses: anthropics/claude-code-action@beta
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          model: claude-sonnet-4-6
+          allowed_tools: "Bash,Read,Write,Edit,WebSearch,WebFetch"
+          prompt: |
+            ainews.md を読み、その指示に従ってAIニュース記事を作成してください。
+
+            完了後、以下の手順を実行してください：
+            1. 生成したファイル（_posts/ 以下の記事、assets/img/ 以下の画像）を確認
+            2. CHANGELOG.md に本日の変更を追記（形式は既存エントリを参照）
+            3. 変更ファイルをすべて git add する
+            4. git commit -m "feat: add daily AI news $(date +%Y-%m-%d)"
+            5. git push origin main
