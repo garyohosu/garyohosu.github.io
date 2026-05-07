@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-05-07
+
+### 変更内容
+- スクリプト追加: `scripts/ainews-generate.mjs`（Claude API + DALL-E 3 で AI ニュース記事を自動生成）
+- ワークフロー追加: `.github/workflows/daily-ainews.yml`（毎日 06:00 JST に ainews 記事生成 → push → Pages 自動デプロイ）
+### 理由
+- `ainews.md` の手順を毎日 06:00 JST に自動実行したい要件に対応
+- GitHub Actions のスケジュール実行（cron: `0 21 * * *` = JST 6時）で記事生成・push を全自動化
+
+---
+
 ## 2026-04-30
 
 ### 変更内容
