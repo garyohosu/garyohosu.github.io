@@ -1,0 +1,60 @@
+name: "Daily AI News Post"
+
+on:
+  schedule:
+    - cron: "0 21 * * *"  # 6 AM JST (UTC+9 = 21:00 UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "daily-ainews"
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Generate AI News Post
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          claude --dangerously-skip-permissions -p \
+            "$(cat ainews.md)
+
+          ---
+          重要（CI実行時の制約）:
+          - 記事ファイル（_posts/）と画像ファイル（assets/img/）の作成のみ行うこと
+          - git add / git commit / git push は一切実行しないこと（CIが自動で実施する）
+          " \
+            --max-turns 40
+
+      - name: Commit and push
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add _posts/ assets/img/
+          if git diff --staged --quiet; then
+            echo "No new article generated, skipping commit"
+            exit 0
+          fi
+          DATE=$(date +%Y-%m-%d -d 'TZ="Asia/Tokyo"' 2>/dev/null || date +%Y-%m-%d)
+          git commit -m "feat: daily AI news post $DATE"
+          git push origin main
