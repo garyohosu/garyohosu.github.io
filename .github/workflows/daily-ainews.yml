@@ -1,0 +1,62 @@
+name: "Daily AI News"
+
+on:
+  schedule:
+    - cron: "0 21 * * *"  # 06:00 JST (UTC+9)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  ainews:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run ainews with Claude Code
+        uses: anthropics/claude-code-action@beta
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          allowed_tools: "Bash,Read,Write,Edit,WebFetch,WebSearch"
+          direct_prompt: |
+            Read the file `ainews.md` in the repository root and follow all its instructions to create today's AI news blog post.
+
+            Required steps:
+            1. Search for the latest AI news from the past 3 days (use English sources like TechCrunch, The Verge, ArXiv, etc.)
+            2. Write a Jekyll blog post in `_posts/` with correct frontmatter (date, title, categories, tags, image)
+            3. Generate a manga-style thumbnail image following `pic.md` instructions (use DALL-E 3 via the Bash tool with curl and $OPENAI_API_KEY)
+            4. Save the image to `assets/img/ai-news-manga-YYYY-MM-DD.png`
+
+            Important:
+            - Do NOT run any git commands — the workflow handles committing and pushing.
+            - Make sure all external URLs use https://.
+            - If a tag or category is numeric, wrap it in quotes in the YAML frontmatter.
+
+      - name: Commit and push
+        run: |
+          git config user.name "claude-ainews[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _posts/ assets/img/
+          if git diff --staged --quiet; then
+            echo "No new content generated."
+            exit 0
+          fi
+          DATE=$(TZ=Asia/Tokyo date '+%Y-%m-%d')
+          git commit -m "Add AI news post ${DATE} [automated]"
+          git push origin main
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Post-push check
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/ai-post-push-check.mjs
