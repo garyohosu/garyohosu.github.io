@@ -1,0 +1,51 @@
+name: Daily AI News Post
+
+on:
+  schedule:
+    - cron: '0 21 * * *'  # 06:00 JST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ainews
+  cancel-in-progress: true
+
+jobs:
+  ainews:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Configure Git
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+
+      - name: Run ainews
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          claude --print \
+            "ainews.mdを読み、その指示に従って今日のAIニュースブログ記事を作成してください。
+            _posts/ に記事ファイルを保存し、assets/img/ に画像を保存した後、
+            git add と git commit を実行してください（git push は不要）。" \
+            --allowedTools "Read,Write,Bash,WebSearch,WebFetch" \
+            --max-turns 80
+
+      - name: Push
+        run: |
+          if git diff --quiet HEAD; then
+            echo "No new posts generated"
+            exit 0
+          fi
+          git push origin main
