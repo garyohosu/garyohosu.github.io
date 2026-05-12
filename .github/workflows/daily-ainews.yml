@@ -1,0 +1,46 @@
+name: "Daily AI News Post"
+
+on:
+  schedule:
+    - cron: "0 21 * * *"  # 6:00 JST (UTC+9)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  ainews:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run ainews skill via Claude Code
+        uses: anthropics/claude-code-action@beta
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            ainews.md を読み、その指示に従ってAIニュース記事を作成してください。
+            記事は _posts/ ディレクトリに Jekyll 形式で保存してください。
+            サムネイル画像は assets/img/ に保存してください。
+            pic.md も参照して画像生成を行ってください。
+
+      - name: Commit and push
+        run: |
+          git diff --quiet && git diff --staged --quiet && \
+            { echo "No changes to commit"; exit 0; }
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add _posts/ assets/img/
+          git diff --staged --quiet && { echo "No new posts or images"; exit 0; }
+          git commit -m "feat(posts): daily AI news $(date -u +%Y-%m-%d)"
+          git push
