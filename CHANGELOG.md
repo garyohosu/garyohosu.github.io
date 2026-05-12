@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-05-12
+
+### 変更内容
+- 記事追加: `_posts/2026-05-12-ai-news-may-week2-update.md`（AIニュース：Apple AI大転換・Veo 3.1が4K動画生成・AIが役員席を狙う）
+- 画像追加: `assets/img/ai-news-manga-2026-05-12.png`（DALL-E 3生成漫画サムネイル）
+### 理由
+- 2026年5月12日の最新AIニュースを定期記事として投稿（Apple iOS 27 AI選択自由化、Veo 3.1動画生成AI、Cloudflare 20%削減、AI規制動向）
+
+---
+
 ## 2026-05-11
 
 ### 変更内容
