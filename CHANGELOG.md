@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-05-13
+
+### 変更内容
+- 記事追加: `_posts/2026-05-13-note-blog-ai-prompt.md`（note紹介記事：ブログ用AIプロンプト）
+- 画像追加: `assets/img/2026-05-13-note-blog-ai-prompt.png`（note OGサムネイル）
+### 理由
+- noteに公開したainews.mdプロンプト解説記事をブログに紹介
+
+---
+
 ## 2026-05-12
 
 ### 変更内容
