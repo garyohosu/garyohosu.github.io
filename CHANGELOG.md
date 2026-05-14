@@ -4,6 +4,18 @@
 
 ---
 
+## 2026-05-14
+
+### 変更内容
+- 記事追加: `_posts/2026-05-14-note-lolipop-hermes-agent-update.md`（note紹介記事：今日のロリポップHermes Agent）
+- 画像追加: `assets/img/2026-05-14-note-lolipop-hermes-agent-update.jpg`（note OGサムネイル）
+- 記事追加: `_posts/2026-05-14-ai-news-may-week2-day14.md`（AIニュース：Google Gemini Intelligence・AIゼロデイ脆弱性・Anthropic収益がOpenAI超え）
+- 画像追加: `assets/img/ai-news-manga-2026-05-14.png`（gpt-image-1生成漫画サムネイル）
+### 理由
+- 2026年5月13〜14日の最新AIニュースを定期記事として投稿（Google Android Show 2026、AIゼロデイ脆弱性、中国AI4モデル同時リリース、Anthropic vs OpenAI収益逆転）
+
+---
+
 ## 2026-05-13
 
 ### 変更内容
