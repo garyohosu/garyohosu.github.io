@@ -7,6 +7,15 @@
 ## 2026-05-14
 
 ### 変更内容
+- ワークフロー追加: `.github/workflows/ainews.yml`（毎日6時JST に ainews スキルを自動実行→コミット→push）
+### 理由
+- AIニュース記事の毎日自動投稿を GitHub Actions で実現するため
+
+---
+
+## 2026-05-14
+
+### 変更内容
 - 記事追加: `_posts/2026-05-14-note-lolipop-hermes-agent-update.md`（note紹介記事：今日のロリポップHermes Agent）
 - 画像追加: `assets/img/2026-05-14-note-lolipop-hermes-agent-update.jpg`（note OGサムネイル）
 - 記事追加: `_posts/2026-05-14-ai-news-may-week2-day14.md`（AIニュース：Google Gemini Intelligence・AIゼロデイ脆弱性・Anthropic収益がOpenAI超え）
