@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-05-16
+
+### 変更内容
+- 記事追加: `_posts/2026-05-16-note-barcode-android-app.md`（note紹介記事：AIでバーコードを読んで一致を確認するAndroidアプリを作りました）
+- 画像追加: `assets/img/2026-05-16-note-barcode-android-app.png`（OGサムネイル）
+### 理由
+- noteに公開した記事をブログに紹介
+
+---
+
 ## 2026-05-14
 
 ### 変更内容
