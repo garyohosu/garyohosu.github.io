@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-05-18
+
+### 変更内容
+- 記事追加: `_posts/2026-05-18-ai-news-may-week3.md`（AIニュース：GPT-5.5 vs Claude Mythos・Google I/O開幕直前・医療AI・省エネAI・Anthropic Dreaming）
+- 画像追加: `assets/img/ai-news-manga-2026-05-18.png`（gpt-image-1生成漫画サムネイル）
+### 理由
+- 2026年5月15〜18日の最新AIニュースを定期記事として投稿（フロンティアモデル対決、Google I/O直前情報、脳MRI診断AI、ニューロシンボリックAI省エネ、AppleがAI選択可能化）
+
+---
+
 ## 2026-05-16
 
 ### 変更内容
