@@ -9,8 +9,11 @@
 ### 変更内容
 - 記事追加: `_posts/2026-05-19-note-hermes-agent-ocr-android.md`（note紹介記事：ロリポップHermes AgentにAndroidのOCRアプリを作ってもらった）
 - 画像追加: `assets/img/2026-05-19-note-hermes-agent-ocr-android.png`（noteサムネイル）
+- 記事追加: `_posts/2026-05-19-ai-news-may-agent-connectivity-safety.md`（AIニュース：AnthropicのStainless買収、World Representation、SkillGenBench、LLMエージェント安全設計、医療AI倫理）
+- 画像追加: `assets/img/ai-news-manga-2026-05-19.png`（gpt-image-1生成漫画サムネイル）
 ### 理由
 - Hermes AgentでバーコードリーダーをOCRアプリに変換し、GitHub ActionsでAPKビルドまで完了した体験記をnoteで公開したため紹介記事を作成
+- 2026年5月19日前後の最新AIニュースを定期記事として投稿（AnthropicのStainless買収、世界モデル表現、技能生成・Auto-Research、安全なLLMエージェント配備、医療AIの価値観監査）
 
 ---
 
