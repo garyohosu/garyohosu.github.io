@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-05-19
+
+### 変更内容
+- 記事追加: `_posts/2026-05-19-note-hermes-agent-ocr-android.md`（note紹介記事：ロリポップHermes AgentにAndroidのOCRアプリを作ってもらった）
+- 画像追加: `assets/img/2026-05-19-note-hermes-agent-ocr-android.png`（noteサムネイル）
+### 理由
+- Hermes AgentでバーコードリーダーをOCRアプリに変換し、GitHub ActionsでAPKビルドまで完了した体験記をnoteで公開したため紹介記事を作成
+
+---
+
 ## 2026-05-18
 
 ### 変更内容
