@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-05-20
+
+### 変更内容
+- 記事追加: `_posts/2026-05-20-ai-latest-trends-may.md`（AIニュース：「AIエージェントの時代」本格到来？Googlebook・OpenAI新会社・iOS Extensionsなど最新トレンド解説）
+- 画像追加: `assets/img/ai-news-manga-2026-05-20.png`（DALL-E 3生成漫画サムネイル）
+### 理由
+- 2026年5月中旬の最新AIニュースを定期記事として投稿（AIエージェントの本格実用化、OpenAIのデプロイ会社設立＆Tomoro買収、GoogleのGemini搭載PC『Googlebook』、AppleのiOS 27向けAI Extensions、米国CAISI安全性合意の拡大）
+
+---
+
 ## 2026-05-19
 
 ### 変更内容
