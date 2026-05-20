@@ -1,0 +1,58 @@
+name: Daily AI News Post
+
+on:
+  schedule:
+    # 毎日 6:00 JST (= 21:00 UTC 前日)
+    - cron: '0 21 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Generate AI news post
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          TODAY=$(TZ=Asia/Tokyo date +%Y-%m-%d)
+          claude --dangerously-skip-permissions -p "
+          今日の日付は ${TODAY} です。
+          ainews.md を読み、その指示に従ってAIニュースのブログ記事を作成してください。
+          - 記事ファイルは _posts/${TODAY}-ai-news-weekly.md として保存してください
+            （同名ファイルが既に存在する場合は -2、-3 と連番にしてください）
+          - サムネイル画像は assets/img/${TODAY}-ai-news.png として保存してください
+          - pic.md の手順に従い DALL-E 3 で漫画風サムネイルを生成して埋め込んでください
+          - git への commit・push は行わないでください（ワークフローが行います）
+          "
+
+      - name: Commit and push
+        run: |
+          if git diff --quiet && git status --porcelain | grep -q "^??"; then
+            true
+          fi
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No new files generated."; exit 0
+          fi
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add _posts/ assets/img/
+          git diff --cached --quiet && { echo "Nothing staged."; exit 0; }
+          git commit -m "post(ainews): daily AI news $(TZ=Asia/Tokyo date +%Y-%m-%d)"
+          git push origin main
