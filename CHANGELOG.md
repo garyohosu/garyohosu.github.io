@@ -7,10 +7,11 @@
 ## 2026-05-21
 
 ### 変更内容
-- 記事追加: `_posts/2026-05-21-note-hermesagent-grok-update.md`（note紹介記事：【新機能】ロリポップのHermesAgentでGrokが使えるようになったので試して見る）
-- 画像追加: `assets/img/2026-05-21-note-hermesagent-grok.png`（note OGサムネイル）
+- 記事追加: `_posts/2026-05-21-note-antigravity-cli-hermesagent-grok-two-articles.md`（note紹介記事：noteに記事を2本公開しました（Antigravity CLI／HermesAgent・Grok））
+- 記事削除: `_posts/2026-05-20-note-antigravity-cli-install.md`
+- 記事削除: `_posts/2026-05-21-note-hermesagent-grok-update.md`
 ### 理由
-- noteに公開したHermes AgentのGrok連携検証とxAI CLI認証メモをブログに紹介したため
+- 2本のnote紹介を1記事に統合し、導線を整理したため
 
 ---
 
