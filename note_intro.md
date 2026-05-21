@@ -1,31 +1,31 @@
-# note紹介記事：Antigravity CLIインストールしてみる
+# note紹介記事：【新機能】ロリポップのHermesAgentでGrokが使えるようになったので試して見る
 
 ## タイトル案（3本）
 
-1. noteに記事を公開しました：Antigravity CLIインストールしてみる
-2. GoogleのAntigravity CLIをWindows 11で入れてみた — 初回設定と `agy` の使い方
-3. Gemini CLIの次に来る？Antigravity CLIを試したインストールメモ
+1. noteに記事を公開しました：【新機能】ロリポップのHermesAgentでGrokが使えるようになったので試して見る
+2. Hermes AgentでGrokが使えるようになったので試した — xAI連携と初期設定のメモ
+3. Hermes AgentにGrok連携が来たので動かしてみた — xAI認証とモデル切替の確認
 
 ## 記事の要点
 
-- Googleから新しく出てきた Antigravity CLI をインストールして試している
-- Windows 11 では PowerShell から `irm https://antigravity.google/cli/install.ps1 | iex` で導入できる
-- 初回起動では `agy` の起動、Google OAuth、利用規約の確認、作業フォルダの選択まで進む
-- `agy --help` を見ながら install / plugin / update などの機能を確認している
-- `--dangerously-skip-permissions` を `agyyolo` という別名で呼びたくなるなど、権限周りの使い勝手も触れている
+- Hermes AgentにGrokが利用可能になり、X APIを使ったリアルタイム検索やエージェント処理ができるようになった
+- 料金体系が「サブスクリプション」と「従量課金」に分かれ、サブスクリプションを選ぶべきだと整理している
+- ローカルPCでは `grok login` がそのままでは動かず、`irm https://x.ai/cli/install.ps1 | iex` でCLIを入れ直して認証を進めた
+- `auth.json` をアップロードして認証を完了し、Hermes Agentの会話モデルをGrokに切り替えて試している
+- Grok連携のメリットとして、Hermesのツール呼び出しとGrokの推論を組み合わせられる点を確認している
 
 ## 読みどころ
 
-- ただのインストールメモではなく、実際の初回セットアップでどこにつまずくかがわかる
-- Gemini CLIとの違いや、Antigravity CLIがどんな方向性のツールかを雰囲気込みで掴める
-- そのまま自分の環境で試すときのコマンドが見つけやすい
+- Hermes AgentにGrokが入ると何が変わるのかを、実際の設定画面や会話ログベースで追える
+- インストール手順だけでなく、つまずいたときの対処まで書かれているので再現しやすい
+- Codex CLIとの使い分けも触れていて、エージェント運用の考え方が見える
 
 ## こんな方におすすめ
 
-- Antigravity CLIをこれから触ってみたい方
-- Gemini CLIの後継っぽいツールの初期設定を知りたい方
-- Windows 11 で AI CLI を試す手順を探している方
+- Hermes AgentでGrokを使ってみたい方
+- xAI / Grok のCLI認証と初期セットアップを知りたい方
+- AIエージェントのモデル切り替えや使い分けに興味がある方
 
 ## 元記事リンク
 
-[Antigravity CLIインストールしてみる](https://note.com/hantani/n/nee2e9179c67b)
+[【新機能】ロリポップのHermesAgentでGrokが使えるようになったので試して見る](https://note.com/hantani/n/n11b21719f4c7)

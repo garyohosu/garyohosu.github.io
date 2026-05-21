@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-05-21
+
+### 変更内容
+- 記事追加: `_posts/2026-05-21-note-hermesagent-grok-update.md`（note紹介記事：【新機能】ロリポップのHermesAgentでGrokが使えるようになったので試して見る）
+- 画像追加: `assets/img/2026-05-21-note-hermesagent-grok.png`（note OGサムネイル）
+### 理由
+- noteに公開したHermes AgentのGrok連携検証とxAI CLI認証メモをブログに紹介したため
+
+---
+
 ## 2026-05-20
 
 ### 変更内容
