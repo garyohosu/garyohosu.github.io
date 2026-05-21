@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-05-22
+
+### 変更内容
+- 記事追加: `_posts/2026-05-22-ai-latest-trends-may-io.md`（AIニュース：「Gemini 3.5 & Omni」発表！Google I/O 2026から紐解く最新AIトレンドとセキュリティ動向）
+- 画像追加: `assets/img/ai-news-manga-2026-05-22.png`（DALL-E 3生成漫画サムネイル）
+### 理由
+- 2026年5月22日前後の最新AIニュースを定期記事として投稿（Google I/O 2026でのGemini 3.5 Flash/Omni発表、AnthropicのStainless買収とエージェント連携、トランプ政権によるAI大統領令の延期、NSAによるMCPセキュリティ指針、マイクロソフトとEYの10億ドル提携）
+
+---
+
 ## 2026-05-21
 
 ### 変更内容
