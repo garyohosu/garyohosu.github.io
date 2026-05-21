@@ -1,0 +1,51 @@
+name: "Daily AI News"
+
+on:
+  schedule:
+    - cron: "0 21 * * *"  # 6:00 AM JST (UTC+9)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  ainews:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Configure Git
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+
+      - name: Generate AI News Article
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          claude --dangerously-skip-permissions \
+            --allowedTools "Bash,Read,Write,Edit,WebSearch,WebFetch" \
+            -p "$(cat ainews.md)"
+
+      - name: Commit and Push
+        run: |
+          git add _posts/ assets/img/ CHANGELOG.md || true
+          if git diff --staged --quiet; then
+            echo "No new content to commit"
+            exit 0
+          fi
+          git commit -m "feat(blog): add daily AI news article $(date '+%Y-%m-%d')"
+          git push
