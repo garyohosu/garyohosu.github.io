@@ -1,35 +1,31 @@
-# note紹介記事：AIでバーコードを読んで一致を確認するAndroidアプリを作りました
+# note紹介記事：Antigravity CLIインストールしてみる
 
 ## タイトル案（3本）
 
-1. AIでバーコード照合Androidアプリを作った — Claude Code × Codex CLIの完全AI駆動開発
-2. バーコード一致確認アプリをAIと作った手順を全公開（SPEC→TDD→APK配布まで）
-3. 業務改善アプリをAIだけで作る — バーコードスキャナAndroidアプリ制作記
+1. noteに記事を公開しました：Antigravity CLIインストールしてみる
+2. GoogleのAntigravity CLIをWindows 11で入れてみた — 初回設定と `agy` の使い方
+3. Gemini CLIの次に来る？Antigravity CLIを試したインストールメモ
 
 ## 記事の要点
 
-- カメラで2つのバーコードを読み取り、一致/不一致を音声・画面表示で即確認できるAndroidアプリを作成
-- 重複バーコードの検知、CSVエクスポート（日時付き）、ログクリア機能を搭載
-- ChatGPT → Claude Code → Codex CLIを使うAI駆動開発フロー（SPEC.md→QandA.md→Mermaid設計図→TDD実装）を実践
-- AndroidアプリのコンパイルからAPKのスマホ書き込みまでAIが担当
-- 作成したAPKはGitHubで公開・配布中
+- Googleから新しく出てきた Antigravity CLI をインストールして試している
+- Windows 11 では PowerShell から `irm https://antigravity.google/cli/install.ps1 | iex` で導入できる
+- 初回起動では `agy` の起動、Google OAuth、利用規約の確認、作業フォルダの選択まで進む
+- `agy --help` を見ながら install / plugin / update などの機能を確認している
+- `--dangerously-skip-permissions` を `agyyolo` という別名で呼びたくなるなど、権限周りの使い勝手も触れている
 
 ## 読みどころ
 
-- 「Webアプリではカメラバーコード読み取りが難しい」という技術判断からAndroidアプリに切り替えた実際の経緯が記されている
-- SPEC.md→QandA.md→Mermaid図→TDDという設計から実装まで一貫したAI駆動開発フローが具体的に紹介されている
-- 非エンジニアでも再現できるよう、各ツールの役割分担が明確に解説されている
+- ただのインストールメモではなく、実際の初回セットアップでどこにつまずくかがわかる
+- Gemini CLIとの違いや、Antigravity CLIがどんな方向性のツールかを雰囲気込みで掴める
+- そのまま自分の環境で試すときのコマンドが見つけやすい
 
 ## こんな方におすすめ
 
-- AI駆動開発でモバイルアプリ開発に挑戦したい方
-- バーコード照合・現場管理ツールを低コストで作りたい方
-- Claude Code・Codex CLIを組み合わせた実開発フローを学びたい方
+- Antigravity CLIをこれから触ってみたい方
+- Gemini CLIの後継っぽいツールの初期設定を知りたい方
+- Windows 11 で AI CLI を試す手順を探している方
 
 ## 元記事リンク
 
-[AIでバーコードを読んで一致を確認するAndroidアプリを作りました](https://note.com/hantani/n/n87834d8b380a)
-
-## SNS投稿文
-
-AIでバーコード照合Androidアプリを作りました📱 Claude Code × Codex CLIで SPEC→設計図→TDD実装まで全自動。APKも公開中！ https://note.com/hantani/n/n87834d8b380a #ClaudeCode #AI駆動開発
+[Antigravity CLIインストールしてみる](https://note.com/hantani/n/nee2e9179c67b)
