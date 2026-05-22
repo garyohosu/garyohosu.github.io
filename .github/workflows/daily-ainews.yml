@@ -1,0 +1,72 @@
+name: "Daily AI News Post"
+
+on:
+  schedule:
+    - cron: "0 21 * * *"  # 6:00 AM JST (UTC+9)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "daily-ainews"
+  cancel-in-progress: false
+
+jobs:
+  ainews:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+
+      - name: Generate AI News Post
+        uses: anthropics/claude-code-action@beta
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          allowed_tools: "Bash,Read,Write,Edit,WebSearch,WebFetch"
+          direct_prompt: |
+            あなたはブログ運用担当のAIエージェントです。
+            以下の手順で本日のAIニュース記事を作成・公開してください。
+
+            ## 実行手順
+
+            1. `ainews.md` を読んで記事作成の指示を確認する
+            2. `AGENTS.md` を読んで運用ルールを確認する
+            3. `.claude/rules/blog-operation.md` があれば読む
+            4. WebSearchで最新（直近3日以内）のAIニュースを英語・日本語で調査する
+            5. `ainews.md` の指示に従い、Markdown形式の記事を作成する
+               - ファイル名: `_posts/YYYY-MM-DD-ai-latest-trends-<月名または識別子>.md`
+               - 既存のファイル名と重複しないよう `ls _posts/` で確認すること
+               - YAMLフロントマターの文字列は正しくクォートする
+               - 外部URLはすべて `https://` で始まること
+               - 数字のみのタグやカテゴリは `"403"` のようにクォートする
+            6. `pic.md` を読んでDALL-E 3でサムネイル画像を生成し `assets/img/` に保存する
+               - model: dall-e-3, size: 1792x1024, quality: hd
+            7. 記事冒頭に画像を埋め込む
+            8. `CHANGELOG.md` を更新する
+            9. `AGENTS.md` の再発防止チェックリストに従ってプッシュ前確認をする
+            10. 以下のgitコマンドを実行する:
+                ```
+                git add _posts/ assets/img/ CHANGELOG.md
+                git status
+                git diff --cached --stat
+                git commit -m "Add daily AI news post $(date +%Y-%m-%d)"
+                git push origin main
+                ```
+            11. プッシュ後に `node scripts/ai-post-push-check.mjs` を実行してデプロイを確認する
+
+            ## 注意事項
+            - 記事は必ず最新ニュース（3日以内）に基づくこと
+            - 英語ニュースを優先的に調査し、日本語で解説する
+            - push前に `bundle exec jekyll build` が実行できない場合はスキップしてよい
