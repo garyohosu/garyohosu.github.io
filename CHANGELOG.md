@@ -7,10 +7,18 @@
 ## 2026-05-22
 
 ### 変更内容
+<<<<<<< HEAD
 - 記事追加: `_posts/2026-05-22-ai-latest-trends-may-io.md`（AIニュース：「Gemini 3.5 & Omni」発表！Google I/O 2026から紐解く最新AIトレンドとセキュリティ動向）
 - 画像追加: `assets/img/ai-news-manga-2026-05-22.png`（DALL-E 3生成漫画サムネイル）
 ### 理由
 - 2026年5月22日前後の最新AIニュースを定期記事として投稿（Google I/O 2026でのGemini 3.5 Flash/Omni発表、AnthropicのStainless買収とエージェント連携、トランプ政権によるAI大統領令の延期、NSAによるMCPセキュリティ指針、マイクロソフトとEYの10億ドル提携）
+=======
+- 記事追加: `_posts/2026-05-22-meta-8000-layoff.md`（「Metaが8000人クビ」素人向け解説記事）
+- 画像追加: `assets/img/meta-8000-layoff-eyecatch.png`（OpenAI Codexで生成した衝撃的なアイキャッチ画像）
+
+### 理由
+- X（旧Twitter）で話題になっているMetaの8000人解雇について、AIやテックに詳しくない人でもわかるように詳しくまとめ、アイキャッチ画像も生成して公開したため
+>>>>>>> d5d2eb4 (Add: Meta 8000 layoffs explained for beginners + AI generated eyecatch image)
 
 ---
 
