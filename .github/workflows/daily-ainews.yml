@@ -1,0 +1,49 @@
+name: "Daily AI News Post"
+
+on:
+  schedule:
+    - cron: "0 21 * * *"  # 6:00 AM JST (UTC+9)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  ainews:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Git
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+      - name: Create daily AI news post
+        uses: anthropics/claude-code-action@beta
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          model: claude-opus-4-5
+          allowed_tools: "Bash,Read,Write,Edit,WebSearch,WebFetch"
+          prompt: |
+            Read ainews.md and follow all its instructions to create a daily AI news blog post.
+
+            Required steps:
+            1. Read ainews.md for full instructions
+            2. Use WebSearch to find the latest AI news from the past 3 days
+               (prioritize English sources: TechCrunch, The Verge, ArXiv, IEEE Spectrum, etc.)
+            3. Write a Japanese blog post in Markdown format per ainews.md specifications
+            4. Read pic.md and generate a manga-style thumbnail using DALL-E 3 via curl:
+               curl -s https://api.openai.com/v1/images/generations \
+                 -H "Content-Type: application/json" \
+                 -H "Authorization: Bearer $OPENAI_API_KEY" \
+                 -d '{"model":"dall-e-3","prompt":"<prompt>","n":1,"size":"1792x1024","quality":"hd","response_format":"url"}'
+               Then download the image to assets/img/ai-news-manga-YYYY-MM-DD.png
+            5. Check existing _posts/ files to avoid slug collisions, then save the post
+            6. Commit: git add _posts/<filename> assets/img/<image> && git commit -m "Add AI news post for YYYY-MM-DD"
+            7. Push: git push -u origin main
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
