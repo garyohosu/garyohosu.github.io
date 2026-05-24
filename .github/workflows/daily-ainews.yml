@@ -1,0 +1,57 @@
+name: "Daily AI News Post"
+
+on:
+  schedule:
+    - cron: '0 21 * * *'  # 6:00 AM JST (UTC+9)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "daily-ainews"
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup git
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+
+      - name: Run ainews skill via Claude Code
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          allowed_tools: "Bash,Read,Write,Edit,WebSearch,WebFetch"
+          direct_prompt: |
+            /ainews を実行して今日のAIニュースブログ記事を作成してください。
+
+            手順：
+            1. ainews.md を読む
+            2. WebSearch で最近3日以内の最新AIニュースを調査する
+            3. 記事を _posts/ に Jekyll形式で作成する（YYYY-MM-DD-ainews-weekNN.md）
+            4. pic.md の手順に従い DALL-E 3 で漫画風サムネイルを生成し assets/img/ に保存する
+            5. 記事のフロントマターに image.path を設定する
+
+            ⚠️ git commit と git push は実行しないこと（ワークフローが自動で行う）
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      - name: Commit and push
+        run: |
+          git add _posts/ assets/img/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          DATE=$(date -u +"%Y-%m-%d")
+          git commit -m "chore(ainews): add AI news post for ${DATE}"
+          git push origin main

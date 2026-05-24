@@ -7,6 +7,16 @@
 ## 2026-05-24
 
 ### 変更内容
+- GitHub Actions ワークフロー追加: `.github/workflows/daily-ainews.yml`（毎日6:00 JST に ainews スキルを自動実行し main にプッシュ → Pages を自動更新）
+
+### 理由
+- AIニュース記事の毎日6時自動投稿フローを構築するため
+
+---
+
+## 2026-05-24（ainews記事）
+
+### 変更内容
 - 新記事追加: `_posts/2026-05-24-hermes-agent-ai-secretary.md`（「AIの秘書が自分で育つって本当？ Hermes Agentがすごい理由をやさしく解説」）
 - 画像追加: `assets/img/hermes-agent-eyecatch-2026.png`（Hermes Agentをイメージした未来のAI秘書アイキャッチ）
 
