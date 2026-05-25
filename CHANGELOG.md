@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-05-25
+
+### 変更内容
+- `scripts/generate-ainews.py` 追加: Claude API + RSSフィードを使って毎日AIニュース記事を自動生成するスクリプト
+- `.github/workflows/ainews.yml` 追加: 毎日6時JST（21:00 UTC）にainewsスクリプトを実行し、記事をコミット&プッシュするGitHub Actionsワークフロー
+
+### 理由
+- 毎日6時にAIニュース記事を自動生成・投稿・Pages更新するパイプラインを構築するため
+
+---
+
 ## 2026-05-26
 
 ### 変更内容
