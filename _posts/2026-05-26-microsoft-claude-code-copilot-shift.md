@@ -5,7 +5,7 @@ date: 2026-05-26 12:00:00 +0900
 categories: [AI, トレンド]
 tags: ["Microsoft", "Claude", "Copilot", "AIコスト", "企業AI"]
 image:
-  path: /assets/img/ai-news-manga-2026-05-22.png
+  path: /assets/img/ai-news-manga-2026-05-25.png
 ---
 
 ## 今週のAIニュース漫画
