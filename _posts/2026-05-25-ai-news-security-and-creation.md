@@ -5,12 +5,12 @@ date: 2026-05-25 12:00:00 +0900
 categories: [AI, トレンド]
 tags: ["AIセキュリティ", "生成AI", "Codex", "DeepMind", "Anthropic"]
 image:
-  path: /assets/img/ai-news-manga-2026-05-25.png
+  path: /assets/img/ai-news-manga-2026-05-22.png
 ---
 
 ## 今週のAIニュース漫画
 
-![今週のAIニュース漫画](/assets/img/ai-news-manga-2026-05-25.png)
+![今週のAIニュース漫画](/assets/img/ai-news-manga-2026-05-22.png)
 
 ---
 
