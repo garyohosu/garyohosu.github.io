@@ -4,12 +4,22 @@
 
 ---
 
+## 2026-05-26
+
+### 変更内容
+- 新記事追加: `_posts/2026-05-26-microsoft-claude-code-copilot-shift.md`（「Microsoftが“最強AI部下”を減らした本当の理由」）
+- MicrosoftのClaude Code利用縮小とCopilot移行のニュースを、非エンジニア向けに例え話を交えて深掘り解説
+- コスト問題、dogfooding、Uber事例などを平易に説明。画像は認証問題のため暫定使用
+
+### 理由
+- X上で話題になったMicrosoftのAIツール移行ニュースを、企業におけるAIコストの現実として一般読者にわかりやすく伝えるため。
+
 ## 2026-05-25
 
 ### 変更内容
 - 新記事追加: `_posts/2026-05-25-ai-news-security-and-creation.md`（「AIが1万件の脆弱性を発見！今週は『守り』と『創造』の両輪が加速」）
 - 記事はainews.mdに基づき、Anthropic Project Glasswing、Google DeepMind SynthID/Genie、OpenAI Codex Goal Modeなどを5つのトレンドとしてまとめました
-- 画像: `assets/img/ai-news-manga-2026-05-25.png`（※画像生成API認証エラーのため後で追加予定）
+- 画像: `assets/img/ai-news-manga-2026-05-22.png`（device_code exhaustedのため5/22の画像を暫定使用。53分待機後またはdashboard認証後に本画像を生成予定）
 
 ### 理由
 - ainews.mdを実行して最新AIニュース記事を作成するため。過去3日間の主要発表（Anthropicのサイバーセキュリティ成果、DeepMindの現実世界応用、OpenAIのCodex進化）を非専門家向けにわかりやすく解説。
