@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-05-26 (2)
+
+### 変更内容
+- GitHub Actions ワークフロー追加: `.github/workflows/daily-ainews.yml`
+- 毎日6時(JST)に自動で `/ainews` スキルを実行し、記事生成→commit→pushを行う定期ジョブ
+
+### 理由
+- AIニュース記事の毎日自動投稿を実現するため。ANTHROPIC_API_KEYシークレットをリポジトリに設定することで有効化。
+
 ## 2026-05-26
 
 ### 変更内容
