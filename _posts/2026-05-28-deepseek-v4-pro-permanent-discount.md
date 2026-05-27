@@ -3,7 +3,7 @@ title: "中国製激安AI「DeepSeek V4 Pro」が永久75%オフに。ChatGPTの
 date: 2026-05-28 09:00:00 +0900
 categories: ai
 tags: [DeepSeek, AI, 価格比較, Claude, GPT, Gemini]
-image: /assets/img/deepseek-v4-pro-eyecatch.png
+# image: /assets/img/deepseek-v4-pro-eyecatch.png  # 画像生成後に有効化（HTMLProoferエラー回避のため一旦無効化）
 ---
 
 ![DeepSeek V4 Pro アイキャッチ](/assets/img/deepseek-v4-pro-eyecatch.png)
