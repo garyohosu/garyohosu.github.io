@@ -8,11 +8,13 @@
 
 ### 変更内容
 - 新記事追加: `_posts/2026-05-28-deepseek-v4-pro-permanent-discount.md`（「中国製激安AI「DeepSeek V4 Pro」が永久75%オフに。ChatGPTの30分の1の値段でこの性能は本気でヤバい」）
-- Gigazine記事に基づき、Xの反応とClaude/GPT/Geminiとの価格比較を非エンジニア向けに大幅に簡略化して執筆
-- 中国製であることのプライバシー注意点も明記。アイキャッチ画像は後続で追加予定
+- 新記事追加: `_posts/2026-05-28-note-android-cli.md`（note紹介：「Android CLIを試して見る」）
+- note記事を基に、AIエージェントがAndroidアプリを効率的に開発できるGoogle公式CLIツールを非エンジニア向けに比喩多めでやさしく解説
+- 記事のOGサムネイル画像を `assets/img/2026-05-28-note-android-cli.png` として追加
 
 ### 理由
 - ユーザーのリクエストにより、DeepSeek V4 Proの永久割引ニュースをブログで解説。X評判と他API比較を平易にまとめ、一般読者が「安さの衝撃」を実感できる内容にした。
+- note.com/hantaniさんの新着記事「Android CLIを試して見る」（5/27公開）をcron自動チェックで検知。未紹介だったため、即時ブログ紹介記事を作成し、AIツールの実用性を一般読者に伝えるため。
 
 ## 2026-05-26
 
