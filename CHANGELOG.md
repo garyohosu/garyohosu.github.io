@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-05-29 (2)
+
+### 変更内容
+- GitHub Actions ワークフロー追加: `.github/workflows/daily-ainews.yml`
+  - 毎日06:00 JST（21:00 UTC）に `ainews` スキルを自動実行
+  - Claude Code CLI で `ainews.md` の指示を実行し、記事を `_posts/` に保存
+  - 変更があれば `main` へ自動コミット＆プッシュ → `pages-deploy.yml` が GitHub Pages を更新
+
+### 理由
+- 毎日のAIニュース記事作成・公開を完全自動化するため
+
+---
+
 ## 2026-05-29
 
 ### 変更内容

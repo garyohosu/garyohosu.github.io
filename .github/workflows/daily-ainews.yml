@@ -1,0 +1,52 @@
+name: "Daily AI News (6 AM JST)"
+on:
+  schedule:
+    - cron: "0 21 * * *"   # 21:00 UTC = 6:00 AM JST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "daily-ainews"
+  cancel-in-progress: false
+
+jobs:
+  create-ainews:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Run ainews skill
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          claude --dangerously-skip-permissions -p \
+            "ainews.md を読み、その指示に従ってAIニュース記事を作成してください。記事は _posts/ に保存してください。"
+
+      - name: Commit and push if changed
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git add _posts/ assets/img/ ainews.md
+            git commit -m "feat(ainews): daily AI news $(date +'%Y-%m-%d')"
+            git push origin main
+          else
+            echo "No changes to commit"
+          fi
