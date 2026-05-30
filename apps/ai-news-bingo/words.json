@@ -28,11 +28,11 @@
   "path",
   "alt",
   "Agent",
-  "OpenClaw",
   "hantani",
+  "OpenClaw",
   "note.com",
-  "Jekyll",
   "生成AI",
+  "Jekyll",
   "Apple",
   "LLM",
   "Pages",
@@ -314,6 +314,7 @@
   "エラー解決",
   "オープンソース",
   "バイブコーディング",
+  "ブログ運用",
   "プロンプト",
   "マルチエージェント",
   "医療AI",
@@ -372,7 +373,7 @@
   "tech-news",
   "troubleshooting",
   "web-app",
-  "ブログ運用",
+  "初心者向け",
   "args",
   "CS",
   "dall-e-2",
@@ -397,6 +398,5 @@
   "Vera",
   "Add",
   "Agent Builder",
-  "ai-news-bingo",
-  "AIニュースBingo"
+  "ai-news-bingo"
 ]
