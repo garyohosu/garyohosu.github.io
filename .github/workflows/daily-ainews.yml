@@ -1,0 +1,51 @@
+name: Daily AI News (ainews)
+
+on:
+  schedule:
+    - cron: '0 21 * * *'  # 毎日 6:00 JST (= 21:00 UTC)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  ainews:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run ainews skill via Claude Code
+        uses: anthropics/claude-code-action@beta
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          allowed_tools: "Bash,Read,Edit,Write,WebSearch,WebFetch"
+          prompt: |
+            あなたはブログ自動投稿エージェントです。以下の手順で作業してください。
+
+            ## 手順
+
+            1. `ainews.md` を読んで記事作成ルールを把握する
+            2. 最新のAIニュースをWebで調査し、今日の日付のAIニュース記事を `_posts/YYYY-MM-DD-ai-news-weekly.md` に作成する
+               - ファイル名の YYYY-MM-DD は今日の日付
+               - Jekyllフロントマター必須（title, date, categories, tags など）
+               - 数字のみのタグは必ずクォートする
+               - 外部URLは全て https:// で始まること
+            3. 記事のサムネイル画像を `assets/img/` に保存する（URLから取得 or 生成）
+            4. `CHANGELOG.md` を今日の日付で更新する
+            5. 作成・変更したファイルをコミット＆プッシュする:
+               ```bash
+               git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+               git config user.name "github-actions[bot]"
+               git add _posts/ assets/img/ CHANGELOG.md
+               git diff --staged --quiet || git commit -m "feat(ainews): daily AI news $(date '+%Y-%m-%d')"
+               git push
+               ```
+
+            ## 注意事項
+            - 類似ファイル名が既にないか `ls _posts/` で確認してから作成する
+            - YAMLフロントマターの引用符が正しいか確認する
+            - `image.path` に指定した画像ファイルが `assets/img/` に実在すること

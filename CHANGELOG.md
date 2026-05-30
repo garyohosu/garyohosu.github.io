@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-05-30 (2件目)
+
+### 変更内容
+- 新ワークフロー追加: `.github/workflows/daily-ainews.yml`
+  - 毎日 6:00 JST に自動実行（cron: `0 21 * * *`）
+  - `anthropics/claude-code-action@beta` で ainews スキルを実行
+  - 記事作成 → コミット → プッシュ → GitHub Pages 自動更新
+
+### 理由
+- AIニュース記事の毎日6時自動生成・公開を実現するため
+
+---
+
 ## 2026-05-30
 
 ### 変更内容
