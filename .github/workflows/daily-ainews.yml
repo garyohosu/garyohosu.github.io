@@ -1,0 +1,36 @@
+name: Daily AI News
+
+on:
+  schedule:
+    - cron: '0 21 * * *'  # 06:00 JST (UTC+9)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  ainews:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+
+      - name: Run ainews via Claude Code
+        uses: anthropics/claude-code-action@beta
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            /ainews
+
+            記事の作成が完了したら、以下を実行してください：
+            1. `git status` で変更ファイルを確認
+            2. `_posts/` と `assets/img/` の新規ファイルを `git add`
+            3. `git commit -m "feat(ainews): add AI news $(date +%Y-%m-%d)"`
+            4. `git push origin main`
