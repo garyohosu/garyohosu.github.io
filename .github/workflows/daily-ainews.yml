@@ -1,0 +1,60 @@
+name: "Daily AI News"
+
+on:
+  schedule:
+    - cron: "0 21 * * *"   # 毎日 06:00 JST
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  ainews:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Configure Git
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+
+      - name: Run ainews skill
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          claude --dangerously-skip-permissions -p "
+          ainews.md を読んで、その指示に従い、今日のAIニュース記事を作成してください。
+
+          手順:
+          1. ainews.md をまず読んで、形式・スタイル・構成を確認する
+          2. Web検索で過去24時間以内の最新AIニュースを収集する
+          3. ainews.md の形式・スタイルに従い、日本語の記事を作成する
+          4. ファイル名は $(date +%Y-%m-%d)-ai-news-roundup.md の形式で _posts/ に保存する
+             ※ 同名ファイルが既にある場合は -2, -3 と連番を付ける
+          5. CHANGELOG.md に変更を追記する
+
+          今日の日付: $(date +%Y-%m-%d)
+          "
+
+      - name: Commit and push
+        run: |
+          git add _posts/ assets/img/ CHANGELOG.md 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "変更なし、コミットをスキップします"
+            exit 0
+          fi
+          git commit -m "$(date +%Y-%m-%d) AIニュース記事追加 (自動生成)"
+          git push origin main

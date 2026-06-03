@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-06-03 (2件目)
+
+### 変更内容
+- `.github/workflows/daily-ainews.yml` を追加（毎日 06:00 JST に ainews スキルを自動実行）
+
+### 理由
+- ainews.md の実行・GitHub push・Pages 更新を毎日 6 時に自動化するため
+
+---
+
 ## 2026-06-03
 
 ### 変更内容
