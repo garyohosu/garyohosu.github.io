@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-06-03
+
+### 変更内容
+- 新記事追加: `_posts/2026-06-03-ai-news-roundup.md`（「AIがWindows PCを直接操作！ Codex「Computer Use」対応と量子AI加速の今週ニュース」）
+- PC Watch報道のOpenAI Codex「Computer Use」Windows対応をメインに、量子コンピュータ×AIのShorアルゴリズム加速（Justin Drake予測更新）、MiniMax M3リリース、GrokのNotion統合、Claude Code更新、OpenAI障害情報を統合
+- 非エンジニア向けに「AIがPC画面を見て作業してくれる」「量子コンピュータがAIの助けで強くなる」などの比喩を多用してやさしく解説。画像は生成失敗のためfrontmatterから一時削除
+
+### 理由
+- ユーザーの直接依頼により、指定されたPC Watch記事を中心に今週のAIニュースをまとめたブログ記事を作成・公開するため。実用的なagent機能と最先端研究の両方を一般読者にわかりやすく届ける。
+
 ## 2026-05-30
 
 ### 変更内容
