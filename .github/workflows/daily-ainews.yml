@@ -1,0 +1,44 @@
+name: "Daily AI News"
+
+on:
+  schedule:
+    - cron: "0 21 * * *"  # 毎日 6:00 JST (21:00 UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  ainews:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+
+      - name: Run ainews skill
+        uses: anthropics/claude-code-action@beta
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            ainews.md の指示に従い、今日のAIニュース記事を作成してください。
+
+            手順：
+            1. ainews.md を読む
+            2. 最新のAIニュース（直近2〜3日）をWeb検索でリサーチする
+            3. `_posts/` に今日の日付で記事ファイルを作成する（形式: YYYY-MM-DD-ai-news-digest.md）
+            4. AGENTS.md のチェックリストに従い、フロントマターや画像パスを確認する
+            5. git add と git commit を実行する（pushはしない）
+
+            コミットメッセージは英語で `Add daily AI news YYYY-MM-DD` 形式にしてください。
+          allowed_tools: "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
+
+      - name: Push to main
+        run: git push origin main
