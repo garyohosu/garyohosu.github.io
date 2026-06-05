@@ -4,6 +4,13 @@
 
 ---
 
+## 2026-06-05
+### 変更内容
+- `.github/workflows/daily-ainews.yml` を追加：毎日 6:00 AM JST に Claude Code で ainews スキルを自動実行し、記事作成・push・Pages デプロイを行うワークフロー
+
+### 理由
+- 毎日の AI ニュース記事投稿を自動化するため
+
 ## 2026-06-04
 
 ### 変更内容
