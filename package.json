@@ -2,11 +2,15 @@
   "name": "garyohosu.github.io",
   "private": true,
   "version": "0.0.0",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.55.0"
+  },
   "devDependencies": {
     "playwright": "^1.48.0"
   },
   "scripts": {
     "check:thumb": "node scripts/check-post-thumb.js",
-    "check:post-push": "node scripts/ai-post-push-check.mjs"
+    "check:post-push": "node scripts/ai-post-push-check.mjs",
+    "ainews": "node scripts/generate-ainews.mjs"
   }
 }

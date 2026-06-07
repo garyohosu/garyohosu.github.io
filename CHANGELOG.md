@@ -4,6 +4,18 @@
 
 ---
 
+## 2026-06-07
+
+### 変更内容
+- `.github/workflows/daily-ainews.yml` 追加：毎日6:00 JST（21:00 UTC）にAIニュース記事を自動生成してmainへpush
+- `scripts/generate-ainews.mjs` 追加：Anthropic Claude API（Webサーチ付き）でAIニュース記事を生成し `_posts/YYYY-MM-DD-ai-news-daily.md` として保存
+- `package.json` に `@anthropic-ai/sdk` 依存と `npm run ainews` スクリプトを追加
+
+### 理由
+- 毎日6時のAIニュース記事生成・push・Pages更新を自動化するため
+
+---
+
 ## 2026-06-04
 
 ### 変更内容
