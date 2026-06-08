@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-06-08
+
+### 変更内容
+- `.github/workflows/daily-ainews.yml` を追加：毎日 6:00 JST に `/ainews` スキルを自動実行し、記事を commit/push → GitHub Pages を更新する GitHub Actions ワークフロー
+
+### 理由
+- 毎日手動で ainews.md を実行する作業を自動化するため。スケジュール（cron）でトリガーし、`anthropics/claude-code-action` で記事を生成、push 後に既存の `pages-deploy.yml` が Pages を更新する。
+
+---
+
 ## 2026-06-04
 
 ### 変更内容
