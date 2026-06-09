@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-06-09
+
+### 変更内容
+- `scripts/generate-ainews.mjs` を追加: Anthropic API + RSS フィードを使い AIニュース記事を自動生成するスクリプト
+- `.github/workflows/daily-ainews.yml` を追加: 毎日 06:00 JST に ainews 記事を生成・コミット・push する GitHub Actions ワークフロー
+
+### 理由
+- AIニュース記事作成を毎日 6 時に自動化するため。push 後は既存の `pages-deploy.yml` が自動的に GitHub Pages を更新する。
+
 ## 2026-06-04
 
 ### 変更内容
