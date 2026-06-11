@@ -1,0 +1,59 @@
+name: "Daily AI News"
+
+on:
+  schedule:
+    - cron: "0 21 * * *"  # 06:00 JST (UTC+9)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  ainews:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+
+      - name: Run ainews skill via Claude Code
+        uses: anthropics/claude-code-action@beta
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          allowed_tools: "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
+          prompt: |
+            あなたはブログ運用AIです。以下の手順でAIニュース記事を作成してください。
+
+            ## 事前確認
+            - `AGENTS.md` と `.claude/rules/blog-operation.md`（存在する場合）を読む
+            - `ainews.md` を読んで記事フォーマット・スタイルを把握する
+            - `_posts/` 内の最新AIニュース記事を確認してスラッグの重複を避ける
+
+            ## 記事作成
+            1. WebSearch で直近7日間の最新AIニュース（日本語・英語）を収集する
+            2. 以下のフォーマットで `_posts/YYYY-MM-DD-ai-news-<slug>.md` を作成する
+               - YYYY-MM-DD は今日の日付
+               - <slug> はユニークな英数字スラッグ（例: daily-trends, roundup など）
+               - ainews.md と同じ Jekyll frontmatter 形式を使用
+               - 本文は ainews.md と同じ構成で日本語で書く
+               - 外部URLは必ず `https://` を使用（`http://` 禁止）
+               - 数値のみのタグ・カテゴリはダブルクォートで囲む
+
+            ## Git操作
+            記事ファイルを作成したら以下を実行：
+            ```bash
+            git add _posts/
+            git commit -m "Add daily AI news article for $(date +%Y-%m-%d)"
+            git push origin main
+            ```
+
+            ## 注意
+            - `_config.yml` は変更しない
+            - 存在しない画像パスは frontmatter に含めない
+            - コミットメッセージは英語
