@@ -1,0 +1,38 @@
+name: Daily AI News
+
+on:
+  schedule:
+    - cron: '0 21 * * *'  # 6:00 AM JST (UTC+9)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  ainews:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+      - name: Run ainews with Claude Code
+        uses: anthropics/claude-code-action@beta
+        with:
+          prompt: |
+            /ainews を実行してください。
+            記事を _posts/ ディレクトリに保存したら、以下のgit操作を行ってください:
+            1. git status で新規ファイルを確認
+            2. git add で新しい記事ファイルをステージング
+            3. CHANGELOG.md に今日の変更を追記してステージング
+            4. git commit -m "Add daily AI news post $(date +%Y-%m-%d)" でコミット（英語メッセージ）
+            5. git push origin main でプッシュ
+            プッシュ後は node scripts/ai-post-push-check.mjs を実行して確認してください。
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
