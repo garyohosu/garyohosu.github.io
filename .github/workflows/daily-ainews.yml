@@ -1,0 +1,59 @@
+name: "Daily AI News"
+
+on:
+  schedule:
+    - cron: "0 21 * * *"  # 6:00 AM JST (UTC+9)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  ainews:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        env:
+          REPO: ${{ github.repository }}
+          SERVER_URL: ${{ github.server_url }}
+          TOKEN: ${{ secrets.GH_PAT || github.token }}
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          SERVER_STRIPPED="${SERVER_URL#https://}"
+          git remote set-url origin "https://x-access-token:${TOKEN}@${SERVER_STRIPPED}/${REPO}.git"
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Set today's date (JST)
+        run: echo "TODAY=$(TZ=Asia/Tokyo date +%Y-%m-%d)" >> $GITHUB_ENV
+
+      - name: Run ainews skill
+        run: |
+          claude --dangerously-skip-permissions -p \
+            "/ainews を実行してください。今日の日付は ${TODAY}（JST）です。作成した記事は _posts/ ディレクトリに保存してください。"
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Commit and push
+        run: |
+          git add _posts/ assets/img/ ainews.md 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No new content generated"
+            exit 0
+          fi
+          git commit -m "Add daily AI news post ${TODAY}"
+          git push origin main
