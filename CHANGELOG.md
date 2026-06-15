@@ -4,16 +4,18 @@
 
 ---
 
-## 2026-06-15
+## 2026-06-16
 
 ### 変更内容
-- 新記事確認: `_posts/2026-06-15-ai-news-government-intervention.md`（「AIの最新トレンド5選：政府がフロンティアモデルを止めた衝撃 - 2026年6月」）
-- 欠損画像を修正: `assets/img/ai-news-manga-2026-05-26.png`、`assets/img/ai-news-manga-2026-06-15.png` を追加（HTMLProofer ビルド失敗の修正）
+- 新記事追加: `_posts/2026-06-16-note-lolipop-hermes-update.md`（「noteに記事を公開しました：ロリポップのHermes Agentにアップデート機能が追加されていた やさしく解説」）
+- note.com/hantaniさんの2026-06-15公開記事「ロリポップのHermes Agentにアップデート機能が追加されていた」をcron自動チェックで検知
+- Hermes Agentの新アップデート機能（バージョン管理・検証済み表示）を「住み込みの優秀な執事さんが最新マニュアルを覚える」などのアナロジーで非エンジニア向けに解説
+- noteのOGサムネイル画像を `assets/img/2026-06-16-note-hermes-lolipop-update.png` として追加
 
 ### 理由
-- 毎日6時のainews定期実行。Build and Deploy が `Test site` ステップで失敗していたため、欠損していた画像ファイルをプレースホルダーとして追加し、ビルドを修正。
+- 毎日朝8時のcronジョブによりnote.com/hantaniの新着をチェック。未紹介だった実用的なAIツール改善事例を一般読者向けに紹介するため。Hermes Agentの継続的な運用しやすさを広める。
 
-## 2026-06-14
+## 2026-06-15
 
 ### 変更内容
 - 新記事追加: `_posts/2026-06-14-note-ai-novel-contest.md`（「noteに記事を公開しました：生成AIで8年前の小説アイデアを蘇らせて創作大賞に応募！ やさしく解説」）
