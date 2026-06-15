@@ -153,6 +153,13 @@ node scripts/ai-post-push-check.mjs
 **解決**: `scripts/ai-post-push-check.mjs` を追加し、push後チェックをAIの自動実行手順に変更。
 **再発防止**: AIエージェントは push直後に `node scripts/ai-post-push-check.mjs` を必ず実行する。
 
+### カテゴリー11: ainews定期実行時の画像欠損によるビルド失敗
+#### 2026-06-15: ai-news-manga 画像欠損で HTMLProofer 失敗
+**症状**: `Build and Deploy` の `Test site` ステップで `internal image .../ai-news-manga-2026-06-15.png does not exist` および `ai-news-manga-2026-05-26.png does not exist` エラーが発生しビルド失敗。
+**原因**: ainews 記事（2026-06-15）と note 紹介記事（2026-05-26 の2記事）が存在しない画像ファイルを参照していた。画像生成が記事作成と同時に行われなかったため。
+**解決**: 直近の既存 manga 画像（`ai-news-manga-2026-05-25.png`）をプレースホルダーとしてコピーし、欠損ファイル名で `assets/img/` に追加。再 push 後のビルドで全ステップ success を確認。
+**再発防止**: ainews 記事作成時は必ず manga 画像ファイルを同時に生成・追加すること。note 紹介記事でも `image.path` に指定した画像が実在するか事前確認すること。
+
 ### カテゴリー10: root-portal 監視異常（CompanyGuardian）
 #### 2026-03-13: root-portal リンク切れ・掲載漏れ
 **症状**: CompanyGuardian 日報で `KEYWORD_MISSING: Virtual Company`、`LINK_BROKEN: https://genspark.ai?via=garyo471`、`LINK_BROKEN: https://garyohosu.github.io/{url}`、ポータル掲載漏れ 5 件が報告された。
