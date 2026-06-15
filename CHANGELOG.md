@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-06-15
+
+### 変更内容
+- 新記事確認: `_posts/2026-06-15-ai-news-government-intervention.md`（「AIの最新トレンド5選：政府がフロンティアモデルを止めた衝撃 - 2026年6月」）
+- 欠損画像を修正: `assets/img/ai-news-manga-2026-05-26.png`、`assets/img/ai-news-manga-2026-06-15.png` を追加（HTMLProofer ビルド失敗の修正）
+
+### 理由
+- 毎日6時のainews定期実行。Build and Deploy が `Test site` ステップで失敗していたため、欠損していた画像ファイルをプレースホルダーとして追加し、ビルドを修正。
+
 ## 2026-06-14
 
 ### 変更内容
