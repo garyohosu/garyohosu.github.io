@@ -7,6 +7,8 @@
 ## 2026-06-16
 
 ### 変更内容
+- 新記事追加（ainews定期実行）: `_posts/2026-06-16-ai-news-model-flood-june.md`（「AIの最新トレンド5選：史上最多モデルリリースが激突する2026年6月」）
+- manga画像追加: `assets/img/ai-news-manga-2026-06-16.png`
 - 新記事追加: `_posts/2026-06-16-note-lolipop-hermes-update.md`（「noteに記事を公開しました：ロリポップのHermes Agentにアップデート機能が追加されていた やさしく解説」）
 - note.com/hantaniさんの2026-06-15公開記事「ロリポップのHermes Agentにアップデート機能が追加されていた」をcron自動チェックで検知
 - Hermes Agentの新アップデート機能（バージョン管理・検証済み表示）を「住み込みの優秀な執事さんが最新マニュアルを覚える」などのアナロジーで非エンジニア向けに解説
