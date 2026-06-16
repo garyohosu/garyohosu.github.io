@@ -11,9 +11,12 @@
 - note.com/hantaniさんの2026-06-15公開記事「ロリポップのHermes Agentにアップデート機能が追加されていた」をcron自動チェックで検知
 - Hermes Agentの新アップデート機能（バージョン管理・検証済み表示）を「住み込みの優秀な執事さんが最新マニュアルを覚える」などのアナロジーで非エンジニア向けに解説
 - noteのOGサムネイル画像を `assets/img/2026-06-16-note-hermes-lolipop-update.png` として追加
-- 新記事追加: `_posts/2026-06-16-note-dq1-ai-game.md`（「noteに記事を公開しました：ドラクエ１っぽいゲームをAIで作ってみた」）
-- note.com/hantaniさんの2026-06-16公開記事「ドラクエ１っぽいゲームをAIで作ってみた」を紹介
-- OGサムネイル画像を `assets/img/2026-06-16-note-dq1-ai-game.png` として追加
+ - 新記事追加: `_posts/2026-06-16-note-dq1-ai-game.md`（「noteに記事を公開しました：ドラクエ１っぽいゲームをAIで作ってみた」）
+ - note.com/hantaniさんの2026-06-16公開記事「ドラクエ１っぽいゲームをAIで作ってみた」を紹介
+ - OGサムネイル画像を `assets/img/2026-06-16-note-dq1-ai-game.png` として追加
+ - 新記事追加: `_posts/2026-06-16-multi-agent-ai-team.md`（「Xでバズっている「マルチエージェント」って何？ 複数AIがチームで働く未来をやさしく解説」）
+ - Xで話題のFusion AgentsやClaudeのマルチエージェント機能を「専門分野の違う執事チーム」のアナロジーで非エンジニア向けに解説
+ - 過去のmulti-agent関連SVGを `assets/img/2026-06-16-multi-agent-team.svg` として使用
 
 ### 理由
 - 毎日朝8時のcronジョブによりnote.com/hantaniの新着をチェック。未紹介だった実用的なAIツール改善事例を一般読者向けに紹介するため。Hermes Agentの継続的な運用しやすさを広める。
