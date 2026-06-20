@@ -160,6 +160,12 @@ node scripts/ai-post-push-check.mjs
 **解決**: 直近の既存 manga 画像（`ai-news-manga-2026-05-25.png`）をプレースホルダーとしてコピーし、欠損ファイル名で `assets/img/` に追加。再 push 後のビルドで全ステップ success を確認。
 **再発防止**: ainews 記事作成時は必ず manga 画像ファイルを同時に生成・追加すること。note 紹介記事でも `image.path` に指定した画像が実在するか事前確認すること。
 
+#### 2026-06-20: ainews.md が手順ファイルとして機能していなかった問題
+**症状**: 定期実行ルーチンで `ainews.md` を読んだところ、本来あるべき実行指示（プロンプト）ではなく、過去（2026-05-25頃）に生成された記事本文がそのまま書き込まれており、`_posts/` には対応する記事が存在しなかった（記事は未公開のまま失われていた）。
+**原因**: 過去のainews実行時に、生成した記事本文を `_posts/` 配下の新規ファイルに保存せず、誤って `ainews.md` 自体を編集・上書きしてしまった。
+**解決**: `ainews.md` を直前のコミット（`d75379b`時点）の指示文に復元し、「生成した記事本文は `ainews.md` には書き込まず、必ず `_posts/` 配下の新規ファイルに保存すること」という注意書きを追記。また、DALL-E 3 API（`OPENAI_API_KEY`／`dalle-image` MCP）が利用できない実行環境だったため、直近の manga 画像（`ai-news-manga-2026-06-16.png`）を `ai-news-manga-2026-06-20.png` としてプレースホルダーコピーして使用。
+**再発防止**: ainews 実行前に `ainews.md` の先頭が指示文（「あなたは、AI分野を専門とする...」）で始まっているか確認する。記事生成後は必ず `_posts/` に新規ファイルが作成されたことを確認し、`ainews.md` 自体に差分が出ていないかを `git diff ainews.md` でチェックする。
+
 ### カテゴリー10: root-portal 監視異常（CompanyGuardian）
 #### 2026-03-13: root-portal リンク切れ・掲載漏れ
 **症状**: CompanyGuardian 日報で `KEYWORD_MISSING: Virtual Company`、`LINK_BROKEN: https://genspark.ai?via=garyo471`、`LINK_BROKEN: https://garyohosu.github.io/{url}`、ポータル掲載漏れ 5 件が報告された。
