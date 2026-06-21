@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-06-21
+
+### 変更内容
+- 新記事追加（ainews定期実行）: `_posts/2026-06-21-ai-news-talent-war-and-market-share.md`（「AIの最新トレンド5選：トップ人材の争奪戦とChatGPTの牙城に変化が起きた2026年6月」）
+- manga画像追加: `assets/img/ai-news-manga-2026-06-21.png`（DALL-E 3 APIが利用不可だったため、直近の `ai-news-manga-2026-06-20.png` をプレースホルダーとしてコピー）
+
+### 理由
+- 毎日6時の定期実行ルーチンにより、直近3日以内のAIニュース（Noam Shazeer氏のOpenAI移籍、John Jumper氏のAnthropic移籍、ChatGPTシェア低下など）をもとに記事を作成。
+
 ## 2026-06-20
 
 ### 変更内容
