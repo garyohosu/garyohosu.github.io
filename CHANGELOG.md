@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-06-24 (ainews定期実行)
+
+### 変更内容
+- 新記事追加（ainews定期実行）: `_posts/2026-06-24-ai-news-gemini-deepthink-shazeer.md`（「Googleの"最強AI"登場とTransformer生みの親の転職 2026年6月後半AIニュース」）
+- プレースホルダー画像追加: `assets/img/ai-news-manga-2026-06-24.png`（DALL-E 3 API / dalle-image MCPが利用できない実行環境のため、直近のmanga画像をコピーして使用）
+
+### 理由
+- 毎日6時の定期実行ルーチンで`ainews.md`の指示に従い、過去3日以内の最新AI動向（Gemini 2.5 Pro Deep Think、Noam Shazeer氏のOpenAI移籍、ChatGPTシェア50%割れ、中国のAI投資計画）を非エンジニア向けにまとめた
+
 ## 2026-06-24
 
 ### 変更内容
