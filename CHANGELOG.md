@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-06-25 (ainews定期実行)
+
+### 変更内容
+- 新記事追加（ainews定期実行）: `_posts/2026-06-25-ai-news-spacex-cursor-jumper-anthropic.md`（「SpaceXがCursorを6兆円で買収＆AlphaFold開発者がAnthropicへ 2026年6月25日AIニュース」）
+- プレースホルダー画像追加: `assets/img/ai-news-manga-2026-06-25.png`（DALL-E 3 API / dalle-image MCPが利用できない実行環境のため、直近のmanga画像をコピーして使用）
+
+### 理由
+- 毎日6時の定期実行ルーチンで`ainews.md`の指示に従い、過去3日以内の最新AI動向（SpaceXによるCursor/Anysphere買収、John Jumper氏のAnthropic移籍、Gemini 3.5 Pro GA間近、Claude Fable 5の料金変更、Getty-OpenAI提携、AIエージェント投資拡大）を非エンジニア向けにまとめた
+
 ## 2026-06-24 (ainews定期実行)
 
 ### 変更内容
