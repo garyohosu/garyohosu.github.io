@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-06-27 (ainews定期実行)
+
+### 変更内容
+- 新記事追加（ainews定期実行）: `_posts/2026-06-27-ai-news-talent-war-and-chip.md`（「Google研究者の大量流出とOpenAIの自社製AIチップ「Jalapeño」 2026年6月27日のAIニュース」）
+- 画像は既存記事（2026-06-24）のmanga画像をプレースホルダーとして再利用（DALL-E 3 API / dalle-image MCPが利用できない実行環境のため）
+
+### 理由
+- 毎日6時の定期実行ルーチンで`ainews.md`の指示に従い、過去3日以内の最新AI動向（Google研究者の相次ぐAnthropic移籍、OpenAI・Broadcomの自社製チップJalapeño発表、AnthropicによるAlibaba/Qwen蒸留攻撃の米議会提訴）を非エンジニア向けにまとめた
+- 直近2記事（Mythos対GPT-5.5-Cyberの国家安全保障対立）と内容が重複しないよう、人材・ハードウェア・知的財産という別の3トピックを選定した
+
 ## 2026-06-24 (ainews定期実行)
 
 ### 変更内容
