@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-06-29
+
+### 変更内容
+- 新記事追加: `_posts/2026-06-29-agent-loop-loop-engineering.md`（「AIエージェントの本質はwhileループだった：Agent LoopとLoop Engineering入門」）
+
+### 理由
+- ユーザー指示による詳細解説記事の作成
+- OpenAI公式ガイド・Agents SDK・Addy OsmaniのLoop Engineering記事・Ziwen XuのGTA風ゲーム開発事例を調査した上で執筆
+- 初心者〜AIコーディングエージェント利用者を対象に、Agent Loopの本質とLoop Engineering概念をやさしく・正確に解説
+- 画像なし（専用画像が存在しないためimage:フロントマターを省略）
+
 ## 2026-06-28 (ainews定期実行)
 
 ### 変更内容
