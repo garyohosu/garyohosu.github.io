@@ -30,6 +30,15 @@
 - 毎日6時の定期実行ルーチンで`ainews.md`の指示に従い、過去3〜5日以内の最新AI動向（OpenAI GPT-5.6 Sol/Terra/Lunaの政府限定先行公開、Claude Mythos 5輸出規制の一部解除とオーストリアによるEUへのAnthropic誘致提案、Figma Motionのアニメーション機能）を非エンジニア向けにまとめた
 - 直近の記事（人材流出・チップ、IPO・コスト、Agent Loop解説）と重複しないよう、「最先端AIへのアクセス制限」という新しい切り口を選定した
 
+## 2026-06-29 (追記)
+
+### 変更内容
+- note投稿用下書き追加: `drafts/note-agent-loop-loop-engineering.md`
+
+### 理由
+- `_posts/2026-06-29-agent-loop-loop-engineering.md` のnote向け整形版
+- Front Matter削除、見出し軟化、リード文追加、タグ案追記
+
 ## 2026-06-29
 
 ### 変更内容
