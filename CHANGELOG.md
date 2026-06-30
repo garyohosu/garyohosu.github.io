@@ -4,6 +4,18 @@
 
 ---
 
+## 2026-07-01
+
+### 変更内容
+- 新記事追加: `_posts/2026-07-01-note-deno-desktop-app.md`（「noteに記事を公開しました：DenoでDesktopアプリを作ってみるをやさしく解説」）
+- note OGサムネイル画像追加: `assets/img/2026-07-01-note-deno-desktop.png`
+
+### 理由
+- cron自動チェック（毎日朝8時 https://note.com/hantani ）で2026-06-30公開の新着note（ID: nb35677327f40）を検知。未紹介だったためフルワークフローを実行
+- 非エンジニア向けに短い段落・多数の見出し・家や執事のアナロジーを使い、Denoの新「deno desktop」機能とClaude Codeの組み合わせを客観的第三者視点で解説
+- 画像はnoteページのogImageをcurlでassets/img/に安定名でダウンロードしてfrontmatterで参照
+- AGENTS.mdルール（CHANGELOG更新、git pull --rebase、post-pushチェック）を厳守
+
 ## 2026-06-29 (ainews定期実行)
 
 ### 変更内容
