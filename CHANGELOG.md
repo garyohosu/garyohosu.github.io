@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-06-30 (ainews定期実行)
+
+### 変更内容
+- 新記事追加（ainews定期実行）: `_posts/2026-06-30-ai-news-gpt56-gemini-deepthink.md`（「GPT-5.6登場・Gemini Deep Think・AIチップ自社開発──2026年6月末AI最前線」）
+- 画像は既存記事（2026-06-24）のmanga画像をプレースホルダーとしてコピー（DALL-E 3 API / dalle-image MCPが利用できない実行環境のため）
+
+### 理由
+- 毎日6時の定期実行ルーチンで`ainews.md`の指示に従い、過去3日以内の最新AI動向を非エンジニア向けにまとめた
+- GPT-5.6 Sol/Terra/Luna（3モデル体制）、Gemini 2.5 Pro Deep Think、Jalapeñoカスタムチップ、Qwen AgentWorld、Figma Motion、Agentjackingセキュリティ脅威、Anthropic vs. Alibaba問題の7トピックを取り上げた
+
 ## 2026-06-29 (ainews定期実行)
 
 ### 変更内容
