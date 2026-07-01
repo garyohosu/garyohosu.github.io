@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-07-02
+
+### 変更内容
+- 新記事追加: `_posts/2026-07-02-note-hermes-agent-grok-not-working.md`（「noteに記事を公開しました：ロリポップのHermes AgentでGrokが動かなくなったをやさしく解説」）
+- note OGサムネイル画像追加: `assets/img/2026-07-02-note-hermes-grok.png`
+
+### 理由
+- cron自動チェック（毎日朝8時 https://note.com/hantani ）で2026-07-01公開の新着note（ID: n61a3a27d1b66）を検知。未紹介だったため、Hermes AgentとGrokの認証・翻訳・クレジット不足の切り分けを一般読者向けに整理した
+
 ## 2026-07-01 (下書き整理)
 
 ### 変更内容
