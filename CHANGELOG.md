@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-07-01 (ainews定期実行)
+
+### 変更内容
+- 新記事追加: `_posts/2026-07-01-ai-news-fable5-returns-gpt56.md`（「Fable 5が世界復帰！GPT-5.6登場。2026年7月1日のAIニュースをやさしく解説」）
+- 漫画サムネイル追加: `assets/img/ai-news-manga-2026-07-01.png`（プレースホルダー：OPENAI_API_KEY未設定のため既存画像をコピー）
+
+### 理由
+- 毎日6時のcron定期実行によるainews記事自動生成
+- 主要トピック：Claude Fable 5の輸出規制解除・世界復帰、GPT-5.6 Sol/Terra/Luna限定プレビュー、カリフォルニア州のAI政府導入、CREATE AI法案、日本国内AIエージェント実装拡大
+
 ## 2026-07-01 (下書き整理)
 
 ### 変更内容
