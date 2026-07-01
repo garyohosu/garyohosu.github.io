@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-07-01 (下書き整理)
+
+### 変更内容
+- `drafts/note-agent-loop-loop-engineering.md` を一文一行形式に整形（読みやすさ向上のための改行調整）
+- note投稿用下書き追加: `drafts/claude-code-token-saving.md`（Claude Codeのトークン節約Tips）
+- note投稿用下書き追加: `drafts/claude-code-token-saving-promo.md`（上記記事の告知文案）
+
+### 理由
+- ronbunルール（一文一行）に沿って既存下書きを整形
+- Claude Codeのトークン管理に関するnote記事の下書きと告知文を作成
+
 ## 2026-07-01
 
 ### 変更内容
