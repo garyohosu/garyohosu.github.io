@@ -22,12 +22,15 @@
 - note OGサムネイル画像追加: `assets/img/2026-07-01-note-deno-desktop.png`
 - 新記事追加: `_posts/2026-07-01-ai-news-agent-safety-science.md`（「AIは「使う」から「任せる」へ。2026年6月下旬のAIニュースをやさしく解説」）
 - アイキャッチ画像追加: `assets/img/2026-07-01-ai-news-eyecatch.png`
+- 新記事追加: `_posts/2026-07-01-note-claude-code-token-saving.md`（「noteに記事を公開しました：Claude Codeがすぐ制限に当たる人へ。トークンを減らす使い方まとめをやさしく解説」）
+- note OGサムネイル画像追加: `assets/img/2026-07-01-note-claude-code-token.png`
 
 ### 理由
 - cron自動チェック（毎日朝8時 https://note.com/hantani ）で2026-06-30公開の新着note（ID: nb35677327f40）を検知。未紹介だったためフルワークフローを実行
 - 非エンジニア向けに短い段落・多数の見出し・家や執事のアナロジーを使い、Denoの新「deno desktop」機能とClaude Codeの組み合わせを客観的第三者視点で解説
 - 画像はnoteページのogImageをcurlでassets/img/に安定名でダウンロードしてfrontmatterで参照
 - 6月下旬のAnthropic/Google DeepMind公式発表を基に、AIエージェント化・安全対策・研究向け作業台の流れをやさしく整理
+- note記事「Claude Codeがすぐ制限に当たる人へ。トークンを減らす使い方まとめ」を紹介し、Claude Codeの節約運用を初心者向けに整理
 - AIニュース記事ではアイキャッチを同時追加する運用ルールを継続
 - AGENTS.mdルール（CHANGELOG更新、git pull --rebase、post-pushチェック）を厳守
 
