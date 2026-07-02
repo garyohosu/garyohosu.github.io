@@ -7,10 +7,13 @@
 ## 2026-07-02
 
 ### 変更内容
+- AIニュース記事追加: `_posts/2026-07-02-ai-news-sonnet5-cyber-agents.md`（「Claude Sonnet 5が全員の手に、AIサイバー攻撃は数ヶ月以内――7月上旬のAI最前線」）
+- 漫画サムネイル画像追加: `assets/img/ai-news-manga-2026-07-02.png`（直近画像からプレースホルダーコピー、OPENAI_API_KEY未設定のため）
 - 新記事追加: `_posts/2026-07-02-note-hermes-agent-grok-not-working.md`（「noteに記事を公開しました：ロリポップのHermes AgentでGrokが動かなくなったをやさしく解説」）
 - note OGサムネイル画像追加: `assets/img/2026-07-02-note-hermes-grok.png`
 
 ### 理由
+- 毎日6時の ainews 定期実行（Claude Sonnet 5デフォルト化、Fable 5輸出規制解除、Google Search AI化、Five Eyesサイバー警告、カリフォルニア州AI導入など直近3日のAIニュースをまとめ）
 - cron自動チェック（毎日朝8時 https://note.com/hantani ）で2026-07-01公開の新着note（ID: n61a3a27d1b66）を検知。未紹介だったため、Hermes AgentとGrokの認証・翻訳・クレジット不足の切り分けを一般読者向けに整理した
 
 ## 2026-07-01 (下書き整理)
