@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-07-03 (5)
+
+### 変更内容
+- `_posts/2026-07-03-ai-news-gpt56-science-jobs.md` を新規作成（定期ainews記事）
+- `assets/img/ai-news-manga-2026-07-03.png` を追加（プレースホルダー画像）
+
+### 理由
+- 毎日6時のainews定期実行。GPT-5.6 (Sol/Terra/Luna) プレビュー・Claude Science・UN AIガバナンス・雇用統計等を解説
+
 ## 2026-07-03 (4)
 
 ### 変更内容
