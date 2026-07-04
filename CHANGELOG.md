@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-07-04
+
+### 変更内容
+- `_posts/2026-07-04-ai-news-grok45-longcat-pentagon.md` を新規作成（定期ainews記事）
+- `assets/img/ai-news-manga-2026-07-04.png` を追加（プレースホルダー画像）
+
+### 理由
+- 毎日6時のainews定期実行。Grok 4.5プライベートベータ・LongCat-2.0オープンソース・Anthropicとペンタゴンの自律兵器問題・OpenAI政府株式提案・国連AI委員会発足を解説
+
+---
+
 ## 2026-07-03 (5)
 
 ### 変更内容
