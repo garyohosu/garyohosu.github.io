@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-07-05
+
+### 変更内容
+- `_posts/2026-07-05-ai-news-claude-science-ipo-omnivideo.md` を新規作成（定期ainews記事）
+- `assets/img/ai-news-manga-2026-07-05.png` を追加（プレースホルダー画像）
+
+### 理由
+- 毎日6時のainews定期実行。Claude Science（AI創薬ワークベンチ）・GPT-5.6 Sol/Terra/Luna・Google OmniFlash動画生成・AIエージェント標準化・OpenAI/AnthropicのIPO準備を解説
+
+---
+
 ## 2026-07-04
 
 ### 変更内容
