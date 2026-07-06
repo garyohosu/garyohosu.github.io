@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-07-06
+
+### 変更内容
+- 新記事追加: `_posts/2026-07-06-claude-code-second-brain.md`（「Claude Codeで実践する『第二の脳』構築術 ― BASB × AIの最強ワークフロー」）
+- アイキャッチ画像追加: `assets/img/2026/07/claude-second-brain.png`
+
+### 理由
+- ユーザーの「D」選択により、第二の脳（BASB）の包括的導入ノート＋ブログ記事を作成。Claude CodeでのCODE/PARA実践法、具体的なDistill/Expressプロンプト、Hermesとの役割分担（Claude=思考パートナー、Hermes=出版・運用パートナー）を体系的にまとめ、ユーザーの知識管理システム強化を支援。
+
 ## 2026-07-05
 
 ### 変更内容
