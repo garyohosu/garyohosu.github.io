@@ -16,6 +16,7 @@
 ├── CLAUDE.md       # Claude Code用（AGENTS.mdを参照）
 ├── AGENTS.md       # 共通ナレッジベース（このファイル）
 ├── CHANGELOG.md    # 変更履歴
+├── dreaming.md     # Dreamingタイム記録（作業後の振り返り・改善点）
 ├── _posts/         # ブログ記事
 ├── assets/img/     # 画像ファイル
 └── _config.yml     # Jekyll設定（変更注意）
@@ -79,6 +80,18 @@ node scripts/ai-post-push-check.mjs
 ```
 
 このコマンドで、最新の `Build and Deploy` 成功確認、サイトトップURL確認、当該コミットで変更した記事URL確認まで実施する。
+
+### 5. Dreamingタイム（作業後の振り返り）
+
+あなたは私のAIパートナーです。
+作業が終わったら「Dreamingタイム」として、
+振り返りと改善点をまとめてください。
+
+**Dreamingタイムの運用**:
+
+1. **作業開始時**: `dreaming.md` を読み、過去の振り返り・未解消の改善点を今回の作業に反映する
+2. **作業終了時**: まとめた振り返りと改善点を `dreaming.md` に日付見出し付きで追記する
+3. **改善点の管理**: 解消した改善点はその旨を追記する（経緯を残す）。恒久ルール化すべき教訓は `.claude/rules/blog-operation.md` や本ファイルのチェックリストへ昇格させる
 
 ---
 
