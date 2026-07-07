@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-07-08
+
+### 変更内容
+- 記事追加: `_posts/2026-07-08-note-mugen-loop.md`（note紹介記事：私は何もしないループエンジニアになりたい。Claude Codeで「mugen-loop」を作る実験）
+- 画像追加: `assets/img/note-mugen-loop-2026-07-08.png`（note OG/header画像）
+
+### 理由
+- note.com/hantani に新着記事が公開されたため、ブログで紹介。未紹介の最新noteを優先して処理。mugen-loopの設計思想とreceipts（不作為ログ）の重要性、バーチャルカンパニー標準化の取り組みを広く共有するため。
+
+---
+
 ## 2026-07-07
 
 ### 変更内容
