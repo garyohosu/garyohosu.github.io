@@ -20,9 +20,12 @@
 ### 変更内容
 - 記事追加: `_posts/2026-07-08-note-mugen-loop.md`（note紹介記事：私は何もしないループエンジニアになりたい。Claude Codeで「mugen-loop」を作る実験）
 - 画像追加: `assets/img/note-mugen-loop-2026-07-08.png`（note OG/header画像）
+- 記事追加: `_posts/2026-07-08-ai-news-fable5-paid-cursor-ios-eu-act.md`（ainews定期実行：Claude Fable 5有料化・Cursor iOS・EU AI Act施行間近ほか7月第2週AIニュース）
+- 画像追加: `assets/img/ai-news-manga-2026-07-08.png`（プレースホルダー画像、OPENAI_API_KEY未設定のため前日画像を流用）
 
 ### 理由
 - note.com/hantani に新着記事が公開されたため、ブログで紹介。未紹介の最新noteを優先して処理。mugen-loopの設計思想とreceipts（不作為ログ）の重要性、バーチャルカンパニー標準化の取り組みを広く共有するため。
+- ainews定期実行（毎日6時）：2026-07-05〜07-08の最新AIニュースを取り上げた週次まとめ記事を作成・公開。
 
 ---
 
