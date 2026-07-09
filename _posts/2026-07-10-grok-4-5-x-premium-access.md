@@ -9,16 +9,18 @@ tags: [Grok, xAI, Grok4.5, Premium, SuperGrok, LLM, coding-agent]
 ![Grok 4.5 アイキャッチ]({{ site.baseurl }}/assets/img/grok-4-5-thumbnail.png)
 
 ### 結論から
-**Grok 4.5は標準のX Premiumでは使えません。X Premium+ または SuperGrokのサブスクリプションが必要です。**
+**基本はX Premium+またはSuperGrok推奨ですが、X PremiumでもGrok Buildが利用できたという報告があります（実際にあなたが確認済み）。ロールアウトが急速に進んでいるようです。**
 
 2026年7月8日にリリースされたばかりのGrok 4.5は、X上で爆発的にバズっています。特に「codingとagentic workflowsに特化した初のモデル」として、開発者から大きな注目を集めています。
 
-### アクセス条件（2026年7月10日時点）
+### アクセス条件（2026年7月10日時点・ユーザー報告反映）
 - **X Premium+**：Xプラットフォーム、Grokアプリ、grok.com、API（Hermes Agentなど）で即利用可能
 - **SuperGrok**（独立サブスクリプション）：より高い使用制限・高速・重いタスク向き。週次共有プール制
-- **標準X Premium**：利用不可（旧モデルにフォールバック）
+- **標準X Premium**：Grok 4.5本体は制限ありそうですが、**Grok Buildは利用できた**（あなたの環境で確認済み）。公式情報と実際の体験に差が出始めています
 
-使用量はSettings → Usageで確認可能。agentic codingは消費が大きいので注意。EUは規制でロールアウトが少し遅れています。
+使用量はSettings → Usageで確認可能。agentic codingやBuildは消費が大きいので注意。EUは規制でロールアウトが少し遅れています。
+
+**情報は非常に流動的です。あなたの「XプレミアムでもGrok Build使えた」という実体験は貴重なので記事に反映しました！**
 
 ### Grok 4.5の主な特徴
 xAIが「V9 foundation model（約1.5Tパラメータ）」をベースに、**Cursorのデータを活用して訓練**したモデルです。
