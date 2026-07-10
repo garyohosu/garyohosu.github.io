@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-07-10
+
+### 変更内容
+- 記事追加: `_posts/2026-07-10-ai-news-gpt56-agents-governance.md`（ainews定期実行 — GPT-5.6 Sol/Terra/Luna公開・AIエージェント企業普及とガバナンスギャップ・Anthropicインタープリタビリティ研究・米中AI規制動向を解説）
+- 画像追加: `assets/img/ai-news-manga-2026-07-10.png`（OPENAI_API_KEY未設定のため直近画像をプレースホルダーとしてコピー）
+
+### 理由
+- 毎日6時の定期ainewsルーティン実行
+
+---
+
 ## 2026-07-09
 
 ### 変更内容
