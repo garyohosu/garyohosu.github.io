@@ -2,19 +2,30 @@
 
 このファイルはブログの重要な変更を記録します。
 
----
-
-## 2026-07-10
-
-### 変更内容
-- 新記事追加: `_posts/2026-07-10-note-codex-cli-plugin.md` （「Claude CodeからCodex CLIを呼べるOpenAI公式プラグインを試して見る」のブログ紹介記事）
-- noteのOG/header画像を `assets/img/note-codex-cli-plugin-2026-07-10.png` として保存・検証済み
-- CHANGELOG更新と重複チェックを実施（未紹介noteを優先）
-
-### 理由
-- 毎日朝8時のcronジョブで https://note.com/hantani をチェック。新着note（2026/7/9公開）を検知し、`note-blog-intro-post-workflow` に従って自動でブログ紹介記事を作成・公開したため。未紹介のものを優先処理。
-
-## 2026-05-27
+|---
+|
+|## 2026-07-11
+|
+|### 変更内容
+|- 新記事追加: `_posts/2026-07-11-note-ai-werewolf-orchestration.md` （「4つのAI CLIにワンナイト人狼をさせたら、AIエージェントのオーケストレーションが見えてきた」のブログ紹介記事）
+|- noteのheader画像を `assets/img/note-ai-werewolf-orchestration-2026-07-11.png` として保存・検証済み（684kB確認）
+|- 重複チェック（search_filesでタイトル/note-id確認）とCHANGELOG更新を実施
+|- git add/commit/push実行
+|
+|### 理由
+|- 毎日朝8時のcronジョブで https://note.com/hantani をチェック。新着note（2026/7/10公開の「4つのAI CLIにワンナイト人狼...」）を検知し、`note-blog-intro-post-workflow` に従って自動でブログ紹介記事を作成・公開したため。未紹介のものを優先処理。
+|
+|## 2026-07-10
+|
+|### 変更内容
+|- 新記事追加: `_posts/2026-07-10-note-codex-cli-plugin.md` （「Claude CodeからCodex CLIを呼べるOpenAI公式プラグインを試して見る」のブログ紹介記事）
+|- noteのOG/header画像を `assets/img/note-codex-cli-plugin-2026-07-10.png` として保存・検証済み
+|- CHANGELOG更新と重複チェックを実施（未紹介noteを優先）
+|
+|### 理由
+|- 毎日朝8時のcronジョブで https://note.com/hantani をチェック。新着note（2026/7/9公開）を検知し、`note-blog-intro-post-workflow` に従って自動でブログ紹介記事を作成・公開したため。未紹介のものを優先処理。
+|
+|## 2026-05-27
 
 ### 変更内容
 - 新記事追加: `_posts/2026-05-27-ai-from-smart-toy-to-real-work.md`（「AIってまだ「おもちゃ」だと思ってる？ 2026年は本気で「仕事に使い始めた」年になりました」）
