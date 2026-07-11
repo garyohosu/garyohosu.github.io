@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-07-11
+
+### 変更内容
+- 記事追加: `_posts/2026-07-11-ai-news-gpt56-public-claude-cowork-grok45.md`（ainews定期実行：GPT-5.6一般公開・Claude Coworkモバイル・Grok 4.5ほか7月第2週AIニュース）
+- 画像追加: `assets/img/ai-news-manga-2026-07-11.png`（プレースホルダー画像、OPENAI_API_KEY未設定のため07-08画像を流用）
+- `_config.yml` の `exclude` に `garyohosu.github.io` を追加（ビルド修正）
+
+### 理由
+- ainews定期実行（毎日6時）：2026-07-09〜07-11の最新AIニュースを取り上げた記事を作成・公開。7月9日はGPT-5.6公開・Claude Coworkモバイル・Grok 4.5が同時リリースという歴史的な日。
+- mainブランチで `garyohosu.github.io/` サブディレクトリがJekyllに誤って処理され、HTMLProoferが画像リンク切れを検知してビルド失敗していた（2026-07-10 23:02 UTC）。`_config.yml` の exclude 設定でこのサブディレクトリをJekyll処理対象外にする修正を追加。
+
+---
+
 ## 2026-07-09
 
 ### 変更内容
