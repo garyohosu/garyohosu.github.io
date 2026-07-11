@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-07-11
+
+### 変更内容
+- 記事追加: `_posts/2026-07-11-ai-news-gpt56-public-claude-cowork-grok45.md`（ainews定期実行：GPT-5.6一般公開・Claude Coworkモバイル・Grok 4.5ほか7月第2週AIニュース）
+- 画像追加: `assets/img/ai-news-manga-2026-07-11.png`（プレースホルダー画像、OPENAI_API_KEY未設定のため07-08画像を流用）
+
+### 理由
+- ainews定期実行（毎日6時）：2026-07-09〜07-11の最新AIニュースを取り上げた記事を作成・公開。7月9日はGPT-5.6公開・Claude Coworkモバイル・Grok 4.5が同時リリースという歴史的な日。
+
+---
+
 ## 2026-07-09
 
 ### 変更内容
