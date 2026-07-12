@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-07-12
+
+### 変更内容
+- 記事追加: `_posts/2026-07-12-ai-news-apple-openai-gemini-china-ai.md`（ainews定期実行：AppleがOpenAIを提訴・Gemini 3.5 Pro 7/17リリース・ChatGPT Work公開・中国GLM-5.2台頭と輸出規制・AI動画生成3社の動向・SambaNova 10億ドル調達）
+- 画像追加: `assets/img/ai-news-manga-2026-07-12.png`（プレースホルダー画像、OPENAI_API_KEY未設定のため07-11画像を流用）
+
+### 理由
+- ainews定期実行（毎日6時）：2026-07-10〜07-12の最新AIニュースを取り上げた記事を作成。AppleのOpenAI提訴、Gemini 3.5 Proの7月17日一般提供予告、中国AIの台頭と規制、AI動画生成の新展開を特集。
+
+---
+
 ## 2026-07-11
 
 ### 変更内容
