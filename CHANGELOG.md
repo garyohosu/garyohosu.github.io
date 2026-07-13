@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-07-13
+
+### 変更内容
+- 記事追加: `_posts/2026-07-13-ai-news-gpt56-meta-muse-eu-ai-act.md`（ainews定期実行：GPT-5.6三モデル体制・Meta Muse Image・EU AI Act施行迫る）
+- 画像追加: `assets/img/ai-news-manga-2026-07-13.png`（プレースホルダー画像、OPENAI_API_KEY未設定のため07-11画像を流用）
+
+### 理由
+- ainews定期実行（毎日6時）：2026-07-11〜07-13の最新AIニュースを取り上げた記事を作成・公開。
+
+---
+
 ## 2026-07-11
 
 ### 変更内容
