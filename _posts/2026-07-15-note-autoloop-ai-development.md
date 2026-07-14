@@ -74,7 +74,7 @@ AIエージェントを使った開発を日常的に回している人ほど、
 
 **関連記事**
 
-- [私は何もしないループエンジニアになりたい。Claude Codeで「mugen-loop」を作る実験](/posts/2026-07-08-note-mugen-loop/)
-- [Claude Codeがすぐ制限に当たる人へ。トークンを減らす使い方まとめ](/posts/2026-07-01-note-claude-code-token-saving/)
+- [私は何もしないループエンジニアになりたい。Claude Codeで「mugen-loop」を作る実験](/posts/note-mugen-loop/)
+- [Claude Codeがすぐ制限に当たる人へ。トークンを減らす使い方まとめ](/posts/note-claude-code-token-saving/)
 
 新着noteを自動処理してブログに反映しました。
