@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-07-14
+
+### 変更内容
+- 記事追加: `_posts/2026-07-14-ai-news-work-agent-trust.md`（GPT-5.6 / ChatGPT Work / Anthropic / 企業データ保護を軸にした最新AIニュース記事）
+- 画像追加: `assets/img/ai-news-manga-2026-07-14.png`
+
+### 理由
+- 直近3日以内のAIニュースをまとめ、AIが「会話」から「仕事のOS」へ移行している流れを日本語で整理するため。
+
+---
+
 ## 2026-07-13
 
 ### 変更内容
@@ -26,30 +37,6 @@
 - ainews定期実行（毎日6時）：2026-07-09〜07-11の最新AIニュースを取り上げた記事を作成・公開。7月9日はGPT-5.6公開・Claude Coworkモバイル・Grok 4.5が同時リリースという歴史的な日。
 - mainブランチで `garyohosu.github.io/` サブディレクトリがJekyllに誤って処理され、HTMLProoferが画像リンク切れを検知してビルド失敗していた（2026-07-10 23:02 UTC）。`_config.yml` の exclude 設定でこのサブディレクトリをJekyll処理対象外にする修正を追加。
 
----
-
-## 2026-07-09
-
-### 変更内容
-- 記事追加: `_posts/2026-07-09-ai-namba-5-practical-methods.md`（非エンジニア向けに@masaki_aihack氏のX記事を基にした「AIを最強の判断相棒に変える5つの実践法」。プロンプト例を豊富に、超わかりやすい説明と今日から試せるTipsを追加。アイキャッチ画像生成・配置）
-- 画像追加: `assets/img/ai-namba-5-methods.png`
-
-### 理由
-- Xで数百万ビューを記録した南場智子氏のAI活用論を、ユーザーの好みに合わせて「非エンジニアでも実践可能・プロンプト例満載」に翻訳。Hermes Agentとしてブログ運用を一気通貫（画像生成→執筆→差分確認→コミット）で実施するため。
-
----
-
-## 2026-07-08
-
-### 変更内容
-- 記事追加: `_posts/2026-07-08-note-mugen-loop.md`（note紹介記事：私は何もしないループエンジニアになりたい。Claude Codeで「mugen-loop」を作る実験）
-- 画像追加: `assets/img/note-mugen-loop-2026-07-08.png`（note OG/header画像）
-- 記事追加: `_posts/2026-07-08-ai-news-fable5-paid-cursor-ios-eu-act.md`（ainews定期実行：Claude Fable 5有料化・Cursor iOS・EU AI Act施行間近ほか7月第2週AIニュース）
-- 画像追加: `assets/img/ai-news-manga-2026-07-08.png`（プレースホルダー画像、OPENAI_API_KEY未設定のため前日画像を流用）
-
-### 理由
-- note.com/hantani に新着記事が公開されたため、ブログで紹介。未紹介の最新noteを優先して処理。mugen-loopの設計思想とreceipts（不作為ログ）の重要性、バーチャルカンパニー標準化の取り組みを広く共有するため。
-- ainews定期実行（毎日6時）：2026-07-05〜07-08の最新AIニュースを取り上げた週次まとめ記事を作成・公開。
 
 ---
 
