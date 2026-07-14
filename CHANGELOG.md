@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-07-15
+
+### 変更内容
+- 記事追加: `_posts/2026-07-15-note-autoloop-ai-development.md`（「AIで5日間開発したら「残りあと半月」と言われたので、AI開発そのものを自動化することにした」のブログ紹介記事）
+- 画像追加: `assets/img/note-autoloop-ai-dev-2026-07-15.png` / `assets/images/note-autoloop-ai-dev-2026-07-15.png`（noteのOG画像を保存・検証済み）
+- noteのタイトル/note-id重複チェックを実施し、新着noteを1件処理
+
+### 理由
+- 毎日朝8時のcronジョブで https://note.com/hantani をチェック。2026/7/14公開の新着noteを検知し、`note-blog-intro-post-workflow` に従ってブログ紹介記事を作成・公開したため。未紹介のものを優先処理。
+
 ## 2026-07-14
 
 ### 変更内容
