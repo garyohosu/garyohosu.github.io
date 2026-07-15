@@ -7,11 +7,14 @@
 ## 2026-07-15
 
 ### 変更内容
+- 記事追加: `_posts/2026-07-15-ai-news-safety-index-ipo-gov-stake.md`（AI安全性指数・Anthropic IPO・OpenAI政府株式提供を軸にした最新AIニュース記事）
+- 画像追加: `assets/img/ai-news-manga-2026-07-15.png`（前日画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
 - 記事追加: `_posts/2026-07-15-note-autoloop-ai-development.md`（「AIで5日間開発したら「残りあと半月」と言われたので、AI開発そのものを自動化することにした」のブログ紹介記事）
 - 画像追加: `assets/img/note-autoloop-ai-dev-2026-07-15.png` / `assets/images/note-autoloop-ai-dev-2026-07-15.png`（noteのOG画像を保存・検証済み）
 - noteのタイトル/note-id重複チェックを実施し、新着noteを1件処理
 
 ### 理由
+- ainews定期実行（毎日6時）: 直近3日のAIニュース（AI安全性格付け・Anthropic IPO・OpenAI政府提案・Claude for Teachers等）をまとめた記事を作成・公開。
 - 毎日朝8時のcronジョブで https://note.com/hantani をチェック。2026/7/14公開の新着noteを検知し、`note-blog-intro-post-workflow` に従ってブログ紹介記事を作成・公開したため。未紹介のものを優先処理。
 
 ## 2026-07-14
