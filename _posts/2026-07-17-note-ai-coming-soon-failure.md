@@ -50,9 +50,9 @@ hantaniさんのnoteで公開された最新記事「[AIは「永遠のcoming so
 
 ## 関連記事
 
-- [4つのAI CLIにワンナイト人狼をさせたら、AIエージェントのオーケストレーションが見えてきた](/posts/2026-07-11-note-ai-werewolf-orchestration/)
-- [AIで5日間開発したら「残りあと半月」と言われたので、AI開発そのものを自動化することにした](/posts/2026-07-15-note-autoloop-ai-development/)
-- [Claude CodeからCodex CLIを呼べるOpenAI公式プラグインを試して見る](/posts/2026-07-10-note-codex-cli-plugin/)
+- [4つのAI CLIにワンナイト人狼をさせたら、AIエージェントのオーケストレーションが見えてきた](/posts/note-ai-werewolf-orchestration/)
+- [AIで5日間開発したら「残りあと半月」と言われたので、AI開発そのものを自動化することにした](/posts/note-autoloop-ai-development/)
+- [Claude CodeからCodex CLIを呼べるOpenAI公式プラグインを試して見る](/posts/note-codex-cli-plugin/)
 
 ぜひ元記事も読んでみてください！
 
