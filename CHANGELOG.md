@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-07-16
+
+### 変更内容
+- 記事追加: `_posts/2026-07-16-ai-news-gpt56-gemini35-economists-warning.md`（GPT-5.6 Sol/Terra/Luna・Gemini 3.5 Pro前夜・経済学者200人警告を軸にした最新AIニュース記事）
+- 画像追加: `assets/img/ai-news-manga-2026-07-16.png`（前日画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- ainews定期実行（毎日6時）: 直近3日のAIニュース（OpenAI GPT-5.6三段階モデル公開・Google Gemini 3.5 Pro 7/17リリース予告・ノーベル賞受賞経済学者含む200人超の雇用警告書簡・Meta AIインフラ1,450億ドル投資等）をまとめた記事を作成・公開。
+
 ## 2026-07-15
 
 ### 変更内容
