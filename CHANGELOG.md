@@ -7,11 +7,14 @@
 ## 2026-07-17
 
 ### 変更内容
+- 記事追加: `_posts/2026-07-17-ai-news-kimi-k3-waic-2026.md`（Kimi K3登場・WAIC 2026・Anthropic IPO準備・AI規制動向を軸にした最新AIニュース記事）
+- 画像追加: `assets/img/ai-news-manga-2026-07-17.png`（前日画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
 - 記事追加: `_posts/2026-07-17-note-ai-coming-soon-failure.md`（「AIは「永遠のcoming soon」でいい？　いいえ、使えるうちに失敗しておいた方がいい」のブログ紹介記事）
 - 画像追加: `assets/img/note-ai-coming-soon-failure-2026-07-17.png` / `assets/images/note-ai-coming-soon-failure-2026-07-17.png`（noteのOG画像を保存・検証済み）
 - noteのタイトル/note-id重複チェックを実施し、新着noteを1件処理
 
 ### 理由
+- ainews定期実行（毎日6時）: 直近3日のAIニュース（Kimi K3 2.8兆パラメータモデル・WAIC 2026開幕・Anthropic収益首位・IPO準備・OpenAI政府株式提案・中国AIエージェント規制施行等）をまとめた記事を作成・公開。
 - 毎日朝8時のcronジョブで https://note.com/hantani をチェック。2026/7/16公開の新着noteを検知し、`note-blog-intro-post-workflow` に従ってブログ紹介記事を作成・公開したため。未紹介のものを優先処理。
 
 ## 2026-07-16
