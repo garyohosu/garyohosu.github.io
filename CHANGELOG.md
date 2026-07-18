@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-07-18
+
+### 変更内容
+- 記事追加: `_posts/2026-07-18-ai-news-microsoft-google-apple-cyber.md`（Microsoft Project Perception・Google Gemini 3.5 Pro遅延・Apple vs OpenAI提訴・Fable 5無料終了・Five Eyes AIサイバー警告を軸にした最新AIニュース記事）
+- 画像追加: `assets/img/ai-news-manga-2026-07-18.png`（前日画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- ainews定期実行（毎日6時）: 直近3日のAIニュース（MicrosoftのAIセキュリティツールProject Perception発表・GoogleのGemini 3.5 Pro三度目の遅延でAlphabet株4%下落・AppleがOpenAIをハードウェア秘密窃取で提訴・Fable 5無料アクセス7/19終了・Five Eyes連合のAIサイバー攻撃「数ヶ月以内」警告等）をまとめた記事を作成・公開。
+
 ## 2026-07-17
 
 ### 変更内容
