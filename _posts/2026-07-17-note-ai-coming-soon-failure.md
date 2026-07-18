@@ -51,6 +51,8 @@ hantaniさんのnoteで公開された最新記事「[AIは「永遠のcoming so
 ## 関連記事
 
 - [AIで5日間開発したら「残りあと半月」と言われたので、AI開発そのものを自動化することにした](/posts/note-autoloop-ai-development/)
+- [OpenClaw × Ollama 自動起動で「無料ローカルLLM運用」を実戦投入した話](/posts/note-openclaw-ollama-local-llm-auto-start/)
+- [Hermes AgentにAndroidのOCRアプリを作ってもらった](/posts/note-hermes-agent-ocr-android/)
 
 ぜひ元記事も読んでみてください！
 
