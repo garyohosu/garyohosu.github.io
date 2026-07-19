@@ -7,11 +7,14 @@
 ## 2026-07-19
 
 ### 変更内容
+- 記事追加: `_posts/2026-07-19-ai-news-kimi-k3-waico-moonshot-ipo.md`（Kimi K3「第2のDeepSeekショック」・WAICO発足・MoonshotのIPO計画・モデル競争・ファイブアイズ警告を軸にした最新AIニュース記事）
+- 画像追加: `assets/img/ai-news-manga-2026-07-19.png`（前日画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
 - 記事追加: `_posts/2026-07-19-note-ai-search-dakkai-wall.md`（「AIを検索だけに使うのはもったいない。南場智子氏に学ぶ「叩き台」と「壁打ち」の使い方」のブログ紹介記事）
 - 画像追加: `assets/img/note-ai-search-dakkai-wall-2026-07-19.jpg` / `assets/images/note-ai-search-dakkai-wall-2026-07-19.jpg`（noteのOG画像を保存・検証済み）
 - noteのタイトル/note-id重複チェックを実施し、新着noteを1件処理
 
 ### 理由
+- ainews定期実行（毎日6時）: Kimi K3 2.8兆パラメータモデルによる市場ショック・WAICO（29カ国AIアライアンス）発足・MoonshotのHK-IPO計画・GPT-5.6/Claude Sonnet 5競争・ファイブアイズのサイバー警告等、直近3日の最新AIニュースをまとめた記事を作成・公開。
 - 毎日朝8時のcronジョブで https://note.com/hantani をチェック。2026/7/8公開の未紹介noteを検知し、`note-blog-intro-post-workflow` に従ってブログ紹介記事を作成・公開したため。未紹介のものを優先処理。
 
 ## 2026-07-17
