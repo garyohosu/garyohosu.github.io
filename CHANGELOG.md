@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-07-20
+
+### 変更内容
+- 記事追加: `_posts/2026-07-20-ai-news-waico-agi-eu-regulation.md`（WAICO設立・DeepMind CEO AGI5年内警告・GPT-5.6ファミリー・Gemini遅延・EU規制を軸にした最新AIニュース記事）
+- 画像追加: `assets/img/ai-news-manga-2026-07-20.png`（前日画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- ainews定期実行（毎日6時）: 直近3日のAIニュース（中国がWAICOを設立・ハサビス氏AGI5年内警告・OpenAI GPT-5.6 Sol/Terra/Luna公開・Google Gemini 3.5 Pro三度目遅延で時価総額約20兆円消滅・EU規制等）をまとめた記事を作成・公開。
+
 ## 2026-07-19
 
 ### 変更内容
