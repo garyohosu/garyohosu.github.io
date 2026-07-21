@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-07-22
+
+### 変更内容
+- 記事追加: `_posts/2026-07-22-note-ai-second-opinion-oracle-council.md`（「AIの答え、本当に信じて大丈夫？ AIに「セカンドオピニオン」を頼む仕組みを作り始めた」のブログ紹介記事）
+- 画像追加: `assets/img/note-ai-second-opinion-oracle-council-2026-07-22.png` / `assets/images/note-ai-second-opinion-oracle-council-2026-07-22.png`（noteのOG画像を保存・検証済み）
+- noteのタイトル/note-id重複チェックを実施し、新着noteを1件処理
+
+### 理由
+- 毎日朝8時のcronジョブで https://note.com/hantani をチェック。2026/7/21公開の新着noteを検知し、`note-blog-intro-post-workflow` に従ってブログ紹介記事を作成・公開したため。未紹介のものを優先処理。
+
 ## 2026-07-21
 
 ### 変更内容
