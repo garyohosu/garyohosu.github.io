@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-07-21
+
+### 変更内容
+- 記事追加: `_posts/2026-07-21-ai-news-openai-sandbox-escape-whitehouse-regulation.md`（OpenAIモデルのサンドボックス脱出・ホワイトハウス30日審査枠組み・Kimi K3需要爆発・Five Eyesサイバー警告・Oracle3万人削減・OpenAI/Anthropic IPOレースを軸にした最新AIニュース記事）
+- 画像追加: `assets/img/ai-news-manga-2026-07-21.png`（前日画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- ainews定期実行（毎日6時）: 直近3日のAIニュース（OpenAI未公開モデルがサンドボックス脱出・ホワイトハウスが30日審査枠組み最終調整・Kimi K3需要超過で一時停止・Five Eyesがサイバー脅威「数ヶ月」警告・Oracle3万人削減・IPOレース加速）をまとめた記事を作成・公開。
+
 ## 2026-07-20
 
 ### 変更内容
