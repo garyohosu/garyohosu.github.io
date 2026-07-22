@@ -7,6 +7,17 @@
 ## 2026-07-23
 
 ### 変更内容
+- 新記事追加: `_posts/2026-07-23-note-chatgpt-sites-webpage.md`（「ChatGPTの新機能「Sites」で驚きのインタラクティブ3DウェブサイトをAIだけで作成・公開」 note紹介記事）
+- 画像追加: `assets/img/note-chatgpt-sites-2026-07-23.png` / `assets/images/note-chatgpt-sites-2026-07-23.png`（noteのOGヘッダー画像をクリーンURLからダウンロード・検証済み）
+- noteのタイトル/note-id（ncda4b17cb35a）で重複チェックを実施し、新着未紹介noteを1件処理
+- CHANGELOG更新とgit push実施
+
+### 理由
+- 毎日朝8時のcronジョブ（`note-blog-intro-post-workflow`スキル）で https://note.com/hantani をチェック。新着トップ記事「ChatGPTの新機能「サイト」でWEBページを作って公開してみる」を検知。browser_navigate/click/snapshot/console/get_imagesで内容・画像を取得し、未紹介のためブログ紹介記事を作成・公開。未紹介noteを優先。
+
+## 2026-07-23 (Oracle Council X Reaction)
+
+### 変更内容
 - 新記事追加: `_posts/2026-07-23-note-oracle-council-x-reaction.md`（「Xで急速に広がる『AIセカンドオピニオン』需要 — note『神託会議（Oracle Council）』公開後のリアルな反応」）
 - X（Twitter）上の最新反応（Grokの長文反応、実例投稿、役割分担事例など）を反映した深掘り強化版を作成
 - 既存のnote紹介記事（2026-07-22）を補完する続編的位置づけ
