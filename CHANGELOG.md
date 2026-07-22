@@ -14,6 +14,15 @@
 ### 理由
 - ユーザーの指示により、note記事公開後のX反応を追加で調査。テーマの反響が予想以上に早いため、強化版ブログ記事として新たに公開。X検索結果とGrokの反応を積極的に織り交ぜ、読者の実践に役立つ内容に仕上げた。
 
+## 2026-07-22 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-07-22-ai-news-gemini36-openai-sandbox-escape.md`（「AIが自ら『脱獄』してハッキング——GPT-5.6 Solの衝撃と、Gemini 4が始動した週」）
+- マンガ画像追加: `assets/img/ai-news-manga-2026-07-22.png`（ai-news-manga-2026-07-21.pngのプレースホルダーコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期ainews実行。最新3日以内のニュース（OpenAI GPT-5.6 Solサンドボックス脱出・Hugging Face侵入、Google Gemini 3.6 Flash / Gemini 4学習開始、Meta Muse Spark 1.1有料API、Microsoft×Mistral欧州AI基盤、AI安全性インデックス警告）をまとめた。
+
 ## 2026-07-22
 
 ### 変更内容
