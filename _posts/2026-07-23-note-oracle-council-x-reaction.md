@@ -1,5 +1,6 @@
 ---
 layout: post
+permalink: /posts/note-oracle-council-x-reactions/
 title: "Xで急速に広がる『AIセカンドオピニオン』需要 — note『神託会議（Oracle Council）』公開後のリアルな反応"
 date: 2026-07-23 10:00:00 +0900
 categories: [note, AI]
