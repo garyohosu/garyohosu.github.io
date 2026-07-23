@@ -179,6 +179,13 @@ node scripts/ai-post-push-check.mjs
 **解決**: `ainews.md` を直前のコミット（`d75379b`時点）の指示文に復元し、「生成した記事本文は `ainews.md` には書き込まず、必ず `_posts/` 配下の新規ファイルに保存すること」という注意書きを追記。また、DALL-E 3 API（`OPENAI_API_KEY`／`dalle-image` MCP）が利用できない実行環境だったため、直近の manga 画像（`ai-news-manga-2026-06-16.png`）を `ai-news-manga-2026-06-20.png` としてプレースホルダーコピーして使用。
 **再発防止**: ainews 実行前に `ainews.md` の先頭が指示文（「あなたは、AI分野を専門とする...」）で始まっているか確認する。記事生成後は必ず `_posts/` に新規ファイルが作成されたことを確認し、`ainews.md` 自体に差分が出ていないかを `git diff ainews.md` でチェックする。
 
+### カテゴリー12: note紹介記事の `post_url` 参照切れによるビルド失敗
+#### 2026-07-23: post_url で存在しない記事を参照してビルド失敗
+**症状**: `Build and Deploy` の `Build site` ステップで `Could not find post "2026-07-11-note-ai-werewolf-orchestration" in tag 'post_url'. (Jekyll::Errors::PostURLError)` が発生しビルド失敗。
+**原因**: `_posts/2026-07-23-note-chatgpt-sites-webpage.md` の「関連記事」セクションが `{% post_url 2026-07-11-note-ai-werewolf-orchestration %}` を参照していたが、そのファイルは `_posts/` に存在しなかった。
+**解決**: `post_url` タグを削除し、プレーンテキスト（「近日公開予定」）に置き換えて再push。
+**再発防止**: ainews実行前に `grep -rn "post_url" _posts/` で全 `post_url` 参照ファイルが実在するか確認する。
+
 ### カテゴリー10: root-portal 監視異常（CompanyGuardian）
 #### 2026-03-13: root-portal リンク切れ・掲載漏れ
 **症状**: CompanyGuardian 日報で `KEYWORD_MISSING: Virtual Company`、`LINK_BROKEN: https://genspark.ai?via=garyo471`、`LINK_BROKEN: https://garyohosu.github.io/{url}`、ポータル掲載漏れ 5 件が報告された。
