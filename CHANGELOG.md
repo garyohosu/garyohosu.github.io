@@ -10,11 +10,20 @@
 - 新記事追加: `_posts/2026-07-24-note-green-little-people.md`（「生成AIとは「緑の小人」なんです」 note紹介記事）
 - 画像追加: `assets/img/note-green-little-people-2026-07-24.png` / `assets/images/note-green-little-people-2026-07-24.png`（noteのOGヘッダー画像をクリーンURLからダウンロード・検証済み、サイズ394kB確認）
 - note-id `n77fc21e5bd3b` とタイトルキーワードで重複チェック（search_files使用）、未紹介のため処理
-- CHANGELOG更新、git add/commit/push実施（pull --rebase先行）
+- CHANGELOG更新、git add/commit/push実施
 - `note-blog-intro-post-workflow`スキル準拠でbrowser_navigate/click/console/snapshot/get_images/terminal curl使用
 
 ### 理由
 - 毎日朝8時のcronジョブ（`note-blog-intro-post-workflow`スキル）で https://note.com/hantani をチェック。新着トップ記事「生成AIとは「緑の小人」なんです」を検知。AI活用の8段階とAgents SDKを「緑の小人」比喩で解説した内容をブログで紹介。未紹介noteを優先処理。
+
+## 2026-07-23 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-07-23-ai-news-claude-record-skill-openai-camellia-governance.md`（「AIが「見て学ぶ」新機能と、4.5兆円データセンター・著作権和解——AI規制の合意も秒読みに」）
+- 画像追加: `assets/img/ai-news-manga-2026-07-23.png`（ai-news-manga-2026-07-22.pngをプレースホルダーとしてコピー。OPENAI_API_KEY未設定のためDALL-E 3生成不可）
+
+### 理由
+- 毎日6時の定期実行タスク。Claude「Record a Skill」・OpenAI Project Camellia・Anthropic著作権和解・ホワイトハウス30日枠組み・Google Frozen v2の5トレンドを2026-07-21〜23の最新ニュースに基づき執筆。
 
 ## 2026-07-23
 
