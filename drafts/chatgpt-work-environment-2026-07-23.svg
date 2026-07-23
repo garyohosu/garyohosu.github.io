@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">ChatGPT Work編集セッションの作業環境実測値</title>
+  <desc id="desc">2026年7月23日に実行したfree、df、nproc、unameの結果。メモリ5.9GiB、ルートディスク63GB、CPU 5論理コア。</desc>
+  <rect width="1400" height="820" rx="28" fill="#111827"/>
+  <rect x="0" y="0" width="1400" height="76" rx="28" fill="#1f2937"/>
+  <rect x="0" y="48" width="1400" height="28" fill="#1f2937"/>
+  <circle cx="38" cy="38" r="11" fill="#ef4444"/>
+  <circle cx="72" cy="38" r="11" fill="#f59e0b"/>
+  <circle cx="106" cy="38" r="11" fill="#22c55e"/>
+  <text x="700" y="47" text-anchor="middle" fill="#e5e7eb" font-family="sans-serif" font-size="24" font-weight="700">作業用Linux環境の実測結果</text>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="24" fill="#d1d5db">
+    <text x="52" y="122" fill="#93c5fd">$ free -h</text>
+    <text x="52" y="164">               total        used        free      shared  buff/cache   available</text>
+    <text x="52" y="204">Mem:           5.9Gi       902Mi       4.5Gi        16Ki       815Mi       5.0Gi</text>
+    <text x="52" y="244">Swap:             0B          0B          0B</text>
+
+    <text x="52" y="306" fill="#93c5fd">$ df -h /</text>
+    <text x="52" y="348">Filesystem      Size  Used Avail Use% Mounted on</text>
+    <text x="52" y="388">/dev/vda         63G   21G   39G  35% /</text>
+
+    <text x="52" y="450" fill="#93c5fd">$ nproc</text>
+    <text x="52" y="492">5</text>
+
+    <text x="52" y="554" fill="#93c5fd">$ uname -a</text>
+    <text x="52" y="596">Linux a108cffe84da 6.12.13 #1 SMP Tue Jun 23 15:34:50 UTC 2026</text>
+    <text x="52" y="636">x86_64 GNU/Linux</text>
+  </g>
+
+  <rect x="42" y="690" width="1316" height="92" rx="16" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="68" y="727" fill="#f8fafc" font-family="sans-serif" font-size="22" font-weight="700">測定日：2026年7月23日</text>
+  <text x="68" y="760" fill="#cbd5e1" font-family="sans-serif" font-size="20">この編集セッションでの参考値。OpenAIが保証する固定仕様ではなく、セッションによって変わる可能性があります。</text>
+</svg>
