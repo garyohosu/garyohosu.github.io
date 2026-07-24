@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-07-25
+
+### 変更内容
+- 新記事追加: `_posts/2026-07-25-note-claude-security.md`（「Claude CodeのセキュリティチェックをAIがやってくれる！「Claude Security」プラグインを実際に試した結果」 note紹介記事）
+- 画像追加: `assets/img/note-claude-security-2026-07-25.png` / `assets/images/note-claude-security-2026-07-25.png`（noteのOGヘッダー画像をクリーンURLからダウンロード・検証済み、サイズ~600kB確認）
+- note-id `ne01d8f69d015` とタイトルキーワード「Claude Security」で重複チェック（search_files + CHANGELOG確認）、未紹介のため処理
+- browser_navigate → click(top新着) → console(location.href) → snapshot(full) + get_imagesで内容・画像取得
+- CHANGELOG更新、git pull --rebase（conflict resolved） → add → commit → push実施（nesting対応）
+- `note-blog-intro-post-workflow`スキル準拠でcron実行
+
+### 理由
+- 毎日朝8時のcronジョブ（`note-blog-intro-post-workflow`スキル）で https://note.com/hantani をチェック。新着トップ記事「Claude Securityを使ってみた」を検知。プラグインインストール手順、Workflowツール欠落による失敗、代替レビュー結果を非エンジニア向けにまとめブログ紹介。未紹介noteを優先処理。
+
 ## 2026-07-24 (ainews)
 
 ### 変更内容
