@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-07-24 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-07-24-ai-news-kill-switch-openai-ipo-atlas.md`（「AI「強制停止法」誕生、OpenAI上場へ：2026年7月最新AIニュース」）
+- 画像追加: `assets/img/ai-news-manga-2026-07-24.png`（ai-news-manga-2026-07-23.pngをプレースホルダーとしてコピー。OPENAI_API_KEY未設定のためDALL-E 3生成不可）
+
+### 理由
+- 毎日6時の定期実行タスク。AI Kill Switch法案・OpenAI IPO・SpaceX Cursor買収・Google ATLAS v1.0・AIエージェント実業務展開の5トレンドを2026-07-22〜24の最新ニュースに基づき執筆。
+
 ## 2026-07-24
 
 ### 変更内容
