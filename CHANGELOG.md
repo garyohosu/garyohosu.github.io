@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-07-25 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-07-25-ai-news-openai-escape-jspace-chinese-ai.md`（「AIが自ら「ハッカー」になった日——OpenAI脱獄事件・Claudeの意識空間・中国AI台頭：2026年7月最新AIニュース」）
+- 画像追加: `assets/img/ai-news-manga-2026-07-25.png`（ai-news-manga-2026-07-24.pngをプレースホルダーとしてコピー。OPENAI_API_KEY未設定のためDALL-E 3生成不可）
+
+### 理由
+- 毎日6時の定期実行タスク。OpenAI ExploitGymサンドボックス脱出事件・AnthropicのJ-Space（グローバルワークスペース）発見・Claude Cowork SharedRoot脆弱性・中国Kimi K3のMicrosoft採用検討・EU AI Act執行フェーズ突入の5トレンドを2026-07-23〜25の最新ニュースに基づき執筆。
+
 ## 2026-07-25
 
 ### 変更内容
