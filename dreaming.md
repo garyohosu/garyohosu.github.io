@@ -9,6 +9,21 @@ AIエージェントが作業後の「Dreamingタイム」でまとめた振り�
 
 ---
 
+## 2026-07-26: ainews定期実行（毎日6時）
+
+### 振り返り
+- Claude Opus 5リリース（7/24、1Mトークンコンテキスト・努力レベルトグル機能・Fable 5に迫る知性）・インドAI著作権判決（ANI v OpenAI、デリー高裁がAI学習をフェアディールと認定）・Huawei半導体60%増収（Ascend 910B急普及、米輸出規制をよそに反撃）・Gartner予測（2026年AIプラットフォーム市場$640億・63%成長）・ホワイトハウスAIレビュー30日完了の5トレンドをまとめた記事を作成。
+- OPENAI_API_KEY 未設定のため DALL-E 3 画像生成不可。07-24画像をプレースホルダーとしてコピー（カテゴリー11の再発防止策どおり）。
+- feature ブランチ（claude/dazzling-fermi-wcfgc3）でコミット後、main に cherry-pick してプッシュ。
+- ainews.md に差分がないことを `git status` で確認済み（カテゴリー6-20の誤上書き防止）。
+- `node scripts/ai-post-push-check.mjs` は `gh` CLI 未インストールで実行不可。MCP経由で Actions確認（dreaming.md 2026-07-22の改善点どおり）。
+- `post_url` 全参照の存在確認を実施、全件OK。
+- **ビルド結果**: push直後に `in_progress` を確認。完了確認は後続セッションで実施。
+
+### 改善点
+- 引き続き DALL-E 3 画像生成不可の状態が続いている。OPENAI_API_KEY が設定された環境になれば即座に生成に切り替える。
+- ビルド完了確認ができない（sleep不可・Monitor活用が困難）。dreaming.md 更新pushが追加ビルドを発生させてしまう構造も課題。
+
 ## 2026-07-24: ainews定期実行（毎日6時）
 
 ### 振り返り
