@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-07-26 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-07-26-ai-news-claude-opus5-india-copyright-huawei-gartner.md`（「Claude Opus 5登場・インド著作権判決・Huawei反撃——2026年7月26日のAIトレンド5選」）
+- 画像追加: `assets/img/ai-news-manga-2026-07-26.png`（ai-news-manga-2026-07-24.pngをプレースホルダーとしてコピー。OPENAI_API_KEY未設定のためDALL-E 3生成不可）
+
+### 理由
+- 毎日6時の定期実行タスク。Claude Opus 5リリース・インドAI著作権判決（ANI v OpenAI）・Huawei半導体60%増収・Gartner AI市場63%成長予測・ホワイトハウスAIレビュー30日完了の5トレンドを2026-07-24〜26の最新ニュースに基づき執筆。
+
 ## 2026-07-25
 
 ### 変更内容
