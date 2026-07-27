@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-07-27 (ANNEWS/ainews更新)
+
+### 変更内容
+- 新記事追加: `_posts/2026-07-27-ai-news-claude5-gpt5.md`（「2026年7月 AIニュースまとめ：Claude 5 Opus登場とGPT-5.6の激戦」）
+- 画像生成・追加: `assets/img/ai-news-manga-2026-07-27.png` (image_generateツールで新規作成、サイズ2.6MB確認)
+- x_searchで2026年7月最新のClaude 5 / GPT-5.6 / Grok 4.5の実ユーザー報告・公式発表を収集
+- 企業利用・セキュリティ（prompt injection耐性）・研究（アライメント）・エージェント実用性に焦点を当てた簡潔日本語bullet記事化（USER好み準拠）
+
+### 理由
+- ユーザーの「ANNEWS.mdをやって」指示を受け、research-workflows + note-workflowsスキルで実行。過去の画像欠損インシデントを回避し、AGENTS.mdチェックリスト（類似確認、image.path実在、minimal diff、英語commit）を厳守。週次Telegram digestにも活用可能なconcreteまとめを作成。
+
 ## 2026-07-26 (ainews)
 
 ### 変更内容
@@ -12,7 +23,6 @@
 
 ### 理由
 - 毎日6時の定期実行タスク。Claude Opus 5リリース・インドAI著作権判決（ANI v OpenAI）・Huawei半導体60%増収・Gartner AI市場63%成長予測・ホワイトハウスAIレビュー30日完了の5トレンドを2026-07-24〜26の最新ニュースに基づき執筆。
-
 ## 2026-07-25
 
 ### 変更内容
