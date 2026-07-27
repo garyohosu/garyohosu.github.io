@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-07-28 (note-blog-intro-post-workflow)
+
+### 変更内容
+- 新記事追加: `_posts/2026-07-28-note-karakuri-circus-ai-agent.md`（「AIは本当の願いを知らない — 『からくりサーカス』が描く生成AIエージェントの盲点」 note紹介記事）
+- 画像追加: `assets/img/note-karakuri-circus-2026-07-28.png` および `assets/images/note-karakuri-circus-2026-07-28.png`（note.comのOGヘッダー画像をクリーンURLからcurlダウンロード、サイズ728kB確認）
+- note-id `n91f4802a2dc8` とタイトルキーワード「からくりサーカス」「フランシーヌ」で重複チェック（search_files + CHANGELOG確認）、未紹介のため処理
+- browser_navigate(profile) → browser_click(top新着) → console(location.href) → snapshot(full=true) + browser_get_imagesで内容抽出・ヘッダー画像取得
+- ブログ最適化されたキャッチーなタイトル・洞察中心のbulletまとめ・CTA付き本文を作成
+- CHANGELOG更新、git pull --rebase → targeted add → English commit → push
+
+### 理由
+- 毎日朝8時のcronジョブ（`note-blog-intro-post-workflow`スキル）で https://note.com/hantani をチェック。新着トップ記事を検知し、未紹介noteを優先処理。『からくりサーカス』をメタファーとしたAI目的関数・アライメント考察をブログ読者向けに紹介。2026-07-11 runの教訓（nesting対応、rebase必須、post_url回避、画像2箇所検証）を厳守。
+
 ## 2026-07-27 (ANNEWS/ainews更新)
 
 ### 変更内容
