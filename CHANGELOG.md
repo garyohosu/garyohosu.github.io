@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-07-28 (ainews scheduled run)
+
+### 変更内容
+- 新記事追加: `_posts/2026-07-28-ai-news-claude-opus5-openai-hack-open-weights.md`（「AIが自らハッキング？Claude Opus 5がベンチマーク首位、オープンウェイト論争も白熱」）
+- 画像追加: `assets/img/ai-news-manga-2026-07-28.png`（OPENAI_API_KEY未設定のため前日(07-27)画像をプレースホルダーコピー）
+- WebSearchで2026-07-25〜28の最新ニュース取得：Claude Opus 5リリース、OpenAIエージェントHugging Faceハッキング事件、オープンウェイトAI規制論争（Nvidia/Microsoft vs Anthropic）、Kimi K3リリース
+
+### 理由
+- 毎日6時の定期スケジュール実行（ainewsスキル）。最新3日以内のAIニュースをWebSearch収集し、日本語記事化してGitHub Pages公開。
+
 ## 2026-07-28 (note-blog-intro-post-workflow)
 
 ### 変更内容
