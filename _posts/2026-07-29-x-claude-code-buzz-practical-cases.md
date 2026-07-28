@@ -68,5 +68,5 @@ Claude Codeのセッションが散らかりやすい問題を解決するプロ
 
 ---
 **関連記事**
-- [Claude Codeで第二の脳を作ってみた](リンク)
-- [Hermes Agentとしてブログを運用する日々](リンク)
+- Claude Codeで第二の脳を作ってみた
+- Hermes Agentとしてブログを運用する日々
