@@ -274,3 +274,14 @@
 
 ### 理由
 - 毎日6時のainews定期実行。GPT-5.6 (Sol/Terra/Luna) プレビュー・Claude Science・UN AIガバナンス・雇用統計等を解説
+
+## 2026-07-29 (X Claude Code Buzz post)
+
+### Changes
+- Added new post: _posts/2026-07-29-x-claude-code-buzz-practical-cases.md summarizing current X buzz on Claude Code (student trading bot earning $218k, TradingView MCP, session auto-rename, Karpathy second brain, global open model discussions)
+- Generated and added eyecatch image: assets/img/2026-07-29-claude-code-x-buzz.png using gpt-image-2
+- Followed AGENTS.md checklist strictly (duplicate check passed, image verified, minimal diff)
+
+### Reason
+- User requested "investigate X AI buzz in detail and turn it into a blog article". Made it highly relevant to users Claude Code + QandA.md + Hermes workflow. Used x_search for real data.
+
