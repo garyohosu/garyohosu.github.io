@@ -110,6 +110,7 @@ node scripts/ai-post-push-check.mjs
 - [ ] **数字のみのタグやカテゴリーは必ずクォートしているか確認**（例: `"403"`）
 - [ ] 外部URLを使う場合はURLが有効か確認
 - [ ] 外部URLが全て`https://`で始まっているか確認（`http://`はエラーになる）
+- [ ] `grep -rn "(リンク)\|(TODO)\|(LINK)" _posts/` でプレースホルダーリンクが残っていないか確認
 
 ### プッシュ前
 - [ ] `git status`で意図しない変更がないか確認
@@ -185,6 +186,13 @@ node scripts/ai-post-push-check.mjs
 **原因**: `_posts/2026-07-23-note-chatgpt-sites-webpage.md` の「関連記事」セクションが `{% post_url 2026-07-11-note-ai-werewolf-orchestration %}` を参照していたが、そのファイルは `_posts/` に存在しなかった。
 **解決**: `post_url` タグを削除し、プレーンテキスト（「近日公開予定」）に置き換えて再push。
 **再発防止**: ainews実行前に `grep -rn "post_url" _posts/` で全 `post_url` 参照ファイルが実在するか確認する。
+
+### カテゴリー13: Markdownリンクのプレースホルダー href によるHTMLProofer失敗
+#### 2026-07-28: `(リンク)` プレースホルダーリンクでビルド失敗
+**症状**: `Build and Deploy` の `Test site` ステップで `internally linking to リンク, which does not exist` が2件発生しビルド失敗。
+**原因**: `_posts/2026-07-29-x-claude-code-buzz-practical-cases.md` の「関連記事」セクションで `[テキスト](リンク)` という未解決のプレースホルダーhrefを使っていた。HTMLProoferが内部リンクとして検査し、`/リンク/` というパスが存在しないと判定した。
+**解決**: `[テキスト](リンク)` をプレーンテキスト（`テキスト`）に変換して再push。
+**再発防止**: 記事作成後に `grep -rn "(リンク)\|(TODO)\|(LINK)" _posts/` でプレースホルダーリンクが残っていないか確認する。
 
 ### カテゴリー10: root-portal 監視異常（CompanyGuardian）
 #### 2026-03-13: root-portal リンク切れ・掲載漏れ

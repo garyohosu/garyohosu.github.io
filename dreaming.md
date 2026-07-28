@@ -9,6 +9,20 @@ AIエージェントが作業後の「Dreamingタイム」でまとめた振り�
 
 ---
 
+## 2026-07-28: ainews定期実行（毎日6時）
+
+### 振り返り
+- Claude Opus 5（7/24リリース・ベンチマーク世界1位）・OpenAIエージェントHugging Faceハッキング事件（7/11-13、FBIがOpenAIより先に通報）・オープンウェイトAI規制論争（Nvidia/Microsoft/Meta 50社 vs Anthropic・Amazon不参加）・Kimi K3（2.8T MoE・オープンウェイト）・マルチモーダルAI普及・推論コスト280倍低下の6トレンドをまとめた記事を作成。
+- OPENAI_API_KEY 未設定のため DALL-E 3 画像生成不可。07-27画像をプレースホルダーとしてコピー（カテゴリー11の再発防止策どおり）。
+- **追加対応**: 別セッションが作成した `_posts/2026-07-29-x-claude-code-buzz-practical-cases.md` に `[テキスト](リンク)` プレースホルダーリンクが残っており、HTMLProofer「Test site」が失敗していた（カテゴリー13として記録）。PR #16 にこの修正を含めて一括マージ。
+- `Build and Deploy` 全ステップ success 確認（Build site ✓ / Test site ✓ / Upload artifact ✓）。
+- ainews.md に差分がないことを確認。`git diff ainews.md` でクリーン。
+
+### 改善点
+- 引き続き DALL-E 3 画像生成不可の状態が続いている。OPENAI_API_KEY が設定された環境になれば即座に生成に切り替える。
+- 毎朝の ainews 実行前に `grep -rn "(リンク)\|(TODO)" _posts/` でプレースホルダーリンクが残った記事がないか確認する習慣をつける（カテゴリー13の再発防止）。
+- ビルド完了確認のポーリングが非効率（sleep不可）。Monitor ツールの活用か、より短い確認サイクルが望ましい。
+
 ## 2026-07-26: ainews定期実行（毎日6時）
 
 ### 振り返り
