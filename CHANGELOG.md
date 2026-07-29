@@ -4,6 +4,23 @@
 
 ---
 
+## 2026-07-29
+
+### 変更内容
+- 新記事追加: `_posts/2026-07-29-note-nanoclaw-yameru.md`（「ロリポップのNanoClawやめる」 note紹介記事）
+- 新記事追加: `_posts/2026-07-28-note-ai-language-evolution.md`（「生成AIでコーディングすると、プログラミング言語はどう進化する？」 note紹介記事）
+- 新記事追加: `_posts/2026-07-28-note-claude-shared-public.md`（「Claudeの共有Artifactは実質公開。設定を今すぐ確認して」 note紹介記事）
+- 新記事追加: `_posts/2026-07-23-note-claude-code-second-brain.md`（「XでバズるClaude Code活用を調べたら、第二の脳が一番実用的だった」 note紹介記事）
+- 新記事追加: `_posts/2026-07-23-note-windows11-claude-codex.md`（「Windows 11でClaude CodeとCodexを連携させた記録」 note紹介記事）
+- 新記事追加: `_posts/2026-07-10-note-nanoclaw-trial.md`（「ロリポップのNanoClawを試して見る」 note紹介記事）
+- 画像追加: `assets/img/note-nanoclaw-yameru-2026-07-29.png` / `assets/img/note-ai-language-evolution-2026-07-28.png` / `assets/img/note-claude-shared-public-2026-07-28.png` / `assets/img/note-claude-code-second-brain-2026-07-28.png` / `assets/img/note-windows11-claude-codex-2026-07-23.png` / `assets/img/note-nanoclaw-trial-2026-07-10.png`（note.comのOGヘッダー画像をクリーンURLからcurlダウンロード）
+- note-id `n5d2d681d4926`, `n3e0e87a1de1a`, `n8aa6ebcd9932`, `nf664544ca039`, `n85eb4842a300`, `nae1250e1f416` をそれぞれ重複チェックし、visibleな未紹介noteをまとめて処理
+- browser_navigateでnote profileを再確認し、console/location href、snapshot、get_imagesで各記事の内容と画像を取得
+- 既存のnote紹介記事フォーマットに合わせて、要点の整理と元noteリンクを付けた紹介文を作成
+
+### 理由
+- note.com/hantani の最新〜過去の未紹介記事をまとめてブログ紹介し、読者が追いやすい状態にするため。NanoClawの試用→撤退、Claudeの共有設定の注意喚起、AI向けプログラミング言語の進化、第二の脳、Windows 11でのClaude/Codex連携など、AI実務に役立つ複数のテーマが直近で並んでいたため、遡って一括で整理した。
+
 ## 2026-07-28 (ainews scheduled run)
 
 ### 変更内容
