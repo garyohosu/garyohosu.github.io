@@ -4,6 +4,18 @@
 
 ---
 
+## 2026-07-30
+
+### 変更内容
+- 新記事追加: `_posts/2026-07-30-note-giron-kabeuchi.md`（「「壁打ち」が失礼に感じるのはなぜ？ 日本人が議論を苦手にしやすい理由を整理したnote」 note紹介記事）
+- 画像追加: `assets/img/note-giron-kabeuchi-2026-07-30.png` / `assets/images/note-giron-kabeuchi-2026-07-30.png`（note.comのOGヘッダー画像をクリーンURLからcurlダウンロード、サイズ555kB確認）
+- note-id `n34763d181aea` とタイトルキーワード「日本人はなぜ議論が苦手なのか」「壁打ち」で重複チェックし、未紹介のため処理
+- browser_navigate(profile) → browser_click(top新着) → console(location.href) → snapshot(full=true) + browser_get_imagesで内容・画像を取得
+- 既存のnote紹介記事フォーマットに合わせて、議論の歴史・壁打ち論争・日本で議論が育ちにくい背景を要約した紹介文を作成
+
+### 理由
+- note.com/hantani の最新note「日本人はなぜ議論が苦手なのか」を検知し、未紹介のためブログ紹介記事を作成・公開するため。壁打ちの失礼さ、議論という語の歴史、上下関係と教育環境が議論を難しくする背景を、ブログ読者向けに整理した。
+
 ## 2026-07-29
 
 ### 変更内容
