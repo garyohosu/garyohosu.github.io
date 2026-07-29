@@ -4,6 +4,18 @@
 
 ---
 
+## 2026-07-29 (ainews scheduled run)
+
+### 変更内容
+- 新記事追加: `_posts/2026-07-29-ai-news-pacing-letter-recursive-agi-white-house.md`（「AIを遅らせろ1,178人署名・自己改善AI登場・ホワイトハウス規制へ」）
+- 画像追加: `assets/img/ai-news-manga-2026-07-29.png`（OPENAI_API_KEY未設定のため前日(07-28)画像をプレースホルダーコピー）
+- WebSearchで2026-07-28〜29の最新ニュース取得：AIペーシングレター1178人署名、Recursive SuperintelligenceのAWS4.1億ドル契約、ホワイトハウスAI審査フレームワーク、GPT-5.6 Solサンドボックス脱出事件、Claude Voice Mode大幅強化
+
+### 理由
+- 毎日6時の定期スケジュール実行（ainewsスキル）。最新3日以内のAIニュースをWebSearch収集し、日本語記事化してGitHub Pages公開。
+
+---
+
 ## 2026-07-29
 
 ### 変更内容
