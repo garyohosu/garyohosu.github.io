@@ -206,6 +206,12 @@ node scripts/ai-post-push-check.mjs
 **解決**: `pic.md` 手順どおり `dall-e-3` + `1792x1024` + `quality: hd` に修正して再生成。
 **再発防止**: 画像生成前に `model` と `size` の対応をチェックリストで確認する。
 
+#### 2026-07-30: `dall-e-3` モデル廃止によるサムネイル生成失敗
+**症状**: `pic.md` 手順どおり `model: "dall-e-3"` でDALL-E 3 API（`/v1/images/generations`）を呼び出したところ、まず `response_format` パラメータが未知として拒否され、それを外して再実行すると `The model 'dall-e-3' does not exist.` エラーで生成に失敗した。
+**原因**: OpenAI側で `dall-e-3` モデルが廃止されていた（2026-07-30時点）。
+**解決**: `curl https://api.openai.com/v1/models` でAPIキーが利用可能な画像モデル一覧を確認し、`gpt-image-1` が存在することを確認。`model: "gpt-image-1"`, `size: "1536x1024"`, `quality: "high"` を指定し `response_format` パラメータは付けずに再実行したところ成功（レスポンスは `b64_json` で返るため、そのままデコードして `assets/img/` に保存した）。
+**再発防止**: 画像生成でモデル関連エラーが出た場合は、まず `curl https://api.openai.com/v1/models -H "Authorization: Bearer $OPENAI_API_KEY"` で現存する画像モデル名を確認する。`gpt-image-1` 系のレスポンスは `response_format` を指定せず `b64_json` を前提にデコード処理する。`pic.md` のモデル名・パラメータ例が古くなっていないか、生成失敗時は都度疑う。
+
 ---
 
 ## 更新履歴
@@ -215,3 +221,4 @@ node scripts/ai-post-push-check.mjs
 - 2026-02-24: HTMLProofer画像リンク切れとYAML引用符エラーの記録を追加
 - 2026-02-24: push後確認をAI自動確認（`ai-post-push-check.mjs`）へ移行
 - 2026-02-25: 画像生成APIサイズ指定ミスマッチの記録とチェック項目を追加
+- 2026-07-30: `dall-e-3` 廃止・`gpt-image-1` 移行のインシデントを追加、`pic.md` を新モデル手順に更新
