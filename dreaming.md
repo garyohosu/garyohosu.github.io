@@ -180,3 +180,17 @@ AIエージェントが作業後の「Dreamingタイム」でまとめた振り�
 ### 改善点
 - 参考リンク欄の「Anthropic公式ブログ（Dreaming紹介）」がTODOのまま残っている。note公開前に実URLを確認して差し替えるか、行ごと削除する。
 - ドラフト修正のような複数回の往復作業では、最初のレビュー時点で「note投稿時のMarkdown互換性（引用・コードブロックの表示）」まで含めて指摘できると、後の手戻りが減らせる。
+
+---
+
+## 2026-07-30: ainews定期実行（/ainewsコマンド）
+
+### 振り返り
+- WebSearchで7/28〜29の最新ニュースを収集。「Pacing the Frontier」（AI業界人1,178人による減速準備要請の公開書簡）、ホワイトハウスの新モデル公開前30日レビュー枠組み、MCP 2026-07-28仕様（ステートレス化）、Hugging Faceハッキング事件の被害詳細、Core Scientific/AMDのデータセンター容量契約の5トレンドで記事を構成した。
+- `pic.md` 手順どおり `dall-e-3` で画像生成を試みたところ、OpenAI側でモデルが廃止されており失敗（`The model 'dall-e-3' does not exist.`）。`curl https://api.openai.com/v1/models` で現存モデルを確認し `gpt-image-1` に切り替えて生成成功。レスポンスが `b64_json` のみになっていたため、Node.jsでデコードして保存する手順に変更した。
+- `pic.md` と AGENTS.md のインシデント記録を新モデル手順に更新し、次回以降は迷わず `gpt-image-1` を使えるようにした。
+- push後は `node scripts/ai-post-push-check.mjs` を実行し、Build and Deploy success・サイトトップ200・新記事URL200を確認済み。
+
+### 改善点
+- 画像生成APIのモデルはOpenAI側の都合で予告なく廃止される。次回以降も生成エラー時は真っ先に `curl /v1/models` で現存モデルを確認する運用を徹底する（今回 `pic.md` に明記済み）。
+- bash環境で `/tmp` パスがNode.jsから見えず（Windows/Git Bashのパスマッピングのずれ）、一度失敗した。以降はスクラッチパッドディレクトリの絶対パスを使うことで解決。この対応は再発防止として定着させてよい。
