@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-07-31
+
+### 変更内容
+- 新記事追加: `_posts/2026-07-31-note-codex-security-cli-windows-bug.md`（「noteに記事を公開しました：Codex Security CLIを試したらWindows版の落とし穴に当たった」 note紹介記事）
+- 画像追加: `assets/img/note-codex-security-cli-2026-07-31.png` / `assets/images/note-codex-security-cli-2026-07-31.png`（note.comのOGヘッダー画像をクリーンURLからcurlダウンロード、サイズ559kB確認）
+- note-id `na1347737a92d` とタイトルキーワード「Codex Security CLI」「Windows」で重複チェックし、未紹介のため処理
+- browser_navigate(profile) → browser_click(top新着) → console(location.href) → snapshot(full=true) + browser_get_imagesで内容・画像を取得
+- Codex Security CLIのコマンド、Windowsでの `Invalid Codex plugin directory` エラー、WSL推奨を要点にした紹介文を作成
+
+### 理由
+- note.com/hantani の最新note「Codex Security CLIを使ってみる」を検知し、未紹介のためブログ紹介記事を作成・公開するため。Windows環境で遭遇した実エラーと回避策を、ブログ読者向けに整理した。
+
+
 ## 2026-07-30
 
 ### 変更内容
