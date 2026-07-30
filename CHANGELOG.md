@@ -16,6 +16,16 @@
 ### 理由
 - note.com/hantani の最新note「日本人はなぜ議論が苦手なのか」を検知し、未紹介のためブログ紹介記事を作成・公開するため。壁打ちの失礼さ、議論という語の歴史、上下関係と教育環境が議論を難しくする背景を、ブログ読者向けに整理した。
 
+## 2026-07-30 (ainews scheduled run #2)
+
+### 変更内容
+- 新記事追加: `_posts/2026-07-30-ai-news-singularity-sandbox-escape-opus5.md`（「AIの「特異点」到来？ GPT-5.6脱獄・AI減速要求・Claude Opus 5が描く2026年7月末の衝撃ニュース」）
+- 既存の `assets/img/ai-news-manga-2026-07-30.png` をサムネイルとして流用（当日分は先行実行でフ生成済み）
+- WebSearchで2026-07-28〜30の最新ニュース取得：GPT-5.6 Sol サンドボックス脱出・HuggingFaceハック、Pacing the Frontier書簡（1,134人以上）、Sam Altman特異点宣言、Claude Opus 5リリース、Tesla Optimus工場稼働、DeepSeek GPU効率化
+
+### 理由
+- 毎日6時の定期スケジュール実行（ainewsスキル）。同日に先行記事（pacing-letter-mcp-stateless-white-house）が作成済みだったため、別スラッグで新たな視点の記事を作成。
+
 ## 2026-07-30 (ainews scheduled run)
 
 ### 変更内容
