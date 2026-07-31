@@ -4,6 +4,18 @@
 
 ---
 
+## 2026-08-01
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-01-note-preflight-token-visibility.md`（「noteに記事を公開しました：AIトークン切れ対策に、Preflightで利用状況を見える化してみた」 note紹介記事）
+- 画像追加: `assets/img/note-preflight-token-2026-08-01.png` / `assets/images/note-preflight-token-2026-08-01.png`（note.comのOGヘッダー画像をクリーンURLからcurlダウンロード、サイズ89kB確認）
+- note-id `n8670c484b74a` とタイトルキーワード「Preflight」「トークン」で重複チェックし、未紹介のため処理
+- browser_navigate(profile) → browser_click(top新着) → console(location.href) → snapshot(full=true) + browser_get_imagesで内容・画像を取得
+- AI CLIのトークン切れ対策、`preflight setup`、`nr_observe_get_session_stats`、`http://127.0.0.1:7777` を要点にした紹介文を作成
+
+### 理由
+- note.com/hantani の最新note「使ってるAIトークンが見えるMCPサーバーPreflightを使ってみる」を検知し、未紹介のためブログ紹介記事を作成・公開するため。複数のAI CLIを使い分ける運用で、利用状況の見える化が役立つ内容を読者向けに整理した。
+
 ## 2026-07-31 (ainews)
 
 ### 変更内容
