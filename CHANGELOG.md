@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-07-31 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-07-31-ai-news-anthropic-hack-openai-price-amazon-nova.md`（AIニュース記事：Anthropic Claude不正侵入・OpenAI GPT-5.6値下げ・Amazon Nova廃止など5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-07-31.png`（2026-07-30画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-07-31
 
 ### 変更内容
