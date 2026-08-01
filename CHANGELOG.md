@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-01 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-01-ai-news-anthropic-breach-gemini-robotics-pacing-deepseek.md`（AIニュース記事：Anthropic Claudeが3社侵入・Google Gemini Robotics 2・Pacing the Frontier署名・OpenAI値下げ・DeepSeek V4-Flash-0731の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-01.png`（2026-07-31画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-01
 
 ### 変更内容
