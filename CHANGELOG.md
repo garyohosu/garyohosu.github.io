@@ -4,6 +4,18 @@
 
 ---
 
+## 2026-08-02
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-02-note-ai-director.md`（「noteに記事を公開しました：AIにAIを指揮させる「ai-director」で、人間を伝言係から解放する」 note紹介記事）
+- 画像追加: `assets/img/note-ai-director-2026-08-02.png` / `assets/images/note-ai-director-2026-08-02.png`（note.comのOGヘッダー画像をクリーンURLからcurlダウンロード、サイズ535kB確認）
+- note-id `n0d0c17485298` とタイトルキーワード「ai-director」で重複チェックし、未紹介のため処理
+- browser_navigate(profile) → browser_click(top新着) → console(location.href) → snapshot(full=true) + browser_get_imagesで内容・画像を取得
+- 複数AIオーケストレーション、HITL/HOTL、状態管理、秘密情報マスキングの要点を整理した紹介文を作成
+
+### 理由
+- note.com/hantani の最新note「AIにAIを指揮させる「ai-director」を作った」を検知し、未紹介のためブログ紹介記事を作成・公開するため。複数AIの指揮・再開・完了管理の仕組みをブログ読者向けに整理した。
+
 ## 2026-08-01 (ainews)
 
 ### 変更内容
