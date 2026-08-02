@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-02 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-02-ai-news-eu-ai-act-enforcement-hailuo3-deepseek-cyber.md`（AIニュース記事：EU AI Act施行開始・カリフォルニアSB 942発効・MiniMax H3(Hailuo 3.0)2K動画AI・DeepSeek悪用460台サイバー攻撃・Google Gemini無料動画トライアルの5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-02.png`（2026-08-01画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-02
 
 ### 変更内容
