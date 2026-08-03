@@ -4,6 +4,18 @@
 
 ---
 
+## 2026-08-04
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-04-note-chatgpt-work-second-brain-virtual-company.md`（「noteに記事を公開しました：ChatGPT Workで「第二の脳」とバーチャルカンパニーを作ってみた」 note紹介記事）
+- 画像追加: `assets/img/note-chatgpt-work-second-brain-2026-08-04.png` / `assets/images/note-chatgpt-work-second-brain-2026-08-04.png`（note.comのOGヘッダー画像をクリーンURLからcurlダウンロード、サイズ617kB確認）
+- note-id `n7d545ee185f7` とタイトルキーワード「ChatGPT Work」「第二の脳」「バーチャルカンパニー」で重複チェックし、未紹介のため処理
+- browser_navigate(profile) → browser_click(top新着) → console(location.href) → snapshot(full=true) + browser_get_imagesで内容・画像を取得
+- Library / プロジェクト / GitHub連携 / 自動化 / 検品の要点を整理した紹介文を作成
+
+### 理由
+- note.com/hantani の最新note「ChatGPT Workで「第二の脳」とバーチャルカンパニーを作ってみた」を検知し、未紹介のためブログ紹介記事を作成・公開するため。AIが読み書きできるLibrary、プロジェクトの役割分担、終了コードだけでは見えない失敗の検出を読者向けに整理した。
+
 ## 2026-08-03 (ainews)
 
 ### 変更内容
