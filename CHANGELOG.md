@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-03 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-03-ai-news-astra-math-deepseek-whitehouse-robotics.md`（AIニュース記事：OpenAI Astra数学難問10問解決・DeepSeek V4-Flash超低価格・ホワイトハウスAI安全枠組み・ジュネーブAIサミット&EU AI Act完全施行・ヒューマノイドロボット実用化の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-03.png`（2026-08-02画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-02 (ainews)
 
 ### 変更内容
