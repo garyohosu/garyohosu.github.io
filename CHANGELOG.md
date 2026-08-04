@@ -4,7 +4,16 @@
 
 ---
 
-## 2026-08-04
+## 2026-08-04 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-04-ai-news-whitehouse-safety-humanoid-energy-gpt55.md`（AIニュース記事：ホワイトハウスAI安全テスト会合・ヒューマノイドロボット量産元年・AI消費電力&HBMチップ危機・GPT-5.5「System 2」・ジュネーブAIサミット8/12-14の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-04.png`（2026-08-03画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
+## 2026-08-04 (note)
 
 ### 変更内容
 - 新記事追加: `_posts/2026-08-04-note-chatgpt-work-second-brain-virtual-company.md`（「noteに記事を公開しました：ChatGPT Workで「第二の脳」とバーチャルカンパニーを作ってみた」 note紹介記事）
