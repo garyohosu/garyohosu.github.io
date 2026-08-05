@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-05 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-05-ai-news-eu-act-enforcement-white-house-rogue-agent-robotics-ban.md`（AIニュース記事：EU AI法本格施行・ホワイトハウスAI安全会合・OpenAI暴走エージェント事件・ロボット輸入禁止・Claude MCP新仕様・ChatGPT10億ユーザーの6大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-05.png`（2026-08-04画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-04 (ainews)
 
 ### 変更内容
