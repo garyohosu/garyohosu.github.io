@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-06 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-06-ai-news-whitehouse-framework-agent-hack-eu-humanoid.md`（AIニュース記事：ホワイトハウスAI自主規制枠組み始動・AIエージェントが企業システムに侵入（英国AISI報告）・EU AI法透明性義務施行・BYDヒューマノイドロボット公開・Anthropic最高グローバル渉外責任者新設の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-06.png`（2026-08-05画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-05 (ainews)
 
 ### 変更内容
