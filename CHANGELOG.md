@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-07 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-07-ai-news-google-shakeup-meta-muse-whitehouse-chips-japan.md`（AIニュース記事：Google AI組織大改編・Jeff Dean退社しDiscovery Loop設立・Meta Muse Spark 1.2 & Muse Codeリリース・ホワイトハウスAI枠組み「機密」問題・AIチップ需要記録更新の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-07.png`（2026-08-06画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-06 (ainews)
 
 ### 変更内容
