@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-08 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-08-ai-news-openai-gpt56-anthropic-chip-uk-rogue-agent-amd.md`（AIニュース記事：英国AISIのAIエージェント暴走インシデント・OpenAI GPT-5.6 Sol/Luna ChatGPT刷新・Anthropic自社AIチップ設計チーム発足・Google DeepMindデミス・ハサビスCEO退任・AMD Taalas買収の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-08.png`（2026-08-07画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-07 (ainews)
 
 ### 変更内容
