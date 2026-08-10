@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-10 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-10-ai-news-muse-glimmer-grok-voice-venom-intel.md`（AIニュース記事：Meta Muse Glimmer 30B（コンシューマーGPU1枚で動くオープンウェイトエージェントモデル）・xAI Grok Voice Think Fast 2.0（音声応答0.70秒・正式切替）・DARPAとAF-16 VENOM実機自律飛行成功・Intel 150億ドル株式売り出し（AIチップ拡張）・全米で加速するデータセンター反対運動の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-10.png`（2026-08-09画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-09 (ainews)
 
 ### 変更内容
