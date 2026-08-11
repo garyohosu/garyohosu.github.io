@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-11 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-11-ai-news-sonnet5-muse-glimmer-daybreak-google.md`（AIニュース記事：Anthropic Claude Sonnet 5価格永続固定（$2/$10 per Mtok）・Meta Muse Glimmer 30BローカルエージェントAI（Apache 2.0）・OpenAI Daybreak Red GPT-5.6-Cyberサイバーセキュリティ専用モデル解禁・Google DeepMind組織再編（Demis Hassabis会長へ）・Anthropic 710億ドルインフラ投資・ジュネーブAIサミットの6大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-11.png`（2026-08-10画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-10 (ainews)
 
 ### 変更内容
