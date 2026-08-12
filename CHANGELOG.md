@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-12 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-12-ai-news-daybreak-claude-auto-muse-glimmer-google.md`（AIニュース記事：OpenAI Daybreak Red＆GPT-5.6-Cyber（サイバーセキュリティ専用AI）・Meta Muse Glimmer 30B（Apache 2.0オープンソース、家庭用GPU動作）・Anthropic Claude Code Auto Mode デフォルト化（8/14〜）・Google DeepMind体制刷新（Hassabis会長・Jeff Dean独立）・OpenAI IPO S-1申請書8月後半公開・OpenAI Astra一時停止（安全性懸念）の6大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-12.png`（2026-08-11画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-11 (ainews)
 
 ### 変更内容
