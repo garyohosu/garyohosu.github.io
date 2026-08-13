@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-13 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-13-ai-news-anthropic-profit-deepseek-v4pro-nvidia-500b-pixel11.md`（AIニュース記事：Anthropic初の黒字（Q2売上$10.9B・営業利益$559M）・DeepSeek V4-Pro公開＋Claude Code対抗「Harness」オープンソース化・Nvidia $5000億ドルAIインフラ同盟（Apollo/Blackstone等6社）・Google Pixel 11発表（Tensor G6/2nm・Gemini自律予約）・EU AI法高リスク条項施行・OpenAI IPO S-1公開目前）
+- 画像追加: `assets/img/ai-news-manga-2026-08-13.png`（2026-08-12画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-12 (ainews)
 
 ### 変更内容
