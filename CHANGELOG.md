@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-14 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-14-ai-news-gemini37flash-ultrafast-astra-watermark-apple.md`（AIニュース記事：Google Gemini 3.7 Flash＋OpenAI GPT-5.6 Sol Ultrafast（毎秒750トークン）・OpenAI Astra史上初「Critical」サイバーリスク判定で開発停止・Anthropic全Claude出力にC2PA透かし（世界展開）・Apple×アリババ中国向け独自AIモデル共同開発・ジュネーブAIサミット閉幕（150か国・ジュネーブ協定）の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-14.png`（2026-08-13画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-13 (ainews)
 
 ### 変更内容
