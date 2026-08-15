@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-15 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-15-ai-news-gemini-1b-qwen38-27b-heir-tldv-honor.md`（AIニュース記事：Gemini月間10億ユーザー突破・Alibaba Qwen 3.8 27B Apache 2.0で無料公開・Google HEIR準同型暗号コンパイラ公開・tl;dv AI会議録18万件漏洩・Honor Agentic OSスマホAIエージェント化の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-15.png`（2026-08-14画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-14 (ainews)
 
 ### 変更内容
