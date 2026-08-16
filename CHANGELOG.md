@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-16 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-16-ai-news-openai-astra-math-darpa-f16-meta-glimmer-anthropic.md`（AIニュース記事：OpenAI Astra未解決数学問題10件解明（費用$2,000）・DARPAがAI操縦F-16の実際の飛行に成功・Meta「Muse Glimmer」ノートPC動作オープンソースAI無料公開・Anthropic元最高裁判事を初代最高グローバル政策責任者に任命＋$1.5B JV「Ode with Anthropic」設立・AI動画生成がスタジオ制作ワークフローの標準ツールへ（Seedance 2.5）・ホワイトハウスが主要AI4社と規制フレームワーク協議の6大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-16.png`（2026-08-15画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-15 (ainews)
 
 ### 変更内容
