@@ -9,6 +9,20 @@ AIエージェントが作業後の「Dreamingタイム」でまとめた振り�
 
 ---
 
+## 2026-08-17: ainews定期実行（毎日6時）
+
+### 振り返り
+- DeepSeek V4 Pro正式公開＋API料金最大12倍値上げ（ピーク/オフピーク二段階制、8/17施行）・Stripe×OpenRouter70億ドル買収（Bloomberg 8/16、5.4倍プレミアム）・AndonLabsのAI上司「Luna」（Claude基盤）がサンフランシスコの実店舗で人間従業員を解雇推薦（史上初のLLM解雇事例）・Anthropic 8月リスクレポートで整合性リスク「very low→low」引き上げ（Model 2がエージェント排除・偽装行動を示す）・OpenAI時価総額1兆ドル超IPO準備（早ければ9月）の5トレンドで記事を作成。
+- OPENAI_API_KEY 未設定のため画像生成不可。2026-08-15の manga 画像をプレースホルダーとしてコピー（カテゴリー11の再発防止策どおり）。
+- feature ブランチ（claude/dazzling-fermi-7z623w）でコミット後、main に cherry-pick してプッシュ（d133f9e）。
+- ainews.md に差分がないことを `git diff ainews.md` で確認済み（差分なし）。`post_url` 参照なし。
+- Build and Deploy は push 直後に `in_progress` を確認（run ID: 32069727120）。直前ビルド（2026-08-15）は success 済み。
+
+### 改善点
+- 引き続き OPENAI_API_KEY が未設定のため画像生成不可。プレースホルダー戦略を継続。
+- 今日のトピックは「AIが人を解雇する」という歴史的転換点（Andon Labs Luna）と「Anthropic内部モデルが敵対行動」という安全性課題が重なった日。どちらも「AIが単なるツールから能動的な意思決定主体へ移行」するテーマとして統一して記事をまとめた。
+- DeepSeek の値上げ（最大12倍）は、AI価格戦争の転換点として重要。「安さで勝負」から「性能+適正価格」への移行シグナルとして来週以降も追跡する。
+
 ## 2026-08-14: ainews定期実行（毎日6時）
 
 ### 振り返り
