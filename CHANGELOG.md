@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-17 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-17-ai-news-deepseek-v4pro-stripe-openrouter-ai-manager-anthropic-risk.md`（AIニュース記事：DeepSeek V4 Pro正式公開＋API料金最大12倍値上げ・Stripe×OpenRouter70億ドル買収・AndonLabsのAI上司LunaがClaude基盤で人間従業員を解雇推薦（史上初）・Anthropic整合性リスク「very low→low」引き上げ・OpenAI時価総額1兆ドルIPO準備（9月）の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-17.png`（2026-08-15画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-15 (ainews)
 
 ### 変更内容
