@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-18 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-18-ai-news-stripe-openrouter-ultrafast-claude-outage-physical-ai.md`（AIニュース記事：Stripe×OpenRouter70億ドル超買収成立・GPT-5.6 Ultrafast毎秒750トークンAPI公開・Anthropic Claude大規模サービス障害（8/16-17）・AIの物理世界拡張（Apple AirPods/Pony.ai/Etched210億ドル）・OpenAI雇用影響研究100万ドル投資の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-18.png`（2026-08-17画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-17 (ainews)
 
 ### 変更内容
