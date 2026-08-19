@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-19 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-19-ai-news-deepmind-restructure-eu-ai-act-darpa-f16-deepseek-river.md`（AIニュース記事：DeepMind大再編（ハサビス会長就任・コーディングチームMV移転）・EU AI法高リスク条項施行（チャットボット自己開示義務）・DARPA F-16完全AI操縦実飛行成功・DeepSeek V4-Flash再訓練版がV4 Proをコーディングで逆転・River AI製品なし2ヶ月で11億ドル調達の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-19.png`（2026-08-18画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-18 (ainews)
 
 ### 変更内容
