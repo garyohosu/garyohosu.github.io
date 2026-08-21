@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-21 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-21-ai-news-robotaxi-teens-watermark-brazil-taiwan.md`（AIニュース記事：ラスベガスでTesla・Uber・Waymo最大8,000台ロボタクシー解禁・ChatGPT for Teens発売（13〜17歳向け安全機能デフォルトON）・AnthropicのClaudeテキスト透かし全世界展開（C2PA）・ブラジルAI投資4.44億ドル（Huawei/iFlytek参加）・AIエージェント8体による台湾政府機関自律サイバー攻撃の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-21.png`（2026-08-20画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-20 (ainews)
 
 ### 変更内容
