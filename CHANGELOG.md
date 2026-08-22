@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-22 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-22-ai-news-anthropic-ipo-claude-protein-cloudflare-kitesurf-meta-muse.md`（AIニュース記事：AnthropicのIPO申請準備（年間収益650億ドル、8月末申請予定）・ClaudeによるAIタンパク質設計実証（14/15ターゲット成功、業界標準の2倍超）・CloudflareのAIエージェント専用ブラウザ「Kitesurf」（Chromium比3〜7倍効率化）・Meta「Muse Code」AIコーディングアシスタント発表・AlibabaのQwen 3.8-MaxがClaude Fable 5に対抗の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-22.png`（2026-08-21画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-21 (ainews)
 
 ### 変更内容
