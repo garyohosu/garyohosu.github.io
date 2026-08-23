@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-23 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-23-ai-news-claude-protein-cyber-attack-anthropic-ipo-model-surge.md`（AIニュース記事：Claudeがタンパク質設計で業界平均2倍の成功率達成・AIによる完全自律サイバー攻撃が初めて記録・AnthropicのIPO準備（年換算売上65B USD）・ChatGPT10億人突破とモデル価格80%削減・Google AI体制刷新（ハサビス氏会長就任）の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-23.png`（2026-08-21画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-21 (ainews)
 
 ### 変更内容
