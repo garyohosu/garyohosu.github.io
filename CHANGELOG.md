@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-24 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-24-ai-news-astra-pause-chatgpt-ads-gpt56-darpa-regulation.md`（AIニュース記事：OpenAI Astra数学10問解決・Critical危険ティアで一時停止、ChatGPT欧州31か国広告開始、GPT-5.6値下げ・無料無制限、DARPA F-16完全自律飛行成功、米フロンティアAI30日前申告義務化、Meta Muse Code参入の6大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-24.png`（2026-08-21画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-21 (ainews)
 
 ### 変更内容
