@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-26 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-26-ai-news-anthropic-ipo-hugging-face-xpeng-mistral-claude.md`（AIニュース記事：Anthropic IPO「30兆ドル市場」宣言・Claude記憶統合（ChatとCowork間）・Hugging Face 130億ドル売却検討・Mistral×HUMAIN サウジアラビア主権AI提携・XPengロボット9億ドル調達＋Claude Code SWE-bench首位の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-26.png`（2026-08-25画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-25 (ainews)
 
 ### 変更内容
