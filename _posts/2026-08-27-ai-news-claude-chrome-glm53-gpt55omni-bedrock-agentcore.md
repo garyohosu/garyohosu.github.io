@@ -105,7 +105,7 @@ AIエージェントは「自律的に動く」ため、人間が全ての動作
 
 Google Workspace（Gmail、Docs、Sheets などのビジネスツール群）に統合された「**Gemini**」が、**操作可能なコンテンツを使った回答生成**に対応しました。単に「要約して」と頼むだけでなく、スプレッドシートの数値を参照して計算したり、メールの添付ファイルを開いて内容を読み込んだりしながら答えられるようになります。
 
-また、ローカルLLM実行ツール「**Ollama**」が「Claude Desktop」に正式対応。インターネット接続なしに手元のPCでClaudeを動かせるようになりました。
+また、ローカルLLM実行ツール「**Ollama**」が「Claude Desktop」に正式対応。Claude Desktop を経由して、Ollama で動作するオープンソースのローカルモデル（Llama や Mistral など）を利用できるようになりました。なお、Anthropic の Claude モデル自体はクラウド上で動作しており、「Ollama 対応」はあくまでも Claude Desktop が Ollama をバックエンドとして使えるようになったという意味です。
 
 **なぜ重要？**
 
@@ -115,7 +115,7 @@ Google Workspace（Gmail、Docs、Sheets などのビジネスツール群）に
 
 - 「先月の売上データを基に今月の予測を作って」と Sheets 上の Gemini に依頼
 - Gmail の受信トレイを Gemini にスキャンさせて、緊急度の高いメールだけを抽出
-- ローカル PC 上の機密文書を、クラウドに送らずに Ollama + Claude Desktop で分析
+- Ollama で動作するローカルモデルを Claude Desktop のインターフェースから操作し、開発・実験環境を統一
 
 ---
 
