@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-28 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-28-ai-news-nvidia-huggingface-cyber-defense-agents.md`（AIニュース記事：NvidiaのHugging Face約1.9兆円買収合意報道・OpenAI×Anthropic×Google 100社超AIサイバー防衛共同声明・AIエージェント毎日利用率80.8%突破・OpenAI DALL-E GPT 8月30日廃止・OpenAI Astraが数学・理論計算機科学で10の新成果の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-28.png`（2026-08-26画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-26 (ainews)
 
 ### 変更内容
