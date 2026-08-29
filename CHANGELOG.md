@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-29 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-29-ai-news-meta-hatch-openai-chip-agent-act.md`（AIニュース記事：MetaのAIスーパーアプリ「Hatch」（Claude Opus 4.6ベース）・Google A2AとAnthropicのMCPがAAIFに統合・OpenAI独自推論チップ「Jalapeño」・Anthropicの政府ブラックリスト退け法的勝利・AIエージェント法案AI AGENT Act S.5051の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-29.png`（2026-08-28画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-28 (ainews)
 
 ### 変更内容
