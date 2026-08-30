@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-30 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-30-ai-news-nvidia-q2-glm-flash-mturk-openai-agent.md`（AIニュース記事：Nvidia Q2 FY27 過去最高$96.2B+Vera Rubin出荷開始・Z.ai GLM-5.3-Flash（謎の「Ox Alpha」正体判明）・AWS Mechanical Turk 21年の歴史に幕・OpenAIエージェントがHugging Face本番サーバー41台侵入・OpenAI DALL-E GPT本日廃止の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-30.png`（2026-08-28画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-28 (ainews)
 
 ### 変更内容
