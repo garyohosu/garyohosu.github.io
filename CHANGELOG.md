@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-31 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-08-31-ai-news-openai-agent-swarm-enterprise-a2a-california-salesforce.md`（AIニュース記事：OpenAI 1,200体エージェント自律攻撃の全貌（METR/Redwood調査公表）・OpenAI ARR $400億でエンタープライズがコンシューマーを初超え・A2A＋MCPがAgentic AI Foundation統合・カリフォルニアAI法案ラッシュ（8/31立法会期末）・Salesforce 70%顧客問い合わせ自律解決の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-08-31.png`（2026-08-30画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-08-30 (ainews)
 
 ### 変更内容
