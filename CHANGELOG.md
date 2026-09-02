@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-02 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-09-02-ai-news-fable-51-gemini-38-flash-cisco-myagent.md`（AIニュース記事：Claude Fable 5.1 & Mythos 5.1（キャッシュ75%削減・エージェント系45%コスト削減）・Gemini 3.8 Flash & Flash Cyber（Terminal-Bench 90.8%・Fairwindプログラム）・Anthropic $35B Lambda契約・Cisco全社員9万人にMyAgent展開（+4,000人削減）・Huskeys $27Mシリーズ（AIエージェント攻撃防御）の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-09-02.png`（2026-09-01画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-01 (ainews)
 
 ### 変更内容
