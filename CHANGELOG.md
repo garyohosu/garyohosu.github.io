@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-03 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-09-03-ai-news-nvidia-acquires-huggingface-crowdstrike-safemind.md`（AIニュース記事：NvidiaがHugging Faceを$129億で買収合意・CrowdStrike×Nvidia「SafeMind」発表（Red Tempest攻撃型+Blue Solano防御型、Fal.Con 2026）・Meta Muse Sparkオープンウェイト公開（MRCR 98.1%・1Mトークン）・韓国主権AI $9190億投資計画（2035年18.4GW）・ChatGPT/Claude/Gemini同時サービス障害（AI依存リスク顕在化）の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-09-03.png`（2026-09-02画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-02 (ainews)
 
 ### 変更内容
