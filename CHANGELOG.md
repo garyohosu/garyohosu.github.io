@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-04 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-09-04-ai-news-gpt6-astra-apple-ternus-ai-hiring.md`（AIニュース記事：OpenAI GPT-6 Astra公開（Critical閾値・AGI発言・OSWorld 72.6%）・Apple新CEO John Ternus就任（AI最優先）・米連邦政府AI採用インタビュー導入（Tech Force/CodeSignal）・中国清朗キャンペーン第2フェーズ（561万件削除）・Nvidia Personal AI Router発表の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-09-04.png`（2026-09-03画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-03 (ainews)
 
 ### 変更内容
