@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-06 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-09-06-ai-news-gpt6-astra-eu-aiact-ms-transcribe.md`（AIニュース記事：GPT-6 Astra正式公開（コンピュータ使用・105万トークン・Criticalサイバー閾値）・EU AI法Article 50本格施行（ウォーターマーク義務化・最大€1,500万罰則）・Microsoft MAI-Transcribe-2（最安$0.10/時・OpenAI/Google超え主張）・Anthropic Fable 5.1正式リリース（Terminal-Bench-Science 52.6）・McKinsey報告書（32%がソフト購入取りやめAI内製化）・Nemotron-3-Ultra-CC がIOI 2026で人間超えの6大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-09-06.png`（2026-09-04画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-04 (ainews)
 
 ### 変更内容
