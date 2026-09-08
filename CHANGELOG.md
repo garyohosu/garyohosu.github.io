@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-08 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-09-08-ai-news-mistral-china-mckinsey-gpt-opendata.md`（AIニュース記事：Mistral AI €30億シリーズD調達・Samsung主導・欧州テック史上最大のエクイティラウンド・中国MIIT 2030年AI計算力9800エクサフロップ計画・¥3.8兆インフラ投資・McKinsey「AIの現状2026」調査：32%の企業がエージェンティックコーディングでSaaS購入をスキップ・OpenAI GPT-5.6がMicrosoft 365 Copilotに採用（複雑タスク40%向上・幻覚25%減）・Hugging Face×NVIDIA「Open Data for Agents」公開（5万件超タスク軌跡）の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-09-08.png`（2026-09-07画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-07 (ainews)
 
 ### 変更内容
