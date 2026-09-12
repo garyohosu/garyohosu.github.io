@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-12 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-09-12-ai-news-safety-pact-thinking-machines-cyber-agents.md`（AIニュース記事：OpenAI/Anthropic/DeepMind CEO「AI減速協定」示唆・OpenAI IPO延期検討・元OpenAI CTOミラ・ムラティのThinking Machines Lab 50〜60億ドル調達（Nvidia主導・評価額400億ドル）・AIエージェント440台を動員した国際サイバー攻撃（48カ国395組織被害）・AIエージェント専用ファイアウォール企業AIR Security $50Mローンチ・Google Gemini Robotics 2産業展開加速の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-09-12.png`（2026-09-10画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-10 (ainews)
 
 ### 変更内容
