@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-11 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-09-11-ai-news-openai-agents-api-pentagon-kya-framework-meta-agents.md`（AIニュース記事：OpenAI Agents APIパブリックベータ公開（Codexハーネスを外部開放・マルチエージェント・長時間稼働対応）・国防総省がFluidstackへ約50億ドルのAIインフラ融資検討・Ant International×Visa×MastercardがKYA（Know-Your-Agent）決済標準を発表・MetaがShared AgentsをMeta Connectで先行発表へ・OpenAI Astra Proプラン新規受付停止（システム負荷）・PositronがシリーズCで8.75億ドル調達の6大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-09-11.png`（2026-09-10画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-10 (ainews)
 
 ### 変更内容
