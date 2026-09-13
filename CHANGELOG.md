@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-13 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-09-13-ainews-weekly.md`（AIニュース記事：OpenAI GPT-6 Astra公開（コンピューター操作の新フロンティア・ブラウザ/フォーム/スプレッドシートを超人的スピードで操作）・Salesforce Agentforce（Casey/Paige/Carter/Hunter/Marshall/Piper/Fin 7体の専門AIエージェント登場）・OpenAI Agents API & Voice API（全二重通話GPT-Live-1・$0.05/分）・World Labs Atlas（Fei-Fei Li共同設立・1440p 3D世界モデル・幾何学情報付き）・AIを使ったサイバー攻撃現実化（ロシア系・48カ国395組織440台被害・4時間以内に侵入）・Anthropic Fable 5.1正式公開（Terminal-Bench-Science 24.7→52.6倍増）の6大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-09-13.png`（2026-09-12画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-12 (ainews)
 
 ### 変更内容
@@ -697,4 +706,3 @@
 
 ### Reason
 - User requested "investigate X AI buzz in detail and turn it into a blog article". Made it highly relevant to users Claude Code + QandA.md + Hermes workflow. Used x_search for real data.
-
