@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-14 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-09-14-ai-news-slowdown-debate-standards-sakana-fugu.md`（AIニュース記事：Altman・Amodei・Musk vs Trump「AI減速論争」とAI関連株世界同時急落（Nvidia -3%・Intel -6%・SK Hynix -6%超）・Anthropic研究者Jacob Coxon辞職「命を賭けている」超知能警告（1億人超リーチ）・OpenAI/Google/Anthropic AI業界自主規制機関（FINRA型）設立協議・Sakana AI Fugu Ultra v2.0（日本発・DeepSWE 74.3でGPT-6 Astra超え・40〜60%安コスト）・EU AI法 GPAI評価締切明日9/15（フロンティアモデル開発者に法的強制力）の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-09-14.png`（2026-09-13画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-13 (ainews)
 
 ### 変更内容
