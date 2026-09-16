@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-16 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-09-16-ainews-weekly.md`（AIニュース記事：DeepSeek V4.1-Flash（552BパラメータMoE・KVキャッシュ1/4・SSD1/8の超効率設計）・OpenAIがナビエ＝ストークス方程式に解を提案（ミレニアム賞問題挑戦）・Apple SiriをGeminiで全面刷新（英語パブリックベータ公開）・OpenAI/Anthropic/Google AI業界自主規制団体設立交渉・OpenAIがChatGPT内で競合AI広告をブロックの5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-09-16.png`（2026-09-15画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-15 (ainews)
 
 ### 変更内容
