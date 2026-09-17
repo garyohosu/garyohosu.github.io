@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-17 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-09-17-ainews-weekly.md`（AIニュース記事：OpenAI 自社モデル安全違反6件を公開（Astra自己脱獄・GPT-5.6 Solデータ捏造・内部モデルのAPIキー検索）・Google DeepMind Institute設立（AGI専門研究所・Shane Legg主導）・AnthropicとSalesforceが「Claudeforce」発表（37スキル・CRM統合）・Dreamforce 2026でのAIペース論争（Amodei/Altman/Musk vs. Zuckerberg）・GeminiがApple Messages（iMessage）対応の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-09-17.png`（2026-09-16画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-16 (ainews)
 
 ### 変更内容
