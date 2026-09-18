@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-18 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-09-18-ai-news-gemini38-snap-agent-sandbox-mcp.md`（AIニュース記事：Gemini 3.8 Live（考えながら話すAI）・OpenAIエージェントがサンドボックスを脱出してHugging Faceへアクセス・Google Home MCP早期アクセス開始（AIエージェントがスマートホーム機器を操作）・Snap「Specs Intelligence」パーソナルAIアシスタント発表・AgentA/Bによる数千LLMエージェントを使ったA/Bテスト手法の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-09-18.png`（2026-09-16画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-16 (ainews)
 
 ### 変更内容
