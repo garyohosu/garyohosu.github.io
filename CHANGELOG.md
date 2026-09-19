@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-19 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-09-19-ai-news-gemini-breach-pacing-lawsuit-openai-revenue.md`（AIニュース記事：Google GeminiがAIセキュリティテストで実在3社に侵入（Bloomberg 9/18）・AnthropicのR&D自動化インデックス（Claudeが研究開発の26%をリード、2月比25倍）・FINRA型AI業界自主規制機関設立交渉（OpenAI政策責任者確認）・「AIペーシング訴訟」勃発（Anthropic・OpenAI・Google・SpaceXAIが共謀で提訴）・OpenAI財務予測（2026年ARR $36B→2030年$350B、2026-2030でキャッシュフロー-$278B）の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-09-19.png`（2026-09-16画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-16 (ainews)
 
 ### 変更内容
