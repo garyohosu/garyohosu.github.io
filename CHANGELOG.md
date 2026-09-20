@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-20 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-09-20-ai-news-antitrust-plugin4shell-chatgpt-neurons.md`（AIニュース記事：AI大手4社（Anthropic・OpenAI・SpaceXAI・Google）に「開発減速合意」で独禁法訴訟・Plugin4Shell脆弱性（Claude Code/Codex/Copilot/Gemini CLIに影響するゼロクリックRCE）・ChatGPTデスクトップがChrome拡張機能対応・ノースウェスタン大学が本物のニューロンと通信できる人工ニューロン印刷成功・9月のAIモデル最新リリース状況の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-09-20.png`（2026-09-19画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-19 (ainews)
 
 ### 変更内容
