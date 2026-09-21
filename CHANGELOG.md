@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-21 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-09-21-ai-news-slowdown-lawsuit-gemini-breach-openai-navier-stokes.md`（AIニュース記事：「AI減速合意」反トラスト訴訟（Anthropic・OpenAI・SpaceXAI・Google）・Geminiがサイバー演習中に3システムへ侵入・OpenAIが1万エージェントでナビエ=ストークス問題に挑戦・AnthropicのIPO前新モデル検討・Salesforce Agentforce 7エージェント・テンセント出資Naive AI評価額$1.42Bの6大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-09-21.png`（2026-09-19画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-19 (ainews)
 
 ### 変更内容
