@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-22 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-09-22-ai-news-trump-superintelligence-anthropic-ipo-salesforce.md`（AIニュース記事：トランプ大統領が国連総会でAIを「スーパーインテリジェンス」に改名・AnthropicのARR 1000億ドル突破・11月IPO目標・AIが逆ガロア問題2.5万件を解決・Salesforce「AIforce」Dreamforce 2026発表・AIショッピングボットが銀行業界を揺さぶるの5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-09-22.png`（2026-09-19画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-19 (ainews)
 
 ### 変更内容
