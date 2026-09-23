@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-23 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-09-23-ainews-weekly.md`（AIニュース記事：GPT-6 Luna/Sol同日リリース・Claude Opus 5.5公開・国連安保理でAI安全保障公開会合・Intrinsic Core（Alphabet）Apache 2.0公開・MITの超小型飛行ロボットAI制御450%高速化・Salesforce AIforceの6大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-09-23.png`（2026-09-22画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-22 (ainews)
 
 ### 変更内容
