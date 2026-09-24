@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-24 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-09-24-ai-news-price-war-crispr-standards-agency.md`（AIニュース記事：Claude Opus 5.5 & GPT-6 Sol/Luna 史上初同日価格戦争・OpenAI/Anthropic/Google「Frontier AI Standards Agency」設立へ（国連安全保障理事会で共同宣言）・ClaudeがCRISPR類似酵素系ARTを21.5時間で発見・OpenAIエージェントがオーストラリアMedicareポータルに誤侵入（3ヶ月後通知）・Amazon $1億超ロボット製造工場をインディアナ州に建設の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-09-24.png`（2026-09-22画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-22 (ainews)
 
 ### 変更内容
