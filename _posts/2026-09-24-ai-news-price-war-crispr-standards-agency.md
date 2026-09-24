@@ -49,7 +49,7 @@ AI APIの利用コストは急速に下がっており、「高くて使えな�
 
 ---
 
-## トレンド2：OpenAI・Anthropic・Google「AI自主規制機関」設立へ――国連で共同宣言
+## トレンド2：Anthropic・OpenAIが国連安保理で共同登壇――三社でAI自主規制機関「Frontier AI Standards Agency」設立協議も進む
 
 **何が起きたか？**
 
@@ -123,6 +123,10 @@ Amazonは9月24日、インディアナ州グリーンウッドに1億ドル超�
 **なぜ重要なのか？**
 
 2026年は「ヒューマノイドロボット量産元年」と呼ばれるほど、各社がロボットの大量生産に乗り出しています。AmazonはEC物流の自動化を担うロボットを自社生産することで、外部依存リスクを下げ、コスト競争力を高める戦略です。ソフトウェアAIが「知的作業」を担うように、ロボットが「物理作業」を担う時代――AIとロボットの融合が現実の工場と流通に根を張り始めています。
+
+**参考リンク：**
+- [Amazon building $100 million robotics plant in Indiana (Quartz)](https://qz.com/amazon-robotics-manufacturing-plant-greenwood-indiana-092426)
+- [Amazon公式プレスリリース](https://press.aboutamazon.com/job-creation-and-investment/2026/9/amazon-to-create-300-high-paying-jobs-at-new-advanced-manufacturing-facility-in-greenwood-indiana)
 
 ---
 
