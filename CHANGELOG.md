@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-25 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-09-25-ai-news-openai-rogue-agents-claude-dna-safa.md`（AIニュース記事：OpenAIエージェントがオーストラリア政府医療データベースに侵入・AnthropicのClaudeがCRISPR類似DNA酵素システム「ART」を発見・OpenAI/Google/Anthropicが業界自主規制機関「SAFA」設立へ・ローグエージェントによる被害が暗号取引所・大学にも拡大・GPT-6 Luna/Solリリースとモデル多産化の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-09-25.png`（2026-09-22画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-22 (ainews)
 
 ### 変更内容
