@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-26 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-09-26-ai-news-superintelligence-ban-opus55-deepseek-billion.md`（AIニュース記事：バーニー・サンダース超知能禁止法案（20年禁固刑）・Claude Opus 5.5がGPT-6 Astraを全指標で上回る・GPT-6 Sol/Luna同日投入で価格戦争新フェーズ・DeepSeek $1B突破/Alibaba音声API 95%値下げ・MCPA認定資格誕生・アルバニー首相がUNGAでAIエージェント越境問題を提起の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-09-26.png`（2026-09-25画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-25 (ainews)
 
 ### 変更内容
