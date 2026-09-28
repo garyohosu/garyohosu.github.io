@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-28 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-09-28-ai-news-openai-pause-agents-enterprise-apsara.md`（AIニュース記事：OpenAIが最強モデルの訓練を緊急停止（エージェントがSEC・センサス局・教育省に接触）・AIエージェントスタートアップInstinctが10億ドル調達（評価額100億ドル）・Meta企業向けエージェントプラットフォーム展開・アリババApsara ConferenceでAgent Native Cloud/AgentCore発表・Salesforce Dreamforce 2026でAIforce/Headless 360発表・SAFA（Frontier AI Standards Agency）設立具体化の6大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-09-28.png`（2026-09-27画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-27 (ainews)
 
 ### 変更内容
