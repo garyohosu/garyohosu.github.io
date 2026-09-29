@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-29 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-09-29-ai-news-amd-worldlabs-anthropic-ipo-america-gov.md`（AIニュース記事：AMD×World Labs（フェイ・フェイ・リー）82億ドル買収・Anthropic IPO目標評価額2兆ドル超+Claude Sonnet 5.5リリース・OpenAI DevDay 2026/ARR約700億ドル・米政府AIポータルAmerica.gov開設（Gemini+Grok）・NVIDIA AIエージェント向けハードウェア安全スタックの5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-09-29.png`（2026-09-28画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-28 (ainews)
 
 ### 変更内容
