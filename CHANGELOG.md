@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-30 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-09-30-ai-news-openai-devday-dots-trump-si-deepseek.md`（AIニュース記事：OpenAI DevDay 2026/常時稼働エージェント「Dots」・トランプ大統領がAI表記を「超知能（SI）」に改名する大統領令署名・DeepSeek年収10億ドル突破・OpenAI/Anthropic/Googleによる「フロンティアAI標準機関」設立協議・9月は5大フロンティアモデルが10日でリリースのモデルラッシュ月間）
+- 画像追加: `assets/img/ai-news-manga-2026-09-30.png`（2026-09-29画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-29 (ainews)
 
 ### 変更内容
