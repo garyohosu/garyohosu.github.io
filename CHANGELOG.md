@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-10-01 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-10-01-ai-news-gemini4-ftc-whitehouse-accord-gpt61-sol.md`（AIニュース記事：Google Gemini 4 Argon発表（1Mトークン出力・サイバー防衛特化）・FTCがOpenAI/Anthropic/METRのローグAIエージェント調査開始・ホワイトハウス「超知能協定」に主要AI企業CEOが署名・OpenAI GPT-6.1 Solリリース（Astra同等性能を5分の1価格）・ElevenLabs時価総額220億ドル・DeepMindAI設計タンパク質に電子透かしの5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-10-01.png`（2026-09-29画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-29 (ainews)
 
 ### 変更内容
