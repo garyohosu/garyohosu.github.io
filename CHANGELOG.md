@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-10-03 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-10-03-ai-news-gpt61-gemini4-anthropic-ipo-safety.md`（AIニュース記事：OpenAI GPT-6.1 Sol公開（$2/M・Astra級性能5分の1コスト）・Google Gemini 4 Argon発表（1Mトークン出力・68% CWE-bench・Fairwindプログラム先行）・Anthropic IPOロードショー10月中旬開始・評価額2兆ドル超・OpenAI安全研究者3名解雇＋カリフォルニアAG召喚状・日本のフィジカルAI（CEATEC 2026・JALヒューマノイド）の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-10-03.png`（2026-09-29画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-09-29 (ainews)
 
 ### 変更内容
