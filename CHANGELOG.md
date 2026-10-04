@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-10-04 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-10-04-ai-news-ftc-anthropic-ipo-gemini-argon-meta-math.md`（AIニュース記事：FTCがOpenAI・Anthropicを消費者安全リスクで調査開始・Anthropic IPOロードショー10月14日開始/評価額2兆ドル目標・Google Gemini 4 Argon限定公開（CWE-bench 68%・Fairwindプログラム）・MetaのAIが数学未解決問題5つ解決・AnthropicのMythosがCVE-2026-61500発見→24時間以内に悪用の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-10-04.png`（2026-10-03画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-10-03 (ainews)
 
 ### 変更内容
