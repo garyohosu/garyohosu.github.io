@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-10-05 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-10-05-ai-news-nyc-hearing-trump-superai-dots-gemini.md`（AIニュース記事：NYC市議会AI公聴会（Anthropic/OpenAI/Google/Meta宣誓証言・召喚状直前参加表明）・トランプ大統領「超知能部隊（Super Intelligence Force）」創設発表・OpenAI常時稼働エージェント「dots」（GPT-6 Astra搭載・Slack/Teams連携）・FTC産業横断AI調査開始（ローグエージェント消費者被害フォーカス）・Google Gemini 4 Argon（自律脆弱性発見・修正・CWE-bench 68%・Fairwindプログラム）の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-10-05.png`（2026-10-04画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-10-04 (ainews)
 
 ### 変更内容
