@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-10-06 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-10-06-ai-news-dots-agents-super-intelligence-amodei-deepseek-mistral.md`（AIニュース記事：OpenAI「dots」常時稼働エージェント・トランプ「超知性フォース」連邦機関創設・Dario AmodeiのAIスローダウン宣言＋OpenAI安全チーム問題・DeepSeek米中AI格差3%・Mistral Large 4「le Chonk」1兆パラメータオープンモデルの5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-10-06.png`（2026-10-04画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-10-04 (ainews)
 
 ### 変更内容
