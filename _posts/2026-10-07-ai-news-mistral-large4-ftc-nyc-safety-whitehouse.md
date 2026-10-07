@@ -23,21 +23,21 @@ image:
 
 ### 何が起きたか
 
-フランスのAIスタートアップMistralが、パラメータ数1兆の超大規模オープンウェイトモデル **「Mistral Large 4」（通称 "le Chonk"）** をリリースした。クローズドなGPT-6やGemini 4に真っ向勝負を挑む形で、商用・研究目的を問わず自由に利用できるライセンスで公開されている。
+フランスのAIスタートアップMistralが、パラメータ数1兆の超大規模モデル **「Mistral Large 4」（通称 "le Chonk"）** を発表し、**監視付きAPI公開プレビュー**を開始した。Mistralの10月6日付け公式発表によれば、モデルウェイト（重みファイル）のダウンロード公開は月末以降を予定しており、現時点ではAPI経由の試験利用が可能な段階だ。クローズドなGPT-6やGemini 4に真っ向勝負を挑む野心的な取り組みとして注目されている。
 
-[情報源: TechCrunch](https://techcrunch.com/)
+[情報源: Mistral公式発表](https://mistral.ai/news/mistral-large-4/) / [TechCrunch](https://techcrunch.com/)
 
 ### なぜ重要か
 
-これまで「超大規模モデル＝クローズド（非公開）」という常識があった。GPT-4、Claude、Geminiはいずれもプロプライエタリ（独占所有）だ。Mistral Large 4はその壁を破り、「1兆パラメータ級の能力をオープンソースで」という夢を現実にした。
+これまで「超大規模モデル＝クローズド（非公開）」という常識があった。GPT-4、Claude、Geminiはいずれもプロプライエタリ（独占所有）だ。Mistral Large 4はその壁を崩す可能性を示し、「1兆パラメータ級の能力をオープンウェイトで」という夢に現実味が出てきた。
 
-企業がモデルを自社サーバーで運用したり、特定業界向けに追加学習させたりする選択肢が一気に広がる。AIの「民主化」という言葉が改めて問われる節目だ。
+ウェイト公開後は、企業が自社サーバーで運用したり、特定業界向けに追加学習させたりする選択肢が広がると期待されている。ライセンスの詳細はウェイト公開時に正式発表される予定だ。
 
-### 具体的な活用例
+### 具体的な活用例（ウェイト公開後の展望）
 
 - 医療・法律など**機密データを外部に出せない業界**が自社インフラで運用
 - 大学や研究機関が**大規模言語モデルの挙動を独立して研究**
-- スタートアップが**クラウドAPIコストゼロで製品開発**
+- スタートアップが**クラウドAPIコストを大幅削減して製品開発**
 
 ---
 
@@ -150,7 +150,9 @@ AIは「夢の技術」から「社会インフラ」へ。その移行期に今
 ---
 
 *Sources:*
+- [Mistral AI: Mistral Large 4 announcement](https://mistral.ai/news/mistral-large-4/)
 - [TechCrunch: Anthropic gives startups a free year of Claude Team](https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/)
 - [CNBC: Anthropic, OpenAI, Google, Meta execs testify NYC Council AI hearing](https://www.cnbc.com/2026/10/05/anthropic-openai-google-meta-execs-testify-nyc-council-ai-hearing.html)
 - [Fox News: OpenAI, Anthropic, Meta, Google stop short of AI safety guarantee](https://www.foxnews.com/live-news/ai-super-intelligence-safety-10-06)
-- [Winbuzzer: Why AI Researchers Are Leaving OpenAI, Anthropic and Google DeepMind](https://winbuzzer.com/2026/10/05/why-ai-researchers-left-openai-anthropic-and-google-deepmind-xcxwbn)
+- [ABC News: FTC opens probe into AI safety](https://abcnews.go.com/Politics/ftc-opens-probe-safety-ai-including-anthropic-open/story?id=136896227)
+- [AI Weekly: AI News October 1-7, 2026](https://aiweekly.co/ai-news-today/edition/2026-10-01)
