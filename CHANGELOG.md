@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-10-07 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-10-07-ai-news-mistral-large4-ftc-nyc-safety-whitehouse.md`（AIニュース記事：Mistral Large 4「le Chonk」1兆パラメータオープンウェイトモデル・NYC市議会AI安全聴聞会でビッグテック「安全保証できない」証言・Anthropic Claude for Startups＋サイバーセキュリティ拡張・FTC調査拡大＋CA州AI労働保護法・Google EmbeddingGemma 2マルチモーダル埋め込みモデルの5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-10-07.png`（2026-10-04画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-10-04 (ainews)
 
 ### 変更内容
