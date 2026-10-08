@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-10-08 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-10-08-ai-news-gpt6-ui-nyc-hearing-mistral-large4-robot-reality.md`（AIニュース記事：OpenAI GPT-6「Intelligent UI」全ユーザー開放（Oct 7）・NYC市議会AI安全公聴会—企業代表が安全保証を拒否（Oct 5）・Mistral Large 4プレビュー（1兆パラメーター/490億アクティブMoE・オープンウェイト予告）（Oct 7）・トランプ「超知能部隊」AIタスクフォース創設（Oct 4）・MITロボット現実検証—AIロボットは「すぐには来ない」（Oct 8）の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-10-08.png`（2026-10-04画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-10-04 (ainews)
 
 ### 変更内容
