@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-10-12 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-10-12-ai-news-openai-devday-dots-anthropic-ipo-gpt61sol.md`（AIニュース記事：OpenAI DevDay 2026でGPT-6.1 Sol・Dots（常時稼働AIエージェント）・ChatGPT Space・$500プランを発表・AnthropicがIPO前夜（10/14投資家説明会・評価額2兆ドル目標）・Claude Frontier Academy（1億ドル・1万人育成）・Google Geminiユニバーサルエージェント・AI安全性の業界課題の6大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-10-12.png`（2026-10-09画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-10-09 (ainews)
 
 ### 変更内容
