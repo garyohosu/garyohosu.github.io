@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-10-13 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-10-13-ai-news-anthropic-ipo-gpt61sol-safety-containment.md`（AIニュース記事：AnthropicIPOロードショー開始（10月中旬・2兆ドル目標）・GPT-6.1 Sol（Astra並み性能で1/5コスト）・Anthropicモデル蒸留攻撃防御（90〜99%削減）・400人以上の科学者AIの封じ込めを求める公開書簡・Google Gemini Enterprise+BigQueryデータベース統合の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-10-13.png`（2026-10-09画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-10-09 (ainews)
 
 ### 変更内容
