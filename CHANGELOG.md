@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-10-15 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-10-15-ai-news-gpt6-all-users-agent-protocol-anthropic-ipo.md`（AIニュース記事：GPT-6全ユーザー解放（Intelligent UI・GPT-6 Sol/Luna）・Personal Agent Protocol（Meta・Sierra・Walmart・Stripe）・Anthropic IPO翌日動向（評価額2兆ドル・S-1公開待ち）・Google Gemini 4 Argon企業展開（1Mトークン出力）・Microsoft Work IQ & Nous Research（AIエージェント企業統合）の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-10-15.png`（2026-10-14画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
 ## 2026-10-14 (ainews)
 
 ### 変更内容
