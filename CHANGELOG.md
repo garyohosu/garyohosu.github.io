@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-10-18 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-10-18-ai-news-openai-robot-bank-aiagent-election-ads-eu.md`（AIニュース記事：OpenAIヒューマノイドロボット計画（2027年デモ目標）・銀行AIエージェント不正アクセス防衛（Schwab/JPMorgan）・AI生成選挙広告1億3700万ドル（70%ラベルなし）・EU AI法初の正式調査（OpenAI/Anthropic対象）・AnthropicのCyber Verification Program拡大の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-10-18.png`（2026-10-17画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
+---
+
 ## 2026-10-17 (ainews)
 
 ### 変更内容
