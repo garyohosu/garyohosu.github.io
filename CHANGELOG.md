@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-10-19 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-10-19-ai-news-anthropic-workers-fund-deepseek-search-openai-robot-nscale-trump.md`（AIニュース記事：Anthropic株式5%「公共便益基金」拠出発表・DeepSeek V4.1-Flash-1017アップデート＋Search/Fetch API開放・Nscale-Anthropic第2の450億ドル計算資源契約交渉・OpenAIヒューマノイドロボット2027年デモ確認・トランプ大統領AI自主規制協定署名の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-10-19.png`（2026-10-18画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
+---
+
 ## 2026-10-18 (ainews)
 
 ### 変更内容
