@@ -179,6 +179,13 @@ node scripts/ai-post-push-check.mjs
 **解決**: `ainews.md` を直前のコミット（`d75379b`時点）の指示文に復元し、「生成した記事本文は `ainews.md` には書き込まず、必ず `_posts/` 配下の新規ファイルに保存すること」という注意書きを追記。また、DALL-E 3 API（`OPENAI_API_KEY`／`dalle-image` MCP）が利用できない実行環境だったため、直近の manga 画像（`ai-news-manga-2026-06-16.png`）を `ai-news-manga-2026-06-20.png` としてプレースホルダーコピーして使用。
 **再発防止**: ainews 実行前に `ainews.md` の先頭が指示文（「あなたは、AI分野を専門とする...」）で始まっているか確認する。記事生成後は必ず `_posts/` に新規ファイルが作成されたことを確認し、`ainews.md` 自体に差分が出ていないかを `git diff ainews.md` でチェックする。
 
+### カテゴリー13: 内部リンクの日付付きスラッグによるHTMLProofer失敗
+#### 2026-10-20: 記事内の内部リンクにChirpy非互換スラッグを使用しビルド失敗
+**症状**: GitHub Actionsの `Test site` ステップで `internally linking to /posts/2026-10-19-ai-news-anthropic-workers-fund-deepseek-search-openai-robot-nscale-trump/, which does not exist` エラーが発生しビルド失敗。
+**原因**: ainews記事内で別記事へのMarkdownリンク `[昨日の記事](/posts/2026-10-19-...)` を記載したが、Chirpyテーマのスラッグは `YYYY-MM-DD-` の日付プレフィックスを含まない形式（`/posts/ai-news-...`）であるため、存在しないURLになった。
+**解決**: リンクを削除し「昨日発表」という平文に変更して再push、PR #63でビルドsuccess確認。
+**再発防止**: 記事内で他記事を参照する場合は、日付なしスラッグ（`/posts/<slug-without-date>/`）を使うか、リンクを張らず平文で言及する。「昨日の記事」等のクロス参照はリンクなし平文が最も安全。
+
 ### カテゴリー12: note紹介記事の `post_url` 参照切れによるビルド失敗
 #### 2026-07-23: post_url で存在しない記事を参照してビルド失敗
 **症状**: `Build and Deploy` の `Build site` ステップで `Could not find post "2026-07-11-note-ai-werewolf-orchestration" in tag 'post_url'. (Jekyll::Errors::PostURLError)` が発生しビルド失敗。

@@ -4,6 +4,18 @@
 
 ---
 
+## 2026-10-20 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-10-20-ai-news-agent-hacks-anthropic-ipo-openai-funding-singapore.md`（AIニュース記事：AIエージェントによる100社超サイバー攻撃（$8,000で実行）・Anthropic IPO最終局面・OpenAI 1.2兆ドル評価での資金調達検討・AnthropicのシンガポールオフィスMOU締結・Microsoft Agent 365エンタープライズエージェント統治の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-10-20.png`（2026-10-19画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+- 修正: 記事内の内部リンクで日付付きスラッグを使用していた誤り（HTMLProoferビルド失敗→即修正）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
+---
+
 ## 2026-10-19 (ainews)
 
 ### 変更内容
