@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-10-21 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-10-21-ai-news-openai-orchestra-anthropic-ipo-deepseek-ban-oracle-agent.md`（AIニュース記事：OpenAI創薬AIスタートアップOrchestra Bio買収・Anthropic Q3収益$16.8B/$2兆IPOへ加速・米国がDeepSeekを連邦機関全面禁止・Oracle AIエージェントスタジオ＆Databricks Agent Memoryリリース・ケン・グリフィン「AIバブル」警告の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-10-21.png`（2026-10-20画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
+---
+
 ## 2026-10-20 (ainews)
 
 ### 変更内容
