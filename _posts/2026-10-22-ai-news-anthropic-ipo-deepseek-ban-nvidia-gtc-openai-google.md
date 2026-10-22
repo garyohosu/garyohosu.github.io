@@ -36,7 +36,7 @@ Anthropicは早ければ今週金曜日（10月23日）にもSECへのIPO公開�
 - DeepSeek技術を使って開発されたサードパーティのソフトウェア・サービスも対象
 - 即時遵守が義務付け
 
-**背景**：2025年初頭に上院議員Tom CottonがDeepSeek禁止を求めた要請から始まり、今回の措置で事実上すべての連邦政府内DeepSeek利用が封じられた形となる。民間利用への制限はなく、商務省のエンティティリスト追加も今回は見送られた。
+**背景**：2025年初頭に上院議員Tom CottonがDeepSeek禁止を求めた要請から始まり、今回の措置で連邦民間行政機関（文民エージェンシー）内のDeepSeek利用が事実上封じられた形となる。国家安全保障・情報機関系のシステムは対象外で例外申請も可能。民間利用への制限はなく、商務省のエンティティリスト追加も今回は見送られた。
 
 **なぜ重要か**：中国製AIモデルへの「国家安全保障上の脅威」という認定が制度化されたことは、今後の輸出規制や同盟国との協調規制に向けた布石として注目される。「オープンソースAIの国籍化」が現実の法的制度になったという意味で、業界全体に波及する可能性がある。
 
@@ -58,7 +58,7 @@ Anthropicは早ければ今週金曜日（10月23日）にもSECへのIPO公開�
 
 ## 4. OpenAI×Google Cloudマルチクラウド提携——Microsoft独占の終焉
 
-OpenAIとGoogle Cloudは、OpenAIのフロンティアモデルおよびCodexエージェントワークフローをGoogle CloudのModel Gardenで提供することで合意した（[TechRadar](https://www.techradar.com/pro/openai-set-to-add-google-cloud-services-as-it-looks-to-meet-computing-capacity-needs)）。
+OpenAIとGoogle Cloudは2026年10月21日、OpenAIのモデルをGoogle Cloudのインフラで提供することで合意したと発表した（[CNBC](https://cnbc.com/amp/2026/10/21/openai-bring-its-ai-models-to-googles-cloud-expands-beyond-microsoft.html)・[Revolgy](https://www.revolgy.com/insights/blog/google-cloud-signs-deal-with-openai-ending-microsofts-exclusive-role)）。
 
 **提携の概要**
 - OpenAIのGPT系モデルがGoogle Cloud経由で利用可能に
@@ -71,7 +71,7 @@ OpenAIとGoogle Cloudは、OpenAIのフロンティアモデルおよびCodexエ
 
 ## 5. Dario Amodei氏がAI安全規制提言を公表——2027年1月15日までに速度規制案を提示へ
 
-Anthropic CEOのDario Amodei氏は10月21日、AI安全性と中国との競争に関する長文の政策提言をブログに公開し、AIの研究開発速度を規制する具体的な提案を2027年1月15日までに提示すること（または理由を説明すること）を約束した。
+Anthropicは10月19日に更新した「Frontier Safety Roadmap」の中で、AIの研究開発速度を規制する具体的な提案を2027年1月15日までに提示すること（または提示できない理由を説明すること）を約束した。この約束はDario Amodei CEOが9月に公表したAI安全性と中国政策に関する長文論考と合わせて注目されている。
 
 **提言の骨子**
 - AIの開発スピードに対する規制の必要性を認める
@@ -104,5 +104,5 @@ AIが「研究室の話題」から「株式市場・法規制・国際競争の
 - [Motley Fool: Why Anthropic Is Racing to IPO While OpenAI Waits Until 2027](https://www.fool.com/investing/2026/10/22/why-anthropic-is-racing-to-ipo-while-openai-waits/)
 - [Reuters via Investing.com: OpenAI seeks to accelerate fundraising ahead of Anthropic IPO](https://www.investing.com/news/stock-market-news/exclusiveopenai-seeks-to-accelerate-fundraising-ahead-of-anthropic-ipo-sources-say-4958511)
 - [ROIC.ai: Trump administration expands DeepSeek restrictions to all civilian federal agencies](https://www.roic.ai/news/trump-administration-expands-deepseek-restrictions-to-all-civilian-federal-agencies-10-19-2026)
-- [TechRadar: OpenAI set to add Google Cloud services](https://www.techradar.com/pro/openai-set-to-add-google-cloud-services-as-it-looks-to-meet-computing-capacity-needs)
+- [CNBC: OpenAI bring its AI models to Google's Cloud](https://cnbc.com/amp/2026/10/21/openai-bring-its-ai-models-to-googles-cloud-expands-beyond-microsoft.html)
 - [Baxtel: NVIDIA GTC Berlin 2026](https://baxtel.com/events/nvidia-gtc-berlin-2026)
