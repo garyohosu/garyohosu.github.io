@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-10-23 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-10-23-ai-news-claude-duet-openai-funding-haiku55-bank-agents-artex.md`（AIニュース記事：Anthropic Claude Duet発表（プロアクティブAIエージェント・デイリーブリーフィング・ProおよびMaxプラン向けリサーチプレビュー）・OpenAI1.25兆ドル評価額300億ドル調達検討（IPO前ブリッジ）・Claude Haiku 5.5（エフォートコントロール+1Mコンテキスト・$0.10/$0.50）・銀行AIエージェントリスク（Morgan Stanley・BofAが制御強化）・Microsoft ARTEX（ロシア系脅威アクターのAIサイバー攻撃ツール悪用+医療AI診断成果）の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-10-23.png`（2026-10-20画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
+---
+
 ## 2026-10-20 (ainews)
 
 ### 変更内容
