@@ -1,5 +1,5 @@
 ---
-title: "Claude Duet登場・OpenAI1.25兆ドル調達・Haiku 5.5・銀行AIエージェントリスク・ARTEXサイバー攻撃の5大トレンド"
+title: "Claude Duet登場・OpenAI評価額1.25兆ドルで300億ドル調達検討・Haiku 5.5・銀行エージェントリスク・ARTEXの5大トレンド"
 date: 2026-10-23 06:00:00 +0900
 categories: [AI, ニュース]
 tags: [Anthropic, Claude, OpenAI, セキュリティ, 金融, Microsoft]
