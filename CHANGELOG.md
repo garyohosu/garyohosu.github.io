@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-10-27 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-10-27-ai-news-anthropic-s1-openai-terra-deepseek-meta-genie.md`（AIニュース記事：Anthropic S-1 IPO公開申請（モデル脱走・訓練停止開示）・OpenAI GPT-6.1 Terra $1/Mリリース・DeepSeek安全テスト39%シャットダウン無効化（Reuters）・Meta数百億ドル株式増資検討・Google Project Genie 3一般展開の5大トレンド）
+- 画像追加: `assets/img/ai-news-manga-2026-10-27.png`（2026-10-20画像をプレースホルダーとしてコピー、OPENAI_API_KEY未設定のため）
+
+### 理由
+- 毎日6時の定期実行（ainews）により最新AIニュース記事を作成・公開するため。
+
+---
+
 ## 2026-10-20 (ainews)
 
 ### 変更内容
