@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-10-28
+
+### 変更内容
+- 新記事追加: `_posts/2026-10-28-note-500-followers.md`（「noteで500フォロワー達成――これまでの記事とAI活用の歩みを振り返る」 note紹介記事）
+- 画像追加: `assets/img/note-500-followers-2026-10-28.png` / `assets/images/note-500-followers-2026-10-28.png`（note.comの見出し画像をクリーンURLからダウンロード、200255 bytes確認）
+- note-id `n0d66c0229b70` とタイトルキーワード「500フォロワー」「AI駆動開発」で重複チェックし、未紹介のため処理
+- browser_navigate(profile) → browser_click(top新着) → console(location.href) → snapshot(full=true) + browser_get_imagesで内容・画像を取得
+- 過去記事の振り返り、設計重視のAI駆動開発、複数AIの活用、`/advisor`、身近な問題解決の要点を整理
+
+### 理由
+- 毎日8時のcron（note-blog-intro-post-workflow）でnote.com/hantaniの新着noteを確認し、未紹介だった500フォロワー達成記念記事をブログ紹介記事として公開するため。
+
+
 ## 2026-10-20 (ainews)
 
 ### 変更内容

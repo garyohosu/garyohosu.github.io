@@ -1,0 +1,39 @@
+---
+title: "noteで500フォロワー達成――これまでの記事とAI活用の歩みを振り返る"
+date: 2026-10-28 08:00:00 +0900
+categories: [note, AI]
+tags: ["note", "500フォロワー", "AI駆動開発", "Claude Code", "Codex CLI", "AIエージェント"]
+image:
+  path: /assets/img/note-500-followers-2026-10-28.png
+---
+
+![header]({{ site.baseurl }}/assets/img/note-500-followers-2026-10-28.png)
+
+hantaniさんのnote「[noteで500フォロワー達成しました。ありがとうございます](https://note.com/hantani/n/n0d66c0229b70)」を紹介します（2026年10月7日公開）。
+
+500フォロワー達成を記念して、これまで公開してきた記事を振り返る内容です。AI駆動開発の考え方から、Claude Code・Codex CLIを使った実践、AIに身近な問題を解決してもらった記録まで、hantaniさんの活動の流れが見える記事になっています。
+
+### このnoteの主なポイント
+
+- 2026年8月27日に494フォロワーとなってから、500人達成を楽しみにしていたという節目の報告
+- 仕様書→ユースケース図→シーケンス図→クラス図という、AIを使う前から続けてきた設計重視の開発手法
+- Claude Codeで作り、Codex CLIでレビューするなど、複数のAIを組み合わせたAI駆動開発
+- Cドライブの空き容量不足や、身に覚えのないOpenAI API課金といった身近な問題をAIで調査・解決した実例
+- トークン消費量を抑えるためのClaude Code「`/advisor`」コマンドや、4つのAIを使ったオーケストレーションへの挑戦
+- ループエンジニアリング、グラフエンジニアリングなど、新しい開発スタイルを継続して試していること
+
+### 読んで感じたこと
+
+このnoteの面白さは、単なるフォロワー数の報告ではなく、過去記事を通じて「AIに任せる前に設計する」「複数のAIに役割を分担させる」「実際の困りごとで効果を確かめる」という一貫した姿勢が見える点です。
+
+AI駆動開発に興味がある人はもちろん、AIを使って何から始めればよいかわからない人にも、具体的な実践例をたどる入り口になります。500フォロワー達成の記念記事として、ぜひnote本編をご覧ください。
+
+---
+
+**関連するブログ記事**
+
+- [Claude Codeで作ってCodex CLIでレビューするAI駆動開発]({{ site.baseurl }}/posts/2026-04-13-note-ai-driven-dev-skill-rebuild/)
+- [AI駆動開発を非エンジニア向けに解説]({{ site.baseurl }}/posts/2026-03-14-note-ai-driven-dev-for-non-engineers/)
+- [Claude Codeのトークン消費を抑える方法]({{ site.baseurl }}/posts/2026-04-15-note-claude-code-token-saving/)
+
+ご質問や感想はXやnoteでどうぞ！
