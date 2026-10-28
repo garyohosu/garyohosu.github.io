@@ -32,8 +32,8 @@ AI駆動開発に興味がある人はもちろん、AIを使って何から始�
 
 **関連するブログ記事**
 
-- [Claude Codeで作ってCodex CLIでレビューするAI駆動開発]({{ site.baseurl }}/posts/2026-04-13-note-ai-driven-dev-skill-rebuild/)
-- [AI駆動開発を非エンジニア向けに解説]({{ site.baseurl }}/posts/2026-03-14-note-ai-driven-dev-for-non-engineers/)
-- [Claude Codeのトークン消費を抑える方法]({{ site.baseurl }}/posts/2026-04-15-note-claude-code-token-saving/)
+- [Claude Codeで作ってCodex CLIでレビューするAI駆動開発](/posts/note-ai-driven-dev-skill-rebuild/)
+- [AI駆動開発を非エンジニア向けに解説](/posts/note-ai-driven-dev-for-non-engineers/)
+- Claude Codeのトークン消費を抑える方法（関連記事）
 
 ご質問や感想はXやnoteでどうぞ！
