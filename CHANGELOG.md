@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-10-30 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-10-30-ai-news-openai-math-proof-oracle-tpu-anthropic-ipo-gemini4carbon.md`（AIニュース: OpenAI数学証明対決・Oracle Google TPU採用・Anthropic IPO秒読み・Gemini 4 Carbon・OpenAI Dots/GPT-6.1 Sol）
+- 画像追加: `assets/img/ai-news-manga-2026-10-30.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-10-30のAIニュース記事を作成・公開するため。
+
 ## 2026-10-29 (ainews)
 
 ### 変更内容
