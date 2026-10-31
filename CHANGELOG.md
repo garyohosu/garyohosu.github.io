@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-10-31 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-10-31-ai-news-openai-valuation-claude-duet-cursor-malware-scraping-standard.md`（AIニュース: OpenAI評価額削減・Claude Duet・Cursorマルウェア拡張・スクレイピング規格・DoorDash AIエージェント・Meta格下げ）
+- 画像追加: `assets/img/ai-news-manga-2026-10-31.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-10-31のAIニュース記事を作成・公開するため。
+
 ## 2026-10-29 (ainews)
 
 ### 変更内容
