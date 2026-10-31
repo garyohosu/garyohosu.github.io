@@ -16,7 +16,7 @@ AIエージェントが作業後の「Dreamingタイム」でまとめた振り�
 - OPENAI_API_KEY 未設定のため画像生成不可。2026-10-29のmanga画像をプレースホルダーとしてコピー（カテゴリー11再発防止策どおり）。
 - feature ブランチ（claude/dazzling-fermi-dfvmwy）でコミット（bb4ba71）後、PR #75 を作成・squash mergeでmainにマージ（ea2de30）。
 - ainews.md に差分なし確認済み。`post_url` タグ参照なし。`http://` リンクなし。日付付きスラッグの内部リンクなし。
-- Build and Deploy: PR merge後 in_progress 確認中（ai-post-push-check.mjs実行中）。
+- Build and Deploy: PR #75 merge後 run #607（run ID: 41242303998）conclusion: success（21:12:38Z完了）。Root URL 200確認済み。
 
 ### 改善点
 - 引き続き OPENAI_API_KEY が未設定のため画像生成不可。プレースホルダー戦略を継続。
