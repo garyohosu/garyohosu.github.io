@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-01 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-01-ai-news-anthropic-ipo-roadshow-gemini4carbon-openai-tpu.md`（AIニュース: AnthropicIPOロードショー開始・Gemini 4 Carbon世界1位・OpenAI×Google TPU交渉・Suncatcher衛星AI・スクレイピング規格・ChatGPT+Codex統合）
+- 画像追加: `assets/img/ai-news-manga-2026-11-01.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-01のAIニュース記事を作成・公開するため。
+
 ## 2026-10-31 (ainews)
 
 ### 変更内容
