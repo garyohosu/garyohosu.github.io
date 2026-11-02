@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-02 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-02-ai-news-anthropic-ipo-openai-abu-dhabi-deepseek-agent-gemini4.md`（AIニュース: AnthropicがNasdaq上場申請・OpenAIアブダビ4協定・DeepSeek超エージェント・Gemini 4 Carbon・AIセキュリティゼロデイ28件・AI安全性研究・ウォール街AI株売り）
+- 画像追加: `assets/img/ai-news-manga-2026-11-02.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-02のAIニュース記事を作成・公開するため。
+
 ## 2026-11-01 (ainews)
 
 ### 変更内容
