@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-04 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-04-ai-news-anthropic-self-improvement-chatgpt-search-optout-google.md`（AIニュース: Anthropic再帰的自己改善警告・ChatGPTがGoogle検索の20%到達・4社AI学習オプトアウト共通規格・OpenAI×Ona買収・Google AI Search統合・Anthropic透かし導入）
+- 画像追加: `assets/img/ai-news-manga-2026-11-04.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-04のAIニュース記事を作成・公開するため。
+
 ## 2026-11-01 (ainews)
 
 ### 変更内容
