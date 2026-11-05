@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-05 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-05-ai-news-whitehouse-accord-openai-cyber-meta-conductor-anthropic-ipo.md`（AIニュース: ホワイトハウスAI協定・OpenAI948件Linux脆弱性発見・MetaがConductor買収・AnthropicIPO申請・Xiaomiヒューマノイドロボット8時間稼働・米国チップ輸出規制拡大・英国AI支出1000億円突破）
+- 画像追加: `assets/img/ai-news-manga-2026-11-05.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-05のAIニュース記事を作成・公開するため。
+
 ## 2026-11-04 (ainews)
 
 ### 変更内容
