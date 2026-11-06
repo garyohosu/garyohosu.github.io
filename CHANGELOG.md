@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-06 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-06-ai-news-nasdaq-ai-rout-metr-anthropic-doj-perplexity-artex.md`（AIニュース: Nasdaq -5.5%暴落・METRがAnthropicR&D速度「2倍」推計・DOJ超知性タスクフォース創設・中国系Artexが200組織攻撃・Perplexity Teammates発表・Five9/Level AI $325M買収・Cognition SWE-2 Flash公開）
+- 画像追加: `assets/img/ai-news-manga-2026-11-06.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-06のAIニュース記事を作成・公開するため。
+
 ## 2026-11-05 (ainews)
 
 ### 変更内容
