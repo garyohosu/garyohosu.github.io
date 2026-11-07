@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-07 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-07-ai-news-openai-funding-anthropic-rsi-meta-conductor-smart-ring.md`（AIニュース: OpenAI 110億ドル追加調達・評価額1.25兆ドル・Anthropic RSI自己改善AI警告・AnthropicモデルID暗号検証システム・MetaがConductor買収・AinaスマートリングAIエージェント操作・データセンターがジェットエンジンで自家発電）
+- 画像追加: `assets/img/ai-news-manga-2026-11-07.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-07のAIニュース記事を作成・公開するため。
+
 ## 2026-11-06 (ainews)
 
 ### 変更内容
