@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-08 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-08-ai-news-openai-cyber-gemini-video-anthropic-ipo-inkling.md`（AIニュース: OpenAI GPT-6 Cyber 948件ゼロデイ脆弱性発見・METR Anthropic R&D速度「2倍」再確認・Google Gemini Omni 1.2 Flash一般公開・Anthropic IPO来週予定・Thinking Machines Lab Inkling 2 Small公開・AI支出横ばいデータ・AI生成偽判例が法廷に浸透）
+- 画像追加: `assets/img/ai-news-manga-2026-11-08.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-08のAIニュース記事を作成・公開するため。
+
 ## 2026-11-06 (ainews)
 
 ### 変更内容
