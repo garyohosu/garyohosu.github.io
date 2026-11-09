@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-09 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-09-ai-news-nvidia-scandal-anthropic-ipo-valuation-openai-token.md`（AIニュース: Nvidia CEOジェンスン・フアン氏のスパイ疑惑・不倫スキャンダルで取締役会が独立調査・Anthropic IPO評価額$2T→$1.75Tへ引き下げ・Anthropic 1.7GWガス発電設備$34億ドル確保・METR「研究加速の80%がAI起因」更新・OpenAI ChatGPT 12月からトークン制移行・GPT-6 Cyber ExploitGym 48.5%人間専門家レベル）
+- 画像追加: `assets/img/ai-news-manga-2026-11-09.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-09のAIニュース記事を作成・公開するため。
+
 ## 2026-11-08 (ainews)
 
 ### 変更内容
