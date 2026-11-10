@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-10 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-10-ai-news-anthropic-fable52-ipo-price-deepmind-rsa-apple.md`（AIニュース: Anthropic Fable 5.2/Mythos 5.2リリース（前世代比30%高速化）・Anthropic IPO価格帯$70〜$78確定・11月19日Nasdaq上場予定（ANT）・Google DeepMind AIエージェントがRSA-1024暗号の弱点2つ発見・Nvidia CEO Jensen Huang調査継続・Ramp AI支出横ばいデータ・米上院PATIENT AI法案提出）
+- 画像追加: `assets/img/ai-news-manga-2026-11-10.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-10のAIニュース記事を作成・公開するため。
+
 ## 2026-11-09 (ainews)
 
 ### 変更内容
