@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-11 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-11-ai-news-anthropic-ipo-roadshow-claude-office-openai-businesses-ny-raise.md`（AIニュース: AnthropicIPOロードショー開幕（$70〜$78/株、時価総額約1.4兆ドル）・Claude Fable 5.2/Mythos 5.2リリース・ClaudeオフィスSuite（Sheets・Whiteboards・Meetings）ローンチ・OpenAI「Businesses in ChatGPT」公開・Google Gemini 4 Carbon GA（サイバーセキュリティ向け優先）・NYのRAISE Act 2027年1月施行）
+- 画像追加: `assets/img/ai-news-manga-2026-11-11.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-11のAIニュース記事を作成・公開するため。
+
 ## 2026-11-10 (ainews)
 
 ### 変更内容
