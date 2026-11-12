@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-12 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-12-ai-news-anthropic-ipo-openai-losses-claude-meet-gemini-decisions.md`（AIニュース: Anthropic IPO来週11/19Nasdaq上場確定（評価額$1.3〜1.45兆ドル・ティッカーANT）・OpenAI Q3四半期売上$100億・赤字$109億・Google Gemini Decisions API公開（1,000問を150〜250msで判断）・ClaudeがGoogle Meetに参加機能ベータ追加・New York RAISE法施行（大手AI企業は2027/1/1までに登録義務）・Anthropic MythosをAMD GPUに3日で移植・4大チップ全対応）
+- 画像追加: `assets/img/ai-news-manga-2026-11-12.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-12のAIニュース記事を作成・公開するため。
+
 ## 2026-11-10 (ainews)
 
 ### 変更内容
