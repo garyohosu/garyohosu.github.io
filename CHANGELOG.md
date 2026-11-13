@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-13 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-13-ai-news-nvidia-resign-anthropic-ipo-gemini-hydrogen-deepseek.md`（AIニュース: Nvidia CEO ジェンスン・フアン氏辞任・暫定CEO Colette Kress氏就任・株価-2%・議会証言召喚・Anthropic IPO価格決定11/18・Nasdaq上場11/19（ANT・6倍超過申込）・Google Gemini 4 Hydrogen全展開（$1.50/$7.50 per M）・Delta航空ほかAIエージェントブロック加速・DeepSeek Search+Fetch API開放（$0.75/1000件）・Airbnb AIでサポートコスト17%削減）
+- 画像追加: `assets/img/ai-news-manga-2026-11-13.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-13のAIニュース記事を作成・公開するため。
+
 ## 2026-11-12 (ainews)
 
 ### 変更内容
