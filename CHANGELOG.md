@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-14 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-14-ai-news-nvidia-ceo-anthropic-ipo-gemini4hydrogen-openai-wallet.md`（AIニュース: NvidiaのCEO Jensen Huang氏退任・暫定CEOにColette Kress氏就任、AnthropicのIPO 11/18株価決定・11/19 Nasdaq「ANT」上場予定、Google Gemini 4 Hydrogen リリース（$7.50/M出力トークン）、OpenAI ChatGPT WalletでAIエージェントが決済代行、AI安全訴訟（OpenAI等へのフロンティアモデル開発凍結要求）、Cloudflare Kitesurfオープンソース化）
+- 画像追加: `assets/img/ai-news-manga-2026-11-14.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-14のAIニュース記事を作成・公開するため。
+
 ## 2026-11-12 (ainews)
 
 ### 変更内容
