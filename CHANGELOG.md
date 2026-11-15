@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-15 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-15-ai-news-meta-muse-ember-langchain-crowdstrike-ai-agents.md`（AIニュース: Meta Muse Ember（AIエージェント特化軽量モデル・$0.10/M tokens）・LangChain $300M調達（評価額$3B）・CrowdStrike $495Mでエージェントセキュリティ企業2社買収・英Fractile $720M調達（AI推論チップ）・AnthropicのIPO 11/18-19予定・OpenAIロボティクスチーム解散）
+- 画像追加: `assets/img/ai-news-manga-2026-11-15.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-15のAIニュース記事を作成・公開するため。
+
 ## 2026-11-12 (ainews)
 
 ### 変更内容
