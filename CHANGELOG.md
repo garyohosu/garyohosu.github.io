@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-16 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-16-ai-news-anthropic-ipo-eve-gemini-hydrogen-chatgpt-wallet-qwen4-lawsuit.md`（AIニュース: Anthropic IPO前夜（11/18価格決定・11/19 Nasdaq ANT上場・6〜7倍超過申込・評価額最大$1.4T）・Google Gemini 4 Hydrogen（2.5倍高速・エージェントワークフロー向け）・ChatGPT Wallet（AIエージェントが代わりに商品購入）・Alibaba Qwen4-Max（1Mトークン・コーディング特化）・OpenAI中東展開（ADNOC/G42/Mubadala）・AI開発停止訴訟（SF上級裁判所）
+- 画像追加: `assets/img/ai-news-manga-2026-11-16.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-16のAIニュース記事を作成・公開するため。
+
 ## 2026-11-12 (ainews)
 
 ### 変更内容
