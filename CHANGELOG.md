@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-17 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-17-ai-news-anthropic-ipo-nasdaq-openai-gpt62-faa-outage-china-chips.md`（AIニュース: AnthropicがNasdaq上場（ANT）・OpenAI GPT-6.2 AstraとSol発表（LifeValベンチマーク80%）・FAA全米フライト一時停止（AI導入直後の障害）・米中AIチップ輸出規制強化・ロシア系による史上初の完全自動化AIサイバー攻撃（Google確認）・NY AG AI専門執行ユニット創設）
+- 画像追加: `assets/img/ai-news-manga-2026-11-17.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-17のAIニュース記事を作成・公開するため。
+
 ## 2026-11-12 (ainews)
 
 ### 変更内容
