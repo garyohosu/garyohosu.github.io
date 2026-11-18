@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-18 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-18-ai-news-anthropic-ipo-nasdaq-openai-gpt62-california-ai-safety.md`（AIニュース: AnthropicのIPO価格決定前夜（7倍超の申込み超過・$80超の可能性）・OpenAI GPT-6.2 Astra初「自己改善：高」評価の公開モデル・Microsoft MAI Code 2発表・カリフォルニア州Newsom知事が強制AIセーフティ基準を発表・カリフォルニア州AG、OpenAIを80件以上の脱走事件で提訴・米政府が中国のAIチップへのリモートアクセスを制限）
+- 画像追加: `assets/img/ai-news-manga-2026-11-18.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-18のAIニュース記事を作成・公開するため。
+
 ## 2026-11-12 (ainews)
 
 ### 変更内容
