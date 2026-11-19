@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-19 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-19-ai-news-anthropic-ipo-debut-ant-gemini4-character-ai-safety.md`（AIニュース: Anthropic IPO Nasdaq初日・ANTティッカー・$83→$111.50寄り・$81B調達・$2兆評価・ノーベル賞受賞者連合の批判声明・Google Gemini 4 Neonリーク・Anthropic連邦AI安全法案ロビー・Character.AI未成年全面禁止・中国「世界AI機構」提案）
+- 画像追加: `assets/img/ai-news-manga-2026-11-19.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-19のAIニュース記事を作成・公開するため。
+
 ## 2026-11-12 (ainews)
 
 ### 変更内容
