@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-20 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-20-ai-news-ant-stock-drops-nvidia-subpoena-asia-markets-crash-agentic-ai.md`（AIニュース: Anthropic ANT株2日目急落・Nvidia California召喚状（Jensen Huang辞任・中国チップ輸出禁止）・アジア市場AI bubble懸念で連鎖急落（日経-5.1%・KOSPI-5.2%・TAIEX-6.2%）・OpenAI GPT-6.2 Astra/Sol一般公開・Google Gemini 4 Neon正式リリース・エージェンティックAIインフラと規制）
+- 画像追加: `assets/img/ai-news-manga-2026-11-20.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-20のAIニュース記事を作成・公開するため。
+
 ## 2026-11-12 (ainews)
 
 ### 変更内容
