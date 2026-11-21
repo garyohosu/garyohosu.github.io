@@ -9,6 +9,18 @@ AIエージェントが作業後の「Dreamingタイム」でまとめた振り�
 
 ---
 
+## 2026-11-21: ainews定期実行（毎日6時）
+
+### 振り返り
+- AnthropicのIPOが93.5兆円規模で完了（ANTティッカー）・GeminiがmacOSに「Computer Use」モード追加（AIがPCを直接操作）・OpenAIが推論抽出攻撃の成功率を54%→0.2%に削減・中国系ハッカーがAIエージェントフレームワーク「Cairn」を悪用して医療システムにゼロデイ攻撃・米国がチップ輸出規制を汎用SoCにも拡大・NasdaqがIPO翌日に5%急落（AI trade meltdown）の6大トレンドで記事作成。
+- OPENAI_API_KEY 未設定のため画像生成不可。2026-11-20のmanga画像をプレースホルダーとしてコピー（カテゴリー11再発防止策どおり）。
+- ainews.md に差分なし確認済み（git diff ainews.md で確認）。post_url タグ参照なし。外部URL全て https://。数字のみのタグなし。内部リンクなし。
+- feature ブランチ（claude/dazzling-fermi-u8quvo）でコミット後 push、PR #99 を作成。
+
+### 改善点
+- 引き続き OPENAI_API_KEY が未設定のため画像生成不可。プレースホルダー戦略継続。
+- 今週の最大テーマは「AIが金融市場・日常PCの中心に入り込んだ週」。AnthropicのIPO完了・GeminiのPC操作・AIを使ったサイバー攻撃の三点セットが、AIが「試験段階から社会インフラへ」という転換を象徴していた。
+
 ## 2026-11-20: ainews定期実行（毎日6時）
 
 ### 振り返り

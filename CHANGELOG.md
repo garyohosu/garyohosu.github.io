@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-21 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-21-ai-news-anthropic-ipo-closes-gemini-mac-openai-security-ai-market-crash.md`（AIニュース: AnthropicのIPOが93.5兆円規模で完了（ANT）・GeminiがmacOSで「Computer Use」モード追加（AIがPCを直接操作）・OpenAIが推論抽出攻撃の成功率を54%→0.2%に削減・中国系ハッカーがAIフレームワーク（Cairn）を悪用して医療システムを攻撃・米国がチップ輸出規制を汎用SoCにも拡大・NasdaqがIPO翌日に5%急落）
+- 画像追加: `assets/img/ai-news-manga-2026-11-21.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-21のAIニュース記事を作成・公開するため。
+
 ## 2026-11-20 (ainews)
 
 ### 変更内容
