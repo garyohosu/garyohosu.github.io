@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-22 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-22-ai-news-anthropic-ant-day2-navier-stokes-gemini-neon-amazon-decart.md`（AIニュース: Anthropic ANT上場2〜3日目株価推移（$97.17終値）・AIがナビエ-ストークス方程式の有限時間爆発を証明（Anthropic研究者・Claude/Codex・60万行Lean4）・Google Gemini 4 Neon正式公開（32%コスト削減・4段階思考・1Mトークン）・OpenAI GPT-6.2安全対策強化と実用性懸念・Amazon Decart $75億買収交渉・国連AIキラーロボット交渉合意なし）
+- 画像追加: `assets/img/ai-news-manga-2026-11-22.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-22のAIニュース記事を作成・公開するため。
+
 ## 2026-11-20 (ainews)
 
 ### 変更内容
