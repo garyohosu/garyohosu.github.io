@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-23 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-23-ai-news-google-ai-homepage-openai-amd-chip-gpt62-astra-genie4-privacy.md`（AIニュース: Googleホームページ検索ボタン廃止・AIファースト化（Geminiサイドバー）・OpenAI+AMD GPU回路設計を最大14%改善・GPT-6.2 Astraが「High」自己改善閾値を初達成・Anthropic ANT IPO後の市場評価・Google Genie 4ワールドモデル展開・Meta Muse AIがSignalメッセージを読める問題）
+- 画像追加: `assets/img/ai-news-manga-2026-11-23.png`（プレースホルダー: OPENAI_API_KEY未設定のため2026-11-20の画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-23のAIニュース記事を作成・公開するため。
+
 ## 2026-11-20 (ainews)
 
 ### 変更内容
