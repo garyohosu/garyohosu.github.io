@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-24 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-24-ai-news-anthropic-ipo-landed-gpt62-astra-gemini-neon-riemann-claude-ship.md`（AIニュース: Anthropic ANT株IPO着地（$83・時価総額一時$2兆超）・GPT-6.2 Astraが「自己改善High閾値」初クリア・Google Gemini 4 Neon（$3/$15）リリース・OpenAI主任科学者Pachockiの「知能上限業界合意」提案・Claude Ship発表・Anthropic数学者がClaudeとリーマン予想証明案を提出）
+- 画像追加: `assets/img/ai-news-manga-2026-11-24.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-24のAIニュース記事を作成・公開するため。
+
 ## 2026-11-20 (ainews)
 
 ### 変更内容
