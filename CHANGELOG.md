@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-25 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-25-ai-news-nvidia-ceo-return-openai-safety-matrix-math-australia-ai-law.md`（AIニュース: ジェンスン・フアンNvidia CEO復帰劇（SEC 8-K 11/23付）・OpenAI/Anthropic社員が未公開モデルの安全性に内部告発（ANT株3日間下落背景）・OpenAI行列積算指数ω=9/4突破（1979年以来最大の進歩）・オーストラリアDigital Duty of Care法案（生成AI対象・罰則付き義務化）・WalmartがBlack FridayにMeta Muse等AIエージェントショッピングを開放・米国がAlibaba Singapore子会社をエンティティリストへ（AIチップ迂回輸出規制拡大））
+- 画像追加: `assets/img/ai-news-manga-2026-11-25.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-25のAIニュース記事を作成・公開するため。
+
 ## 2026-11-20 (ainews)
 
 ### 変更内容
