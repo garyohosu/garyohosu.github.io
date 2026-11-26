@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-26 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-26-ai-news-dell-ai-earnings-claude-rust-migration-nvidia-ceo-australia-ai-law.md`（AIニュース: Dell Q3 FY2026 AIサーバーバックログ$95B拡大・Claude CodeによるBunのZig→Rustマイグレーション100万行2週間・Nvidia CEO辞任後の余波（CA召喚状・シューマー輸出規制告発）・Anthropic ANT株価調整・AIによる膀胱がん5年前検知（7万人研究85%検出率）・オーストラリア デジタルデューティ・オブ・ケア法（生成AI対象・$1億超罰金）・MetaのMuse AIエージェント（Walmart Black Friday対応））
+- 画像追加: `assets/img/ai-news-manga-2026-11-26.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-26のAIニュース記事を作成・公開するため。
+
 ## 2026-11-20 (ainews)
 
 ### 変更内容
