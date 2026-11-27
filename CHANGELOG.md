@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-11-27 (ainews)
+
+### 変更内容
+- 新記事追加: `_posts/2026-11-27-ai-news-anthropic-rust-migration-google-math-ai-medical-openai-private.md`（AIニュース: AnthropicのMessages APIをPythonからRustへClaudeエージェントが移行・GoogleのAIが数学論文6本を1日に発表（整数因数分解アルゴリズム）・AIが膀胱がんを5年前に85%精度で検知・OpenAI Private Inference限定パイロット開始・SpaceX軌道上AIデータセンターFCC承認・トランプ・習近平が軍事AI規制協議）
+- 画像追加: `assets/img/ai-news-manga-2026-11-27.png`（プレースホルダー: OPENAI_API_KEY未設定のため直近画像をコピー）
+
+### 理由
+- 毎日6時のcron（ainews定期実行）で2026-11-27のAIニュース記事を作成・公開するため。
+
 ## 2026-11-20 (ainews)
 
 ### 変更内容
